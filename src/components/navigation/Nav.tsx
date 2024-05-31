@@ -18,7 +18,7 @@ const Nav: React.FC = () => {
         <Link to="/social-inclusion" className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange">
          社會共榮
         </Link>
-        <Link to="/happy-enterprise" className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange">
+        <Link to="/enterprise" className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange">
          幸福企業
         </Link>
         <Link to="/operate" className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange">
