@@ -64,7 +64,7 @@ const TabList: React.FC<TabTableProps> = ({ goals }) => {
                 className="grid grid-cols-12 items-center border-b-[1px] border-[#d9d9d9] py-8"
               >
                 <p className="col-span-3 text-[20px]">{item.title}</p>
-                <p className="col-span-9 text-[16px] font-light">{item.description}</p>
+                <p className="col-span-9 content">{item.description}</p>
               </motion.div>
             ))}
           </motion.div>

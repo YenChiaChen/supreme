@@ -12,7 +12,7 @@ const FooterLinkSection: React.FC<FooterLinkSectionProps> = ({ title, links }) =
     <div className="flex flex-col gap-4 tracking-wider">
       <Link to={title.url} className="text-[16px] font-semibold mb-4">{title.name}</Link>
       {links.map((link, index) => (
-        <Link key={index} to={link.url} className="text-[14px] font-light hover:text-orange">
+        <Link key={index} to={link.url} className="text-[16px] font-light hover:text-orange">
           {link.name}
         </Link>
       ))}
@@ -80,8 +80,9 @@ const Footer: React.FC = () => {
   return (
     <div className="mt-[300px] bg-blue rounded-t-[50px]">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4 py-12">
-        <div className="col-span-1 lg:col-span-2">
-          <img src={SupremeLogo} alt='Supreme' className="w-[130px]" />
+        <div className="col-span-1 lg:col-span-2 flex flex-col gap-5">
+          <img src={SupremeLogo} alt='Supreme' className="w-[200px]" />
+          <a href='http://www.supreme.com.tw' className="font-light text-[16px] hover:text-orange" target="_blank" rel="noreferrer">至上電子官方網頁</a>
         </div>
         {sections.map((section, index) => (
           <FooterLinkSection key={index} title={section.title} links={section.links} />
