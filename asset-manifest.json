@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.553ee1a7.css",
-    "main.js": "/supreme/static/js/main.69a21c28.js",
+    "main.css": "/supreme/static/css/main.385ca7e1.css",
+    "main.js": "/supreme/static/js/main.f640f385.js",
     "static/media/healthy.png": "/supreme/static/media/healthy.6defb8b606def061e8f8.png",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
     "static/media/2022-3.png": "/supreme/static/media/2022-3.08830b312fc3f07fc77c.png",
@@ -10,19 +10,17 @@
     "static/media/basketball.png": "/supreme/static/media/basketball.d3684f136a7bd2239d8f.png",
     "static/media/run.png": "/supreme/static/media/run.5ee58e4b05bd6de2049a.png",
     "static/media/tabletennis.png": "/supreme/static/media/tabletennis.3d31fb34cf59420f184a.png",
-    "static/media/testcols.png": "/supreme/static/media/testcols.3e9a458580da4c4bfe2f.png",
     "static/media/2022-aci.png": "/supreme/static/media/2022-aci.afb834cf81d86c4e9dc1.png",
     "static/media/2022-1.png": "/supreme/static/media/2022-1.50e68bef44b32e15ada0.png",
-    "static/media/testcols2.png": "/supreme/static/media/testcols2.942cb1853b9c4679b3e2.png",
     "static/media/testcols3.png": "/supreme/static/media/testcols3.9938123468a09e4d434e.png",
     "static/media/accident.png": "/supreme/static/media/accident.d9e9b84dc35ac9a88db8.png",
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
     "index.html": "/supreme/index.html",
-    "main.553ee1a7.css.map": "/supreme/static/css/main.553ee1a7.css.map",
-    "main.69a21c28.js.map": "/supreme/static/js/main.69a21c28.js.map"
+    "main.385ca7e1.css.map": "/supreme/static/css/main.385ca7e1.css.map",
+    "main.f640f385.js.map": "/supreme/static/js/main.f640f385.js.map"
   },
   "entrypoints": [
-    "static/css/main.553ee1a7.css",
-    "static/js/main.69a21c28.js"
+    "static/css/main.385ca7e1.css",
+    "static/js/main.f640f385.js"
   ]
 }
