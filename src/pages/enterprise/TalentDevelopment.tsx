@@ -69,7 +69,7 @@ const TalentDevelopment: React.FC = () => {
 
   const breadcrumbItems = [
     { label: "幸福企業", href: "/happy-enterprise" },
-    { label: "人才培育與留任" },
+    { label: "人才培育" },
   ];
 
   const cards = [

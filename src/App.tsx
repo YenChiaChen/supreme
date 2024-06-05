@@ -6,6 +6,13 @@ import HumanRightsPolicy from "./pages/enterprise/HumanRightsPolicy";
 import OccupationalSafety from "./pages/enterprise/OccupationalSafety";
 import HealthyWorkplace from "./pages/enterprise/HealthyWorkplace";
 import ScrollToTop from "./components/utils/ScrollToTop";
+import SustainabilityPage from "./pages/sustainability";
+import Governance from "./pages/sustainability/Governance";
+import GovernanceStructure from "./pages/sustainability/GovernanceStructure";
+import InformationSecurity from "./pages/sustainability/InformationSecurity";
+import IntellectualProperty from "./pages/sustainability/IntellectualProperty";
+import RiskManagement from "./pages/sustainability/RiskManagement";
+import SupplyChain from "./pages/sustainability/SupplyChain";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -18,6 +25,14 @@ function App() {
           <Route path="enterprise/human-rights-policy" element={<HumanRightsPolicy />} />
           <Route path="enterprise/occupational-safety" element={<OccupationalSafety />} />
           <Route path="enterprise/healthy-workplace" element={<HealthyWorkplace />} />
+          <Route path="sustainability" element={<SustainabilityPage />} />
+          <Route path="sustainability/governance" element={<Governance />} />
+          <Route path="sustainability/governance-structure" element={<GovernanceStructure />} />
+          <Route path="sustainability/intellectual-property" element={<IntellectualProperty />} />
+          <Route path="sustainability/risk-management" element={<RiskManagement />} />
+          <Route path="sustainability/information-security" element={<InformationSecurity />} />
+          <Route path="sustainability/supply-chain" element={<SupplyChain />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

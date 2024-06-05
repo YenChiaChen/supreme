@@ -39,7 +39,7 @@ const Nav: React.FC = () => {
           幸福企業
         </Link>
         <Link
-          to="/operate"
+          to="/sustainability"
           className="mx-2 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
         >
           永續經營

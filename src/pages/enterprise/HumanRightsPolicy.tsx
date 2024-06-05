@@ -50,7 +50,7 @@ const HumanRightsPolicy: React.FC = () => {
 
   const breadcrumbItems = [
     { label: "幸福企業", href: "/happy-enterprise" },
-    { label: "健康職場認證" },
+    { label: "人權政策" },
   ];
 
 

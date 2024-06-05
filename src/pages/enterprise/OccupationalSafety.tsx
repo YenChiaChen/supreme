@@ -32,7 +32,7 @@ const OccupationalSafety: React.FC = () => {
 
   const breadcrumbItems = [
     { label: "幸福企業", href: "/happy-enterprise" },
-    { label: "職業安全衛生" },
+    { label: "職業安全衛生政策" },
   ];
 
   const goals = ["2023", "2022", "2021"];

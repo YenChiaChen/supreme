@@ -41,11 +41,8 @@ const Footer: React.FC = () => {
     {
       title: {name: '幸福企業', url: '/enterprise'},
       links: [
-        { name: '人力資源分布', url: '/enterprise/hr-distribution' },
-        { name: '員工薪酬福利與關懷', url: '/enterprise/employee-benefits' },
-        { name: '員工權益保障', url: '/enterprise/employee-rights' },
-        { name: '人才培育與留任', url: '/enterprise/talent-development' },
-        { name: '職業安全衛生', url: '/enterprise/occupational-safety' },
+        { name: '人才培育', url: '/enterprise/talent-development' },
+        { name: '職業安全衛生政策', url: '/enterprise/occupational-safety' },
         { name: '健康職場', url: '/enterprise/healthy-workplace' },
         { name: '人權政策', url: '/enterprise/human-rights-policy' },
       ],
@@ -54,13 +51,11 @@ const Footer: React.FC = () => {
       title: {name: '永續經營', url: '/sustainability'},
       links: [
         { name: '公司治理', url: '/sustainability/governance' },
-        { name: '董事會', url: '/sustainability/board' },
-        { name: '永續發展委員會', url: '/sustainability/committee' },
-        { name: '利害關係人議合', url: '/sustainability/stakeholder-engagement' },
-        { name: '誠信經營', url: '/sustainability/ethical-business' },
-        { name: '舉報管道與機制', url: '/sustainability/whistleblowing' },
+        { name: '公司治理架構', url: '/sustainability/governance-structure' },
+        { name: '智慧財產管理', url: '/sustainability/intellectual-property' },
         { name: '風險管理', url: '/sustainability/risk-management' },
-        { name: '顧客隱私', url: '/sustainability/customer-privacy' },
+        { name: '資訊安全管理', url: '/sustainability/information-security' },
+        { name: '供應鏈管理', url: '/sustainability/supply-chain' },
       ],
     },
     {
