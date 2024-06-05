@@ -37,7 +37,7 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
             {card.subtitle}
           </p>
           <div className="h-[1px] w-[60%] bg-black my-6"></div>
-          <p className="text-[14px] font-light">{renderDescriptionWithLineBreaks(card.description)}</p>
+          <p className="text-[14px] font-light tracking-wider">{renderDescriptionWithLineBreaks(card.description)}</p>
         </div>
       ))}
     </div>

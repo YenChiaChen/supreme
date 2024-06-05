@@ -26,7 +26,7 @@ const Stat: React.FC<StatProps> = ({ num, suffix, decimals = 0 }) => {
 
   return (
     <>
-      <span ref={ref}></span>
+      <span ref={ref} className="mr-1"></span>
       {suffix}
     </>
   );
@@ -42,12 +42,12 @@ interface StatDisplayProps {
   
   const StatDisplay: React.FC<StatDisplayProps> = ({ stats }) => {
     return (
-      <div className="bg-[#f5f5f5] rounded-[30px] flex justify-between px-12 py-8 items-center">
+      <div className="bg-gray rounded-[30px] flex justify-between px-12 py-8 items-center">
       {stats.map((stat, index) => (
         <React.Fragment key={index}>
           <div className="flex-1 flex justify-center">
             <div className="text-left text-[16px] text-[#5b5b5b] font-light">
-              <p>{stat.label}</p>
+              <p className="tracking-wide">{stat.label}</p>
               <p className="text-[32px] font-semibold text-orange pt-1">
                 <Stat num={stat.num} suffix={stat.suffix} decimals={stat.num % 1 !== 0 ? 1 : 0} />
               </p>

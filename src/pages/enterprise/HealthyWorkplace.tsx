@@ -5,6 +5,7 @@ import ImageHealth from "../../assets/img/testing/healthy.png";
 import TabContainerIcon from "../../components/ui/TabContainerIcon";
 import {
   faBasketball,
+  faChessRook,
   faFeather,
   faGolfBall,
   faPersonRunning,
@@ -63,6 +64,15 @@ const Golf: React.FC = () => (
     <img src={img5} className="w-full" alt="table_tennis" />
   </>
 );
+const BoardGame: React.FC = () => (
+  <>
+    <p className="my-6 content">
+      高爾夫球是一項可以在忙碌的工作生活之餘紓解身心壓力的休閑運動。愛好高爾夫球運動的同仁們，定期
+      於每月第二週舉辦球敘齊聚各球場，不僅可在絕美大自然景色中放鬆身心，也能互相切磋球技。
+    </p>
+    <img src={img5} className="w-full" alt="table_tennis" />
+  </>
+);
 
 const HealthyWorkplace: React.FC = () => {
   const stats = [
@@ -76,13 +86,14 @@ const HealthyWorkplace: React.FC = () => {
     { label: "健康職場認證" },
   ];
 
-  const goals = ["桌球社", "籃球社", "羽球社", "路跑社", "高爾夫球社"];
+  const goals = ["桌球社", "籃球社", "羽球社", "路跑社", "高爾夫球社", "桌遊社"];
   const icons = [
     <FontAwesomeIcon icon={faTableTennisPaddleBall} className="h-[50px]" />,
     <FontAwesomeIcon icon={faBasketball} className="h-[50px]" />,
     <FontAwesomeIcon icon={faFeather} className="h-[50px]" />,
     <FontAwesomeIcon icon={faPersonRunning} className="h-[50px]" />,
     <FontAwesomeIcon icon={faGolfBall} className="h-[50px]" />,
+    <FontAwesomeIcon icon={faChessRook}  className="h-[50px]" />,
   ];
 
   return (
@@ -98,7 +109,7 @@ const HealthyWorkplace: React.FC = () => {
           <StatDisplay stats={stats} />
         </div>
 
-        <div className="container mx-auto px-[10%] mt-12">
+        <div className="container mx-auto px-[10%] mt-8">
           <Breadcrumbs items={breadcrumbItems} />
           <p className="mt-xl sub-title text-center">職業安全衛生政策</p>
           <p className="mt-md content">
@@ -130,6 +141,9 @@ const HealthyWorkplace: React.FC = () => {
             </div>
             <div data-goal="高爾夫球社">
               <Golf />
+            </div>
+            <div data-goal="桌游社">
+              <BoardGame />
             </div>
           </TabContainerIcon>
         </div>

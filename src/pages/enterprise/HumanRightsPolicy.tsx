@@ -67,7 +67,7 @@ const HumanRightsPolicy: React.FC = () => {
           <StatDisplay stats={stats} />
         </div>
 
-        <div className="container mx-auto px-[10%] mt-12">
+        <div className="container mx-auto px-[10%] mt-8">
           <Breadcrumbs items={breadcrumbItems} />
           <p className="mt-xl sub-title text-center">人權政策</p>
           <p className="mt-md content">

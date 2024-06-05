@@ -19,34 +19,34 @@ const Nav: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex-grow text-center py-[20px] text-[16px] text-gray tracking-wider">
+      <div className="flex-grow text-center py-[20px] text-[16px] text-black tracking-wider">
         <Link
           to="/sustainability"
-          className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
+          className="mx-2 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
         >
           點亮永續
         </Link>
         <Link
           to="/social-inclusion"
-          className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
+          className="mx-2 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
         >
           社會共榮
         </Link>
         <Link
           to="/enterprise"
-          className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
+          className="mx-2 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
         >
           幸福企業
         </Link>
         <Link
           to="/operate"
-          className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
+          className="mx-2 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
         >
           永續經營
         </Link>
         <Link
           to="/symbiosis"
-          className="mx-4 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
+          className="mx-2 border-b-[4px] border-transparent px-4 py-[17px] duration-300 hover:border-orange"
         >
           永續共生
         </Link>

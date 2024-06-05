@@ -7,6 +7,39 @@ import Img02 from "../../assets/img/testing/2022-2.png";
 import Img03 from "../../assets/img/testing/2022-3.png";
 import CardGrid from "../../components/ui/CardGrid";
 import TabContainer from "../../components/ui/TabContainer";
+import HoverCard from "../../components/ui/HoverCard";
+import { faUserTie, faRankingStar, faBook, faBuilding } from "@fortawesome/free-solid-svg-icons";
+
+
+const cardData = [
+  {
+    title: "文化發展",
+    description:
+      "強調組織價值觀、企業文化和倫理道德的培養，確立員工對組織的認同感，並促進積極的工作態度和合作精神。",
+    icon: faBuilding,
+  },
+  {
+    title: "職能發展",
+    description:
+      "提升員工專業領域技能和知識，確保員工得以勝任並不斷進步。",
+    icon: faBook,
+  },
+  {
+    title: "主管培育",
+    description:
+      "針對管理階層人才，培養領導能力、人際關係和決策技能。",
+    icon: faUserTie,
+  },
+  {
+    title: "競爭力發展",
+    description:
+      "協助員工提升職場能力和競爭力 可以解決工作場所的爭議和糾紛，避免對勞雇 / 勞資關係造成負面影響。",
+    icon: faRankingStar,
+  },
+];
+
+
+
 const ShortTermGoals: React.FC = () => (
   <>
     <p className="my-6 content">目前沒有資料！過一陣子再來看看吧！</p>
@@ -78,7 +111,7 @@ const TalentDevelopment: React.FC = () => {
           <StatDisplay stats={stats} />
         </div>
 
-        <div className="container mx-auto px-[10%] mt-12">
+        <div className="container mx-auto px-[10%] mt-8">
           <Breadcrumbs items={breadcrumbItems} />
           <p className="mt-xl sub-title text-center">多元訓練課程</p>
           <p className="mt-md content">
@@ -94,7 +127,13 @@ const TalentDevelopment: React.FC = () => {
           <CardGrid cards={cards} />
 
           <p className="mt-xl text-center sub-title">人才培育之四大課程類別</p>
-          <img src={TestImage} alt="testing" className="w-full mt-md" />
+          {/* <img src={TestImage} alt="testing" className="w-full mt-md" /> */}
+          
+          <div className="w-full flex mt-md justify-between gap-4">
+            {cardData.map((data, index) => (
+              <HoverCard key={index} data={data} />
+            ))}
+          </div>
           <p className="mt-xl text-center sub-title">多元職涯發展</p>
           <p className="mt-md content">
             本公司十分重視員工之培訓和學習計劃，期望能和員工以長遠的目標共同成長，因此提供職業規劃和發展計劃，協助員工確立長期職業發展目標和方向。提供內部調動和轉職機會，讓員工可以在公司內部尋找新的職業發展機會，包括跨部門調動、工作輪調、跨國調動等。倘若當公司面臨需要進行組織重組或裁員時，公司會提供適應性培訓和協助，如職業轉型培訓及就業輔導等，確保員工能夠順利過渡到新的工作環境中。

@@ -50,7 +50,7 @@ const OccupationalSafety: React.FC = () => {
           <StatDisplay stats={stats} />
         </div>
 
-        <div className="container mx-auto px-[10%] mt-12">
+        <div className="container mx-auto px-[10%] mt-8">
           <Breadcrumbs items={breadcrumbItems} />
           <p className="mt-xl sub-title text-center">職業安全衛生政策</p>
           <p className="mt-md content">
@@ -71,7 +71,7 @@ const OccupationalSafety: React.FC = () => {
             <div className="col-span-3 bg-pink text-white flex items-center justify-center p-6">
               辦公處所
             </div>
-            <div className="col-span-9 p-6 pl-12 content">
+            <div className="col-span-9 p-6 pl-12 notes">
               <ul className="list-disc ">
                 <li>設置符合飲水標準之飲水設備，定期清洗及維護。</li>
                 <li>
@@ -95,7 +95,7 @@ const OccupationalSafety: React.FC = () => {
             <div className="col-span-3 bg-pink text-white flex items-center justify-center p-6 border-t-[1px] border-white">
               倉儲環境
             </div>
-            <div className="col-span-9 p-6 pl-12 content border-t-[1px] border-pink">
+            <div className="col-span-9 p-6 pl-12 notes border-t-[1px] border-pink">
               秉持工作安全至上原則，倉儲之貨運搬運、堆放係依勞動部「職業安全衛生設施規則」辦理。
               <ul className="list-disc ">
                 <li>
