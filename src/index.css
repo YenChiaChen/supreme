@@ -35,6 +35,12 @@
   color: #ff8d50;
   letter-spacing: 0.1em;
 }
+.side-title{
+  font-size:20px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color:#ff8d50
+}
 .mt-md {
   margin-top: 50px;
 }

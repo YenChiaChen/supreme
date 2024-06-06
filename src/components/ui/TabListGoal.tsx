@@ -11,7 +11,8 @@ interface TabTableProps {
 }
 
 const TabListGoal: React.FC<TabTableProps> = ({ goals }) => {
-  const [selectedGoal, setSelectedGoal] = useState(Object.keys(goals)[0]);
+  const [selectedGoal, setSelectedGoal] = useState(Object.keys(goals)[Object.keys(goals).length - 1]);
+
 
   const containerVariants = {
     hidden: { opacity: 1 },
