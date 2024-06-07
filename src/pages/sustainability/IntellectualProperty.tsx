@@ -3,6 +3,7 @@ import StatDisplay from "../../components/ui/StatDisplay";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import SlideUpList from "../../components/ui/SlideUpList";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import Bg from "../../assets/img/bg/bg.png";
 
 const data = [
   {
@@ -145,23 +146,15 @@ const IntellectualProperty: React.FC = () => {
 
   return (
     <div>
-      <HeroBanner
-        title="永續經營"
-        description={`本公司於從事企業經營同時，積極實踐永續發展，以符合平衡環境，社會及公司治理發展之國際趨勢，
-        並透過企業公民擔當，提升國家經濟貢獻，改善員工、社區及社會之生活品質，促進以企業責任為本之競爭優勢。`}
-        backgroundImage="https://picsum.photos/1920/1080/?blur"
-      />
-      <div className="bg-white rounded-t-[50px] w-full  -translate-y-[50px]">
-        <div className="container mx-auto -translate-y-[50px] px-8">
-          <StatDisplay stats={stats} />
-        </div>
-
-        <div className="container mx-auto px-[10%] mt-8">
-          <Breadcrumbs items={breadcrumbItems} />
-          <p className="mt-xl sub-title text-center">智慧財產管理計畫</p>
-          <p className="mt-md content">
-            本公司為有效管理本公司智慧財產權，於2020年11月經董事會通過訂定「智慧財產管理計畫」。範圍包含：專利權、商標權、著作權及營業秘密，對象涵蓋本公司員工及參與本公司研究計畫之外部人士所產出或取得之各種智慧財產。
-          </p>
+    <HeroBanner
+      title="智慧財產管理"
+      description={`本公司為有效管理本公司智慧財產權，於2020年11月經董事會通過訂定「智慧財產管理計畫」。範圍包含：專利權、商標權、著作權及營業秘密，對象涵蓋本公司員工及參與本公司研究計畫之外部人士所產出或取得之各種智慧財產。`}
+      backgroundImage={Bg}
+      center={true}
+    />
+    <div className="bg-white">
+      <div className="container mx-auto px-[10%] mt-8 pt-18">
+        <Breadcrumbs items={breadcrumbItems} />
           <p className="mt-xl sub-title text-center">專案管理</p>
           <div className="mt-md">
             <SlideUpList items={data2} />

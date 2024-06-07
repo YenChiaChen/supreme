@@ -13,6 +13,7 @@ import InformationSecurity from "./pages/sustainability/InformationSecurity";
 import IntellectualProperty from "./pages/sustainability/IntellectualProperty";
 import RiskManagement from "./pages/sustainability/RiskManagement";
 import SupplyChain from "./pages/sustainability/SupplyChain";
+import MaintainPage from "./pages/maintain";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -32,6 +33,14 @@ function App() {
           <Route path="sustainability/risk-management" element={<RiskManagement />} />
           <Route path="sustainability/information-security" element={<InformationSecurity />} />
           <Route path="sustainability/supply-chain" element={<SupplyChain />} />
+          <Route path="esg" element={<MaintainPage />} />
+          <Route path="esg/*" element={<MaintainPage />} />
+          <Route path="society" element={<MaintainPage />} />
+          <Route path="society/*" element={<MaintainPage />} />
+          <Route path="symbiosis" element={<MaintainPage />} />
+          <Route path="symbiosis/*" element={<MaintainPage />} />
+
+
 
         </Route>
       </Routes>

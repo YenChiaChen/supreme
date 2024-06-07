@@ -45,7 +45,7 @@
   margin-top: 50px;
 }
 .mt-xl {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 
@@ -77,8 +77,8 @@
 }
 
 .draw-border::after {
-  border-top-width: 3px;
-  border-right-width: 3px;
+  border-top-width: 2px;
+  border-right-width: 2px;
 }
 
 .draw-border::before, .sss:hover .draw-border::after {

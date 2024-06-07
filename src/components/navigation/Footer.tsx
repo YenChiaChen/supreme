@@ -1,6 +1,8 @@
 import React from "react";
-import SupremeLogo from '../../assets/img/logo/supreme.png'
+import SupremeLogo from '../../assets/img/logo/supreme-white.png'
 import { Link } from 'react-router-dom';
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface FooterLinkSectionProps {
   title: { name: string; url: string }
@@ -12,7 +14,7 @@ const FooterLinkSection: React.FC<FooterLinkSectionProps> = ({ title, links }) =
     <div className="flex flex-col gap-4 tracking-wider">
       <Link to={title.url} className="text-[16px] font-semibold mb-4">{title.name}</Link>
       {links.map((link, index) => (
-        <Link key={index} to={link.url} className="text-[16px] font-light hover:text-orange">
+        <Link key={index} to={link.url} className="text-[16px] font-light hover:text-orange  duration-300">
           {link.name}
         </Link>
       ))}
@@ -23,11 +25,11 @@ const FooterLinkSection: React.FC<FooterLinkSectionProps> = ({ title, links }) =
 const Footer: React.FC = () => {
   const sections = [
     {
-      title: {name: '點亮永續', url: '/sustainability'},
+      title: {name: '點亮永續', url: '/esg'},
       links: [
-        { name: '永續績效', url: '/sustainability/performance' },
-        { name: '董事長的話', url: '/sustainability/chairman-message' },
-        { name: '永續發展藍圖', url: '/sustainability/blueprint' },
+        { name: '永續績效', url: '/esg/performance' },
+        { name: '董事長的話', url: '/esg/chairman-message' },
+        { name: '永續發展藍圖', url: '/esg/blueprint' },
       ],
     },
     {
@@ -73,11 +75,11 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <div className="mt-[300px] bg-blue rounded-t-[50px]">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4 py-12">
-        <div className="col-span-1 lg:col-span-2 flex flex-col gap-5">
-          <img src={SupremeLogo} alt='Supreme' className="w-[200px]" />
-          <a href='http://www.supreme.com.tw' className="font-light text-[16px] hover:text-orange" target="_blank" rel="noreferrer">至上電子官方網頁</a>
+    <div className="mt-[300px] bg-dark_blue rounded-t-[50px]">
+      <div className="container pl-12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4 py-12 text-white">
+        <div className="col-span-1 lg:col-span-2 flex flex-col gap-5 justify-between">
+          <img src={SupremeLogo} alt='Supreme' className="w-[250px]" />
+          <a href='http://www.supreme.com.tw' className="bg-orange w-fit px-6 py-2 tracking-wide rounded-full hover:scale-[1.05] duration-300" target="_blank" rel="noreferrer">至上電子官方網頁<FontAwesomeIcon icon={faArrowRight} className="ml-4" /></a>
         </div>
         {sections.map((section, index) => (
           <FooterLinkSection key={index} title={section.title} links={section.links} />

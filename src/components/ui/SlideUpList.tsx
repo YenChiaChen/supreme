@@ -68,7 +68,7 @@ const SlideUpListItem: React.FC<SlideUpListItemProps> = ({ item, delay }) => {
           download
           target="_blank"
         >
-         <FontAwesomeIcon icon={faCloudArrowDown} className="text-[34px] text-orange duration-300 hover:scale-[1.1]" />
+         <FontAwesomeIcon icon={faCloudArrowDown} className="text-[34px] text-orange duration-300 hover:scale-[1.1] mr-2" />
         </a>
       )}
     </motion.li>
