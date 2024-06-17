@@ -14,13 +14,14 @@ import IntellectualProperty from "./pages/sustainability/IntellectualProperty";
 import RiskManagement from "./pages/sustainability/RiskManagement";
 import SupplyChain from "./pages/sustainability/SupplyChain";
 import MaintainPage from "./pages/maintain";
+import LandingPage from "./pages/landing";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
       <ScrollToTop />
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route path="/" element={<Layout />}>
-        <Route path="" element={<EnterprisePage />} />
           <Route path="enterprise" element={<EnterprisePage />} />
           <Route path="enterprise/talent-development" element={<TalentDevelopment />} />
           <Route path="enterprise/human-rights-policy" element={<HumanRightsPolicy />} />
