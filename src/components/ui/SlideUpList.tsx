@@ -35,7 +35,7 @@ interface SlideUpListItemProps {
 
 const SlideUpListItem: React.FC<SlideUpListItemProps> = ({ item, delay }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <motion.li
@@ -50,7 +50,7 @@ const SlideUpListItem: React.FC<SlideUpListItemProps> = ({ item, delay }) => {
       {item.icon && (
         <FontAwesomeIcon
           icon={item.icon}
-          className="mr-4"
+          className="mr-4 w-[50px]"
           style={{ fontSize: item.iconSize || '1em', color: item.iconColor || 'inherit' }} 
         />
       )}

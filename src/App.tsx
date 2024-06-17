@@ -14,6 +14,7 @@ import IntellectualProperty from "./pages/sustainability/IntellectualProperty";
 import RiskManagement from "./pages/sustainability/RiskManagement";
 import SupplyChain from "./pages/sustainability/SupplyChain";
 import MaintainPage from "./pages/maintain";
+import EnergyManagement from "./pages/symbiosis/EnergyManagement";
 import LandingPage from "./pages/landing";
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="society" element={<MaintainPage />} />
           <Route path="society/*" element={<MaintainPage />} />
           <Route path="symbiosis" element={<MaintainPage />} />
+          <Route path="symbiosis/energy-management" element={<EnergyManagement />} />
           <Route path="symbiosis/*" element={<MaintainPage />} />
 
 
