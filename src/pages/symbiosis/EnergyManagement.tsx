@@ -4,18 +4,26 @@ import Bg from "../../assets/img/bg/bg.png";
 import TabContainer from "../../components/ui/TabContainer";
 import cols from "../../assets/img/testing/testcol.png";
 import hakimo from "../../assets/img/testing/hakimo.png";
+import hakimoProcess from "../../assets/img/testing/group64.png";
 import hakimoPercent from "../../assets/img/testing/hakimoPercent.png";
-import { faAlarmClock, faTennisBall } from "@fortawesome/pro-solid-svg-icons"
 import {
+  faBasketball,
+  faChessRook,
   faComputer,
+  faFeather,
+  faGolfBall,
   faLightbulb,
+  faPersonRunning,
   faPlugCircleXmark,
   faPowerOff,
   faStairs,
+  faTableTennisPaddleBall,
   faWind,
 } from "@fortawesome/free-solid-svg-icons";
+import {faBinBottlesRecycle, faBoxHeart, faMemoCircleCheck, faPalletBoxes} from "@fortawesome/pro-solid-svg-icons"
 import SlideUpList from "../../components/ui/SlideUpList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import TabContainerIcon from "../../components/ui/TabContainerIcon";
 const EnergyManagement: React.FC = () => {
   const ShortTermGoals: React.FC = () => (
     <>
@@ -109,6 +117,27 @@ const EnergyManagement: React.FC = () => {
     { label: "公司治理" },
   ];
 
+  const goals2 = [
+    "辦公室無紙化",
+    "運輸棧板重複利用",
+    "落實垃圾分類",
+    "產品不過度包裝",
+  ];
+  const icons = [
+    <FontAwesomeIcon icon={faMemoCircleCheck} className="h-[50px]" />,
+    <FontAwesomeIcon icon={faPalletBoxes} className="h-[50px]" />,
+    <FontAwesomeIcon icon={faBinBottlesRecycle} className="h-[50px]" />,
+    <FontAwesomeIcon icon={faBoxHeart} className="h-[50px]" />,
+  ];
+
+  const A1: React.FC = () => (
+    <>
+      <p className="my-6 content">
+        倉儲中心原使用木棧板，為減少廢棄棧板數量，於2017年改購置鐵塑棧板使廢棄棧板量大幅減少，截至2022年無再採購存儲作業所需棧板，往年進貨所乘載貨物的木製棧板也持續回收再出貨利用。
+      </p>
+    </>
+  );
+
   return (
     <div>
       <HeroBanner
@@ -161,6 +190,32 @@ const EnergyManagement: React.FC = () => {
               <LongTermGoals />
             </div>
           </TabContainer>
+          <p className="mt-xl sub-title text-center">廢棄物報廢流程</p>
+        </div>
+
+        <img src={hakimoProcess} className="w-full mt-md" alt="Energy " />
+        <div className="container mx-auto px-[10%]">
+          <p className="mt-xl sub-title text-center">廢棄物減量</p>
+          <p className="mt-md content ">
+            為減少廢棄物之產生，除宣導減少資源浪費，亦積極做好垃圾分類，物流作業所需包裝材料，例如紙箱、
+            填充物及泡棉等，均回收再利用於出貨包裝，落實資源回收再利用政策，對於回收之廢棄物均採集中式管理，
+            定期記錄廢棄物數量與清運數據，並委託合格之廢棄物回收廠商進行處置。
+          </p>
+
+          <TabContainerIcon goals={goals2} icons={icons}>
+            <div data-goal="辦公室無紙化">
+              <A1 />
+            </div>
+            <div data-goal="運輸棧板重複利用">
+              <A1 />
+            </div>
+            <div data-goal="落實垃圾分類">
+              <A1 />
+            </div>
+            <div data-goal="產品不過度包裝">
+              <A1 />
+            </div>
+          </TabContainerIcon>
         </div>
       </div>
     </div>

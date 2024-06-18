@@ -93,3 +93,18 @@
 .sss:hover .draw-border::after {
   transition-delay: 0s, 0.25s, 0s;
 }
+
+
+.floating{
+  animation: float 5s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(5deg);
+  }
+}
