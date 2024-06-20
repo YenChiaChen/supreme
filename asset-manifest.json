@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.0e7fdacc.css",
-    "main.js": "/supreme/static/js/main.f1fbe068.js",
+    "main.css": "/supreme/static/css/main.156a254a.css",
+    "main.js": "/supreme/static/js/main.38db092d.js",
     "static/media/healthy.png": "/supreme/static/media/healthy.6defb8b606def061e8f8.png",
+    "static/media/earth.png": "/supreme/static/media/earth.77f43f1b2f0f39833589.png",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
     "static/media/2022-3.png": "/supreme/static/media/2022-3.08830b312fc3f07fc77c.png",
     "static/media/goaltest-2.png": "/supreme/static/media/goaltest-2.fe2311d8c1b744665526.png",
@@ -20,18 +21,23 @@
     "static/media/security.png": "/supreme/static/media/security.ed95fc98b5169332a480.png",
     "static/media/2022-1.png": "/supreme/static/media/2022-1.50e68bef44b32e15ada0.png",
     "static/media/board-test.png": "/supreme/static/media/board-test.aa883fe7c536c08e0c40.png",
+    "static/media/energycol.png": "/supreme/static/media/energycol.8014fdaca230a2b840b7.png",
     "static/media/security3.png": "/supreme/static/media/security3.f8d92e6391d8a42f7bb2.png",
     "static/media/supply2.png": "/supreme/static/media/supply2.45e9f4ad5ce2c5f95738.png",
     "static/media/board.png": "/supreme/static/media/board.bfa68ca2ad57b6ea0204.png",
+    "static/media/hakimoPercent.png": "/supreme/static/media/hakimoPercent.1b4927d51b2e999583cf.png",
     "static/media/accident.png": "/supreme/static/media/accident.d9e9b84dc35ac9a88db8.png",
+    "static/media/hakimo.png": "/supreme/static/media/hakimo.913fb3bb7222a18ab752.png",
+    "static/media/testcol.png": "/supreme/static/media/testcol.bb0eebd651312d797fcd.png",
+    "static/media/group64.png": "/supreme/static/media/group64.cdb77db81638e25d624c.png",
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.0e7fdacc.css.map": "/supreme/static/css/main.0e7fdacc.css.map",
-    "main.f1fbe068.js.map": "/supreme/static/js/main.f1fbe068.js.map"
+    "main.156a254a.css.map": "/supreme/static/css/main.156a254a.css.map",
+    "main.38db092d.js.map": "/supreme/static/js/main.38db092d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e7fdacc.css",
-    "static/js/main.f1fbe068.js"
+    "static/css/main.156a254a.css",
+    "static/js/main.38db092d.js"
   ]
 }
