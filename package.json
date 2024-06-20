@@ -19,6 +19,8 @@
     "@fortawesome/sharp-regular-svg-icons": "^6.5.2",
     "@fortawesome/sharp-solid-svg-icons": "^6.5.2",
     "@fortawesome/sharp-thin-svg-icons": "^6.5.2",
+    "@nivo/bar": "^0.87.0",
+    "@nivo/core": "^0.87.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -26,6 +28,7 @@
     "@types/node": "^16.18.97",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "aos": "^2.3.4",
     "classnames": "^2.5.1",
     "framer-motion": "^11.2.10",
     "react": "^18.3.1",
@@ -62,6 +65,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.3"
   }

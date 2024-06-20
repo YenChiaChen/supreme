@@ -1,20 +1,30 @@
-import { faAnglesDown, faBrush, faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown, faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import bg from "../../assets/img/testing/bg.png";
-import cloud from "../../assets/img/testing/cloud.png";
 import SupremeWhiteLogo from "../../assets/img/logo/supreme-white.png";
-import classNames from "classnames";
-import { Link } from "react-router-dom";
 import earth from "../../assets/img/testing/earth.png"
 import { faBlockBrickFire, faHouseChimneyHeart } from "@fortawesome/pro-solid-svg-icons";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import Nav from "../../components/navigation/NavBar";
 const LandingPage: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration
+      easing: 'ease-in-out', // easing function
+    });
+  }, []);
   return (
     <div>
       <div className="bg-gradient-to-b from-dark_blue h-[100vh] w-full">
-        <div className="w-full flex container mx-auto px-[5%] pt-16 items-center">
+      <div
+  className="flex container px-[5%] absolute left-1/2 top-16 items-center"
+  style={{ transform: 'translateX(-50%)' }}
+  data-aos="fade-in"
+>
           <div className="border-r-[1px] border-white pr-8"><img src={SupremeWhiteLogo} className="w-[180px]" /></div>
           <p className="pl-4 text-white tracking-widest">企業永續</p>
-          <div className="justify-center flex grow">
+          <div className="justify-center flex grow gap-2">
           <p className=" text-white tracking-widest text-sm px-2 border-b-[2px] border-transparent py-3 duration-300 hover:border-orange cursor-pointer">點亮永續</p>
           <p className=" text-white tracking-widest text-sm px-2 border-b-[2px] border-transparent py-3 duration-300 hover:border-orange cursor-pointer">最新動態</p>
           <p className=" text-white tracking-widest text-sm px-2 border-b-[2px] border-transparent py-3 duration-300 hover:border-orange cursor-pointer">社會共榮</p>
@@ -28,13 +38,13 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
         <div className="w-full h-[100vh] grid grid-cols-2 container mx-auto px-[5%]">
-          <div className="flex justify-center text-white flex-col">
+          <div className="flex justify-center text-white flex-col mt-[15%]">
             <p className="text-5xl font-bold tracking-widest">永續至上</p>
             <p className="content mt-6">
               致力環境保護發展， 守護每位員工權益， 承諾給予社會正面價值。
             </p>
           </div>
-          <div className="flex items-center justify-center "><img src={earth} className="w-[70%] floating" /></div>
+          <div className="flex items-center justify-center mt-[15%]"><img src={earth} className="w-[70%] floating" /></div>
           <div className="flex justify-center col-span-2"><FontAwesomeIcon icon={faAnglesDown} className="text-white h-[40px]" bounce /></div>
         </div>
       </div>
@@ -68,6 +78,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </div>
+<Nav />
     </div>
   );
 };

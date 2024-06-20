@@ -35,6 +35,7 @@ function App() {
           <Route path="sustainability/risk-management" element={<RiskManagement />} />
           <Route path="sustainability/information-security" element={<InformationSecurity />} />
           <Route path="sustainability/supply-chain" element={<SupplyChain />} />
+          <Route path="sustainability/*" element={<MaintainPage />} />
           <Route path="esg" element={<MaintainPage />} />
           <Route path="esg/*" element={<MaintainPage />} />
           <Route path="society" element={<MaintainPage />} />
@@ -42,6 +43,7 @@ function App() {
           <Route path="symbiosis" element={<MaintainPage />} />
           <Route path="symbiosis/energy-management" element={<EnergyManagement />} />
           <Route path="symbiosis/*" element={<MaintainPage />} />
+          <Route path="news/*" element={<MaintainPage />} />
 
 
 

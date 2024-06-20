@@ -5,6 +5,8 @@ import Goal from "../../assets/img/testing/golatest.png";
 import Board from "../../assets/img/testing/board-test.png";
 import SlideUpList from "../../components/ui/SlideUpList";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faBullseyeArrow } from "@fortawesome/pro-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const RiskManagement: React.FC = () => {
   const data2 = [
@@ -40,40 +42,38 @@ const RiskManagement: React.FC = () => {
     },
   ];
 
-  
   const items2 = [
     {
       id: 1,
-      content: "成立風險管控小組，由各部門推派人員共同組成，共 9 名成員，於每年年初及年中檢討各項風險 議題，投入部門人力監控及增加保險預算轉嫁風險。",
+      content:
+        "成立風險管控小組，由各部門推派人員共同組成，共 9 名成員，於每年年初及年中檢討各項風險 議題，投入部門人力監控及增加保險預算轉嫁風險。",
       icon: faCircleCheck,
-      iconColor: '#FF8D50',
-      iconSize: '30px',
+      iconColor: "#FF8D50",
+      iconSize: "30px",
     },
     {
       id: 2,
-      content:
-        "做好保險規劃控制損失，提升公司整體利益。",
+      content: "做好保險規劃控制損失，提升公司整體利益。",
       icon: faCircleCheck,
-      iconColor: '#FF8D50',
-      iconSize: '30px',
+      iconColor: "#FF8D50",
+      iconSize: "30px",
     },
     {
       id: 3,
-      content: "由各部門針對風險議題實施預防管理計畫，授信部門實地查訪客戶，要求提供財務報表，再審慎評估客戶風險。",
+      content:
+        "由各部門針對風險議題實施預防管理計畫，授信部門實地查訪客戶，要求提供財務報表，再審慎評估客戶風險。",
       icon: faCircleCheck,
-      iconColor: '#FF8D50',
-      iconSize: '30px',
+      iconColor: "#FF8D50",
+      iconSize: "30px",
     },
     {
       id: 4,
-      content:
-        "建立風險事件及時應對作業流程，評估影響程度，並依規定公告揭露。",
+      content: "建立風險事件及時應對作業流程，評估影響程度，並依規定公告揭露。",
       icon: faCircleCheck,
-      iconColor: '#FF8D50',
-      iconSize: '30px',
+      iconColor: "#FF8D50",
+      iconSize: "30px",
     },
   ];
-
 
   const breadcrumbItems = [
     { label: "永續經營", href: "/sustainability" },
@@ -97,7 +97,57 @@ const RiskManagement: React.FC = () => {
           </p>
         </div>
 
-        <img src={Goal} alt="goal" className="w-full mt-md" />
+        <div className="w-[90vw] bg-blue mt-md rounded-r-xl py-12">
+          <div className="container mx-auto pl-[16.2%]  ">
+            <ol className=" sm:flex">
+              <li className="relative mb-8 sm:mb-0 w-[33%]">
+                <div className="flex items-center">
+                  <p className="w-[140px] text-[24px] font-semibold text-dark_blue">
+                    整體目標
+                  </p>
+                  <div className="hidden sm:flex w-full bg-dark_blue h-[1px]"></div>
+                </div>
+                <div className="mt-8 sm:pe-8 flex flex-col gap-2">
+                  <p className="note">降低呆滯產品庫存量</p>
+                  <p className="note">減少存貨跌價損失金額</p>
+                  <p className="note">控制呆帳損失金額</p>
+                  <p className="note">規避匯率及利率波動風險</p>
+                  <p className="note">優化稅務規劃</p>
+                </div>
+              </li>
+              <li className="relative w-[33%]">
+                <div className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faBullseyeArrow}
+                    className="text-dark_blue text-[28px]"
+                  />
+                  <div className="hidden sm:flex w-full bg-dark_blue h-[1px]"></div>
+                </div>
+                <div className="mt-8 sm:pe-8  flex flex-col gap-2 justify-center">
+                  <p className=" text-[24px] font-semibold text-dark_blue">
+                    短期目標
+                  </p>
+                  <p className="note">2023 年達成呆帳率 1 % 以下</p>
+                </div>
+              </li>
+              <li className="relative mb-6 sm:mb-0 w-[33%]">
+                <div className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faBullseyeArrow}
+                    className="text-dark_blue text-[28px]"
+                  />
+                  <div className="hidden sm:flex w-full bg-dark_blue h-[1px]"></div>
+                </div>
+                <div className="mt-8 sm:pe-8  flex flex-col gap-2">
+                  <p className=" text-[24px] font-semibold text-dark_blue">
+                    中長期目標
+                  </p>
+                  <p className="note">維持呆帳率 0%</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
 
         <div className="container mx-auto px-[10%]">
           <p className="mt-xl sub-title text-center">管理方針</p>
@@ -113,7 +163,6 @@ const RiskManagement: React.FC = () => {
           <img src={Board} alt="board" className="w-full mt-md mb-8" />
           <SlideUpList items={data2} />
 
-          
           <p className="mt-xl sub-title text-center mb-12">實際執行成效</p>
           <SlideUpList items={items2} />
         </div>

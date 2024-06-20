@@ -6,24 +6,33 @@ import cols from "../../assets/img/testing/testcol.png";
 import hakimo from "../../assets/img/testing/hakimo.png";
 import hakimoProcess from "../../assets/img/testing/group64.png";
 import hakimoPercent from "../../assets/img/testing/hakimoPercent.png";
+import energycol from "../../assets/img/testing/energycol.png";
+import WaterConsumptionChart from "../../components/charts/WaterConsumptionChart";
+
 import {
-  faBasketball,
-  faChessRook,
   faComputer,
-  faFeather,
-  faGolfBall,
   faLightbulb,
-  faPersonRunning,
   faPlugCircleXmark,
   faPowerOff,
   faStairs,
-  faTableTennisPaddleBall,
   faWind,
 } from "@fortawesome/free-solid-svg-icons";
-import {faBinBottlesRecycle, faBoxHeart, faMemoCircleCheck, faPalletBoxes} from "@fortawesome/pro-solid-svg-icons"
+import {
+  faBinBottlesRecycle,
+  faBoxHeart,
+  faMemoCircleCheck,
+  faPalletBoxes,
+} from "@fortawesome/pro-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContainerIcon from "../../components/ui/TabContainerIcon";
+const data = [
+  { year: "2019", consumption: 0.532 },
+  { year: "2020", consumption: 0.654 },
+  { year: "2021", consumption: 0.819 },
+  { year: "2022", consumption: 2.867 },
+  { year: "2023", consumption: 3.111 },
+];
 const EnergyManagement: React.FC = () => {
   const ShortTermGoals: React.FC = () => (
     <>
@@ -113,8 +122,8 @@ const EnergyManagement: React.FC = () => {
   const goals = ["2023", "2022", "2021"];
 
   const breadcrumbItems = [
-    { label: "永續經營", href: "/sustainability" },
-    { label: "公司治理" },
+    { label: "永續共生", href: "/symbiosis" },
+    { label: "能源管理" },
   ];
 
   const goals2 = [
@@ -216,6 +225,23 @@ const EnergyManagement: React.FC = () => {
               <A1 />
             </div>
           </TabContainerIcon>
+          <p className="mt-xl sub-title text-center">廢棄物減量專案</p>
+          <img src={energycol} className="w-full mt-md" />
+          <p className="mt-xl sub-title text-center">水資源管理</p>
+          <p className="mt-md content ">
+            本公司共有四個營運據點，分別為台北總部、新莊、龍潭及台南三個辦事處，各營運據點取水來源均為各地所屬自來水公司，未取得地表水、地下水、海水、產出水等，也無自具有水資源壓力的地區取水。本公司採用Aqueduct
+            Water Risk
+            Atlas工具，三個辦事處之水資源壓力分析結果皆屬「Low-Medium(1-2)」。
+            <br />
+            <br />
+            註：WATERRISKATLAS：https://reurl.cc/yyjme2
+          </p>
+          <p className="mt-xl sub-title text-center">水資源使用統計</p>
+          <p className="note text-[#a6a6a6] text-right mt-md">單位：百萬公升 ( Million Litres )</p>
+          <div style={{ height: "400px" }}>
+            <WaterConsumptionChart data={data} />
+          </div>
+          <p className="note text-[#a6a6a6] mt-md">註 1：盤查邊界涵蓋台北總部、新莊、龍潭及台南三處辦事處。</p>
         </div>
       </div>
     </div>
