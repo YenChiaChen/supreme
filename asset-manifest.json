@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.d7ec081e.css",
-    "main.js": "/supreme/static/js/main.211e0656.js",
+    "main.css": "/supreme/static/css/main.2b672ccc.css",
+    "main.js": "/supreme/static/js/main.e5298321.js",
     "static/media/healthy.png": "/supreme/static/media/healthy.6defb8b606def061e8f8.png",
     "static/media/earth.png": "/supreme/static/media/earth.77f43f1b2f0f39833589.png",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
     "static/media/2022-3.png": "/supreme/static/media/2022-3.08830b312fc3f07fc77c.png",
+    "static/media/earth.gif": "/supreme/static/media/earth.30f392d564c023e8e6df.gif",
+    "static/media/bg02.png": "/supreme/static/media/bg02.43777c44b4689bcdcf45.png",
     "static/media/goaltest-2.png": "/supreme/static/media/goaltest-2.fe2311d8c1b744665526.png",
+    "static/media/bg01.png": "/supreme/static/media/bg01.202e27df6eee39581f95.png",
     "static/media/security4.png": "/supreme/static/media/security4.082e2ecf4089d8a3f1d6.png",
     "static/media/badminton.png": "/supreme/static/media/badminton.fb3c221378f78522eddf.png",
     "static/media/golf.png": "/supreme/static/media/golf.d82071ca79c000c30ceb.png",
@@ -36,11 +39,11 @@
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.d7ec081e.css.map": "/supreme/static/css/main.d7ec081e.css.map",
-    "main.211e0656.js.map": "/supreme/static/js/main.211e0656.js.map"
+    "main.2b672ccc.css.map": "/supreme/static/css/main.2b672ccc.css.map",
+    "main.e5298321.js.map": "/supreme/static/js/main.e5298321.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7ec081e.css",
-    "static/js/main.211e0656.js"
+    "static/css/main.2b672ccc.css",
+    "static/js/main.e5298321.js"
   ]
 }
