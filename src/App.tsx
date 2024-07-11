@@ -16,6 +16,8 @@ import SupplyChain from "./pages/sustainability/SupplyChain";
 import MaintainPage from "./pages/maintain";
 import EnergyManagement from "./pages/symbiosis/EnergyManagement";
 import LandingPage from "./pages/landing";
+import Board from "./pages/sustainability/Board";
+import KeyTopics from "./pages/sustainability/KeyTopics";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -35,6 +37,8 @@ function App() {
           <Route path="sustainability/risk-management" element={<RiskManagement />} />
           <Route path="sustainability/information-security" element={<InformationSecurity />} />
           <Route path="sustainability/supply-chain" element={<SupplyChain />} />
+          <Route path="sustainability/board" element={<Board />} />
+          <Route path="sustainability/key-topics" element={<KeyTopics />} />
           <Route path="sustainability/*" element={<MaintainPage />} />
           <Route path="esg" element={<MaintainPage />} />
           <Route path="esg/*" element={<MaintainPage />} />

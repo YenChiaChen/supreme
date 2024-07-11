@@ -1,0 +1,233 @@
+[
+    {
+      "id": 1,
+      "name": "經營績效",
+      "possibilityPositive": 8,
+      "impactPositive": 9.5,
+      "possibilityNegative": 8.8,
+      "impactNegative": 6.8,
+      "categoryPositive": "首要的正面衝擊主題",
+      "categoryNegative": "首要的負面衝擊主題"
+    },
+    {
+      "id": 2,
+      "name": "資訊安全",
+      "possibilityPositive": 5.8,
+      "impactPositive": 5.8,
+      "possibilityNegative": 6.9,
+      "impactNegative": 6.3,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "首要的負面衝擊主題"
+    },
+    {
+      "id": 3,
+      "name": "誠信經營",
+      "possibilityPositive": 7.9,
+      "impactPositive": 8.9,
+      "possibilityNegative": 5.2,
+      "impactNegative": 6.2,
+      "categoryPositive": "首要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 4,
+      "name": "風險管理",
+      "possibilityPositive": 5,
+      "impactPositive": 6.4,
+      "possibilityNegative": 6.9,
+      "impactNegative": 7.2,
+      "categoryPositive": "首要的正面衝擊主題",
+      "categoryNegative": "首要的負面衝擊主題"
+    },
+    {
+      "id": 5,
+      "name": "人才培育與留任",
+      "possibilityPositive": 5.5,
+      "impactPositive": 5.2,
+      "possibilityNegative": 7.3,
+      "impactNegative": 4.5,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "首要的負面衝擊主題"
+    },
+    {
+      "id": 6,
+      "name": "產品與客戶服務",
+      "possibilityPositive": 7.2,
+      "impactPositive": 6.2,
+      "possibilityNegative": 6.8,
+      "impactNegative": 5.5,
+      "categoryPositive": "首要的正面衝擊主題",
+      "categoryNegative": "首要的負面衝擊主題"
+    },
+    {
+      "id": 7,
+      "name": "勞雇/勞資關係",
+      "possibilityPositive": 6,
+      "impactPositive": 5.5,
+      "possibilityNegative": 6.8,
+      "impactNegative": 4.3,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 8,
+      "name": "公司治理",
+      "possibilityPositive": 8.8,
+      "impactPositive": 6.2,
+      "possibilityNegative": 6,
+      "impactNegative": 6.2,
+      "categoryPositive": "首要的正面衝擊主題",
+      "categoryNegative": "首要的負面衝擊主題"
+    },
+    {
+      "id": 9,
+      "name": "氣候變遷對策及溫室氣體管理/能源管理",
+      "possibilityPositive": 6.3,
+      "impactPositive": 5.3,
+      "possibilityNegative": 5.8,
+      "impactNegative": 5.3,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 10,
+      "name": "綠色產品服務",
+      "possibilityPositive": 4.8,
+      "impactPositive": 3.2,
+      "possibilityNegative": 5,
+      "impactNegative": 3.8,
+      "categoryPositive": "持續追蹤的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 11,
+      "name": "職業安全衛生",
+      "possibilityPositive": 6.9,
+      "impactPositive": 4.3,
+      "possibilityNegative": 3.1,
+      "impactNegative": 3.4,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "持續追蹤的負面衝擊主題"
+    },
+    {
+      "id": 12,
+      "name": "永續供應鏈",
+      "possibilityPositive": 5,
+      "impactPositive": 4.5,
+      "possibilityNegative": 5.1,
+      "impactNegative": 4.6,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 13,
+      "name": "採集實務與管理",
+      "possibilityPositive": 5.5,
+      "impactPositive": 5,
+      "possibilityNegative": 4.7,
+      "impactNegative": 5.2,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 14,
+      "name": "行銷與標示",
+      "possibilityPositive": 5.2,
+      "impactPositive": 3.4,
+      "possibilityNegative": 4.2,
+      "impactNegative": 4.8,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 15,
+      "name": "員工關懷與勞動保障",
+      "possibilityPositive": 6.7,
+      "impactPositive": 5.9,
+      "possibilityNegative": 3.5,
+      "impactNegative": 4.9,
+      "categoryPositive": "首要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 16,
+      "name": "社會公義與參與",
+      "possibilityPositive": 4.2,
+      "impactPositive": 3.9,
+      "possibilityNegative": 4.5,
+      "impactNegative": 0.9,
+      "categoryPositive": "持續追蹤的正面衝擊主題",
+      "categoryNegative": "持續追蹤的負面衝擊主題"
+    },
+    {
+      "id": 17,
+      "name": "關稅壁壘",
+      "possibilityPositive": 5.1,
+      "impactPositive": 4.3,
+      "possibilityNegative": 4.9,
+      "impactNegative": 3.2,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 18,
+      "name": "數位轉型",
+      "possibilityPositive": 4.9,
+      "impactPositive": 3.6,
+      "possibilityNegative": 6,
+      "impactNegative": 2.6,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    },
+    {
+      "id": 19,
+      "name": "綠色營運管理",
+      "possibilityPositive": 4,
+      "impactPositive": 2.2,
+      "possibilityNegative": 3.9,
+      "impactNegative": 2.3,
+      "categoryPositive": "持續追蹤的正面衝擊主題",
+      "categoryNegative": "持續追蹤的負面衝擊主題"
+    },
+    {
+      "id": 20,
+      "name": "廢棄物管理",
+      "possibilityPositive": 3.5,
+      "impactPositive": 1.5,
+      "possibilityNegative": 3.2,
+      "impactNegative": 1.3,
+      "categoryPositive": "持續追蹤的正面衝擊主題",
+      "categoryNegative": "持續追蹤的負面衝擊主題"
+    },
+    {
+      "id": 21,
+      "name": "水資源管理",
+      "possibilityPositive": 3,
+      "impactPositive": 1.1,
+      "possibilityNegative": 2.6,
+      "impactNegative": 1.1,
+      "categoryPositive": "持續追蹤的正面衝擊主題",
+      "categoryNegative": "持續追蹤的負面衝擊主題"
+    },
+    {
+      "id": 22,
+      "name": "生物多樣性",
+      "possibilityPositive": 2.8,
+      "impactPositive": 0.6,
+      "possibilityNegative": 2,
+      "impactNegative": 0.8,
+      "categoryPositive": "持續追蹤的正面衝擊主題",
+      "categoryNegative": "持續追蹤的負面衝擊主題"
+    },
+    {
+      "id": 23,
+      "name": "人權",
+      "possibilityPositive": 5,
+      "impactPositive": 5,
+      "possibilityNegative": 4.1,
+      "impactNegative": 4.7,
+      "categoryPositive": "次要的正面衝擊主題",
+      "categoryNegative": "次要的負面衝擊主題"
+    }
+  ]
+  
