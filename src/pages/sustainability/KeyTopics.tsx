@@ -5,22 +5,19 @@ import CardGrid from "../../components/ui/CardGrid";
 import TabListGoal from "../../components/ui/TabListGoal";
 import Bg from "../../assets/img/bg/bg.png";
 import ESGMatrixDetail from "../../components/charts/ESGMatrix";
-import ESGFactor from "../../data/ESGFactor.json"
+import ESGFactor from "../../data/ESGFactor.json";
 import { ESGFactorType } from "../../types";
 import TabContainer from "../../components/ui/TabContainer";
 
 const goals = ["正面衝擊矩陣", "負面衝擊矩陣"];
 
-
 const KeyTopics: React.FC = () => {
-
-  const ESGFactorData: ESGFactorType[] = ESGFactor
+  const ESGFactorData: ESGFactorType[] = ESGFactor;
 
   const breadcrumbItems = [
     { label: "永續經營", href: "/sustainability" },
     { label: "重大主題" },
   ];
-
 
   return (
     <div>
@@ -84,10 +81,63 @@ const KeyTopics: React.FC = () => {
             </div>
           </TabContainer>
 
+          <p className="mt-xl sub-title text-center mb-4">重大主題變動說明</p>
+          <div className="grid grid-cols-[auto,auto,1fr] mt-md content">
+            <div className="bg-orange text-center text-white py-2 px-4 border-r-[1px] border-white">
+              項目
+            </div>
+            <div className="bg-orange text-center text-white py-2 px-4 border-r-[1px] border-white">
+              議題名稱
+            </div>
+            <div className="bg-orange text-center text-white py-2">
+              調整原因
+            </div>
+            <div className="border-b-[1px] border-b-orange px-4 py-4 flex items-center justify-center">
+              整併
+            </div>
+            <div className="border-b-[1px] border-b-orange px-4 py-4 flex items-center justify-center text-center">
+              產品與客戶服務
+              <br />
+              顧客隱私
+            </div>
+            <div className="border-b-[1px] border-b-orange px-4 py-4 flex items-center ">
+              考量國際永續發展趨勢以及呼應本公司永續策略，將主題重組以利聚焦，明確回
+              應利害關係人。
+              <br />
+              原「顧客隱私」整併為「產品與客戶服務」。
+            </div>
+          </div>
+          
 
-          <p className="mt-xl sub-title text-center mb-4">
-          重大議題列表
-          </p>
+
+          <p className="mt-xl sub-title text-center mb-4">重大主題價值鏈邊界</p>
+          <div className="grid grid-cols-5 mt-md text-center">
+            <div className="bg-orange text-white py-2 row-span-2 flex items-center justify-center border-[1px] border-white">面向</div>
+            <div className="bg-orange text-white py-2 row-span-2 flex items-center justify-center border-[1px] border-white">重大主題</div>
+            <div className="col-span-3 bg-orange text-white py-2 border-[1px] border-white">價值鏈邊界影響</div>
+            <div className="col-span-1 bg-orange text-white py-2 border-[1px] border-white">上游</div>
+            <div className="col-span-1 bg-orange text-white py-2 border-[1px] border-white">至上電子營運</div>
+            <div className="col-span-1 bg-orange text-white py-2 border-[1px] border-white">下游</div>
+
+            <div className=" border-b-[1px] border-orange row-span-4 flex items-center justify-center">治理／經濟</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">誠信經營</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">公司治理</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">經營績效</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">風險管理</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+          </div>
+
         </div>
       </div>
     </div>

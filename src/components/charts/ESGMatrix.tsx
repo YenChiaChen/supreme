@@ -1,7 +1,8 @@
 import { ResponsiveScatterPlot } from "@nivo/scatterplot";
 import { motion } from "framer-motion";
 import { ESGFactorType } from "../../types";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const categoryColors: { [key: string]: string } = {
   首要的正面衝擊主題: "#353b63",
@@ -23,7 +24,7 @@ const ESGMatrix = ({ data }: { data: ESGFactorType[] }) => {
   }));
 
   return (
-    <div style={{ height: '400px' }}>
+    <div style={{ height: "400px" }}>
       <ResponsiveScatterPlot
         data={chartData}
         colors={Object.values(categoryColors)}
@@ -78,9 +79,11 @@ const ESGMatrixDetail = ({ data }: { data: ESGFactorType[] }) => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <div className="grid grid-cols-1 gap-2">
-      <ESGMatrix data={data} />
-      <div className="mt-[40px] space-y-4">
+    <div className="grid grid-cols-3 gap-2">
+      <div className="col-span-3">
+        <ESGMatrix data={data} />
+      </div>
+      <div className="col-span-3 mt-[40px] space-y-4">
         {Object.keys(groupedData).map((category, index) => (
           <motion.div
             key={category}
@@ -97,17 +100,21 @@ const ESGMatrixDetail = ({ data }: { data: ESGFactorType[] }) => {
             >
               {category}
             </p>
-            <div className="grid grid-cols-2 px-4 pb-4 pt-2 text-xs font-light">
+            <div className="grid grid-cols-2 px-4 pb-4 pt-2 text-sm font-light">
               {groupedData[category].map((factor) => (
-                <p key={factor.name} className="py-1">
-                  {factor.name}
+                <p key={factor.name} className="py-2 relative">
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="mr-2 w-[10px]"
+                    style={{ color: categoryColors[category] }}
+                  />
+                  <span className="">{factor.name}</span>
                 </p>
               ))}
             </div>
           </motion.div>
         ))}
       </div>
-
     </div>
   );
 };
