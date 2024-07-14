@@ -1,60 +1,43 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
-import img01 from "../../assets/img/testing/compensation-committee-01.png";
-import img02 from "../../assets/img/testing/compensation-committee-02.png";
-import img03 from "../../assets/img/testing/compensation-committee-03.png";
-import img04 from "../../assets/img/testing/compensation-committee-04.png";
+import img01 from "../../assets/img/testing/audit-committee01.png";
+import img02 from "../../assets/img/testing/audit-committee02.png";
+import img03 from "../../assets/img/testing/audit-committee03.png";
 import CollapsibleList from "../../components/ui/CollapsibleList ";
 import TabContainer from "../../components/ui/TabContainer";
 const CompensationCommittee: React.FC = () => {
   const breadcrumbItems = [
     { label: "永續經營", href: "/sustainability" },
     { label: "功能性委員會" },
-    { label: "審計委員會" },
+    { label: "薪酬委員會" },
   ];
   const items = [
     {
-      title: "一、審閱財務報告",
-      content:
-        "董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。",
+      title: "董事薪酬政策",
+      children:
+        <p>本公司董事薪酬包含董事薪資、職務加給、離職金、各種獎金、獎勵金等，相關訂定酬金之程序皆依循「董事績效評估辦法」，除參考公司整體的營運績效、產業未來經營風險及發展趨勢，亦參考個人的績效達成率及 對公司績效的貢獻度，而給予合理報酬，相關績效考核及薪酬合理性均經薪資報酬委員會及董事會審核，並隨 時視實際經營狀況及法令適時檢討酬金制度，以謀公司永續經營與風險控管之平衡。依本公司章程第二十條， 本公司年度扣除員工酬勞及董事酬勞前之本期稅前淨利，應提撥不高於百分之二為董事酬勞，由董事會決議後 分派，並向股東會報告。</p>,
     },
     {
-      title: "二、委任簽證會計師",
-      content:
-        "董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。",
-    },
-    {
-      title: "三、評估內部控制制度之有效性",
-      content:
-        "董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。",
+      title: "經理人薪酬政策",
+      children:
+      <p>本公司董事薪酬包含董事薪資、職務加給、離職金、各種獎金、獎勵金等，相關訂定酬金之程序皆依循「董事績效評估辦法」，除參考公司整體的營運績效、產業未來經營風險及發展趨勢，亦參考個人的績效達成率及 對公司績效的貢獻度，而給予合理報酬，相關績效考核及薪酬合理性均經薪資報酬委員會及董事會審核，並隨 時視實際經營狀況及法令適時檢討酬金制度，以謀公司永續經營與風險控管之平衡。依本公司章程第二十條， 本公司年度扣除員工酬勞及董事酬勞前之本期稅前淨利，應提撥不高於百分之二為董事酬勞，由董事會決議後 分派，並向股東會報告。</p>,
     },
   ];
 
   const LongTermGoals: React.FC = () => (
     <>
-      <p className="notes">
-        2023年度：於2024年01月31日經薪酬委員會審核通過，同日提報董事會。
-      </p>
-      <CollapsibleList items={items} />
-    </>
-  );
-  const Second: React.FC = () => (
-    <>
-      <p className="notes">
-        2023年度：於2024年01月31日經薪酬委員會審核通過，同日提報董事會。
-      </p>
-      <img src={img04} className="w-full max-w-[1200px] mt-md" />
+      <img src={img03} className="w-full max-w-[1200px] mt-md" alt="img" />
     </>
   );
 
-  const goals = ["2023", "2022", "2021"];
+  const goals = ["2023", "2022", "2021", "2020"];
 
   return (
     <div>
       <HeroBanner
-        title="審計委員會"
-        description={`本公司於2019年完成設置審計委員會，並由董事會訂定「審計委員會組織規程」，藉以強化公司治理，健全公司管理制度。`}
+        title="薪資報酬委員會"
+        description={`本公司於2011年完成設置薪資報酬委員會，並由董事會訂定「薪資報酬委員會組織規程」，\n藉以強化公司治理，健全公司董事及經理人薪資報酬制度。`}
         backgroundImage={Bg}
         center={true}
       />
@@ -62,25 +45,45 @@ const CompensationCommittee: React.FC = () => {
         <div className="container mx-auto px-[10%] mt-8 pt-18">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <p className="mt-xl sub-title text-center">審計委員會</p>
+          <p className="mt-xl sub-title text-center">薪資報酬委員會</p>
           <p className="mt-md content">
-            審計委員會旨在協助董事會履行其監督公司在執行有關會計、稽核、財務報導流程及財務控制上的品質和誠信度。
+            成立薪資報酬委員會會旨在於協助董事會執行與評估公司整體薪酬與福利政策及經理人之報酬，以強化公司治理。薪酬審核、績效及調薪等作業，相關薪酬政策及規範皆訂於本公司辦法及規章中。{" "}
             <br />
             <br />
-            依照中華民國證券交易法及相關行政命令規定，審計委員會應由全體獨立董事組成，其人數不得少於三人。本公司審計委員會的設置完全符合上開法規的要求。
+            本屆薪資報酬委員會由董事會任命，由林佩蓉獨立董事擔任召集人，成員為三位獨立董事。本公司薪資報酬委員會每年至少召開兩次，並得視需要隨時召開之，2022
+            年度共召開 2 次，委員出席率達
+            100%。該委員會以善良管理人之注意，依法忠實履行相關職權，並將所提建議提交董事會討論。
             <br />
             <br />
-            審計委員會為履行其職責，依其組織章程規定有權進行任何適當的審核及調查，並且與公司內部稽核人員、簽證會計師及所有員工間皆有直接聯繫之管道。審計委員會也有權聘請律師、會計師或其他顧問，協助審計委員會執行職務。審計委員會至少每季召開一次常會。
+            本公司為了讓委員會成員更加瞭解相關法令規範及公司實際運作狀況，亦安排會議就薪資報酬委員會相關法令規定及公司高階經理人薪酬福利現況向委員會成員進行簡報。
           </p>
 
-          <p className="mt-xl sub-title text-center">第二屆審計委員會成員</p>
-          <img src={img01} className="w-full max-w-[1200px] mt-md" />
-          <p className="mt-xl sub-title text-center">審議事項列表</p>
-          <img src={img02} className="w-full max-w-[1200px] mt-md" />
+          <p className="mt-xl sub-title text-center">薪酬政策</p>
+          <div className="mt-md">
+            <CollapsibleList items={items} />
+          </div>
 
-          <p className="mt-xl sub-title text-center">
-            各年度審計委員會審議情形
+          <p className="mt-xl sub-title text-center">第五屆薪酬委員會成員</p>
+          <p className="mt-md notes">任期：2022/06/17~2025/06/16</p>
+          <img src={img01} className="w-full max-w-[1200px]" alt="img" />
+
+          <p className="mt-xl sub-title text-center">薪酬委員會運作情形</p>
+          <img src={img02} className="w-full max-w-[1200px] mt-md" alt="img" />
+          <p className="mt-md notes">
+            符合之資格條件： <br />
+            1.商務、法務、財務、會計或公司業務所需相關科系之公私立大專院校講師以上。
+            <br />
+            2.法官、檢察官、律師、會計師或其他與公司業務所需之國家考試及格須有證書之專門職業及技術人員。
+            <br />
+            3.具有商務、法務、財務、會計或公司業務所需之工作經驗
+            <br />
+            <br />
+            <span className="text-xs">
+              註：本項應於設置或廢止薪酬委員會，成員委(選)任及異動後二日內輸入，任期中辭任者，請於備註乙欄明寫X年X月X日辭任。
+            </span>
           </p>
+
+          <p className="mt-xl sub-title text-center">薪酬委員會績效評估</p>
           <TabContainer goals={goals}>
             <div data-goal="2023">
               <LongTermGoals />
@@ -91,22 +94,8 @@ const CompensationCommittee: React.FC = () => {
             <div data-goal="2021">
               <LongTermGoals />
             </div>
-          </TabContainer>
-
-          <p className="mt-xl sub-title text-center">審計委員會運作情形</p>
-          <p className="notes mt-md">
-            本屆委員任期：2022年06月17日至2025年06月16日，截至2024年03月11日，出席情形如下：
-          </p>
-          <img src={img03} className="w-full max-w-[1200px]" />
-          <TabContainer goals={goals}>
-            <div data-goal="2023">
-              <Second />
-            </div>
-            <div data-goal="2022">
-              <Second />
-            </div>
-            <div data-goal="2021">
-              <Second />
+            <div data-goal="2020">
+              <LongTermGoals />
             </div>
           </TabContainer>
         </div>
