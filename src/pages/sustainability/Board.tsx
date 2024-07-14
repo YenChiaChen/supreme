@@ -1,0 +1,177 @@
+import HeroBanner from "../../components/ui/HeroBanner";
+import StatDisplay from "../../components/ui/StatDisplay";
+import Breadcrumbs from "../../components/navigation/BreadCrumb";
+import CardGrid from "../../components/ui/CardGrid";
+import TabListGoal from "../../components/ui/TabListGoal";
+import Bg from "../../assets/img/bg/bg.png";
+const Board: React.FC = () => {
+  const stats = [
+    { label: "第九屆公司治理評鑑得分", num: 94.5, suffix: "分" },
+    {
+      label: "上市公司排名列入之級距",
+      num: 6,
+      suffix: "%",
+      staticString: "6% ~ 20%",
+    },
+    {
+      label: "2022年設置",
+      num: 24,
+      suffix: "次",
+      staticString: "永續發展委員會",
+    },
+  ];
+
+  const goals = {
+    "2021": [
+      {
+        description:
+          "整體董事會針對「對公司營運之參與程度、提升董事會決策品質、董事會組成與結構、董事選任及 持續進修、內部控制」五項内容進行董事會内部自評，平均達成率為",
+        highlight: "93.81 %",
+      },
+      {
+        description:
+          "個別董事成員針對「公司目標與任務之掌握、董事職責認知、對公司營運之參與程度、內部關係經營與溝通、董事之專業及持續進修、內部控制」六項内容進行董事自評，平均達成率為",
+        highlight: "95.46 %",
+      },
+      {
+        description: "董事會議共計召開",
+        highlight: "7 次",
+      },
+      {
+        description: "全體董事平均親自出席率 ( 不含委託 ) 達",
+        highlight: "100 %",
+      },
+      {
+        description: "定期向董事會報告財務狀況、投資公司營運情形，共計",
+        highlight: "4 次",
+      },
+    ],
+    "2022": [
+      {
+        description:
+          "整體董事會針對「對公司營運之參與程度、提升董事會決策品質、董事會組成與結構、董事選任及 持續進修、內部控制」五項内容進行董事會内部自評，平均達成率為",
+        highlight: "93.81 %",
+      },
+      {
+        description:
+          "個別董事成員針對「公司目標與任務之掌握、董事職責認知、對公司營運之參與程度、內部關係經營與溝通、董事之專業及持續進修、內部控制」六項内容進行董事自評，平均達成率為",
+        highlight: "95.46 %",
+      },
+      {
+        description: "董事會議共計召開",
+        highlight: "7 次",
+      },
+      {
+        description: "全體董事平均親自出席率 ( 不含委託 ) 達",
+        highlight: "100 %",
+      },
+      {
+        description: "定期向董事會報告財務狀況、投資公司營運情形，共計",
+        highlight: "4 次",
+      },
+    ],
+    "2023": [
+      {
+        description:
+          "整體董事會針對「對公司營運之參與程度、提升董事會決策品質、董事會組成與結構、董事選任及 持續進修、內部控制」五項内容進行董事會内部自評，平均達成率為",
+        highlight: "93.81 %",
+      },
+      {
+        description:
+          "個別董事成員針對「公司目標與任務之掌握、董事職責認知、對公司營運之參與程度、內部關係經營與溝通、董事之專業及持續進修、內部控制」六項内容進行董事自評，平均達成率為",
+        highlight: "95.46 %",
+      },
+      {
+        description: "董事會議共計召開",
+        highlight: "7 次",
+      },
+      {
+        description: "全體董事平均親自出席率 ( 不含委託 ) 達",
+        highlight: "100 %",
+      },
+      {
+        description: "定期向董事會報告財務狀況、投資公司營運情形，共計",
+        highlight: "4 次",
+      },
+    ],
+  };
+
+  const breadcrumbItems = [
+    { label: "永續經營", href: "/sustainability" },
+    { label: "董事會" },
+  ];
+
+  const cards = [
+    {
+      title: "短期目標",
+      subtitle: "",
+      span: 4,
+      description: "落實各項永續發展項目之執行 與董事會之監督及參與。",
+    },
+    {
+      title: "中期目標",
+      subtitle: "",
+      span: 4,
+      description: "公司治理評鑑進入前５% 並獲得永續獎。",
+    },
+    {
+      title: "長期目標",
+      subtitle: "",
+      span: 4,
+      description:
+        "董事會成員具員工身分之董事 占比降低至 25%；女性董事比例提升至 25%。",
+    },
+  ];
+
+  return (
+    <div>
+      <HeroBanner
+        title="董事會"
+        description={`董事會為至上最高治理單位，首要職責在於監督公司守法、資訊透明、即時揭露重要訊息及誠信經營。\n另於董事會下設置「審計委員會」、「薪資報酬委員會」，由全體獨立董事組成，本公司訂定之「公司章程」及「董事選任程序」皆已規範全體董事選舉採候選人提名制度。`}
+        backgroundImage={Bg}
+        center={true}
+      />
+      <div className="bg-white">
+        <div className="container mx-auto px-[10%] mt-8 pt-18">
+          <Breadcrumbs items={breadcrumbItems} />
+
+          <p className="mt-xl sub-title text-center">
+            健全有效的董事會運作是永續經營的根基
+          </p>
+          <p className="mt-md content">
+            董事會首要職責在於監督，督促公司守法、資訊透明、即時揭露重要訊息及誠信經營，並透過審計委員會、薪酬委員會、內控稽核系統協助董事會履行其監督職責；其次，與經營團隊維持良好的溝通管道及互動，指導公司業務之執行及重大決策之決議，以確保公司永續發展及保障股東權益。
+            <br />
+            <br />
+            董事會成員同時也應普遍具備執行職務所必須之知識、技能及素養，為達到公司治理之理想目標，其應具備之能力如下：
+          </p>
+          <CardGrid cards={cards} />
+          <p className="mt-xl sub-title text-center">有效性預估值</p>
+          <p className="mt-md content">
+            推動誠信經營政策，宣導公司永續經營理念，舉辦誠信經營和防範內線交易講座、加強法令宣導，
+            確實遵循法令規章，共創優良企業形象，並於 2022 年 11
+            月經董事會決議通過，自願設置「永續發展委員會」，以因應公司治理及永續發展。
+          </p>
+          <TabListGoal goals={goals} />
+          <p className="mt-xl sub-title text-center">我們相信的根基</p>
+          <p className="mt-md content">
+            强健的公司治理絕對是要打拼企業永續營運的基底，因此將公司治理之精神融入內部控制制度中，新進員工到職時，即對其進行講習及訓練，且輔導員工遵循內部控制制度，另已依相關規定訂定《公司治理實務守則》、《獨立董事之職責範疇規則》、《董事進修推行要點》、《具控制能力法人、股東行使權利及參與議決規範》
+            等規範，並將相關規範揭露於網站及公開資訊觀測站中。
+            <br />
+            <br />
+            公司官⽅網站亦設有公司治理專區，可供查詢治理政策及相關執⾏情形。
+            為進一步優化公司治理，於 2019
+            年委任陳力行會計協理擔任公司治理主管，並於 2023
+            年增設公司治理小組暨股務部專責辦理功能性委員會、董事會、股東會之會議相關事宜、申報董事解就任作業、安排董事持續進修、提供董事執行業務所需參考資料、協助董事法令遵循及其他依公司章程所訂定之事項等。
+            <br />
+            <br />
+            我們以成為優良永續企業為目標，致力於結合優良公司治理與經濟績效，積極配合主管機關於每年進行公司治理評鑑作業，向投資人展現公司治理實施成效。於第九屆
+            ( 111 年度 ) 公司治理評鑑得分為 94.58 分，上市公司排名列入 6%~20%
+            級距。
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Board;

@@ -57,7 +57,7 @@ const SlideUpListItem: React.FC<SlideUpListItemProps> = ({ item, delay }) => {
       {item.title ? (
         <div className="grid grid-cols-12  items-center w-full font-medium">
           <p className="col-span-4 text-[20px]">{item.title}</p>
-          <p className="col-span-8 notes">{item.content}</p>
+          <p className="col-span-8 notes whitespace-pre-line">{item.content}</p>
         </div>
       ) : (
         <span className="flex-1 text-[16px] tracking-wider leading-[32px]">{item.content}</span>

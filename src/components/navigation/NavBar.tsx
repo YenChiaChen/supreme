@@ -146,7 +146,7 @@ const Nav: React.FC = () => {
                       <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/compensation-committee">永續發展委員會</Link>
+                            <Link to="/sustainability/sustainbility-committee">永續發展委員會</Link>
                           </li>
                           <li className="dropdown-link">
                             <Link to="/sustainability/compensation-committee">薪酬委員會</Link>

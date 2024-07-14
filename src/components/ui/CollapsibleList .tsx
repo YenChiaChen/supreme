@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faCircle } from '@fortawesome/free-solid-svg-icons';
 import { motion, AnimatePresence } from 'framer-motion';
 
-type ListItem = {
+type CollapsibleListItemProps = {
   title: string;
-  content: string;
+  children: ReactNode;
 };
 
 type CollapsibleListProps = {
-  items: ListItem[];
+  items: CollapsibleListItemProps[];
 };
 
 const CollapsibleList: React.FC<CollapsibleListProps> = ({ items }) => {
@@ -27,7 +27,10 @@ const CollapsibleList: React.FC<CollapsibleListProps> = ({ items }) => {
             className="py-8 flex justify-between border-b-[1px] border-gray cursor-pointer text-[18px]"
             onClick={() => toggleItem(index)}
           >
-            <div className='flex items-center'><FontAwesomeIcon icon={faCircle} className='text-[5px] mr-4 text-[#555555]' />{item.title}</div>
+            <div className='flex items-center'>
+              <FontAwesomeIcon icon={faCircle} className='text-[5px] mr-4 text-[#555555]' />
+              {item.title}
+            </div>
             <motion.div
               animate={{ rotate: openIndex === index ? 180 : 0 }}
               transition={{ duration: 0.3 }}
@@ -39,12 +42,12 @@ const CollapsibleList: React.FC<CollapsibleListProps> = ({ items }) => {
             {openIndex === index && (
               <motion.div
                 className="py-4 px-8 content whitespace-pre-line"
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
+                initial={{ maxHeight: 0, opacity: 0 }}
+                animate={{ maxHeight: 500, opacity: 1 }}
+                exit={{ maxHeight: 0, opacity: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                {item.content}
+                {item.children}
               </motion.div>
             )}
           </AnimatePresence>

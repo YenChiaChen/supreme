@@ -16,6 +16,13 @@ import SupplyChain from "./pages/sustainability/SupplyChain";
 import MaintainPage from "./pages/maintain";
 import EnergyManagement from "./pages/symbiosis/EnergyManagement";
 import LandingPage from "./pages/landing";
+import Board from "./pages/sustainability/Board";
+import KeyTopics from "./pages/sustainability/KeyTopics";
+import CompensationCommittee from "./pages/sustainability/CompensationCommittee";
+import SustainabilityCommittee from "./pages/sustainability/SustainabilityCommittee";
+import AuditCommittee from "./pages/sustainability/AuditCommittee";
+import ProductCustomerService from "./pages/sustainability/ProductCustomerService";
+import StakeholderEngagement from "./pages/sustainability/StakeholderEngagement";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -35,6 +42,14 @@ function App() {
           <Route path="sustainability/risk-management" element={<RiskManagement />} />
           <Route path="sustainability/information-security" element={<InformationSecurity />} />
           <Route path="sustainability/supply-chain" element={<SupplyChain />} />
+          <Route path="sustainability/board" element={<Board />} />
+          <Route path="sustainability/key-topics" element={<KeyTopics />} />
+          <Route path="sustainability/compensation-committee" element={<CompensationCommittee />} />
+          <Route path="sustainability/sustainbility-committee" element={<SustainabilityCommittee />} />
+          <Route path="sustainability/audit-committee" element={<AuditCommittee />} />
+          <Route path="sustainability/product-customer-service" element={<ProductCustomerService />} />
+          <Route path="sustainability/stakeholder-engagement" element={<StakeholderEngagement />} />
+
           <Route path="sustainability/*" element={<MaintainPage />} />
           <Route path="esg" element={<MaintainPage />} />
           <Route path="esg/*" element={<MaintainPage />} />
