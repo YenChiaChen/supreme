@@ -1,0 +1,69 @@
+import HeroBanner from "../../components/ui/HeroBanner";
+import Breadcrumbs from "../../components/navigation/BreadCrumb";
+import Bg from "../../assets/img/bg/bg.png";
+import Img01 from "../../assets/img/testing/climate-change-01.png";
+import Img02 from "../../assets/img/testing/climate-change-02.png";
+import Img03 from "../../assets/img/testing/climate-change-03.png";
+
+import SlideUpList from "../../components/ui/SlideUpList";
+
+const ClimateChange: React.FC = () => {
+
+
+  const items2 = [
+    {
+      id: 1,
+      content:
+        "各相關單位每年負責進行氣候相關議題蒐整，經確認各項 議題之風險及對組織內部和外部的衝擊，包含氣候變遷風險之 鑑別評估及因應氣候衝擊。以擇定公司當年度永續發展優先倡 議，包含氣候變遷相關議題，以實際行動履行永續政策。 在內部控制制度之監督下，由各單位依據法令規範及風險 管理之執行，並透過內部稽核實施查核，以確保營運安全及穩定，並定期每年一次向董事會報告績效成果，使董事會能及時 掌握永續相關趨勢以及公司在氣候治理議題上的執行進度與因 應狀況，以期更能落實所制定之氣候變遷政策。",
+      title: "・治理",
+    },
+    {
+      id: 2,
+      content:
+        "各單位依循 TCFD 指引進行完整的氣 候變遷相關風險與機會之鑑別，透過分析 產業概況以及國際永續趨勢，將氣候議題 區分為實體風險、轉型風險與氣候機會三大類別，並針對各項風險機會的影響期 程、發生可能性與衝擊程度進行評估，最終確認四項轉型風險、二項實體風險及四項氣候機會，以擬定相關目標與因應策略， 未來每年將定期監督實施情形與目標達成 度，以達管理目的。",
+      title: "・策略",
+    },
+  ];
+
+  const breadcrumbItems = [
+    { label: "永續共生", href: "/symbiosis" },
+    { label: "氣候變遷對策" },
+  ];
+
+
+  return (
+    <div>
+      <HeroBanner
+        title="氣候變遷對策"
+        description={`為因應氣候變遷對產業的經營風險，本公司由永續發展委員會轄下工作推動小組負責召集相關各單位。`}
+        backgroundImage={Bg}
+        center={true}
+      />
+      <div className="bg-white">
+        <div className="container mx-auto px-[10%] mt-8 pt-18">
+          <Breadcrumbs items={breadcrumbItems} />
+
+          <p className="mt-xl sub-title text-center mb-12">氣候變遷對策</p>
+          <p className="mt-md content ">
+            本公司參照「氣候相關財務揭露」( Task Force on Climate-related
+            Financial Disclosures, TCFD ) 架構，透過「治理」、
+            「策略」、「風險管理」、「指標與目標」等四項核心要素，辨識潛在氣候變遷風險與機會，掌握對營運的衝擊
+            與影響，訂定相關因應策略與措施，降低氣候變遷所帶來的損失。
+          </p>
+          <div className="mt-md">
+            <SlideUpList items={items2} />
+          </div>
+
+          <p className="mt-xl sub-title text-center">氣候相關風險與機會之鑑別流程</p>
+          <img src={Img01} className="w-full mt-md" alt="Energy " />
+          <p className="mt-xl sub-title text-center">氣候風險與機會重大性矩陣圖</p>
+          <img src={Img02} className="w-full mt-md" alt="Energy " />
+          <p className="mt-xl sub-title text-center">氣候相關風險及管理程序</p>
+          <img src={Img03} className="w-full mt-md" alt="Energy " />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ClimateChange;

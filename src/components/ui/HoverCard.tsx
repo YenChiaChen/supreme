@@ -10,16 +10,18 @@ interface CardData {
 
 interface HoverCardProps {
   data: CardData;
+  width?: string; 
 }
 
-const HoverCard: React.FC<HoverCardProps> = ({ data }) => {
+const HoverCard: React.FC<HoverCardProps> = ({ data, width = '33%' }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className="w-[22%] bg-gray rounded-xl hover:w-[500px] hover:bg-orange duration-300 flex items-center justify-center group relative min-h-[450px] hover:shadow-xl"
+      className={`bg-gray rounded-xl hover:bg-orange duration-300 flex items-center justify-center group relative min-h-[450px] hover:shadow-xl ${isHovered ? 'w-[500px]' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      style={{ width: isHovered ? '500px' : width }} 
     >
       <div className="flex flex-col gap-4 w-full items-center group-hover:hidden">
         <FontAwesomeIcon icon={data.icon} className="h-[50px] text-orange" />

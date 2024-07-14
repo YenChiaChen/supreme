@@ -50,7 +50,6 @@ const EnergyManagement: React.FC = () => {
         6%。2022年度能源消耗量高於以往年度，能源密集度為2.48 GJ /
         新台幣億元，主要係今年新增盤查範圍，以致用電量增加，加上COVID-19疫情趨緩，商業往來恢復正常，公務車使用次數增加，故汽油耗用量大幅增加。
       </p>
-      <img src={cols} className="w-full mt-md" alt="Energy " />
     </>
   );
 
@@ -123,6 +122,7 @@ const EnergyManagement: React.FC = () => {
 
   const breadcrumbItems = [
     { label: "永續共生", href: "/symbiosis" },
+    { label: "能源與廢棄物管理" },
     { label: "能源管理" },
   ];
 
@@ -160,6 +160,8 @@ const EnergyManagement: React.FC = () => {
           <Breadcrumbs items={breadcrumbItems} />
 
           <p className="mt-xl sub-title text-center">能源管理</p>
+          
+      <img src={cols} className="w-full mt-md" alt="Energy " />
           <TabContainer goals={goals}>
             <div data-goal="2023">
               <ShortTermGoals />
@@ -176,72 +178,6 @@ const EnergyManagement: React.FC = () => {
             減少能源消耗之具體行動方案
           </p>
           <SlideUpList items={items2} />
-          <p className="mt-xl sub-title text-center">廢棄物管理</p>
-          <p className="mt-md content ">
-            本公司主要從事半導體相關零組件代理經銷業務，未有生產製造的營運活動，各營運據點均為辦公大樓，
-            因此在營運過程中產生之廢棄物，多為員工在辦公室工作時產生之事務類廢棄物與生活廢棄物，是由辦公大樓
-            管委會設置垃圾分類集中區域統一處理；內湖總部倉儲中心不定期產生棧板、包材、電子零件等相關之廢棄物，
-            此類廢棄物屬於可回收廢棄物，係委託合法之廢棄物清運商，將此類物品予以回收處理。
-          </p>
-          <p className="mt-xl text-xl font-bold text-orange tracking-wider">
-            價值鏈廢棄物流向圖：
-          </p>
-          <img src={hakimo} className="w-full mt-md" alt="Energy " />
-          <p className="mt-xl sub-title text-center">廢棄物產出結構</p>
-          <TabContainer goals={goals}>
-            <div data-goal="2023">
-              <ShortTermGoals />
-            </div>
-            <div data-goal="2022">
-              <MidTermGoals2 />
-            </div>
-            <div data-goal="2021">
-              <LongTermGoals />
-            </div>
-          </TabContainer>
-          <p className="mt-xl sub-title text-center">廢棄物報廢流程</p>
-        </div>
-
-        <img src={hakimoProcess} className="w-full mt-md" alt="Energy " />
-        <div className="container mx-auto px-[10%]">
-          <p className="mt-xl sub-title text-center">廢棄物減量</p>
-          <p className="mt-md content ">
-            為減少廢棄物之產生，除宣導減少資源浪費，亦積極做好垃圾分類，物流作業所需包裝材料，例如紙箱、
-            填充物及泡棉等，均回收再利用於出貨包裝，落實資源回收再利用政策，對於回收之廢棄物均採集中式管理，
-            定期記錄廢棄物數量與清運數據，並委託合格之廢棄物回收廠商進行處置。
-          </p>
-
-          <TabContainerIcon goals={goals2} icons={icons}>
-            <div data-goal="辦公室無紙化">
-              <A1 />
-            </div>
-            <div data-goal="運輸棧板重複利用">
-              <A1 />
-            </div>
-            <div data-goal="落實垃圾分類">
-              <A1 />
-            </div>
-            <div data-goal="產品不過度包裝">
-              <A1 />
-            </div>
-          </TabContainerIcon>
-          <p className="mt-xl sub-title text-center">廢棄物減量專案</p>
-          <img src={energycol} className="w-full mt-md" />
-          <p className="mt-xl sub-title text-center">水資源管理</p>
-          <p className="mt-md content ">
-            本公司共有四個營運據點，分別為台北總部、新莊、龍潭及台南三個辦事處，各營運據點取水來源均為各地所屬自來水公司，未取得地表水、地下水、海水、產出水等，也無自具有水資源壓力的地區取水。本公司採用Aqueduct
-            Water Risk
-            Atlas工具，三個辦事處之水資源壓力分析結果皆屬「Low-Medium(1-2)」。
-            <br />
-            <br />
-            註：WATERRISKATLAS：https://reurl.cc/yyjme2
-          </p>
-          <p className="mt-xl sub-title text-center">水資源使用統計</p>
-          <p className="note text-[#a6a6a6] text-right mt-md">單位：百萬公升 ( Million Litres )</p>
-          <div style={{ height: "400px" }}>
-            <WaterConsumptionChart data={data} />
-          </div>
-          <p className="note text-[#a6a6a6] mt-md">註 1：盤查邊界涵蓋台北總部、新莊、龍潭及台南三處辦事處。</p>
         </div>
       </div>
     </div>

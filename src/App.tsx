@@ -23,6 +23,12 @@ import SustainabilityCommittee from "./pages/sustainability/SustainabilityCommit
 import AuditCommittee from "./pages/sustainability/AuditCommittee";
 import ProductCustomerService from "./pages/sustainability/ProductCustomerService";
 import StakeholderEngagement from "./pages/sustainability/StakeholderEngagement";
+import SymbiosisPage from "./pages/symbiosis";
+import ClimateChange from "./pages/symbiosis/ClimateChange";
+import GreenhouseGases from "./pages/symbiosis/GreenhouseGases";
+import WasteManagement from "./pages/symbiosis/WasteManagement";
+import WaterManagement from "./pages/symbiosis/WaterManagement";
+import GreenEnergy from "./pages/symbiosis/GreenEnergy";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -55,8 +61,13 @@ function App() {
           <Route path="esg/*" element={<MaintainPage />} />
           <Route path="society" element={<MaintainPage />} />
           <Route path="society/*" element={<MaintainPage />} />
-          <Route path="symbiosis" element={<MaintainPage />} />
+          <Route path="symbiosis" element={<SymbiosisPage />} />
           <Route path="symbiosis/energy-management" element={<EnergyManagement />} />
+          <Route path="symbiosis/water-management" element={<WaterManagement />} />
+          <Route path="symbiosis/waste-management" element={<WasteManagement />} />
+          <Route path="symbiosis/climate-change" element={<ClimateChange />} />
+          <Route path="symbiosis/greenhouse-gases" element={<GreenhouseGases />} />
+          <Route path="symbiosis/green-energy" element={<GreenEnergy />} />
           <Route path="symbiosis/*" element={<MaintainPage />} />
           <Route path="news/*" element={<MaintainPage />} />
 
