@@ -29,6 +29,7 @@ import GreenhouseGases from "./pages/symbiosis/GreenhouseGases";
 import WasteManagement from "./pages/symbiosis/WasteManagement";
 import WaterManagement from "./pages/symbiosis/WaterManagement";
 import GreenEnergy from "./pages/symbiosis/GreenEnergy";
+import MessageFromChairmain from "./pages/sustainability/MessageFromChairmain";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -55,6 +56,7 @@ function App() {
           <Route path="sustainability/audit-committee" element={<AuditCommittee />} />
           <Route path="sustainability/product-customer-service" element={<ProductCustomerService />} />
           <Route path="sustainability/stakeholder-engagement" element={<StakeholderEngagement />} />
+          <Route path="sustainability/message-from-chairman" element={<MessageFromChairmain />} />
 
           <Route path="sustainability/*" element={<MaintainPage />} />
           <Route path="esg" element={<MaintainPage />} />

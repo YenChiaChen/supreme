@@ -4,15 +4,16 @@ import { faChevronDown, faCircle } from '@fortawesome/free-solid-svg-icons';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type CollapsibleListItemProps = {
-  title: string;
+  title: ReactNode;
   children: ReactNode;
 };
 
 type CollapsibleListProps = {
   items: CollapsibleListItemProps[];
+  colSpan?: string;
 };
 
-const CollapsibleList: React.FC<CollapsibleListProps> = ({ items }) => {
+const CollapsibleList: React.FC<CollapsibleListProps> = ({ items, colSpan }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleItem = (index: number) => {
@@ -20,7 +21,7 @@ const CollapsibleList: React.FC<CollapsibleListProps> = ({ items }) => {
   };
 
   return (
-    <div className="border-t-[2px] border-gray mt-md">
+    <div className={`grid grid-cols-${colSpan} gap-4 gap-x-24 border-t-[2px] border-gray mt-md`}>
       {items.map((item, index) => (
         <div key={index}>
           <div
@@ -28,7 +29,6 @@ const CollapsibleList: React.FC<CollapsibleListProps> = ({ items }) => {
             onClick={() => toggleItem(index)}
           >
             <div className='flex items-center'>
-              <FontAwesomeIcon icon={faCircle} className='text-[5px] mr-4 text-[#555555]' />
               {item.title}
             </div>
             <motion.div
@@ -43,7 +43,7 @@ const CollapsibleList: React.FC<CollapsibleListProps> = ({ items }) => {
               <motion.div
                 className="py-4 px-8 content whitespace-pre-line"
                 initial={{ maxHeight: 0, opacity: 0 }}
-                animate={{ maxHeight: 500, opacity: 1 }}
+                animate={{ maxHeight: 1000, opacity: 1 }}
                 exit={{ maxHeight: 0, opacity: 0 }}
                 transition={{ duration: 0.3 }}
               >
