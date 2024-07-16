@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.8c49f168.css",
-    "main.js": "/supreme/static/js/main.bc15b0ed.js",
+    "main.css": "/supreme/static/css/main.896ec75d.css",
+    "main.js": "/supreme/static/js/main.6b3eef3c.js",
     "static/media/climate-change-03.png": "/supreme/static/media/climate-change-03.24e8e4c9c20c46484d57.png",
     "static/media/healthy.png": "/supreme/static/media/healthy.6defb8b606def061e8f8.png",
     "static/media/earth.png": "/supreme/static/media/earth.77f43f1b2f0f39833589.png",
@@ -58,11 +58,11 @@
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.8c49f168.css.map": "/supreme/static/css/main.8c49f168.css.map",
-    "main.bc15b0ed.js.map": "/supreme/static/js/main.bc15b0ed.js.map"
+    "main.896ec75d.css.map": "/supreme/static/css/main.896ec75d.css.map",
+    "main.6b3eef3c.js.map": "/supreme/static/js/main.6b3eef3c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c49f168.css",
-    "static/js/main.bc15b0ed.js"
+    "static/css/main.896ec75d.css",
+    "static/js/main.6b3eef3c.js"
   ]
 }
