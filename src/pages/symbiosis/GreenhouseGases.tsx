@@ -30,16 +30,16 @@ const data = [
   { year: "2023", consumption: 3.111 },
 ];
 const GreenhouseGases: React.FC = () => {
-  const ShortTermGoals: React.FC = () => (
+  const Goal2022: React.FC = () => (
     <>
       <p className="my-6 content">
         2022 年度依循溫室氣體盤查議定書 ( GHG Protocol )
         指引進行盤查作業，溫室氣體總排放量 ( 範疇一 + 範疇二 ) 為 256.829 公噸
         CO2e，主要來自於範疇二之電力排放，占比為 94.29%，其餘溫室
         氣體排放量來源為範疇一之公務車燃料使用、冷媒、滅火器及化糞池，占比為
-        5.71%。 與 2021 年相比呈現微幅增加情形，主要係因為今年新增盤查範圍及
+        5.71%。 <br /><br />與 2021 年相比呈現微幅增加情形，主要係因為今年新增盤查範圍及
         COVID-19
-        疫情趨緩辦公室用電及營運活動增加。為了瞭解企業營運過程中，價值鏈上下游活動的碳排放，針對範疇三進行自主性盤查，期望透過完整的溫室氣體盤查作業，鑑別出最顯著的排放源，為溫室氣體減量與氣候轉型策略提供基礎數據。
+        疫情趨緩辦公室用電及營運活動增加。為了瞭解企業營運過程中，價值鏈上下游活動的碳排放，針對範疇三進行自主性盤查，期望透過完整的溫室氣體盤查作業，鑑別出最顯著的排放源，為溫室氣體減量與氣候轉型策略提供基礎數據。<br /><br />
         2022 年範疇三溫室氣體總量為 1,723.624 公噸
         CO2e，排放源項目包含：與燃料和能源相關活動的排放 ( 未涵蓋在範疇一或二
         )、運輸產生之間接溫室氣體排放 ( 含「貨物上 /
@@ -49,26 +49,40 @@ const GreenhouseGases: React.FC = () => {
     </>
   );
 
-  const LongTermGoals: React.FC = () => (
+  const Goal2023: React.FC = () => (
     <>
-      <p className="my-6 content">目前沒有資料！過一陣子再來看看吧！</p>
+      <p className="my-6 content">
+        本公司為了善盡地球公民的責任,響應國家淨零碳排之目標,自 2021
+        年起開始自主性溫室氣體盤查,主動揭露溫室氣 體排放資訊,2023
+        年度依循溫室氣體盤查議定書(GHG
+        Protocol)指引進行盤查作業,溫室氣體總排放量(範疇一+範疇 二)為 299.712
+        公噸 CO2e,主要來自於範疇二之電力排放,占比為
+        93.51%,其餘溫室氣體排放量來源為範疇一之公務車
+        燃料使用、冷媒、滅火器及化糞池,占比為 6.49%。與 2022
+        年相比呈現微幅增加情形,主要係因營收成長人員相對增加,
+        為因應實質需求,資訊部門擴增伺服器等硬體設備,以致用電量增加。<br /><br />
+        為了瞭解企業營運過程中,價值鏈上下游活動的碳排放,針對範疇三進行自主性盤查,期望透過完整的溫室氣體盤查
+        作業,鑑別出最顯著的排放源,為溫室氣體減量與氣候轉型策略提供基礎數據。2023
+        年範疇三溫室氣體總量為 1,289.207 公噸
+        CO2e,排放源項目包含:與燃料和能源相關活動的排放(未涵蓋在範疇一或二)、運輸產生之間接溫室氣體排放(含
+        「貨物上/
+        下游運輸與分配」、「商務旅行」),其中以下游運輸和配送產生的排放為最大量,占範疇三總排放量之
+        69.51%。
+      </p>
     </>
   );
   const CC: React.FC = () => (
     <>
-          <img src={Img03} className="max-w-[700px] mt-md" alt="Energy " />
+      <img src={Img03} className="max-w-[700px] mt-md" alt="Energy " />
     </>
   );
 
-
-  const goals = ["2023", "2022", "2021"];
+  const goals = ["2023", "2022"];
 
   const breadcrumbItems = [
     { label: "永續共生", href: "/symbiosis" },
     { label: "溫室氣體＆行動方案" },
   ];
-
-
 
   return (
     <div>
@@ -89,13 +103,10 @@ const GreenhouseGases: React.FC = () => {
 
           <TabContainer goals={goals}>
             <div data-goal="2023">
-              <ShortTermGoals />
+              <Goal2023 />
             </div>
             <div data-goal="2022">
-              <LongTermGoals />
-            </div>
-            <div data-goal="2021">
-              <LongTermGoals />
+              <Goal2022 />
             </div>
           </TabContainer>
 
@@ -152,26 +163,20 @@ const GreenhouseGases: React.FC = () => {
             </div>
           </div>
 
-
           <p className="mt-xl sub-title text-center mb-12">
-          溫室氣體盤查外部查證
+            溫室氣體盤查外部查證
           </p>
           <TabContainer goals={goals}>
             <div data-goal="2023">
               <CC />
             </div>
             <div data-goal="2022">
-              <LongTermGoals />
+              <CC />
             </div>
             <div data-goal="2021">
-              <LongTermGoals />
+              <CC />
             </div>
           </TabContainer>
-
-
-
-
-
         </div>
       </div>
     </div>

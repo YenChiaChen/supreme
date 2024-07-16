@@ -325,13 +325,13 @@ const Governance: React.FC = () => {
           <p className="mt-xl sub-title text-center">公司治理主管進修情形</p>
           <TabContainer goals={goals2}>
             <div data-goal="2023">
-              <ShortTermGoals />
+              <MidTermGoals />
             </div>
             <div data-goal="2022">
               <MidTermGoals />
             </div>
             <div data-goal="2021">
-              <LongTermGoals />
+              <MidTermGoals />
             </div>
           </TabContainer>
         </div>

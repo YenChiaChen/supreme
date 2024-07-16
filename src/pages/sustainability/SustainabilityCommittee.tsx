@@ -5,7 +5,6 @@ import img01 from "../../assets/img/testing/sustainbility-committee01.png";
 import img02 from "../../assets/img/testing/sustainbility-committee02.png";
 import img03 from "../../assets/img/testing/sustainbility-committee03.png";
 import img04 from "../../assets/img/testing/sustainbility-committee04.png";
-import TabContainer from "../../components/ui/TabContainer";
 import {
   faChartLine,
   faClipboardCheck,
@@ -59,15 +58,7 @@ const SustainabilityCommittee: React.FC = () => {
     },
   ];
 
-  const LongTermGoals: React.FC = () => (
-    <>
-      <div className="flex justify-center">
-        <img src={img04} className="w-full max-w-[1000px] mt-md" alt='img'  />
-      </div>
-    </>
-  );
-
-  const goals = ["2023", "2022", "2021"];
+  const LongTermGoals: React.FC = () => <></>;
 
   return (
     <div>
@@ -99,7 +90,7 @@ const SustainabilityCommittee: React.FC = () => {
 
           <p className="mt-xl sub-title text-center">永續發展委員會組織圖</p>
           <div className="flex justify-center">
-            <img src={img01} className="w-full max-w-[700px] mt-md" alt='img'  />
+            <img src={img01} className="w-full max-w-[700px] mt-md" alt="img" />
           </div>
           <p className="mt-md content">
             永續發展委員會一年至少二次向董事會報告執行成果及未來工作計劃。永續發展小組之
@@ -122,26 +113,30 @@ const SustainabilityCommittee: React.FC = () => {
 
           <p className="mt-xl sub-title text-center">永續發展委員會成員</p>
           <div className="flex justify-center">
-            <img src={img02} className="w-full max-w-[1000px] mt-md" alt='img'  />
+            <img
+              src={img02}
+              className="w-full max-w-[1000px] mt-md"
+              alt="img"
+            />
           </div>
 
           <p className="mt-xl sub-title text-center">永續發展委員會運作情形</p>
           <div className="flex justify-center">
-            <img src={img03} className="w-full max-w-[1000px] mt-md" alt='img' />
+            <img
+              src={img03}
+              className="w-full max-w-[1000px] mt-md"
+              alt="img"
+            />
           </div>
 
           <p className="mt-xl sub-title text-center">永續發展委員會績效評估</p>
-          <TabContainer goals={goals}>
-            <div data-goal="2023">
-              <LongTermGoals />
-            </div>
-            <div data-goal="2022">
-              <LongTermGoals />
-            </div>
-            <div data-goal="2021">
-              <LongTermGoals />
-            </div>
-          </TabContainer>
+          <div className="flex justify-center">
+            <img
+              src={img04}
+              className="w-full max-w-[1000px] mt-md"
+              alt="img"
+            />
+          </div>
         </div>
       </div>
     </div>

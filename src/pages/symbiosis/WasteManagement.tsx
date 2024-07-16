@@ -172,6 +172,16 @@ const WasteManagement: React.FC = () => {
           </p>
           <img src={hakimo} className="w-full mt-md" alt="Energy " />
           <p className="mt-xl sub-title text-center">廢棄物產出結構</p>
+          <p className="mt-md content ">
+            本公司於 2021
+            年因應永續議題後,同仁對於永續有更深層認知,將「永續環境」概念落實於日常作業中;2023
+            年底更進一步將事業廢棄物進行更細部的分類,將組織中的廢棄物依照環境部廢棄物的分類加以區分後,由權責單位自訂週期以實秤方式取得廢棄物重量,並委外交由合規之清運公司處置;藉著上下游各盡其責,共同提升廢棄物回收的成果及效益,為了落實隨手做環保理念,於
+            2023
+            年第四季由物流倉庫將事業廢棄物的包材進行分類,並將積極有效控管存貨去化,減少
+            電子零件報廢品,以減少混合五金廢料,針對有害廢棄物 E-0217
+            所委託的甲級清運廠商,建立回報機制或監督機制,確保
+            廠商安全合法的執行廢棄物處理。
+          </p>
           <TabContainer goals={goals}>
             <div data-goal="2023">
               <ShortTermGoals />

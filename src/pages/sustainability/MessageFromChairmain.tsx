@@ -56,7 +56,7 @@ const MessageFromChairmain: React.FC = () => {
               在公司邁向永續的路徑上每一個人都扮演著重要的角色，每一項小小的行動都可能產生巨大的影響，在此，衷心感謝每一位員工對至上電子的奉獻與努力，每一位股東對至上電子的支持與認同，讓我們對公司的永
               續發展保持熱情，擁抱挑戰，並不斷超越自我，一同攜手邁向永續，創造更美好的佳績！
             </p>
-            <p className="mt-12 font-semibold tracking-wide text-[18px]">至上電子股份有限公司 董事長 <span className="ml-6 text-3xl font-bold">葛均</span></p>
+            <p className="mt-12 font-semibold tracking-wide text-[18px]">至上電子股份有限公司 董事長 <span className="ml-6 text-3xl font-bold tracking-wdiest">葛 均</span></p>
           <img src={Img01} className="absolute right-0 bottom-[-300px] w-[30%]" />
           </div>
 

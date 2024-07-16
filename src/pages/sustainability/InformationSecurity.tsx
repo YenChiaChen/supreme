@@ -35,44 +35,6 @@ const InformationSecurity: React.FC = () => {
   ];
 
   const goals = {
-    "2021": [
-      {
-        description: "垃圾郵件防護",
-        highlight: "117,406 封",
-      },
-      {
-        description: "資訊安全郵件宣導",
-        highlight: "4 次",
-      },
-      {
-        description: "網站滲透測試",
-        highlight: "1 次",
-      },
-      {
-        description: "網站弱點掃描",
-        highlight: "1 次",
-      },
-      {
-        description: "主機系統弱點掃描",
-        highlight: "2 次",
-      },
-      {
-        description: "病毒郵件攔截統計",
-        highlight: "13,045 封",
-      },
-      {
-        description: "郵件連線阻擋統計",
-        highlight: "117,406 次",
-      },
-      {
-        description: "修補系統及軟體漏洞",
-        highlight: "878 個",
-      },
-      {
-        description: "社交工程演練信件",
-        highlight: "960 封",
-      },
-    ],
     "2022": [
       {
         description: "垃圾郵件防護",
@@ -114,39 +76,31 @@ const InformationSecurity: React.FC = () => {
     "2023": [
       {
         description: "垃圾郵件防護",
-        highlight: "117,406 封",
+        highlight: "107,517 封",
       },
       {
         description: "資訊安全郵件宣導",
-        highlight: "4 次",
-      },
-      {
-        description: "網站滲透測試",
-        highlight: "1 次",
-      },
-      {
-        description: "網站弱點掃描",
-        highlight: "1 次",
+        highlight: "6 次",
       },
       {
         description: "主機系統弱點掃描",
-        highlight: "2 次",
+        highlight: "1 次",
       },
       {
         description: "病毒郵件攔截統計",
-        highlight: "13,045 封",
+        highlight: "1484 封",
       },
       {
         description: "郵件連線阻擋統計",
-        highlight: "117,406 次",
+        highlight: "112,746 次",
       },
       {
         description: "修補系統及軟體漏洞",
-        highlight: "878 個",
+        highlight: "918 個",
       },
       {
         description: "社交工程演練信件",
-        highlight: "960 封",
+        highlight: "510 封",
       },
     ],
   };

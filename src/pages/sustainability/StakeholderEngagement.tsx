@@ -68,7 +68,7 @@ const StakeholderEngagement: React.FC = () => {
     { label: "利害關係人專區" },
     { label: "利害關係人議合" },
   ];
-  const items = [
+  const items2022 = [
     { id: 1, title:"客戶", content: "・積極處理客戶提出之問題\n・選擇財務體質健全之客戶" },
     { id: 2, title:"供應商", content: "・選擇信譽卓越之供應商與供應商\n・溝通簽署「經營管理承諾書」，確認遵照各面向及責任商業聯盟行為準則之綱要標準經營企業" },
     { id: 3, title:"員工", content: "・內部推動員工福利及訓練\n・舉辦「客戶至上，誠信經營」座談會\n・舉辦「策略式銷售與談判成交技巧」、「國際貿易經營實務」、「區塊鏈與密碼貨幣」教育訓練課程" },
@@ -76,11 +76,43 @@ const StakeholderEngagement: React.FC = () => {
     { id: 5, title:"政府與主管機關", content: "・未有違反法令遭處份之情事" },
     { id: 6, title:"非營利組織 / 社區", content: "・辦理淨山、淨灘等公益活動\n・2022年度淨山環境保護活動總計清理32.70公斤垃圾\n・關懷股東，購買防疫包當公司股東會贈品" },
   ];
-  const Lists: React.FC = () => (
+  const items2021 = [
+    { id: 1, title:"客戶", content: "・選擇財務體質健全之客戶\n・積極處理客戶提出之問題\n" },
+    { id: 2, title:"供應商", content: "・選擇信譽卓越之供應與供應商溝通\n・簽署企業社會責任承諾書" },
+    { id: 3, title:"員工", content: "・具體實現對員工的協助與關懷\n・2021 年內部推動員工福利及訓練\n・舉辦「客戶至上，誠信經營」座談會\n・舉辦教育訓練課程" },
+    { id: 4, title:"投資人 / 股東 /券商", content: "・中/ 英文重大訊息及即時公告\n・舉辦法人說明會\n・與投資人及法人分析師溝通良好\n・規劃進行ESG永續發展專案工作\n・成立風險管理組織運作" },
+    { id: 5, title:"政府與主管機關", content: "・公司治理評鑑排行占整體上市公司前20%\n・未有違反法令遭處份之情事" },
+    { id: 6, title:"非營利組織 / 社區", content: "・辦理淨山、淨灘等公益活動\n・辦理各項福利公益事業" },
+  ];
+  const items2023 = [
+    { id: 1, title:"客戶", content: "・積極依客戶產品需求提供完整且即時的技術支援\n・積極協助處理客戶申訴或爭議事項\n・選擇財務體質健全之客戶" },
+    { id: 2, title:"供應商", content: "・選擇信譽卓越之供應商\與供應商溝通簽署「人權、環境永續暨誠信經營承諾書」,確認遵照各面向及責任商業聯盟行為準則之綱要標準經營企業\n・業務實體討論會議34次" },
+    { id: 3, title:"員工", content: "・教育訓練總時數3,530小時，人均時數17.83小時\n・職業災害事件：0\n・健康醫護諮詢：醫護3次/月(共計36次)；醫師3次/年(共計3次)\n・員工健檢人數：170人；健檢率:99%\n・新進員工入職進行新人導引訓練\n・視需求安排宣導座談會" },
+    { id: 4, title:"投資人 / 股東 /券商", content: "・發布年度永續報告書\n・即時回覆股東來電諮詢\n・與法人分析師維持溝通良好關係\n・股東通報事件：0\n・召開2次自辦法說會\n・公告中/英文重大訊息各40則" },
+    { id: 5, title:"政府與主管機關", content: "・違反法令遭處份事件：0\n・董事/經理人法令宣導：5 次" },
+    { id: 6, title:"非營利組織 / 社區", content: "・辦理淨灘公益活動,總計共撿拾37.5 公斤海洋廢棄物。\n・志工參與捐血活動及至上自辦愛心捐血活動,共收集 495 袋\n・公司股東會贈品購買環保材質（小麥桿）製品\n・落實 SDGs 永續目標：指標 3-良好健康和福祉、指標 12-責任消費與生產、指標 14-保育海洋生態。" },
+  ];
+  const List2022: React.FC = () => (
     <>
      
      <div className="mt-md">
-            <SlideUpList items={items} />
+            <SlideUpList items={items2022} />
+          </div>
+    </>
+  );
+  const List2021: React.FC = () => (
+    <>
+     
+     <div className="mt-md">
+            <SlideUpList items={items2021} />
+          </div>
+    </>
+  );
+  const List2023: React.FC = () => (
+    <>
+     
+     <div className="mt-md">
+            <SlideUpList items={items2023} />
           </div>
     </>
   );
@@ -135,13 +167,13 @@ const StakeholderEngagement: React.FC = () => {
           <p className="mt-xl sub-title text-center">利害關係人年度溝通實績</p>
           <TabContainer goals={years}>
             <div data-goal="2023">
-              <Lists />
+              <List2023 />
             </div>
             <div data-goal="2022">
-              <Lists />
+              <List2022 />
             </div>
             <div data-goal="2021">
-              <Lists />
+              <List2021 />
             </div>
           </TabContainer>
 

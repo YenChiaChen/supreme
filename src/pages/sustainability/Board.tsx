@@ -670,7 +670,7 @@ const Board: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-xl -ml-[10%] z-0 min-h-full"></div>
+          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
         </div>
 
         <div className="container mx-auto px-[10%]">

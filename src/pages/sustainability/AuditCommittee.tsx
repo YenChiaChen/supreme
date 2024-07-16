@@ -17,29 +17,43 @@ const AuditCommittee: React.FC = () => {
   const items = [
     {
       title: <p>一、審閱財務報告</p>,
-      children:
-        <p>董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。</p>,
+      children: (
+        <p>
+          董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
+        </p>
+      ),
     },
     {
       title: <p>二、委任簽證會計師</p>,
-      children:
-        <p>董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。</p>,
+      children: (
+        <p>
+          董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
+        </p>
+      ),
     },
     {
       title: <p>三、評估內部控制制度之有效性</p>,
-      children:
-        <p>董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。</p>,
+      children: (
+        <p>
+          董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
+        </p>
+      ),
     },
   ];
   const columns = [
-    { header: '身份別', accessor: 'identity' },
-    { header: '姓名', accessor: 'name' },
-    { header: '主要學經歷', accessor: 'education' },
-    { header: '主要現職', accessor: 'current' },
+    { header: "身份別", accessor: "identity" },
+    { header: "姓名", accessor: "name" },
+    { header: "主要學經歷", accessor: "education" },
+    { header: "主要現職", accessor: "current" },
   ];
 
   const data = [
-    { identity: '獨立董事', name: '林佩蓉', education: '國立台灣大學管理學院', current: '安和智通（股）董事長' },
+    {
+      identity: "獨立董事",
+      name: "林佩蓉",
+      education: "國立台灣大學管理學院",
+      current: "安和智通（股）董事長",
+    },
   ];
 
   const LongTermGoals: React.FC = () => (
@@ -55,7 +69,7 @@ const AuditCommittee: React.FC = () => {
       <p className="notes">
         2023年度：於2024年01月31日經薪酬委員會審核通過，同日提報董事會。
       </p>
-      <img src={img04} className="w-full max-w-[1200px] mt-md"  alt='img'  />
+      <img src={img03} className="w-full max-w-[1200px] mt-md" alt="img" />
     </>
   );
 
@@ -85,10 +99,10 @@ const AuditCommittee: React.FC = () => {
           </p>
 
           <p className="mt-xl sub-title text-center">第二屆審計委員會成員</p>
-          <img src={img01} className="w-full max-w-[1200px] mt-md"  alt='img'  />
+          <img src={img01} className="w-full max-w-[1200px] mt-md" alt="img" />
           <Table columns={columns} data={data} />
           <p className="mt-xl sub-title text-center">審議事項列表</p>
-          <img src={img02} className="w-full max-w-[1200px] mt-md"  alt='img'  />
+          <img src={img02} className="w-full max-w-[1200px] mt-md" alt="img" />
 
           <p className="mt-xl sub-title text-center">
             各年度審計委員會審議情形
@@ -109,7 +123,9 @@ const AuditCommittee: React.FC = () => {
           <p className="notes mt-md">
             本屆委員任期：2022年06月17日至2025年06月16日，截至2024年03月11日，出席情形如下：
           </p>
-          <img src={img03} className="w-full max-w-[1200px]"  alt='img'  />
+          <img src={img04} className="w-full max-w-[1200px]" alt="img" />
+
+          <p className="mt-xl sub-title text-center">審計委員會績效評估</p>
           <TabContainer goals={goals}>
             <div data-goal="2023">
               <Second />

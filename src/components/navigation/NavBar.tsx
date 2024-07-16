@@ -178,7 +178,7 @@ const Nav: React.FC = () => {
                             <Link to="/sustainability/key-topics">重大主題</Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/internal-rules-anti-corruption">內部守則與反貪腐</Link>
+                            <Link to="/sustainability/questionnaire">利害關係人問卷</Link>
                           </li>
                           <div className="arrow"></div>
                         </ul>
