@@ -25,7 +25,7 @@ const GreenEnergy: React.FC = () => {
   const columnsList = [
     { header: '專利名稱', accessor: 'name' },
     { header: '專利編號(證書號)', accessor: 'number' },
-    { header: '專利註冊地', accessor: 'location' },
+    { header: '專利註冊地', accessor: 'location', nowrap: true },
     { header: '專利取得日', accessor: 'date' },
   ];
 

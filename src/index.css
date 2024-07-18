@@ -108,3 +108,10 @@
     transform: translateY(-30px) rotate(5deg);
   }
 }
+
+
+.custom-collapse .collapse-arrow::before,
+.custom-collapse .collapse-arrow::after {
+  color: #FFA500; /* Change the color as needed */
+  font-size: 24px; /* Adjust the size as needed */
+}

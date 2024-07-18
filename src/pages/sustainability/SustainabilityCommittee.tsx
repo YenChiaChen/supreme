@@ -13,6 +13,9 @@ import {
   faTasks,
 } from "@fortawesome/free-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
+import Table from "../../components/ui/Table";
+import CollapsibleList from "../../components/ui/CollapsibleList ";
+import TabContainer from "../../components/ui/TabContainer";
 const SustainabilityCommittee: React.FC = () => {
   const breadcrumbItems = [
     { label: "永續經營", href: "/sustainability" },
@@ -58,7 +61,151 @@ const SustainabilityCommittee: React.FC = () => {
     },
   ];
 
-  const LongTermGoals: React.FC = () => <></>;
+  const columns = [
+    { header: "身份別", accessor: "identity" },
+    { header: "姓名", accessor: "name" },
+    { header: "主要學經歷", accessor: "education" },
+    { header: "主要現職", accessor: "current" },
+  ];
+
+  const data = [
+    {
+      identity: "獨立董事",
+      name: "楊耀松",
+      education: "英國萊斯特大學EMBA\n魔奇科技(股)公司董事\n香港華馨達國際(股)公司副董事長\n晨星半導體(股)公司總經理特助",
+      current: "香港華馨達國際(股)公司副董事長",
+    },
+    {
+      identity: "獨立董事",
+      name: "王淮",
+      education: "國立政治大學企管碩士\n龍巖(股)公司獨立董事\n博錸生技(股)公司獨立董事\n智擎生技製藥(股)公司獨立董事\n中華公司治理協會理事",
+      current: "博錸生技(股)公司獨立董事\n生華創業投資(股)公司監察人",
+    },
+    {
+      identity: "獨立董事",
+      name: "林佩蓉",
+      education: "國立台灣大學管理學院\n台大-復旦EMBA境外專班碩士班\n東森電視業務營銷部副總經理",
+      current: "安和智通（股）董事長\n安璽整合行銷(股)公司董事長\n鉑齡(股)公司董事長\n安投(股)公司董事長\n安智媒體行銷(股)公司董事長",
+    },
+    {
+      identity: "委員",
+      name: "陳銘德",
+      education: "政治大學企研所\n美齊科技副總經理",
+      current: "至上電子(股)公司財務長",
+    },
+    {
+      identity: "委員",
+      name: "張家瑋",
+      education: "元智大學工業工程管理學系\n至上電子(股)公司業務",
+      current: "至上電子(股)公司資深業務副總",
+    },
+    {
+      identity: "委員",
+      name: "陳力行",
+      education: "台灣大學EMBA會計與管理決策組\n中央大學工業管理研究所\n勤業會計師事務所領組\n金雨企業(股)公司董事",
+      current: "至上電子(股)公司會計協理、公司治理主管",
+    },
+  ];
+
+
+  
+
+  const columns2 = [
+    { header: "職稱", accessor: "title" },
+    { header: "姓名", accessor: "name" },
+    { header: "實際出(列)席次數(B)", accessor: "actualAttendance" },
+    { header: "委託出席次數", accessor: "proxyAttendance" },
+    { header: "應出(列)席次數(A)", accessor: "expectedAttendance" },
+    { header: "實際出席(列)%(B/A)", accessor: "attendanceRate" },
+    { header: "備註", accessor: "remarks" },
+  ];
+
+  const data2=[
+    {
+      title: "獨立董事",
+      name: "楊耀松",
+      actualAttendance: "3",
+      proxyAttendance: "0",
+      expectedAttendance: "3",
+      attendanceRate: "100.00",
+      remarks: "",
+    },
+    {
+      title: "獨立董事",
+      name: "王淮",
+      actualAttendance: "3",
+      proxyAttendance: "0",
+      expectedAttendance: "3",
+      attendanceRate: "100.00",
+      remarks: "",
+    },
+    {
+      title: "獨立董事",
+      name: "林佩蓉",
+      actualAttendance: "1",
+      proxyAttendance: "-",
+      expectedAttendance: "1",
+      attendanceRate: "100.00",
+      remarks: "新任",
+    },
+    {
+      title: "財務長",
+      name: "陳銘德	",
+      actualAttendance: "3",
+      proxyAttendance: "0",
+      expectedAttendance: "3",
+      attendanceRate: "100.00",
+      remarks: "",
+    },
+    {
+      title: "資深業務副總",
+      name: "張家瑋",
+      actualAttendance: "2",
+      proxyAttendance: "1",
+      expectedAttendance: "3",
+      attendanceRate: "66.67",
+      remarks: "",
+    },
+    {
+      title: "財會主管/公司治理主管	",
+      name: "陳力行	",
+      actualAttendance: "3",
+      proxyAttendance: "0",
+      expectedAttendance: "3",
+      attendanceRate: "100.00",
+      remarks: "",
+    },
+  ]
+  const columns3 = [
+    { header: "評估範圍", accessor: "assessmentScope" },
+    { header: "評估方式", accessor: "assessmentMethod" },
+    { header: "評估期間", accessor: "assessmentPeriod" },
+    { header: "評估內容", accessor: "assessmentContent" },
+    { header: "評估結果", accessor: "assessmentResult" },
+  ];
+
+  const data3 = [
+    {assessmentScope: '各功能性委員會',
+      assessmentMethod: '董事自評',
+      assessmentPeriod: '2023.01.01~2023.12.31',
+      assessmentContent: 'A.對公司營運之參與程度\nB.功能性委員會職責認知\nC.提升功能性委員會決策品質\nD.功能性委員會組成及成員選任\nE.內部控制',
+      assessmentResult: '平均達成率：95.50%',
+    }
+  ]
+
+
+
+
+  const goals = ["2023"];
+
+  
+  const LongTermGoals: React.FC = () => (
+    <>
+     <Table columns={columns3} data={data3} />
+
+    </>
+  );
+
 
   return (
     <div>
@@ -112,31 +259,18 @@ const SustainabilityCommittee: React.FC = () => {
           </p>
 
           <p className="mt-xl sub-title text-center">永續發展委員會成員</p>
-          <div className="flex justify-center">
-            <img
-              src={img02}
-              className="w-full max-w-[1000px] mt-md"
-              alt="img"
-            />
-          </div>
+          <Table columns={columns} data={data} />
 
           <p className="mt-xl sub-title text-center">永續發展委員會運作情形</p>
-          <div className="flex justify-center">
-            <img
-              src={img03}
-              className="w-full max-w-[1000px] mt-md"
-              alt="img"
-            />
-          </div>
+          <Table columns={columns2} data={data2} />
 
           <p className="mt-xl sub-title text-center">永續發展委員會績效評估</p>
-          <div className="flex justify-center">
-            <img
-              src={img04}
-              className="w-full max-w-[1000px] mt-md"
-              alt="img"
-            />
-          </div>
+       
+          <TabContainer goals={goals}>
+            <div data-goal="2023">
+              <LongTermGoals />
+            </div>
+          </TabContainer>
         </div>
       </div>
     </div>

@@ -59,6 +59,92 @@ const ClimateChange: React.FC = () => {
           <p className="mt-xl sub-title text-center">氣候風險與機會重大性矩陣圖</p>
           <img src={Img02} className="w-full mt-md" alt="Energy " />
           <p className="mt-xl sub-title text-center">氣候相關風險及管理程序</p>
+{/*           
+          <div className="overflow-x-auto mt-md">
+            <table className="min-w-full border-collapse">
+              <thead className="bg-orange text-white content">
+                <tr>
+                  <th className="py-2 px-4 border border-white rounded-tl-lg">風險類別</th>
+                  <th className="py-2 px-4 border border-white">構面</th>
+                  <th className="py-2 px-4 border border-white">氣候相關風險</th>
+                  <th className="py-2 px-4 border border-white">影響時程</th>
+                  <th className="py-2 px-4 border border-white">潛在財務影響</th>
+                  <th className="py-2 px-4 border border-white">因應策略方案</th>
+                  <th className="py-2 px-4 border border-white">因應方案的財務影響</th>
+                  <th className="py-2 px-4 border border-white rounded-tr-lg">成果及績效</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap " rowSpan={4}>轉型風險</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap " rowSpan={2}>技術</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap ">對新技術的投資失敗(R2)術</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap ">中長期</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap ">電動車電池模組、馬達、EXN交換站及電動車零組件等新能源技術投資及開發將提高公司營運成本，若投資開發失敗可能造成公司營運虧損，影響股東獲利。</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  網路通訊安全管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <ul className="list-disc pl-6">
+                      <li>依相關規定申請帳號使用網路通訊系統。</li>
+                      <li>所有網路通訊埠原則上皆予鎖定，視業務需要酌以開放使用。</li>
+                      <li>禁止使用撥號方式連接網路，特殊需要時以直接連線特定主機作業。</li>
+                      <li>利用防火牆做為網路安全之屏障。</li>
+                      <li>安裝防毒程式偵測網路安全風險。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  應用系統安全管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <p className="text-dark_blue font-semibold">原始程式碼之存取更新</p>
+                    <ul className="list-disc pl-6">
+                      <li>原始程式均依規定存放於應用程式伺服器，並嚴格實施權限控管。</li>
+                      <li>更新時必須依相關規定辦理，並將原始程式從應用程式伺服器，拷貝至測試環境更改。</li>
+                      <li>新增或修改完成之應用程式，必須經由嚴格測試及主管核可後，始交付系統管理員執行安裝程序。</li>
+                      <li>系統管理員於新原始程式與執行碼安裝於應用程式伺服器前，須將舊原始程式備份。</li>
+                    </ul>
+                    <p className="text-dark_blue font-semibold">程式執行權之控管</p>
+                    <ul className="list-disc pl-6">
+                      <li>建立安全控管檔案，以便系統管理員管理。</li>
+                      <li>程式執行權配合使用者工作之需要，依相關規定申請，由系統管理員設定執行授權。</li>
+                    </ul>
+                    <p className="text-dark_blue font-semibold">資料存取之控管</p>
+                    <ul className="list-disc pl-6">
+                      <li>資料均透過應用系統之權限管理，並保留存取記錄。</li>
+                      <li>管制非應用系統的資料存取，並保留存取記錄。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  備援管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <ul className="list-disc pl-6">
+                      <li>執行定期備份作業及異地儲存之管理計劃。</li>
+                      <li>執行電腦系統災害復原計劃。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  資產管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <ul className="list-disc pl-6">
+                      <li>依相關規定實施電腦設備之請購、移轉、維修及報廢等作業。</li>
+                      <li>依相關規定實施相關電腦軟體之請購與使用管理。</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> */}
           <img src={Img03} className="w-full mt-md" alt="Energy " />
         </div>
       </div>

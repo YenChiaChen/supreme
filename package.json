@@ -21,6 +21,7 @@
     "@fortawesome/sharp-thin-svg-icons": "^6.5.2",
     "@nivo/bar": "^0.87.0",
     "@nivo/core": "^0.87.0",
+    "@nivo/line": "^0.87.0",
     "@nivo/scatterplot": "^0.87.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -70,6 +71,7 @@
   "devDependencies": {
     "@types/aos": "^3.0.7",
     "@types/react-transition-group": "^4.4.10",
+    "daisyui": "^4.12.10",
     "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.3"
   }

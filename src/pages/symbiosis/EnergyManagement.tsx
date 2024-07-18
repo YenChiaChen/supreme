@@ -160,8 +160,43 @@ const EnergyManagement: React.FC = () => {
           <Breadcrumbs items={breadcrumbItems} />
 
           <p className="mt-xl sub-title text-center">能源管理</p>
+          <p className="mt-md text-2xl font-semibold text-orange">能源消耗量及能源密集度</p>
+          <div className="overflow-x-auto mt-4">
+            <table className="min-w-full border-collapse">
+              <thead className="bg-orange text-white content">
+                <tr>
+                  <th className="py-2 px-4 border border-white rounded-tl-lg" colSpan={2}>內部能源耗用總量</th>
+                  <th className="py-2 px-4 border border-white">2021年</th>
+                  <th className="py-2 px-4 border border-white rounded-tr-lg">2022年</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap" rowSpan={2}>非再生能源</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">汽油(GJ)</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">25.15</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">192.56</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">外購電力(GJ)</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1,643.48</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1,761.67</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap" colSpan={2}>總能源消耗量(GJ)</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1668.63</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1954.23</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap" colSpan={2}>能源密集度(GJ/新台幣億元)</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1.83</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">2.48</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
           
-      <img src={cols} className="w-full mt-md" alt="Energy " />
           <TabContainer goals={goals}>
             <div data-goal="2023">
               <ShortTermGoals />

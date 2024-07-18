@@ -8,6 +8,8 @@ import ESGMatrixDetail from "../../components/charts/ESGMatrix";
 import ESGFactor from "../../data/ESGFactor.json";
 import { ESGFactorType } from "../../types";
 import TabContainer from "../../components/ui/TabContainer";
+import ESGMatrixNDetail from "../../components/charts/ESGMatrixN";
+import Table from "../../components/ui/Table";
 
 const goals = ["正面衝擊矩陣", "負面衝擊矩陣"];
 
@@ -18,6 +20,20 @@ const KeyTopics: React.FC = () => {
     { label: "永續經營", href: "/sustainability" },
     { label: "重大主題" },
   ];
+
+  const columns2 = [
+    { header: "項目", accessor: "item" },
+    { header: "議題名稱", accessor: "name" },
+    { header: "調整原因", accessor: "reason" },
+  ];
+
+  const data3=[
+    {
+      item: "整併",
+      name: "產品與客戶服務顧客隱私",
+      reason: "考量國際永續發展趨勢以及呼應本公司永續策略，將主題重組以利聚焦，明確回 應利害關係人。原「顧客隱私」整併為「產品與客戶服務」。",
+    },
+  ]
 
   return (
     <div>
@@ -77,36 +93,12 @@ const KeyTopics: React.FC = () => {
               <ESGMatrixDetail data={ESGFactorData} />
             </div>
             <div data-goal="負面衝擊矩陣">
-              <ESGMatrixDetail data={ESGFactorData} />
+              <ESGMatrixNDetail data={ESGFactorData} />
             </div>
           </TabContainer>
 
           <p className="mt-xl sub-title text-center mb-4">重大主題變動說明</p>
-          <div className="grid grid-cols-[auto,auto,1fr] mt-md content">
-            <div className="bg-orange text-center text-white py-2 px-4 border-r-[1px] border-white">
-              項目
-            </div>
-            <div className="bg-orange text-center text-white py-2 px-4 border-r-[1px] border-white">
-              議題名稱
-            </div>
-            <div className="bg-orange text-center text-white py-2">
-              調整原因
-            </div>
-            <div className="border-b-[1px] border-b-orange px-4 py-4 flex items-center justify-center">
-              整併
-            </div>
-            <div className="border-b-[1px] border-b-orange px-4 py-4 flex items-center justify-center text-center">
-              產品與客戶服務
-              <br />
-              顧客隱私
-            </div>
-            <div className="border-b-[1px] border-b-orange px-4 py-4 flex items-center ">
-              考量國際永續發展趨勢以及呼應本公司永續策略，將主題重組以利聚焦，明確回
-              應利害關係人。
-              <br />
-              原「顧客隱私」整併為「產品與客戶服務」。
-            </div>
-          </div>
+         <Table columns={columns2} data={data3} />
           
 
 
@@ -119,23 +111,52 @@ const KeyTopics: React.FC = () => {
             <div className="col-span-1 bg-orange text-white py-2 border-[1px] border-white">至上電子營運</div>
             <div className="col-span-1 bg-orange text-white py-2 border-[1px] border-white">下游</div>
 
-            <div className=" border-b-[1px] border-orange row-span-4 flex items-center justify-center">治理／經濟</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">誠信經營</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">公司治理</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">經營績效</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center py-2">風險管理</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
-            <div className=" border-b-[1px] border-orange flex items-center justify-center text-xs text-orange"> ●</div>
+            <div className=" border-b-[1px] border-light_gray row-span-4 flex items-center justify-center">治理／經濟</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">誠信經營</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">公司治理</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">經營績效</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">風險管理</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+
+            
+            <div className=" border-b-[1px] border-light_gray row-span-2 flex items-center justify-center">治理</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">資訊安全</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange"></div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">產品與客戶服務</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+
+            
+            <div className=" border-b-[1px] border-light_gray row-span-2 flex items-center justify-center">社會</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">人才培育與留任</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange"></div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">勞雇與勞資關係</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange"></div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+
+            
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center">環境</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center py-4">氣候變遷對策及溫室氣體管理與能源管理</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
+            <div className=" border-b-[1px] border-light_gray flex items-center justify-center text-xs text-orange">●</div>
           </div>
 
         </div>

@@ -5,20 +5,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 const categoryColors: { [key: string]: string } = {
-  首要的正面衝擊主題: "#353b63",
-  次要的正面衝擊主題: "#6e329c",
-  持續追蹤的正面衝擊主題: "#fa862d",
+  首要的負面衝擊主題: "#353b63",
+  次要的負面衝擊主題: "#6e329c",
+  持續追蹤的負面衝擊主題: "#fa862d",
 };
 
 const ESGMatrix = ({ data }: { data: ESGFactorType[] }) => {
   const chartData = data.map((factor) => ({
-    id: factor.categoryPositive,
+    id: factor.categoryNegative,
     data: [
       {
-        x: factor.possibilityPositive,
-        y: factor.impactPositive,
+        x: factor.possibilityNegative,
+        y: factor.impactNegative,
         name: factor.name,
-        category: factor.categoryPositive,
+        category: factor.categoryNegative,
       },
     ],
   }));
@@ -65,12 +65,12 @@ const ESGMatrix = ({ data }: { data: ESGFactorType[] }) => {
   );
 };
 
-const ESGMatrixDetail = ({ data }: { data: ESGFactorType[] }) => {
+const ESGMatrixNDetail = ({ data }: { data: ESGFactorType[] }) => {
   const groupedData = data.reduce((acc, factor) => {
-    if (!acc[factor.categoryPositive]) {
-      acc[factor.categoryPositive] = [];
+    if (!acc[factor.categoryNegative]) {
+      acc[factor.categoryNegative] = [];
     }
-    acc[factor.categoryPositive].push(factor);
+    acc[factor.categoryNegative].push(factor);
     return acc;
   }, {} as { [key: string]: ESGFactorType[] });
 
@@ -119,4 +119,4 @@ const ESGMatrixDetail = ({ data }: { data: ESGFactorType[] }) => {
   );
 };
 
-export default ESGMatrixDetail;
+export default ESGMatrixNDetail;

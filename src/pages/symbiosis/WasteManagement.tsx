@@ -12,6 +12,7 @@ import WaterConsumptionChart from "../../components/charts/WaterConsumptionChart
 import {
   faComputer,
   faLightbulb,
+  faPlay,
   faPlugCircleXmark,
   faPowerOff,
   faStairs,
@@ -20,12 +21,14 @@ import {
 import {
   faBinBottlesRecycle,
   faBoxHeart,
+  faBullseyeArrow,
   faMemoCircleCheck,
   faPalletBoxes,
 } from "@fortawesome/pro-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContainerIcon from "../../components/ui/TabContainerIcon";
+import Table from "../../components/ui/Table";
 const data = [
   { year: "2019", consumption: 0.532 },
   { year: "2020", consumption: 0.654 },
@@ -66,58 +69,6 @@ const WasteManagement: React.FC = () => {
     </>
   );
 
-  const items2 = [
-    {
-      id: 1,
-      content:
-        "以省電 LED 應用產品為主，採用節能標章高效率照明燈具及電子式安定器、出口指示燈、避難方向指示燈、消防指示燈等，並宣導隨手關燈，並持續與大樓管委會合作推動更換公共區域及地下停車場照明設備。",
-      title: "・汰換耗能燈具",
-      icon: faLightbulb,
-      iconColor: "#FF8D50",
-      iconSize: "30px",
-    },
-    {
-      id: 2,
-      content: "使用有標示一級節能標誌之電器設備等。",
-      title: "・使用節能設備",
-      icon: faComputer,
-      iconColor: "#FF8D50",
-      iconSize: "30px",
-    },
-    {
-      id: 3,
-      content:
-        "辦公事務機器設定省電模式，規定三天以上之假期，電器具或電腦資訊設備需強制關閉主機及周邊設備電源，以減少待機電力之浪費。",
-      title: "・減少電力消耗",
-      icon: faPlugCircleXmark,
-      iconColor: "#FF8D50",
-      iconSize: "30px",
-    },
-    {
-      id: 4,
-      content: "鼓勵同仁多走樓梯，少搭電梯。",
-      title: "・減少使用電梯",
-      icon: faStairs,
-      iconColor: "#FF8D50",
-      iconSize: "30px",
-    },
-    {
-      id: 5,
-      content: "溫度設定為26～28度，且注意門窗有無確實關閉。",
-      title: "・夏日空調定溫",
-      icon: faWind,
-      iconColor: "#FF8D50",
-      iconSize: "30px",
-    },
-    {
-      id: 6,
-      content: "提倡午休時段辦公室關燈。",
-      title: "・午休關燈節能",
-      icon: faPowerOff,
-      iconColor: "#FF8D50",
-      iconSize: "30px",
-    },
-  ];
 
   const goals = ["2023", "2022", "2021"];
 
@@ -140,13 +91,33 @@ const WasteManagement: React.FC = () => {
     <FontAwesomeIcon icon={faBoxHeart} className="h-[50px]" />,
   ];
 
-  const A1: React.FC = () => (
-    <>
-      <p className="my-6 content">
-        倉儲中心原使用木棧板，為減少廢棄棧板數量，於2017年改購置鐵塑棧板使廢棄棧板量大幅減少，截至2022年無再採購存儲作業所需棧板，往年進貨所乘載貨物的木製棧板也持續回收再出貨利用。
-      </p>
-    </>
-  );
+  const columns2 = [
+    { header: "專案名稱", accessor: "name" },
+    { header: "專案簡介", accessor: "desc" },
+    { header: "減少資源浪費", accessor: "target" },
+    { header: "2023年度績效", accessor: "performance" },
+  ];
+
+  const data3=[
+    {
+      name: "e 化簽核流程",
+      desc: "因應廢棄物減量政策，並減少管理成本，將紙本簽核全面改為電子簽核。",
+      target: "銷售收款循環及採購付款循環作業單據e化簽核，減少紙張用量及減少管理成本。",
+      performance: "全集團共完成154,332次電子簽核，等於減少用紙量約462,996張A4 紙，約減少砍伐55.56棵樹。",
+    },
+    {
+      name: "外部憑證電子化",
+      desc: "整合內部和外部之作業，將會計憑證改為電子化。",
+      target: "發票及進出口報單等外部憑證逐年電子化，減少紙張用量及管理成本，並以全公司無紙作業為最終目標。",
+      performance: "電子發票(協力廠商)及進出口報單共減少用紙量約11,530張A4紙，約減少砍伐1.38棵樹。",
+    },
+    {
+      name: "棧板及包材減量",
+      desc: "• 棧板使用不易耗損之材質及回收再出貨利用。\• 包裝材料使用減量及再利用。",
+      target: "使用不易耗損之鐵塑棧板，木製棧板也持續回收再出貨利用。產品出貨到客戶端時，盡量以原廠包裝出貨，無再額外多增加包裝材料使用，以減少包裝耗材之採購量。",
+      performance: "棧板( 鐵塑及木質) 回收出貨再利用達6.175 公噸，較上年度增加4.535公噸。",
+    },
+  ]
 
   return (
     <div>
@@ -196,7 +167,61 @@ const WasteManagement: React.FC = () => {
           <p className="mt-xl sub-title text-center">廢棄物報廢流程</p>
         </div>
 
-        <img src={hakimoProcess} className="w-full mt-md" alt="Energy " />
+        <div className="container mx-auto relative mt-md px-[10%]">
+          <div className="relative z-10 py-12 grid grid-cols-4 items-center">
+            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative  px-6">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+                步驟一
+              </p>
+              <p className="mt-6">
+                當年度報廢之電子零件，待會計師盤點報廢數量，確認後，委託甲級廢棄物處理證照之廠商做清運並提供清冊。
+              </p>
+            </div>
+            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative px-6">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+                步驟二
+              </p>
+              <p className="mt-6">包材與電子零件進行分類(作業一)。</p>
+            </div>
+            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative  px-6">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+                步驟三
+              </p>
+              <p className="mt-6">
+                料盤、載具與電子零件本體等做第二階段分類(作業二)。
+              </p>
+            </div>
+            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative  px-6">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <FontAwesomeIcon
+                icon={faPlay}
+                className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+                步驟四
+              </p>
+              <p className="mt-6">取出可回收廢棄物</p>
+            </div>
+          </div>
+
+          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
+        </div>
+
         <div className="container mx-auto px-[10%]">
           <p className="mt-xl sub-title text-center">廢棄物減量</p>
           <p className="mt-md content ">
@@ -207,20 +232,37 @@ const WasteManagement: React.FC = () => {
 
           <TabContainerIcon goals={goals2} icons={icons}>
             <div data-goal="辦公室無紙化">
-              <A1 />
+              <p className="content">
+                本公司為減少資源浪費，辦公室紙張採購選用森林驗證認可計畫標章(
+                PEFC ) 的產品，並於辦公室內採用廢紙重複利
+                用及雙面列印。廢棄紙張則統一委由合規環保公司處理，透過水銷方式再製成紙製品，達到循環經濟的目標，同時減少空
+                氣污染和碳排放，水銷廢棄紙張共計15箱。
+                同時推動文件表單審核流程電子化及實施電子發票開立服務功能，以減少紙張使用，2023年全集團共完成154,332次
+                電子簽核，加計電子發票及進出口報單，總共減少用紙量約474,526張A4
+                紙，約減少砍伐56.94棵樹，較前一年（2022年
+                ）減少用紙量約196,471張A4紙，未來持續推動少紙化。
+              </p>
             </div>
             <div data-goal="運輸棧板重複利用">
-              <A1 />
+              <p className="content">
+                倉儲中心原使用木棧板，為減少廢棄棧板數量，於2017年改購置鐵塑棧板使廢棄棧板量大幅減少，截至2023年無再
+                採購存儲作業所需棧板，往年進貨所乘載貨物的木製棧板也持續回收再出貨利用。
+              </p>
             </div>
             <div data-goal="落實垃圾分類">
-              <A1 />
+              <p className="content">
+                推行辦公室資源回收再利用，加強同仁資源回收觀念，宣導愛惜各項資源，保護環境從細節生活做起，並在公司內部
+                設置小型資源回收站，期望用簡便和統一處理的方式，提升環保意願和提高廢棄物回收率。
+              </p>
             </div>
             <div data-goal="產品不過度包裝">
-              <A1 />
+              <p className="content">
+                公司將產品出貨到客戶端時，盡量以原廠包裝出貨，勿再額外多增加包裝材料使用，包括紙箱、防震材及零件盒等。
+              </p>
             </div>
           </TabContainerIcon>
           <p className="mt-xl sub-title text-center">廢棄物減量專案</p>
-          <img src={energycol} className="w-full mt-md" />
+          <Table columns={columns2} data={data3} />
         </div>
       </div>
     </div>

@@ -2,13 +2,15 @@ import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
 import Goal from "../../assets/img/testing/goaltest-2.png";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck, faPlay } from "@fortawesome/free-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
 import TabListGoal from "../../components/ui/TabListGoal";
 import Security from "../../assets/img/testing/security.png";
 import Security2 from "../../assets/img/testing/security2.png";
 import Security3 from "../../assets/img/testing/security3.png";
 import Security4 from "../../assets/img/testing/security4.png";
+import { faBullseyeArrow } from "@fortawesome/pro-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const InformationSecurity: React.FC = () => {
   const breadcrumbItems = [
@@ -121,7 +123,65 @@ const InformationSecurity: React.FC = () => {
             未來政策將訂定公司資通安全管理辦法，防範資訊資產遭受各種安全威脅。並基於資訊安全考量承諾絕不使用盜版軟體，避免潛藏之病毒、後門等造成資訊安全破口。
           </p>
         </div>
-        <img src={Goal} alt="goal" className="w-full mt-md" />
+
+        <div className="container mx-auto relative mt-md px-[10%]">
+          <div className="relative z-10 py-12 grid grid-cols-3 items-center">
+            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+                短期目標
+              </p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">零重大資安事件</li>
+                <li className="my-2">對系統及網站服務弱點掃描</li>
+                <li className="my-2">網站滲透測試</li>
+                <li className="my-2">完成修補弱掃及滲透所警示漏洞</li>
+                <li className="my-2">執行資訊安全宣導</li>
+                <li className="my-2">執行社交工程演練</li>
+              </ul>
+            </div>
+            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+                中期目標
+              </p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">零重大資安事件</li>
+                <li className="my-2">舉辨資訊安全教育訓練</li>
+                <li className="my-2">
+                  持續監測網站、系統及修補各 項新發掘漏洞
+                </li>
+                <li className="my-2">社交工程演練點擊率 &lt;10%</li>
+              </ul>
+            </div>
+            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <FontAwesomeIcon
+                icon={faPlay}
+                className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+                長期目標
+              </p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">零重大資安事件</li>
+                <li className="my-2">建立地端 + 雲端雙自主資安監測維運</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
+        </div>
+
         <div className="container mx-auto px-[10%]">
           <p className="mt-xl sub-title text-center">實際執行方案</p>
           <p className="mt-md content mb-12">
@@ -139,7 +199,11 @@ const InformationSecurity: React.FC = () => {
           <p className="mt-xl sub-title text-center">
             資通安全專案小組風險管理架構
           </p>
-          <img src={Security} alt="goal" className="w-full max-w-[1000px] mt-md mx-auto" />
+          <img
+            src={Security}
+            alt="goal"
+            className="w-full max-w-[1000px] mt-md mx-auto"
+          />
           <p className="mt-xl sub-title text-center">資訊安全管理政策</p>
           <p className="mt-md content mb-12">
             本公司秉持維護資訊安全作業環境之理念，對於資訊系統暨所儲存、處理、資料庫、傳遞之資料實施周全
@@ -153,14 +217,103 @@ const InformationSecurity: React.FC = () => {
             為了讓資訊系統損害發生時能儘速恢復營運、降低損失與風險，透過定期委託第三方資訊安全業者協助檢
             測及公司內部稽核檢視資通安全檢查控制作業，改善相關作業流程等因應措施。
           </p>
-          <img src={Security2} alt="goal" className="w-full max-w-[900px] mt-md mx-auto" />
+          <div className="overflow-x-auto mt-md">
+            <table className="min-w-full border-collapse">
+              <thead className="bg-orange text-white content">
+                <tr>
+                  <th className="py-2 px-4 border border-white rounded-tl-lg"></th>
+                  <th className="py-2 px-4 border border-white rounded-tr-lg">
+                    管理方案
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    使用者權限管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <ul className="list-disc pl-6">
+                      <li>執行帳號及密碼之控管。</li>
+                      <li>建立密碼之管理規則。</li>
+                      <li>視情況得隨時修改管理者之帳號及密碼。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  網路通訊安全管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <ul className="list-disc pl-6">
+                      <li>依相關規定申請帳號使用網路通訊系統。</li>
+                      <li>所有網路通訊埠原則上皆予鎖定，視業務需要酌以開放使用。</li>
+                      <li>禁止使用撥號方式連接網路，特殊需要時以直接連線特定主機作業。</li>
+                      <li>利用防火牆做為網路安全之屏障。</li>
+                      <li>安裝防毒程式偵測網路安全風險。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  應用系統安全管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <p className="text-dark_blue font-semibold">原始程式碼之存取更新</p>
+                    <ul className="list-disc pl-6">
+                      <li>原始程式均依規定存放於應用程式伺服器，並嚴格實施權限控管。</li>
+                      <li>更新時必須依相關規定辦理，並將原始程式從應用程式伺服器，拷貝至測試環境更改。</li>
+                      <li>新增或修改完成之應用程式，必須經由嚴格測試及主管核可後，始交付系統管理員執行安裝程序。</li>
+                      <li>系統管理員於新原始程式與執行碼安裝於應用程式伺服器前，須將舊原始程式備份。</li>
+                    </ul>
+                    <p className="text-dark_blue font-semibold">程式執行權之控管</p>
+                    <ul className="list-disc pl-6">
+                      <li>建立安全控管檔案，以便系統管理員管理。</li>
+                      <li>程式執行權配合使用者工作之需要，依相關規定申請，由系統管理員設定執行授權。</li>
+                    </ul>
+                    <p className="text-dark_blue font-semibold">資料存取之控管</p>
+                    <ul className="list-disc pl-6">
+                      <li>資料均透過應用系統之權限管理，並保留存取記錄。</li>
+                      <li>管制非應用系統的資料存取，並保留存取記錄。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  備援管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <ul className="list-disc pl-6">
+                      <li>執行定期備份作業及異地儲存之管理計劃。</li>
+                      <li>執行電腦系統災害復原計劃。</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  資產管理
+                  </td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                    <ul className="list-disc pl-6">
+                      <li>依相關規定實施電腦設備之請購、移轉、維修及報廢等作業。</li>
+                      <li>依相關規定實施相關電腦軟體之請購與使用管理。</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p className="mt-xl sub-title text-center">資訊安全宣導</p>
           <p className="mt-md content mb-12">
             為提升全體員工基礎資訊安全知識與緊急應變能力，每年定期以郵件宣導資訊安全相關事宜，並預計於
             2023 年開始安排公司人員之資訊安全教育訓練，並以全體員工 100%
             完成教育訓練為目標。
           </p>
-          <img src={Security3} alt="goal" className="w-full max-w-[900px] mt-md mx-auto" />
+          <img
+            src={Security3}
+            alt="goal"
+            className="w-full max-w-[900px] mt-md mx-auto"
+          />
           <p className="mt-xl sub-title text-center">資訊安全通報與處理流程</p>
           <p className="mt-md content mb-12">
             資訊安全事件之處理效率關乎其對公司之衝擊影響程度，若重大資安事件未能及時處理將可能影響客戶交
@@ -170,7 +323,11 @@ const InformationSecurity: React.FC = () => {
             年無違反法規及發生利害關
             係人之資訊安全申訴事件，亦無造成營運影響或損失之重大資訊安全事件。
           </p>
-          <img src={Security4} alt="goal" className="w-full max-w-[900px] mt-md mx-auto" />
+          <img
+            src={Security4}
+            alt="goal"
+            className="w-full max-w-[900px] mt-md mx-auto"
+          />
         </div>
       </div>
     </div>

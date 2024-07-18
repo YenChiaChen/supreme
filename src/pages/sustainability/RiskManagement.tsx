@@ -4,7 +4,7 @@ import Bg from "../../assets/img/bg/bg.png";
 import Goal from "../../assets/img/testing/golatest.png";
 import Board from "../../assets/img/testing/board-test.png";
 import SlideUpList from "../../components/ui/SlideUpList";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faBullseyeArrow } from "@fortawesome/pro-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -95,59 +95,43 @@ const RiskManagement: React.FC = () => {
           <p className="content mt-md">
             成立風險管控小組，由各部門推派人員共同組成，共9名成員，於每年年初及年中檢討各項風險議題，投入部門人力監控及增加保險預算轉嫁風險。
           </p>
+
+
         </div>
 
-        <div className="w-[90vw] bg-blue mt-md rounded-r-xl py-12">
-          <div className="container mx-auto pl-[16.2%]  ">
-            <ol className=" sm:flex">
-              <li className="relative mb-8 sm:mb-0 w-[33%]">
-                <div className="flex items-center">
-                  <p className="w-[140px] text-[24px] font-semibold text-dark_blue">
-                    整體目標
-                  </p>
-                  <div className="hidden sm:flex w-full bg-dark_blue h-[1px]"></div>
-                </div>
-                <div className="mt-8 sm:pe-8 flex flex-col gap-2">
-                  <p className="note">降低呆滯產品庫存量</p>
-                  <p className="note">減少存貨跌價損失金額</p>
-                  <p className="note">控制呆帳損失金額</p>
-                  <p className="note">規避匯率及利率波動風險</p>
-                  <p className="note">優化稅務規劃</p>
-                </div>
-              </li>
-              <li className="relative w-[33%]">
-                <div className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faBullseyeArrow}
-                    className="text-dark_blue text-[28px]"
-                  />
-                  <div className="hidden sm:flex w-full bg-dark_blue h-[1px]"></div>
-                </div>
-                <div className="mt-8 sm:pe-8  flex flex-col gap-2 justify-center">
-                  <p className=" text-[24px] font-semibold text-dark_blue">
-                    短期目標
-                  </p>
-                  <p className="note">2023 年達成呆帳率 1 % 以下</p>
-                </div>
-              </li>
-              <li className="relative mb-6 sm:mb-0 w-[33%]">
-                <div className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faBullseyeArrow}
-                    className="text-dark_blue text-[28px]"
-                  />
-                  <div className="hidden sm:flex w-full bg-dark_blue h-[1px]"></div>
-                </div>
-                <div className="mt-8 sm:pe-8  flex flex-col gap-2">
-                  <p className=" text-[24px] font-semibold text-dark_blue">
-                    中長期目標
-                  </p>
-                  <p className="note">維持呆帳率 0%</p>
-                </div>
-              </li>
-            </ol>
+        <div className="container mx-auto relative mt-md px-[10%]">
+          <div className="relative z-10 py-12 grid grid-cols-3 items-center">
+            <div>
+              <p className="text-2xl font-bold text-dark_blue tracking-widest">整體目標</p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">降低呆滯產品庫存量</li>
+                <li className="my-2">減少存貨跌價損失金額</li>
+                <li className="my-2">控制呆帳損失金額</li>
+                <li className="my-2">規避匯率及利率波動風險</li>
+                <li className="my-2">優化稅務規劃</li>
+              </ul>
+            </div>
+            <div className="border-t-[2px] border-dark_blue h-full flex justify-center flex-col relative">
+              <FontAwesomeIcon icon={faBullseyeArrow} className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]" />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest">短期目標</p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">2023 年達成呆帳率 1 % 以下</li>
+              </ul>
+            </div>
+            <div className="border-t-[2px] border-dark_blue h-full flex justify-center flex-col relative">
+            <FontAwesomeIcon icon={faBullseyeArrow} className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]" />
+            <FontAwesomeIcon icon={faPlay}  className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]" />
+              <p className="text-2xl font-bold text-dark_blue tracking-widest">中長期目標</p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">維持呆帳率 0%</li>
+              </ul>
+            </div>
           </div>
+
+          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
         </div>
+
+
 
         <div className="container mx-auto px-[10%]">
           <p className="mt-xl sub-title text-center">管理方針</p>
