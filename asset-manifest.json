@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.b7dce29d.css",
-    "main.js": "/supreme/static/js/main.ac37aac7.js",
+    "main.css": "/supreme/static/css/main.1191ec60.css",
+    "main.js": "/supreme/static/js/main.7c69ad27.js",
     "static/media/climate-change-03.png": "/supreme/static/media/climate-change-03.24e8e4c9c20c46484d57.png",
     "static/media/healthy.png": "/supreme/static/media/healthy.6defb8b606def061e8f8.png",
     "static/media/earth.png": "/supreme/static/media/earth.77f43f1b2f0f39833589.png",
@@ -28,6 +28,7 @@
     "static/media/2022-1.png": "/supreme/static/media/2022-1.50e68bef44b32e15ada0.png",
     "static/media/board-test.png": "/supreme/static/media/board-test.aa883fe7c536c08e0c40.png",
     "static/media/security3.png": "/supreme/static/media/security3.f8d92e6391d8a42f7bb2.png",
+    "static/media/girl.png": "/supreme/static/media/girl.73866d7bb281cd95346c.png",
     "static/media/supply2.png": "/supreme/static/media/supply2.45e9f4ad5ce2c5f95738.png",
     "static/media/board.png": "/supreme/static/media/board.bfa68ca2ad57b6ea0204.png",
     "static/media/hakimoPercent.png": "/supreme/static/media/hakimoPercent.1b4927d51b2e999583cf.png",
@@ -37,13 +38,14 @@
     "static/media/product-customer-service-02.png": "/supreme/static/media/product-customer-service-02.b9e93a99a9bde944d264.png",
     "static/media/greenhouse-gases-03.png": "/supreme/static/media/greenhouse-gases-03.c76e1ead5fd2f588cc6d.png",
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
+    "static/media/logo_mashup.png": "/supreme/static/media/logo_mashup.7a5db9278ef00bcc4e3f.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.b7dce29d.css.map": "/supreme/static/css/main.b7dce29d.css.map",
-    "main.ac37aac7.js.map": "/supreme/static/js/main.ac37aac7.js.map"
+    "main.1191ec60.css.map": "/supreme/static/css/main.1191ec60.css.map",
+    "main.7c69ad27.js.map": "/supreme/static/js/main.7c69ad27.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7dce29d.css",
-    "static/js/main.ac37aac7.js"
+    "static/css/main.1191ec60.css",
+    "static/js/main.7c69ad27.js"
   ]
 }
