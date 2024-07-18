@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.54813c68.css",
-    "main.js": "/supreme/static/js/main.6696d1b6.js",
+    "main.css": "/supreme/static/css/main.244d70a8.css",
+    "main.js": "/supreme/static/js/main.d2de8769.js",
     "static/media/climate-change-03.png": "/supreme/static/media/climate-change-03.24e8e4c9c20c46484d57.png",
     "static/media/healthy.png": "/supreme/static/media/healthy.6defb8b606def061e8f8.png",
     "static/media/earth.png": "/supreme/static/media/earth.77f43f1b2f0f39833589.png",
@@ -28,27 +28,23 @@
     "static/media/security.png": "/supreme/static/media/security.ed95fc98b5169332a480.png",
     "static/media/2022-1.png": "/supreme/static/media/2022-1.50e68bef44b32e15ada0.png",
     "static/media/board-test.png": "/supreme/static/media/board-test.aa883fe7c536c08e0c40.png",
-    "static/media/energycol.png": "/supreme/static/media/energycol.8014fdaca230a2b840b7.png",
     "static/media/security3.png": "/supreme/static/media/security3.f8d92e6391d8a42f7bb2.png",
-    "static/media/greenhouse-gases-01.png": "/supreme/static/media/greenhouse-gases-01.11fc48dca5b417f56762.png",
     "static/media/supply2.png": "/supreme/static/media/supply2.45e9f4ad5ce2c5f95738.png",
-    "static/media/greenhouse-gases-02.png": "/supreme/static/media/greenhouse-gases-02.48b90e91fa5612eb6868.png",
     "static/media/board.png": "/supreme/static/media/board.bfa68ca2ad57b6ea0204.png",
     "static/media/hakimoPercent.png": "/supreme/static/media/hakimoPercent.1b4927d51b2e999583cf.png",
     "static/media/accident.png": "/supreme/static/media/accident.d9e9b84dc35ac9a88db8.png",
     "static/media/hakimo.png": "/supreme/static/media/hakimo.913fb3bb7222a18ab752.png",
     "static/media/testcol.png": "/supreme/static/media/testcol.bb0eebd651312d797fcd.png",
     "static/media/product-customer-service-02.png": "/supreme/static/media/product-customer-service-02.b9e93a99a9bde944d264.png",
-    "static/media/group64.png": "/supreme/static/media/group64.cdb77db81638e25d624c.png",
     "static/media/greenhouse-gases-03.png": "/supreme/static/media/greenhouse-gases-03.c76e1ead5fd2f588cc6d.png",
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.54813c68.css.map": "/supreme/static/css/main.54813c68.css.map",
-    "main.6696d1b6.js.map": "/supreme/static/js/main.6696d1b6.js.map"
+    "main.244d70a8.css.map": "/supreme/static/css/main.244d70a8.css.map",
+    "main.d2de8769.js.map": "/supreme/static/js/main.d2de8769.js.map"
   },
   "entrypoints": [
-    "static/css/main.54813c68.css",
-    "static/js/main.6696d1b6.js"
+    "static/css/main.244d70a8.css",
+    "static/js/main.d2de8769.js"
   ]
 }
