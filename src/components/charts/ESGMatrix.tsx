@@ -79,11 +79,11 @@ const ESGMatrixDetail = ({ data }: { data: ESGFactorType[] }) => {
     visible: { opacity: 1, y: 0 },
   };
   return (
-    <div className="grid grid-cols-3 gap-2">
-      <div className="col-span-3">
+    <div className="grid grid-cols-2 gap-2">
+      <div className="col-span-1">
         <ESGMatrix data={data} />
       </div>
-      <div className="col-span-3 mt-[40px] space-y-4">
+      <div className="col-span-1 mt-[40px] space-y-4">
         {Object.keys(groupedData).map((category, index) => (
           <motion.div
             key={category}

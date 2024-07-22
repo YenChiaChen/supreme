@@ -37,10 +37,7 @@ const Table: React.FC<TableProps> = ({ columns, data }) => {
           {data.map((row, rowIndex) => (
             <tr
               key={rowIndex}
-              className={`hover:bg-[#e6e6e6] duration-300 content ${
-                rowIndex % 2 === 0 ? "bg-white" : "bg-gray"
-              }`}
-            >
+              className="hover:bg-[#f7f7f7] duration-300 content">
               {columns.map((column, columnIndex) => (
                 <td
                   key={column.accessor}

@@ -2,9 +2,9 @@ import EnterprisePage from "./pages/enterprise";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TalentDevelopment from "./pages/enterprise/TalentDevelopment";
 import Layout from "./components/layouts/Layout";
-import HumanRightsPolicy from "./pages/enterprise/HumanRightsPolicy";
-import OccupationalSafety from "./pages/enterprise/OccupationalSafety";
-import HealthyWorkplace from "./pages/enterprise/HealthyWorkplace";
+import HumanRightsPolicy from "./pages/enterprise/HumanRightsPolicy2";
+import OccupationalSafety from "./pages/enterprise/OccupationalSafety2";
+import HealthyWorkplace from "./pages/enterprise/HealthyWorkplace2";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import SustainabilityPage from "./pages/sustainability";
 import Governance from "./pages/sustainability/Governance";
@@ -30,6 +30,12 @@ import WasteManagement from "./pages/symbiosis/WasteManagement";
 import WaterManagement from "./pages/symbiosis/WaterManagement";
 import GreenEnergy from "./pages/symbiosis/GreenEnergy";
 import MessageFromChairmain from "./pages/sustainability/MessageFromChairmain";
+import HRDistribution from "./pages/enterprise/HRDistribution";
+import WelfareCare from "./pages/enterprise/WelfareCare";
+import RightsProtection from "./pages/enterprise/RightsProtection";
+import DiverseGrowth from "./pages/enterprise/DiverseGrowth";
+import PerformanceCompensation from "./pages/enterprise/PerformanceCompensation";
+import EthicalManagement from "./pages/sustainability/EthicalManagement";
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -42,6 +48,12 @@ function App() {
           <Route path="enterprise/human-rights-policy" element={<HumanRightsPolicy />} />
           <Route path="enterprise/occupational-safety" element={<OccupationalSafety />} />
           <Route path="enterprise/healthy-workplace" element={<HealthyWorkplace />} />
+          <Route path="enterprise/hr-distribution" element={<HRDistribution />} />
+          <Route path="enterprise/welfare-care" element={<WelfareCare />} />
+          <Route path="enterprise/rights-protection" element={<RightsProtection />} />
+          <Route path="enterprise/diverse-growth" element={<DiverseGrowth />} />
+          <Route path="enterprise/performance-compensation" element={<PerformanceCompensation />} />
+          <Route path="enterprise/*" element={<MaintainPage />} />
           <Route path="sustainability" element={<SustainabilityPage />} />
           <Route path="sustainability/governance" element={<Governance />} />
           <Route path="sustainability/governance-structure" element={<GovernanceStructure />} />
@@ -57,6 +69,7 @@ function App() {
           <Route path="sustainability/product-customer-service" element={<ProductCustomerService />} />
           <Route path="sustainability/stakeholder-engagement" element={<StakeholderEngagement />} />
           <Route path="sustainability/message-from-chairman" element={<MessageFromChairmain />} />
+          <Route path="sustainability/ethical-management" element={<EthicalManagement />} />
 
           <Route path="sustainability/*" element={<MaintainPage />} />
           <Route path="esg" element={<MaintainPage />} />

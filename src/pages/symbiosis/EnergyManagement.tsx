@@ -70,7 +70,7 @@ const EnergyManagement: React.FC = () => {
       id: 1,
       content:
         "以省電 LED 應用產品為主，採用節能標章高效率照明燈具及電子式安定器、出口指示燈、避難方向指示燈、消防指示燈等，並宣導隨手關燈，並持續與大樓管委會合作推動更換公共區域及地下停車場照明設備。",
-      title: "・汰換耗能燈具",
+      title: "汰換耗能燈具",
       icon: faLightbulb,
       iconColor: "#FF8D50",
       iconSize: "30px",
@@ -78,7 +78,7 @@ const EnergyManagement: React.FC = () => {
     {
       id: 2,
       content: "使用有標示一級節能標誌之電器設備等。",
-      title: "・使用節能設備",
+      title: "使用節能設備",
       icon: faComputer,
       iconColor: "#FF8D50",
       iconSize: "30px",
@@ -87,7 +87,7 @@ const EnergyManagement: React.FC = () => {
       id: 3,
       content:
         "辦公事務機器設定省電模式，規定三天以上之假期，電器具或電腦資訊設備需強制關閉主機及周邊設備電源，以減少待機電力之浪費。",
-      title: "・減少電力消耗",
+      title: "減少電力消耗",
       icon: faPlugCircleXmark,
       iconColor: "#FF8D50",
       iconSize: "30px",
@@ -95,7 +95,7 @@ const EnergyManagement: React.FC = () => {
     {
       id: 4,
       content: "鼓勵同仁多走樓梯，少搭電梯。",
-      title: "・減少使用電梯",
+      title: "減少使用電梯",
       icon: faStairs,
       iconColor: "#FF8D50",
       iconSize: "30px",
@@ -103,7 +103,7 @@ const EnergyManagement: React.FC = () => {
     {
       id: 5,
       content: "溫度設定為26～28度，且注意門窗有無確實關閉。",
-      title: "・夏日空調定溫",
+      title: "夏日空調定溫",
       icon: faWind,
       iconColor: "#FF8D50",
       iconSize: "30px",
@@ -111,7 +111,7 @@ const EnergyManagement: React.FC = () => {
     {
       id: 6,
       content: "提倡午休時段辦公室關燈。",
-      title: "・午休關燈節能",
+      title: "午休關燈節能",
       icon: faPowerOff,
       iconColor: "#FF8D50",
       iconSize: "30px",
@@ -197,15 +197,12 @@ const EnergyManagement: React.FC = () => {
             </table>
           </div>
           
-          <TabContainer goals={goals}>
+          <TabContainer goals={["2023", "2022"]}>
             <div data-goal="2023">
-              <ShortTermGoals />
+             <p className="content">2023 年各營運據點之能源消耗總量為 2293.14 GJ，外購電力占大宗，無採用再生能源。外購電力主要用於辦公事務設備，電力消耗占 89.08%；其餘為公務車之汽油使用為 250.37 GJ，占 10.92%。台北總部大樓能源消耗占 86.95%，其餘新莊、龍潭及台南三處辦事處因佔地面積小及人員較少，合計占比僅有 13.05%。2023 年度能源消耗量高於以往年度，能源密集度為 1.08 GJ/新台幣億元，主要係因營收成長人員相對增加，為因應實質需求，資訊部門擴增伺服器等硬體設備，以致用電量增加，而伴隨公司營收成長，商業往來趨於頻繁，公務車使用次數增加，故汽油耗用量隨之增加。</p>
             </div>
             <div data-goal="2022">
               <MidTermGoals />
-            </div>
-            <div data-goal="2021">
-              <LongTermGoals />
             </div>
           </TabContainer>
 

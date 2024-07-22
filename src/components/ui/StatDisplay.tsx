@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { animate, useInView } from "framer-motion";
 
 interface StatProps {
@@ -7,23 +7,25 @@ interface StatProps {
   decimals?: number;
 }
 
-const Stat: React.FC<StatProps> = ({ num, suffix, decimals = 0 }) => {
+export const Stat: React.FC<StatProps> = ({ num, suffix, decimals = 0 }) => {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || hasAnimated) return;
+
+    setHasAnimated(true);
 
     animate(0, num, {
-      duration: 2.5,
+      duration: 1.5,
       onUpdate(value) {
         if (!ref.current) return;
 
         ref.current.textContent = value.toFixed(decimals);
       },
     });
-  }, [num, decimals, isInView]);
-
+  }, [num, decimals, isInView, hasAnimated]);
   return (
     <>
       <span ref={ref} className="mr-1"></span>

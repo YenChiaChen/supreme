@@ -115,3 +115,21 @@
   color: #FFA500; /* Change the color as needed */
   font-size: 24px; /* Adjust the size as needed */
 }
+
+
+.white-card {
+  width: 300px;
+  height: 350px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+}
+
+.gradient {
+  background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #f7b560 0%, rgba(255, 255, 255, 0) 71.88%)
+}
+
+.shadow-round{
+  box-shadow: 0 8px 36px 0 rgba(0, 0, 0, 1);
+}

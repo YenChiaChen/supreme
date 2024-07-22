@@ -2,29 +2,16 @@ import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
 import TabContainer from "../../components/ui/TabContainer";
-import cols from "../../assets/img/testing/testcol.png";
-import hakimo from "../../assets/img/testing/hakimo.png";
-import hakimoProcess from "../../assets/img/testing/group64.png";
-import hakimoPercent from "../../assets/img/testing/hakimoPercent.png";
-import energycol from "../../assets/img/testing/energycol.png";
-import WaterConsumptionChart from "../../components/charts/WaterConsumptionChart";
-import Img01 from "../../assets/img/testing/greenhouse-gases-01.png";
-import Img02 from "../../assets/img/testing/greenhouse-gases-02.png";
+
 import Img03 from "../../assets/img/testing/greenhouse-gases-03.png";
 import {
-  faBinBottlesRecycle,
-  faBoxHeart,
-  faLightbulb,
   faLightbulbOn,
-  faMemoCircleCheck,
-  faPalletBoxes,
 } from "@fortawesome/pro-solid-svg-icons";
-import SlideUpList from "../../components/ui/SlideUpList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import TabContainerIcon from "../../components/ui/TabContainerIcon";
 import BarChart from "./GasChart";
-import LineChart from "./GasDensity";
 import Table from "../../components/ui/Table";
+import { GasChart2 } from "./GasChart";
+import { faBold, faBolt, faBus, faLeaf, faShippingFast, faTruck } from "@fortawesome/free-solid-svg-icons";
 const data = [
   { year: "2019", consumption: 0.532 },
   { year: "2020", consumption: 0.654 },
@@ -57,24 +44,22 @@ const GreenhouseGases: React.FC = () => {
 
   const Goal2023: React.FC = () => (
     <>
-      <p className="my-6 content">
-        本公司為了善盡地球公民的責任,響應國家淨零碳排之目標,自 2021
-        年起開始自主性溫室氣體盤查,主動揭露溫室氣 體排放資訊,2023
+      <p className="my-6 content">2023
         年度依循溫室氣體盤查議定書(GHG
-        Protocol)指引進行盤查作業,溫室氣體總排放量(範疇一+範疇 二)為 299.712
-        公噸 CO2e,主要來自於範疇二之電力排放,占比為
-        93.51%,其餘溫室氣體排放量來源為範疇一之公務車
-        燃料使用、冷媒、滅火器及化糞池,占比為 6.49%。與 2022
-        年相比呈現微幅增加情形,主要係因營收成長人員相對增加,
-        為因應實質需求,資訊部門擴增伺服器等硬體設備,以致用電量增加。
+        Protocol)指引進行盤查作業，溫室氣體總排放量(範疇一＋範疇二)為 299.712
+        公噸 CO2e，主要來自於範疇二之電力排放，占比為
+        93.51%，其餘溫室氣體排放量來源為範疇一之公務車
+        燃料使用、冷媒、滅火器及化糞池，占比為 6.49%。與 2022
+        年相比呈現微幅增加情形，主要係因營收成長人員相對增加，
+        為因應實質需求，資訊部門擴增伺服器等硬體設備，以致用電量增加。
         <br />
         <br />
-        為了瞭解企業營運過程中,價值鏈上下游活動的碳排放,針對範疇三進行自主性盤查,期望透過完整的溫室氣體盤查
-        作業,鑑別出最顯著的排放源,為溫室氣體減量與氣候轉型策略提供基礎數據。2023
-        年範疇三溫室氣體總量為 1,289.207 公噸
-        CO2e,排放源項目包含:與燃料和能源相關活動的排放(未涵蓋在範疇一或二)、運輸產生之間接溫室氣體排放(含
+        為了瞭解企業營運過程中，價值鏈上下游活動的碳排放，針對範疇三進行自主性盤查，期望透過完整的溫室氣體盤查
+        作業，鑑別出最顯著的排放源，為溫室氣體減量與氣候轉型策略提供基礎數據。2023
+        年範疇三溫室氣體總量為 1，289.207 公噸
+        CO2e，排放源項目包含:與燃料和能源相關活動的排放(未涵蓋在範疇一或二)、運輸產生之間接溫室氣體排放(含
         「貨物上/
-        下游運輸與分配」、「商務旅行」),其中以下游運輸和配送產生的排放為最大量,占範疇三總排放量之
+        下游運輸與分配」、「商務旅行」)，其中以下游運輸和配送產生的排放為最大量，占範疇三總排放量之
         69.51%。
       </p>
     </>
@@ -174,6 +159,7 @@ const GreenhouseGases: React.FC = () => {
           <p className="mt-xl sub-title text-center mb-12">
             範疇一及範疇二溫室氣體排放統計
           </p>
+          <BarChart />
           <Table columns={columns} data={data2} />
 
           <TabContainer goals={goals}>
@@ -197,7 +183,7 @@ const GreenhouseGases: React.FC = () => {
             </div>
             <div className="bg-blue p-12 rounded-xl flex-1 basis-1/2">
               <div className="flex flex-col text-dark_blue gap-6  text-center">
-                <FontAwesomeIcon icon={faLightbulbOn} className="h-[80px]" />
+                <FontAwesomeIcon icon={faBus} className="h-[80px]" />
                 <p>鼓勵搭乘大眾交通運輸或共乘</p>
               </div>
             </div>
@@ -206,6 +192,7 @@ const GreenhouseGases: React.FC = () => {
           <p className="mt-xl sub-title text-center">
             範疇三溫室氣體排放統計（自願揭露）
           </p>
+          <GasChart2 />
           <Table columns={columns} data={data} />
 
           <p className="mt-xl sub-title text-center mb-12">
@@ -214,25 +201,25 @@ const GreenhouseGases: React.FC = () => {
           <div className="flex justify-center gap-8">
             <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
               <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faLightbulbOn} className="h-[80px]" />
+                <FontAwesomeIcon icon={faLeaf} className="h-[80px]" />
                 <p>持續投入尋找新綠能產業代理機會</p>
               </div>
             </div>
             <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
               <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faLightbulbOn} className="h-[80px]" />
+                <FontAwesomeIcon icon={faTruck} className="h-[80px]" />
                 <p>選擇與提供綠色服務之運輸承攬業者合作</p>
               </div>
             </div>
             <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
               <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faLightbulbOn} className="h-[80px]" />
+                <FontAwesomeIcon icon={faBolt} className="h-[80px]" />
                 <p>評估採購綠電或購買綠色憑證</p>
               </div>
             </div>
             <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
               <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faLightbulbOn} className="h-[80px]" />
+                <FontAwesomeIcon icon={faShippingFast} className="h-[80px]" />
                 <p>產品出口合併提貨減少車輛往返</p>
               </div>
             </div>
@@ -241,17 +228,41 @@ const GreenhouseGases: React.FC = () => {
           <p className="mt-xl sub-title text-center mb-12">
             溫室氣體盤查外部查證
           </p>
-          <TabContainer goals={["2022", "2021"]}>
+          <TabContainer goals={["2023", "2022", "2021"]}>
+            <div data-goal="2023">
+              
+          <div className="overflow-x-auto mt-md">
+            <table className="min-w-full border-collapse">
+              <tbody>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">查證機構</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">安侯建業會計師務所</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">盤查範圍</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">範疇一級範疇二</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">保證等級</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">有限確信等級</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">查驗準則</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">ISAE 3410</td>
+                </tr>
+                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">盤查報告</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap"><a className="text-dark_blue font-semibold" target="_blank" href='http://www.supreme.com.tw/File/2022%E5%B9%B4%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E7%9B%A4%E6%9F%A5%E7%A2%BA%E4%BF%A1%E5%A0%B1%E5%91%8APwC.pdf'>檔案連結</a></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+            </div>
             <div data-goal="2022">
               
           <div className="overflow-x-auto mt-md">
             <table className="min-w-full border-collapse">
-              <thead className="bg-orange text-white content">
-                <tr>
-                  <th className="py-2 px-4 border border-white rounded-tl-lg">項目</th>
-                  <th className="py-2 px-4 border border-white rounded-tr-lg"></th>
-                </tr>
-              </thead>
               <tbody>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">查證機構</td>
@@ -282,12 +293,6 @@ const GreenhouseGases: React.FC = () => {
               
           <div className="overflow-x-auto mt-md">
             <table className="min-w-full border-collapse">
-              <thead className="bg-orange text-white content">
-                <tr>
-                  <th className="py-2 px-4 border border-white rounded-tl-lg">項目</th>
-                  <th className="py-2 px-4 border border-white rounded-tr-lg"></th>
-                </tr>
-              </thead>
               <tbody>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">查證機構</td>
@@ -303,7 +308,7 @@ const GreenhouseGases: React.FC = () => {
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">查驗準則</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">ISO 14064-1：2018<br />ISO 14064-3:2006</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">ISO 14064-1：2018<br />ISO 14064-3：2006</td>
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">盤查報告</td>

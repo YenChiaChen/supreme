@@ -242,7 +242,7 @@ const AuditCommittee: React.FC = () => {
                 <div className="flex flex-col gap-4">
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4 "
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">一、審閱財務報告</span>
@@ -253,7 +253,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">二、委任簽證會計師</span>
@@ -267,7 +267,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">
@@ -286,7 +286,7 @@ const AuditCommittee: React.FC = () => {
                 <div className="flex flex-col gap-4">
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">一、審閱財務報告</span>
@@ -297,7 +297,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">二、委任簽證會計師</span>
@@ -311,7 +311,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">
@@ -330,7 +330,7 @@ const AuditCommittee: React.FC = () => {
                 <div className="flex flex-col gap-4">
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">一、審閱財務報告</span>
@@ -341,7 +341,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">二、委任簽證會計師</span>
@@ -356,7 +356,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">
@@ -375,7 +375,7 @@ const AuditCommittee: React.FC = () => {
                 <div className="flex flex-col gap-4">
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">一、審閱財務報告</span>
@@ -386,7 +386,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">二、委任簽證會計師</span>
@@ -401,7 +401,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">
@@ -420,7 +420,7 @@ const AuditCommittee: React.FC = () => {
                 <div className="flex flex-col gap-4">
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">一、審閱財務報告</span>
@@ -431,7 +431,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">二、委任簽證會計師</span>
@@ -446,7 +446,7 @@ const AuditCommittee: React.FC = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className="collapse collapse-arrow shadow  p-4"
+                    className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
                       <span className="text-lg">

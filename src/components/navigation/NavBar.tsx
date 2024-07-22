@@ -7,7 +7,6 @@ import "./nav.css";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 const Nav: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -76,10 +75,10 @@ const Nav: React.FC = () => {
                       <Link to="/esg/performance">永續績效</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/esg/chairman-message">董事長的話</Link>
+                      <Link to="/esg/chairman-message">社會共榮</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/esg/blueprint">永續發展藍圖</Link>
+                      <Link to="/esg/blueprint">特別報導</Link>
                     </li>
                     <div className="arrow"></div>
                   </ul>
@@ -89,37 +88,84 @@ const Nav: React.FC = () => {
                 <Link to="/news">最新動態</Link>
               </li>
               <li className="nav-link">
-                <Link to="/society">社會共榮</Link>
-                <div className="dropdown">
-                  <ul>
-                    <li className="dropdown-link">
-                      <Link to="/society/policy">社會共榮政策</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link to="/society/education-culture">教育文化</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link to="/society/sports-activities">體育活動</Link>
-                    </li>
-                    <div className="arrow"></div>
-                  </ul>
-                </div>
-              </li>
-              <li className="nav-link">
                 <Link to="/enterprise">幸福企業</Link>
                 <div className="dropdown">
                   <ul>
                     <li className="dropdown-link">
-                      <Link to="/enterprise/talent-development">人才培育</Link>
+                      <Link to="/enterprise/hr-distribution">
+                        人力資源分佈
+                      </Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/enterprise/occupational-safety">職業安全衛生政策</Link>
+                      <Link to="#" className="flex gap-4">
+                        員工政策
+                        <FontAwesomeIcon
+                          icon={faAngleRight}
+                          className="text-orange"
+                        />
+                      </Link>
+                      <div className="dropdown second">
+                        <ul>
+                          <li className="dropdown-link">
+                            <Link to="/enterprise/welfare-care">
+                              福利措施與關懷
+                            </Link>
+                          </li>
+                          <li className="dropdown-link">
+                            <Link to="/enterprise/rights-protection">
+                              員工權益保障
+                            </Link>
+                          </li>
+                          <div className="arrow"></div>
+                        </ul>
+                      </div>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/enterprise/healthy-workplace">健康職場</Link>
+                      <Link to="#" className="flex gap-4">
+                      人才培育
+                        <FontAwesomeIcon
+                          icon={faAngleRight}
+                          className="text-orange"
+                        />
+                      </Link>
+                      <div className="dropdown second">
+                        <ul>
+                          <li className="dropdown-link">
+                            <Link to="/enterprise/diverse-growth">
+                            多元化成長
+                            </Link>
+                          </li>
+                          <li className="dropdown-link">
+                            <Link to="/enterprise/performance-compensation">
+                            績效檢核與薪酬
+                            </Link>
+                          </li>
+                          <div className="arrow"></div>
+                        </ul>
+                      </div>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/enterprise/human-rights-policy">人權政策</Link>
+                      <Link to="#" className="flex gap-4">
+                      友善職場
+                        <FontAwesomeIcon
+                          icon={faAngleRight}
+                          className="text-orange"
+                        />
+                      </Link>
+                      <div className="dropdown second">
+                        <ul>
+                          <li className="dropdown-link">
+                          <Link to="/enterprise/occupational-safety">職業安全衛生</Link>
+                          </li>
+                          <li className="dropdown-link">
+                          <Link to="/enterprise/healthy-workplace">健康職場</Link>
+                          </li>
+                          <li className="dropdown-link">
+                          <Link to="/enterprise/human-rights-policy">人權政策</Link>
+                          </li>
+                          <div className="arrow"></div>
+                        </ul>
+                      </div>
                     </li>
                     <div className="arrow"></div>
                   </ul>
@@ -130,10 +176,15 @@ const Nav: React.FC = () => {
                 <div className="dropdown">
                   <ul>
                     <li className="dropdown-link">
-                      <Link to="/sustainability/message-from-chairman">經營者的話</Link>
+                      <Link to="/sustainability/message-from-chairman">
+                        經營者的話
+                      </Link>
                     </li>
                     <li className="dropdown-link">
                       <Link to="/sustainability/governance">公司治理</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link to="/sustainability/ethical-management">誠信經營</Link>
                     </li>
                     <li className="dropdown-link">
                       <Link to="/sustainability/board">董事會</Link>
@@ -149,13 +200,19 @@ const Nav: React.FC = () => {
                       <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/sustainbility-committee">永續發展委員會</Link>
+                            <Link to="/sustainability/sustainbility-committee">
+                              永續發展委員會
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/compensation-committee">薪酬委員會</Link>
+                            <Link to="/sustainability/compensation-committee">
+                              薪酬委員會
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/audit-committee">審計委員會</Link>
+                            <Link to="/sustainability/audit-committee">
+                              審計委員會
+                            </Link>
                           </li>
                           <div className="arrow"></div>
                         </ul>
@@ -172,13 +229,19 @@ const Nav: React.FC = () => {
                       <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/stakeholder-engagement">利害關係人議合</Link>
+                            <Link to="/sustainability/stakeholder-engagement">
+                              利害關係人議合
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/key-topics">重大主題</Link>
+                            <Link to="/sustainability/key-topics">
+                              重大主題
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/questionnaire">利害關係人問卷</Link>
+                            <Link to="/sustainability/questionnaire">
+                              利害關係人問卷
+                            </Link>
                           </li>
                           <div className="arrow"></div>
                         </ul>
@@ -195,14 +258,20 @@ const Nav: React.FC = () => {
                       <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/risk-management">風險管理</Link>
+                            <Link to="/sustainability/risk-management">
+                              風險管理
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/information-security">資訊安全管理</Link>
+                            <Link to="/sustainability/information-security">
+                              資訊安全管理
+                            </Link>
                           </li>
-                          <li className="dropdown-link">
-                            <Link to="/sustainability/customer-privacy">顧客隱私保護</Link>
-                          </li>
+                          {/* <li className="dropdown-link">
+                            <Link to="/sustainability/customer-privacy">
+                              顧客隱私保護
+                            </Link>
+                          </li> */}
                           <div className="arrow"></div>
                         </ul>
                       </div>
@@ -218,10 +287,14 @@ const Nav: React.FC = () => {
                       <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/supply-chain">供應鏈管理</Link>
+                            <Link to="/sustainability/supply-chain">
+                              供應鏈管理
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/sustainability/product-customer-service">產品與客戶服務</Link>
+                            <Link to="/sustainability/product-customer-service">
+                              產品與客戶服務
+                            </Link>
                           </li>
                           <div className="arrow"></div>
                         </ul>
@@ -240,7 +313,9 @@ const Nav: React.FC = () => {
                       <Link to="/symbiosis/climate-change">氣候變遷對策</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/symbiosis/greenhouse-gases">溫室氣體 & 行動方案</Link>
+                      <Link to="/symbiosis/greenhouse-gases">
+                        溫室氣體 & 行動方案
+                      </Link>
                     </li>
                     <li className="dropdown-link">
                       <Link to="#" className="flex gap-4">
@@ -253,13 +328,19 @@ const Nav: React.FC = () => {
                       <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
-                            <Link to="/symbiosis/energy-management">能源管理</Link>
+                            <Link to="/symbiosis/energy-management">
+                              能源管理
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/symbiosis/waste-management">廢棄物管理</Link>
+                            <Link to="/symbiosis/waste-management">
+                              廢棄物管理
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/symbiosis/water-management">水資源管理</Link>
+                            <Link to="/symbiosis/water-management">
+                              水資源管理
+                            </Link>
                           </li>
                           <div className="arrow"></div>
                         </ul>

@@ -125,7 +125,7 @@ const InformationSecurity: React.FC = () => {
         </div>
 
         <div className="container mx-auto relative mt-md px-[10%]">
-          <div className="relative z-10 py-12 grid grid-cols-3 items-center">
+          <div className="relative z-10 py-24 grid grid-cols-3 items-center">
             <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative">
               <FontAwesomeIcon
                 icon={faBullseyeArrow}
@@ -229,7 +229,7 @@ const InformationSecurity: React.FC = () => {
               </thead>
               <tbody>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  <td className="py-2 px-12 border-b border-light_gray whitespace-pre-wrap font-semibold">
                     使用者權限管理
                   </td>
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
@@ -241,7 +241,7 @@ const InformationSecurity: React.FC = () => {
                   </td>
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  <td className="py-2 px-12 border-b border-light_gray whitespace-pre-wrap font-semibold">
                   網路通訊安全管理
                   </td>
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
@@ -255,7 +255,7 @@ const InformationSecurity: React.FC = () => {
                   </td>
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  <td className="py-2 px-12 border-b border-light_gray whitespace-pre-wrap font-semibold">
                   應用系統安全管理
                   </td>
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
@@ -279,7 +279,7 @@ const InformationSecurity: React.FC = () => {
                   </td>
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  <td className="py-2 px-12 border-b border-light_gray whitespace-pre-wrap font-semibold">
                   備援管理
                   </td>
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
@@ -290,7 +290,7 @@ const InformationSecurity: React.FC = () => {
                   </td>
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                  <td className="py-2 px-12 border-b border-light_gray whitespace-pre-wrap font-semibold">
                   資產管理
                   </td>
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">

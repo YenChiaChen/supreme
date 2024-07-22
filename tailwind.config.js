@@ -15,6 +15,14 @@ module.exports = {
         gray: '#f5f5f5',
         light_gray: '#D9D9D9',
       },
+      animation: {
+        'marquee': 'marquee 25s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '100%': { transform: 'translateX(-50%)' }
+        },
+      }
     },
   },
   plugins: [require('daisyui'),],
