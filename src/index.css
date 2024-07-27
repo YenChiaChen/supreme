@@ -10,18 +10,21 @@
   font-weight: 400;
   font-style: normal;
 }
+
 * {
   font-family: "Noto Sans TC", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 .content {
   font-size: 16px;
   letter-spacing: 0.03em;
   font-weight: 300;
   line-height: 2.25rem;
 }
-.notes{
+
+.notes {
   font-size: 15px;
   letter-spacing: 0.02em;
   font-weight: 300;
@@ -29,21 +32,24 @@
   color: #555555;
 
 }
+
 .sub-title {
   font-size: 32px;
   font-weight: 600;
-  color: #ff8d50;
   letter-spacing: 0.1em;
 }
-.side-title{
-  font-size:20px;
+
+.side-title {
+  font-size: 20px;
   letter-spacing: 0.1em;
   font-weight: 600;
-  color:#ff8d50
+  color: #ff8d50
 }
+
 .mt-md {
   margin-top: 50px;
 }
+
 .mt-xl {
   margin-top: 150px;
 }
@@ -62,9 +68,11 @@
 
 .draw-border {
   transition: color 0.25s 0.0833333333s;
-  
+
 }
-.draw-border::before, .draw-border::after {
+
+.draw-border::before,
+.draw-border::after {
   border: 0 solid transparent;
   box-sizing: border-box;
   content: "";
@@ -81,29 +89,35 @@
   border-right-width: 2px;
 }
 
-.draw-border::before, .sss:hover .draw-border::after {
+.draw-border::before,
+.sss:hover .draw-border::after {
   border-color: #D9D9D9;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
   height: 100%;
 }
+
 .sss:hover .draw-border::before {
   transition-delay: 0s, 0s, 0.25s;
 }
+
 .sss:hover .draw-border::after {
   transition-delay: 0s, 0.25s, 0s;
 }
 
 
-.floating{
+.floating {
   animation: float 5s ease-in-out infinite;
 
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0) rotate(-5deg);
   }
+
   50% {
     transform: translateY(-30px) rotate(5deg);
   }
@@ -112,8 +126,10 @@
 
 .custom-collapse .collapse-arrow::before,
 .custom-collapse .collapse-arrow::after {
-  color: #FFA500; /* Change the color as needed */
-  font-size: 24px; /* Adjust the size as needed */
+  color: #FFA500;
+  /* Change the color as needed */
+  font-size: 24px;
+  /* Adjust the size as needed */
 }
 
 
@@ -123,13 +139,78 @@
   border-radius: 30px;
   background: #e0e0e0;
   box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+    -15px -15px 30px #ffffff;
 }
 
 .gradient {
   background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #f7b560 0%, rgba(255, 255, 255, 0) 71.88%)
 }
 
-.shadow-round{
+.shadow-round {
   box-shadow: 0 8px 36px 0 rgba(0, 0, 0, 1);
+}
+
+
+.waves {
+  position: relative;
+  width: 100%;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+
+.s1 {
+  background: 
+    linear-gradient(180deg, #fff 40%, rgba(255, 255, 255, 0) 100%), 
+    radial-gradient(50% 50% at 50% 50%, #fff 0, rgba(255, 255, 255, 0) 100%), 
+    linear-gradient(75deg, #bfd7f0 19.7%, rgba(224, 230, 238, 30) 80.51%), 
+    linear-gradient(25.32deg, #f3ddfa 23.7%, rgba(210, 123, 61, 0) 85.02%), 
+    linear-gradient(140.23deg, #ebd1be -3.96%, rgba(210, 123, 61, 0) 59.99%), 
+    linear-gradient(194.04deg, #efca6f -17.13%, rgba(242, 204, 118, 0) 29.34%), 
+    linear-gradient(236.09deg, #f8dce5 4.2%, rgba(215, 140, 165, 0) 45.07%), #fff9f9;
+    background-attachment: fixed;
+  width: 100%;
+}
+
+
+.glow-shadow{
+  box-shadow: 15px 15px 30px #c9c9c9,
+  -15px -15px 30px #ffffff;
 }

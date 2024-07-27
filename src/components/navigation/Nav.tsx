@@ -1,106 +1,110 @@
-import React, { useEffect, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+
 import SupremeLogo from "../../assets/img/logo/supreme.png";
-import SupremeWhiteLogo from "../../assets/img/logo/supreme-white.png";
-import { Link } from "react-router-dom";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
+export function Nav() {
+  const [hovering, setHovering] = useState<number | null>(null);
+  const [popoverLeft, setPopoverLeft] = useState<number | null>(null);
+  const [popoverHeight, setPopoverHeight] = useState<number | null>(null);
+  const [visible, setVisible] = useState<boolean>(false);
 
-const navItems = [
-  { to: "/esg", label: "點亮永續" },
-  { to: "/society", label: "社會共榮" },
-  { to: "/enterprise", label: "幸福企業" },
-  { to: "/sustainability", label: "永續經營" },
-  { to: "/symbiosis", label: "永續共生" },
-];
+  const refs = useRef<(HTMLDivElement | null)[]>([]);
 
-const Nav: React.FC = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const onMouseEnter = (index: number, el: HTMLElement) => {
+    setHovering(index);
+    setPopoverLeft(el.getBoundingClientRect().left);
+    setVisible(true);
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight * 0.5) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+    if (hovering !== null) {
+      const menuElement = refs.current[hovering];
+      if (menuElement) {
+        setTimeout(() => {
+          setPopoverHeight(menuElement.offsetHeight);
+        }, 0);
       }
-    };
+    }
+  }, [hovering]);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const onMouseLeave = () => {
+    setVisible(false);
+    setTimeout(() => setHovering(null), 300);
+  };
 
   return (
-    <div
-      className={classNames(
-        "container shadow-md rounded-full flex justify-between items-center px-8 fixed mt-8 left-1/2 transform -translate-x-1/2 z-50 transition-colors duration-300",
-        {
-          "bg-white text-black": !scrolled,
-          "bg-orange text-white": scrolled,
-        }
-      )}
-    >
-      <div className="flex-shrink-0">
-        <div className="flex gap-6">
-          <a href="http://www.supreme.com.tw" target="_blank" rel="noreferrer">
-            <img
-              src={scrolled ? SupremeWhiteLogo : SupremeLogo}
-              alt="Supreme"
-              className={classNames("w-[160px]", {
-                "": !scrolled,
-                "pt-1": scrolled,
+    <div className="flex justify-between w-full">
+
+      
+      
+      <div className="flex gap-6 items-center">
+            <a
+              href="http://www.supreme.com.tw"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={ SupremeLogo}
+                alt="Supreme"
+                className={classNames("w-[160px]", {
+                })}
+              />
+            </a>
+            <Link
+              to="/"
+              className={classNames("text-[18px] border-l-[1px] pl-4", {
               })}
-            />
-          </a>
-          <Link
-            to="/"
-            className={classNames("text-[18px] border-l-[1px] pl-4", {
-              "border-black": !scrolled,
-              "border-white": scrolled,
-            })}
-          >
-            企業永續
-          </Link>
-        </div>
-      </div>
+            >
+              企業永續
+            </Link>
+          </div>
 
-      <div className="flex-grow text-center py-[20px] text-[16px] tracking-wider">
-        {navItems.map((item) => (
-          <Link
-            key={item.to}
-            to={item.to}
-            className={classNames(
-              "mx-2 border-b-[4px] border-transparent px-4 py-[17px] duration-300",
-              {
-                "hover:border-orange": !scrolled,
-                "hover:border-white": scrolled,
-              }
-            )}
+      <nav
+        onMouseLeave={onMouseLeave}
+        className="bg-white h-[50px] shadow-xl w-[50%] text-black items-start self-center flex max-w-full justify-between gap-5 my-auto max-md:flex-wrap max-md:justify-center"
+      >
+        <a
+          onMouseEnter={(event) => onMouseEnter(0, event.currentTarget)}
+          href="/products"
+          className="text-center text-base font-medium leading-6 tracking-wide self-stretch"
+        >
+          Products
+        </a>
+        <a
+          onMouseEnter={(event) => onMouseEnter(1, event.currentTarget)}
+          href="/solutions"
+          className="text-center text-base font-medium leading-6 tracking-wide self-stretch"
+        >
+          Solutions
+        </a>
+        {typeof hovering === "number" && (
+          <div
+            style={{
+              left: popoverLeft ?? "0",
+              height: popoverHeight ?? "auto",
+              opacity: visible ? 1 : 0,
+              transition: "left 0.3s ease-in-out, opacity 0.3s ease-in-out",
+              transform: "translateX(-30%)",
+            }}
+            className="transition-all absolute shadow bg-white p-5 rounded w-[600px] mt-6"
           >
-            {item.label}
-          </Link>
-        ))}
-      </div>
-
-      <div className="flex-shrink-0">
-        <div className="flex gap-6 items-center">
-          <p className="text-[16px] font-light">簡&nbsp; |&nbsp; EN</p>
-          <a
-            href="/download"
-            className={classNames(
-              "py-2 px-5 rounded-full text-[14px] duration-300",
-              {
-                "bg-orange text-white hover:bg-[#ff5a00]": !scrolled,
-                "bg-white text-black hover:scale-[1.05]": scrolled,
-              }
-            )}
-          >
-            永續報告書下載
-          </a>
-        </div>
-      </div>
+            <div
+              ref={(el) => (refs.current[0] = el)}
+              style={{ display: hovering === 0 ? "block" : "none" }}
+            >
+              <p className="h-[200px]">Products Menu Content</p>
+            </div>
+            <div
+              ref={(el) => (refs.current[1] = el)}
+              style={{ display: hovering === 1 ? "block" : "none" }}
+            >
+              <p className="h-[400px]">Solutions Menu Content</p>
+            </div>
+          </div>
+        )}
+      </nav>
+      <div>HH</div>
     </div>
   );
-};
-
-export default Nav;
+}

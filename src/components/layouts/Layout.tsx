@@ -4,9 +4,10 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../navigation/Footer';
 import Nav from '../navigation/NavBar';
 
+
 const Layout: React.FC = () => {
   return (
-    <div>
+    <div className=''>
      <Nav />
       <main className="">
         <Outlet />

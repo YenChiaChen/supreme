@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight * 0.5) {
-        setScrolled(true);
+        // setScrolled(true);
       } else {
         setScrolled(false);
       }
@@ -28,7 +28,7 @@ const Nav: React.FC = () => {
   return (
     <header
       className={classNames(
-        "container fixed top-12 left-1/2 -translate-x-1/2 shadow-xl z-50 rounded-full transition-colors duration-300 transform",
+        "fixed w-full shadow-xl z-50  duration-300 transform py-2",
         {
           "bg-white text-black": !scrolled,
           "bg-orange text-white": scrolled,
@@ -92,9 +92,7 @@ const Nav: React.FC = () => {
                 <div className="dropdown">
                   <ul>
                     <li className="dropdown-link">
-                      <Link to="/enterprise/hr-distribution">
-                        人力資源分佈
-                      </Link>
+                      <Link to="/enterprise/hr-distribution">人力資源分佈</Link>
                     </li>
                     <li className="dropdown-link">
                       <Link to="#" className="flex gap-4">
@@ -122,7 +120,7 @@ const Nav: React.FC = () => {
                     </li>
                     <li className="dropdown-link">
                       <Link to="#" className="flex gap-4">
-                      人才培育
+                        人才培育
                         <FontAwesomeIcon
                           icon={faAngleRight}
                           className="text-orange"
@@ -132,12 +130,12 @@ const Nav: React.FC = () => {
                         <ul>
                           <li className="dropdown-link">
                             <Link to="/enterprise/diverse-growth">
-                            多元化成長
+                              多元化成長
                             </Link>
                           </li>
                           <li className="dropdown-link">
                             <Link to="/enterprise/performance-compensation">
-                            績效檢核與薪酬
+                              績效檢核與薪酬
                             </Link>
                           </li>
                           <div className="arrow"></div>
@@ -146,7 +144,7 @@ const Nav: React.FC = () => {
                     </li>
                     <li className="dropdown-link">
                       <Link to="#" className="flex gap-4">
-                      友善職場
+                        友善職場
                         <FontAwesomeIcon
                           icon={faAngleRight}
                           className="text-orange"
@@ -155,13 +153,19 @@ const Nav: React.FC = () => {
                       <div className="dropdown second">
                         <ul>
                           <li className="dropdown-link">
-                          <Link to="/enterprise/occupational-safety">職業安全衛生</Link>
+                            <Link to="/enterprise/occupational-safety">
+                              職業安全衛生
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                          <Link to="/enterprise/healthy-workplace">健康職場</Link>
+                            <Link to="/enterprise/healthy-workplace">
+                              健康職場
+                            </Link>
                           </li>
                           <li className="dropdown-link">
-                          <Link to="/enterprise/human-rights-policy">人權政策</Link>
+                            <Link to="/enterprise/human-rights-policy">
+                              人權政策
+                            </Link>
                           </li>
                           <div className="arrow"></div>
                         </ul>
@@ -184,7 +188,9 @@ const Nav: React.FC = () => {
                       <Link to="/sustainability/governance">公司治理</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link to="/sustainability/ethical-management">誠信經營</Link>
+                      <Link to="/sustainability/ethical-management">
+                        誠信經營
+                      </Link>
                     </li>
                     <li className="dropdown-link">
                       <Link to="/sustainability/board">董事會</Link>
@@ -257,6 +263,11 @@ const Nav: React.FC = () => {
                       </Link>
                       <div className="dropdown second">
                         <ul>
+                          <li className="dropdown-link">
+                            <Link to="/sustainability/intellectual-property">
+                              智慧財產權管理
+                            </Link>
+                          </li>
                           <li className="dropdown-link">
                             <Link to="/sustainability/risk-management">
                               風險管理
@@ -338,9 +349,7 @@ const Nav: React.FC = () => {
                             </Link>
                           </li>
                           <li className="dropdown-link">
-                            <Link to="/symbiosis/water-management">
-                              水資源管理
-                            </Link>
+                            <Link to="">水資源管理</Link>
                           </li>
                           <div className="arrow"></div>
                         </ul>

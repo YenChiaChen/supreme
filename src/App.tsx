@@ -36,6 +36,8 @@ import RightsProtection from "./pages/enterprise/RightsProtection";
 import DiverseGrowth from "./pages/enterprise/DiverseGrowth";
 import PerformanceCompensation from "./pages/enterprise/PerformanceCompensation";
 import EthicalManagement from "./pages/sustainability/EthicalManagement";
+import Test from "./pages/maintain/test";
+
 function App() {
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
@@ -89,6 +91,8 @@ function App() {
 
 
         </Route>
+        <Route path="/test" element={<Test />} />
+
       </Routes>
     </BrowserRouter>
   );
