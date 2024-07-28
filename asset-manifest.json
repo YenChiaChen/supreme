@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.03496b3c.css",
-    "main.js": "/supreme/static/js/main.242bcd6f.js",
+    "main.css": "/supreme/static/css/main.b4d6e57e.css",
+    "main.js": "/supreme/static/js/main.257e25e5.js",
     "static/media/earth.png": "/supreme/static/media/earth.77f43f1b2f0f39833589.png",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
     "static/media/2022-3.png": "/supreme/static/media/2022-3.08830b312fc3f07fc77c.png",
@@ -49,14 +49,15 @@
     "static/media/product-customer-service-02.png": "/supreme/static/media/product-customer-service-02.b9e93a99a9bde944d264.png",
     "static/media/greenhouse-gases-03.png": "/supreme/static/media/greenhouse-gases-03.c76e1ead5fd2f588cc6d.png",
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
+    "static/media/boardStru.png": "/supreme/static/media/boardStru.56e898bad9fb031e88b5.png",
     "static/media/logo_mashup.png": "/supreme/static/media/logo_mashup.7a5db9278ef00bcc4e3f.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.03496b3c.css.map": "/supreme/static/css/main.03496b3c.css.map",
-    "main.242bcd6f.js.map": "/supreme/static/js/main.242bcd6f.js.map"
+    "main.b4d6e57e.css.map": "/supreme/static/css/main.b4d6e57e.css.map",
+    "main.257e25e5.js.map": "/supreme/static/js/main.257e25e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.03496b3c.css",
-    "static/js/main.242bcd6f.js"
+    "static/css/main.b4d6e57e.css",
+    "static/js/main.257e25e5.js"
   ]
 }
