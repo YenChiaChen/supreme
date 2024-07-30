@@ -8,13 +8,18 @@ interface GoalWrapperProps {
 interface GoalTableProps {
   goals: string[];
   children: React.ReactNode;
+  tabColor?: string;
 }
 
 const GoalWrapper: React.FC<GoalWrapperProps> = ({ goal, children }) => {
   return <div data-goal={goal}>{children}</div>;
 };
 
-const TabContainer: React.FC<GoalTableProps> = ({ goals, children }) => {
+const TabContainer: React.FC<GoalTableProps> = ({
+  goals,
+  children,
+  tabColor = "#FF8D50",
+}) => {
   const [selectedGoal, setSelectedGoal] = useState(goals[0]);
 
   return (
@@ -24,25 +29,23 @@ const TabContainer: React.FC<GoalTableProps> = ({ goals, children }) => {
           <div
             key={goal}
             onClick={() => setSelectedGoal(goal)}
-            className={`relative text-center px-6 font-semibold text-[18px] tracking-wide py-2 cursor-pointer group duration-300 ${
-              selectedGoal === goal
-                ? "text-orange"
-                : "text-[#D9D9D9] hover:text-orange"
-            }`}
+            className={`relative text-center px-6 font-semibold text-[18px] tracking-wide py-2 cursor-pointer group duration-300`}
+            style={{
+              color: selectedGoal === goal ? tabColor : '#D9D9D9',
+            }}
           >
             <span className="relative z-10">{goal}</span>
             <span
-              className={`absolute -bottom-[2px] left-0 w-full h-[2px] duration-300 ${
-                selectedGoal === goal
-                  ? "bg-orange"
-                  : "bg-transparent group-hover:bg-orange"
-              }`}
+              className="absolute -bottom-[2px] left-0 w-full h-[2px] duration-300"
+              style={{
+                backgroundColor: selectedGoal === goal ? tabColor : 'transparent',
+              }}
             ></span>
           </div>
         ))}
       </div>
       <div className="mt-[50px] tracking-wide">
-        <AnimatePresence mode='wait'>
+        <AnimatePresence mode="wait">
           {React.Children.map(children, (child) =>
             React.isValidElement(child) &&
             child.props["data-goal"] === selectedGoal ? (

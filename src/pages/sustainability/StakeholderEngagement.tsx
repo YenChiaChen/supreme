@@ -29,13 +29,13 @@ const Content: React.FC = () => (
     </p>
     <div className="border-t-[2px] border-b-[2px] border-light_gray mt-md flex flex-cols">
       <div className="grid grid-cols-[auto,1fr] w-full gap-x-24" >
-        <div className="text-orange text-xl py-6">・優先關注議題</div>
+        <div className="text-blue text-xl py-6">・優先關注議題</div>
         <div className="flex flex-wrap  gap-16 items-center content">
           <div>・產品與客戶服務</div>
           <div>・資訊安全</div>
           <div>・顧客隱私</div>
         </div>
-        <div className="text-orange text-xl py-6">・溝通方式</div>
+        <div className="text-blue text-xl py-6">・溝通方式</div>
         <div className="flex flex-wrap  gap-16 items-center content">
           <div>・不定期與主要客戶業務檢討</div>
           <div>・由專人處理相關申訴或爭議事項，以保障客戶之權益</div>
@@ -114,11 +114,11 @@ const StakeholderEngagement: React.FC = () => {
           </p>
 
           <div className="mt-24">
-            <TabContainerIcon goals={goals} icons={icons}>
+            <TabContainerIcon goals={goals} icons={icons} tabColor="#3B79E4">
               <div data-goal="客戶">
-               <div className="grid grid-cols-2 bg-gray rounded-[20px] border border-orange p-8">
-                <div className="border-r border-orange pr-8">
-                  <p className="border-b border-orange pb-4">溝通方式/頻率</p>
+               <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
+                <div className="border-r border-blue pr-8">
+                  <p className="border-b border-blue pb-4 font-semibold text-blue">溝通方式/頻率</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>不定期以電話、電子郵件保持溝通管道暢通</li>
                     <li>與主要客戶每週至少一次，依業務狀態、市場需求等召開實體檢討會議</li>
@@ -126,14 +126,14 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
                 </div>
                 <div className="ml-8">
-                  <p className="border-b border-orange pb-4 ">關注議題</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue ">關注議題</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>產品品質</li>
                     <li>價格/交期</li>
                   </ul>
 
                   
-                  <p className="border-b border-orange pb-4 mt-12">2023年利害關係人溝通實績</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">2023年利害關係人溝通實績</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>積極依客戶產品發展需求提供完整且即時的技術支援</li>
                     <li>積極協助處理客戶申訴或爭議事項</li>
@@ -143,9 +143,9 @@ const StakeholderEngagement: React.FC = () => {
                </div>
               </div>
               <div data-goal="供應商">
-               <div className="grid grid-cols-2 bg-gray rounded-[20px] border border-orange p-8">
-                <div className="border-r border-orange pr-8">
-                  <p className="border-b border-orange pb-4">溝通方式/頻率</p>
+               <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
+                <div className="border-r border-blue pr-8">
+                  <p className="border-b border-blue pb-4 font-semibold text-blue">溝通方式/頻率</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>不定期以電話、電子郵件保持溝通管道暢通</li>
                     <li>與主要客戶每週至少一次，依業務狀態、市場需求等召開實體檢討會議</li>
@@ -153,7 +153,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
                 </div>
                 <div className="ml-8">
-                  <p className="border-b border-orange pb-4 ">關注議題</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue ">關注議題</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>符合各項法規要求</li>
                     <li>工作環境安全</li>
@@ -163,7 +163,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
 
                   
-                  <p className="border-b border-orange pb-4 mt-12">2023年利害關係人溝通實績</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">2023年利害關係人溝通實績</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>選擇信譽卓越之供應商</li>
                     <li>與供應商溝通簽署「經營管理承諾書」，確認遵照各面向及責任商業聯盟行為準則之綱要標準經營企業</li>
@@ -173,9 +173,9 @@ const StakeholderEngagement: React.FC = () => {
                </div>
               </div>
               <div data-goal="員工">
-               <div className="grid grid-cols-2 bg-gray rounded-[20px] border border-orange p-8">
-                <div className="border-r border-orange pr-8">
-                  <p className="border-b border-orange pb-4">溝通方式/頻率</p>
+               <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
+                <div className="border-r border-blue pr-8">
+                  <p className="border-b border-blue pb-4 font-semibold text-blue">溝通方式/頻率</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>新人教育訓練</li>
                     <li>不定期公告各項員工福利事項(健檢、團險等)、福委會資訊（慶生會、電影欣賞等）、公司重要營運訊息、教育訓練課程資訊、年度績效管理作業等訊息</li>
@@ -186,7 +186,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
                 </div>
                 <div className="ml-8">
-                  <p className="border-b border-orange pb-4 ">關注議題</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue ">關注議題</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>法規遵循</li>
                     <li>誠信經營</li>
@@ -197,7 +197,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
 
                   
-                  <p className="border-b border-orange pb-4 mt-12">2023年利害關係人溝通實績</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">2023年利害關係人溝通實績</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>教育訓練總時數：3,527／H</li>
                     <li>人均時數：17.81／HR</li>
@@ -209,9 +209,9 @@ const StakeholderEngagement: React.FC = () => {
                </div>
               </div>
               <div data-goal="投資人">
-               <div className="grid grid-cols-2 bg-gray rounded-[20px] border border-orange p-8">
-                <div className="border-r border-orange pr-8">
-                  <p className="border-b border-orange pb-4">溝通方式/頻率</p>
+               <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
+                <div className="border-r border-blue pr-8">
+                  <p className="border-b border-blue pb-4 font-semibold text-blue">溝通方式/頻率</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>一年一次股東常會</li>
                     <li>一年二次法說會</li>
@@ -222,7 +222,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
                 </div>
                 <div className="ml-8">
-                  <p className="border-b border-orange pb-4 ">關注議題</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue ">關注議題</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>產業展望、公司競爭優勢及未來成長潛力</li>
                     <li>公司獲利能力及股利政策</li>
@@ -234,7 +234,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
 
                   
-                  <p className="border-b border-orange pb-4 mt-12">2023年利害關係人溝通實績</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">2023年利害關係人溝通實績</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>發布年度永續報告書</li>
                     <li>即時回覆股東來電諮詢</li>
@@ -247,9 +247,9 @@ const StakeholderEngagement: React.FC = () => {
                </div>
               </div>
               <div data-goal="政府與主管機關">
-               <div className="grid grid-cols-2 bg-gray rounded-[20px] border border-orange p-8">
-                <div className="border-r border-orange pr-8">
-                  <p className="border-b border-orange pb-4">溝通方式/頻率</p>
+               <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
+                <div className="border-r border-blue pr-8">
+                  <p className="border-b border-blue pb-4 font-semibold text-blue">溝通方式/頻率</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>不定期更新公司官網／公開資訊觀測站</li>
                     <li>一年一次股東常會年報</li>
@@ -258,14 +258,14 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
                 </div>
                 <div className="ml-8">
-                  <p className="border-b border-orange pb-4 ">關注議題</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue ">關注議題</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>報導具可靠性、及時性、透明性及符合相關規範</li>
                     <li>法令規章之遵循</li>
                   </ul>
 
                   
-                  <p className="border-b border-orange pb-4 mt-12">2023年利害關係人溝通實績</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">2023年利害關係人溝通實績</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>違反法令遭處份事件：0</li>
                     <li>發布年度永續報告書</li>
@@ -275,9 +275,9 @@ const StakeholderEngagement: React.FC = () => {
                </div>
               </div>
               <div data-goal="非營利組織">
-               <div className="grid grid-cols-2 bg-gray rounded-[20px] border border-orange p-8">
-                <div className="border-r border-orange pr-8">
-                  <p className="border-b border-orange pb-4">溝通方式/頻率</p>
+               <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
+                <div className="border-r border-blue pr-8">
+                  <p className="border-b border-blue pb-4 font-semibold text-blue">溝通方式/頻率</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>公司網站</li>
                     <li>公開資訊觀測站</li>
@@ -287,7 +287,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
                 </div>
                 <div className="ml-8">
-                  <p className="border-b border-orange pb-4 ">關注議題</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue ">關注議題</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>能源與水資源管理、廢棄物管理與回收</li>
                     <li>人文及特色教育發展</li>
@@ -297,7 +297,7 @@ const StakeholderEngagement: React.FC = () => {
                   </ul>
 
                   
-                  <p className="border-b border-orange pb-4 mt-12">2023年利害關係人溝通實績</p>
+                  <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">2023年利害關係人溝通實績</p>
                   <ul className="list-disc content pt-4 pl-6">
                     <li>辦理淨灘公益活動，總計共拾拾37.5公斤海洋廢棄物</li>
                     <li>志工參與捐血活動及自辦愛心捐血活動，共收集495袋捐血</li>

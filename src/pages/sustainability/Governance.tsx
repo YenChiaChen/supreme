@@ -6,11 +6,16 @@ import TabListGoal from "../../components/ui/TabListGoal";
 import Bg from "../../assets/img/bg/bg.png";
 import Img01 from "../../assets/img/bg/bg01.png";
 import Img02 from "../../assets/img/testing/board.png";
-import { faBuilding, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBuilding,
+  faCircleCheck,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
 import TabContainer from "../../components/ui/TabContainer";
 import TrainingTable from "../../components/ui/TrainingTable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullseyeArrow } from "@fortawesome/pro-solid-svg-icons";
 const Governance: React.FC = () => {
   const data = [
     {
@@ -260,7 +265,7 @@ const Governance: React.FC = () => {
 
   return (
     <div>
-      {/* <div className="w-full h-[65vh] min-h-[800px] bg-dark_blue">
+      {/* <div className="w-full h-[65vh] min-h-[800px] bg-blue">
           <div className="w-full h-full ">
           <div className="container h-full mx-auto px-[10%] grid grid-cols-2 gap-12">
             <div className="flex items-start justify-end flex-col">
@@ -296,14 +301,66 @@ const Governance: React.FC = () => {
             則，持續推動永續發展，提昇公司治理同時，積極實踐永續發展政策以符合
             ESG 之國際趨勢。
           </p>
-          <CardGrid cards={cards} />
+        </div>
+        <div className="container mx-auto relative mt-md px-[10%]">
+          <div className="relative z-10 py-24 grid grid-cols-3 items-center">
+            <div className="border-t-[2px] border-blue h-full flex  flex-col relative px-12">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-blue tracking-widest mt-12">
+                短期目標
+              </p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">
+                  落實各項永續發展項目之執行與董事會之監督及參與。
+                </li>
+              </ul>
+            </div>
+            <div className="border-t-[2px] border-blue h-full flex  flex-col relative px-12">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-blue tracking-widest mt-12">
+                中期目標
+              </p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">公司治理評鑑進入前５% 並獲得永續獎。</li>
+              </ul>
+            </div>
+            <div className="border-t-[2px] border-blue h-full flex  flex-col relative px-12">
+              <FontAwesomeIcon
+                icon={faBullseyeArrow}
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
+              />
+              <FontAwesomeIcon
+                icon={faPlay}
+                className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
+              />
+              <p className="text-2xl font-bold text-blue tracking-widest mt-12">
+                長期目標
+              </p>
+              <ul className="mt-6 ml-6  list-disc">
+                <li className="my-2">
+                  董事會成員具員工身分之董事占比降低至 25%。
+                </li>
+                <li className="my-2">女性董事比例提升至 25%。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="absolute top-0 left-0 w-[110%] bg-light_blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
+        </div>
+        <div className="container mx-auto px-[10%]">
           <p className="mt-xl sub-title text-center">各年度公司治理績效</p>
           <p className="mt-md content">
             推動誠信經營政策，宣導公司永續經營理念，舉辦誠信經營和防範內線交易講座、加強法令宣導，
             確實遵循法令規章，共創優良企業形象，並於 2022 年 11
             月經董事會決議通過，自願設置「永續發展委員會」，以因應公司治理及永續發展。
           </p>
-          <TabListGoal goals={goals} />
+          <TabListGoal goals={goals} color="#3B79E4" />
           <p className="mt-xl sub-title text-center">我們相信的根基</p>
           <div className="grid grid-cols-5 gap-20">
             <p className="mt-md content col-span-3">
@@ -333,11 +390,13 @@ const Governance: React.FC = () => {
             本公司透過總經理室專職推行公司治理相關業務，主要職責為提供董事執行業務所需之資料，與經營公司有關之最新法規發展，以協助董事遵循法令，並依法辦理董事會及股東會相關事宜。業經2019年8月13日董事會通過會計協理陳力行先生擔任公司治理主管，其具備公開發行公司股務主管工作經驗達三年以上，並依法令規定進行專業進修。
           </p>
 
-          <p className="mt-xl side-title">公司治理主管主要職責如下：</p>
+          <p className="mt-xl side-title !text-blue">
+            公司治理主管主要職責如下：
+          </p>
           <div className="mt-md">
             <SlideUpList items={items} />
           </div>
-          <p className="mt-xl side-title">
+          <p className="mt-xl side-title !text-blue">
             本公司之公司治理單位2022年業務執行情況如下：
           </p>
           <div className="mt-md">
@@ -345,11 +404,11 @@ const Governance: React.FC = () => {
           </div>
 
           <p className="mt-xl sub-title text-center">公司治理主管進修情形</p>
-          <TabContainer goals={goals2}>
+          <TabContainer goals={goals2} tabColor="#3B79E4">
             <div data-goal="2023">
               <div className="overflow-x-auto mt-md">
                 <table className="min-w-full border-collapse">
-                  <thead className="bg-orange text-white content">
+                  <thead className="bg-blue text-white content">
                     <tr>
                       <th className="py-2 px-4 border border-white rounded-tl-lg">
                         進修機構
@@ -532,12 +591,173 @@ const Governance: React.FC = () => {
               </div>
             </div>
             <div data-goal="2022">
-              <MidTermGoals />
+              <div className="overflow-x-auto mt-md">
+                <table className="min-w-full border-collapse">
+                  <thead className="bg-blue text-white content">
+                    <tr>
+                      <th className="py-2 px-4 border border-white rounded-tl-lg">
+                        進修機構
+                      </th>
+                      <th className="py-2 px-4 border border-white">
+                        課程名稱
+                      </th>
+                      <th className="py-2 px-4 border border-white">
+                        進修日期
+                      </th>
+                      <th className="py-2 px-4 border border-white rounded-tr-lg">
+                        進修時數
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        會計研究發展基金會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        企業財報編製常見缺失與內稽內控法令遵循實務
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/03/10
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        6
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        證券交易所
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        國際雙峰會線上論壇
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/05/04
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        證券暨期貨市場發展基金會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        111年度防範內線交易宣導會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/06/10
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        3
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        財團法人台灣金融研訓院
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        公司治理暨永續經營學習班（第19期）
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/06/22
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        3
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        中華公司治理協會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        非合併購併之攻防與公司負責人責任
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/08/11
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        6
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        證券交易所
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022年上市公司—獨立董事及審計委員會行使職權參考指引發布暨董監宣導會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/10/11
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        3
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        中華公司治理協會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        第18屆(2022)公司治理高峰論壇—提升董事職能落實公司永續治理
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/10/19
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        6
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        財團法人台灣金融研訓院
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        公司治理暨企業永續經營研習班—企業永續經營及國內外稅務趨勢
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/10/25
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        3
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        中華公司治理協會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        富邦產險ESG趨勢與風險管理研討會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/11/03
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        3
+                      </td>
+                    </tr>
+                    <tr className="content bg-white">
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        證券暨期貨市場發展基金會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        上市櫃公司—衍生性商品交易策略與市場展望研討會
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        2022/11/11
+                      </td>
+                      <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
+                        3
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div data-goal="2021">
               <div className="overflow-x-auto mt-md">
                 <table className="min-w-full border-collapse">
-                  <thead className="bg-orange text-white content">
+                  <thead className="bg-blue text-white content">
                     <tr>
                       <th className="py-2 px-4 border border-white rounded-tl-lg">
                         進修機構

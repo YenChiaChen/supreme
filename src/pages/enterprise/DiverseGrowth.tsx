@@ -129,60 +129,53 @@ const DiverseGrowth: React.FC = () => {
           
           <div className="w-full flex mt-md justify-between gap-4">
             {cardData.map((data, index) => (
-              <HoverCard key={index} data={data} />
+              <HoverCard key={index} data={data} color='#FF507C' />
             ))}
           </div>
           <p className="mt-xl text-center sub-title">多元職涯發展</p>
           <p className="mt-md content">
             本公司十分重視員工之培訓和學習計劃，期望能和員工以長遠的目標共同成長，因此提供職業規劃和發展計劃，協助員工確立長期職業發展目標和方向。提供內部調動和轉職機會，讓員工可以在公司內部尋找新的職業發展機會，包括跨部門調動、工作輪調、跨國調動等。倘若當公司面臨需要進行組織重組或裁員時，公司會提供適應性培訓和協助，如職業轉型培訓及就業輔導等，確保員工能夠順利過渡到新的工作環境中。
           </p>
-          <p className="tracking-wide text-orange font-semibold text-[20px] text-center mt-xl">
+          <p className="tracking-wide text-pink font-semibold text-[20px] text-center mt-xl">
           區塊鏈與密碼貨幣課程
           </p>
           <div className="flex gap-12 mt-md justify-center">
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 -rotate-[4deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
+           
               <img
                 src={BlockChain01}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className="w-[500px] h-[300px] object-cover"
               />
-            </div>
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 rotate-[4deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
               <img
                 src={BlockChain02}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className="w-[500px] h-[300px] object-cover"
               />
-            </div>
           </div>
 
           
-          <p className="tracking-wide text-orange font-semibold text-[20px] text-center mt-xl">
+          <p className="tracking-wide text-pink font-semibold text-[20px] text-center mt-xl">
           策略式銷售與談判成交技巧課程
           </p>
           <div className="flex gap-12 mt-md justify-center">
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 -rotate-[4deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
               <img
                 src={Sells01}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className="w-[500px] h-[300px] object-cover"
               />
-            </div>
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 rotate-[4deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
               <img
                 src={Sells02}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className="w-[500px] h-[300px] object-cover"
               />
-            </div>
           </div>
           <p className="mt-xl text-center sub-title">年度執行情形報告</p>
-          <TabContainer goals={["2023", "2022"]}>
+          <TabContainer goals={["2023", "2022"]} tabColor="#FF507C">
             <div data-goal="2023">
-            <p className="text-orange text-[18px] tracking-widest font-semibold">2023 年度員工受訓內部課程</p>
+            <p className="text-pink text-[18px] tracking-widest font-semibold">2023 年度員工受訓內部課程</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th className="border border-white px-4 py-2 rounded-tl-2xl">類別</th>
                 <th className="border border-white px-4 py-2">上課日期</th>
                 <th className="border border-white px-4 py-2">課程名稱</th>
@@ -293,15 +286,15 @@ const DiverseGrowth: React.FC = () => {
           <p className="notes mt-1">註: 每年以四大類別來發展教育訓練內容，表格中揭露內容以本年度亮點課程為主。</p>
 
           
-          <p className="text-orange text-[18px] tracking-widest font-semibold mt-md">2023 年度各層級員工受訓（內部＋外部）時數與性別比</p>
+          <p className="text-pink text-[18px] tracking-widest font-semibold mt-md">2023 年度各層級員工受訓（內部＋外部）時數與性別比</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th className="border border-white px-4 py-2 rounded-tl-2xl" rowSpan={2}>類別</th>
                 <th className="border border-white px-4 py-2" colSpan={3}>總受訓時數 ( 小時 )</th>
                 <th className="border border-white px-4 py-2 rounded-tr-2xl" colSpan={3}>每人平均受訓時數 ( 小時 )</th>
               </tr>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th className="border border-white px-4 py-2">男性</th>
                 <th className="border border-white px-4 py-2">女性</th>
                 <th className="border border-white px-4 py-2">合計</th>
@@ -344,10 +337,10 @@ const DiverseGrowth: React.FC = () => {
           <p className="notes mt-1">註1： 主管定義為6職等以上。<br />註2： 統計涵蓋範圍包含台北總部及新莊、龍潭、新竹、台南4處辦事處。<br/>註3： 平均受訓時數=各類別總訓練時數/各類別2023.12.31員工人數。</p>
             </div>
             <div data-goal="2022">
-              <p className="text-orange text-[18px] tracking-widest font-semibold">2022 年度員工受訓課程</p>
+              <p className="text-pink text-[18px] tracking-widest font-semibold">2022 年度員工受訓課程</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th className="border border-white px-4 py-2 rounded-tl-2xl">類別</th>
                 <th className="border border-white px-4 py-2">課程名稱</th>
                 <th className="border border-white px-4 py-2">參與對象</th>
@@ -396,15 +389,15 @@ const DiverseGrowth: React.FC = () => {
           <p className="notes mt-1">註 : 每年以四大類別來發展教育訓練內容，表格中揭露內容以本年度亮點課程為主。</p>
 
           
-          <p className="text-orange text-[18px] tracking-widest font-semibold mt-md">2022 年度各層級員工受訓時數與性別比</p>
+          <p className="text-pink text-[18px] tracking-widest font-semibold mt-md">2022 年度各層級員工受訓時數與性別比</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th className="border border-white px-4 py-2 rounded-tl-2xl" rowSpan={2}>類別</th>
                 <th className="border border-white px-4 py-2" colSpan={2}>總受訓時數 ( 小時 )</th>
                 <th className="border border-white px-4 py-2 rounded-tr-2xl" colSpan={2}>每人平均受訓時數 ( 小時 )</th>
               </tr>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th className="border border-white px-4 py-2">男性</th>
                 <th className="border border-white px-4 py-2">女性</th>
                 <th className="border border-white px-4 py-2">男性</th>

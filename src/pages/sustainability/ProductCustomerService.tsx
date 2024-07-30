@@ -2,14 +2,40 @@ import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
 import img01 from "../../assets/img/testing/product-customer-service-01.png";
-import img02 from "../../assets/img/testing/product-customer-service-02.png";
+import Table from "../../components/ui/Table";
 const ProductCustomerService: React.FC = () => {
   const breadcrumbItems = [
     { label: "永續經營", href: "/sustainability" },
     { label: "永續供應鏈" },
     { label: "產品與客戶服務" },
   ];
+  const columns = [
+    { header: "年度項目", accessor: "item" },
+    { header: "2020年", accessor: "year2020" },
+    { header: "2021年", accessor: "year2021" },
+    { header: "2022年", accessor: "year2022" },
+  ];
 
+  const data = [
+    {
+      item: "研發費用(A)",
+      year2020: "20,688",
+      year2021: "29,522",
+      year2022: "88,789",
+    },
+    {
+      item: "營業收入淨額(B)",
+      year2020: "48,277,022",
+      year2021: "91,147,824",
+      year2022: "78,790,630",
+    },
+    {
+      item: "研發費用佔營業收入淨額比率(A)/(B)",
+      year2020: "0.04%",
+      year2021: "0.03%",
+      year2022: "0.11%",
+    },
+  ];
 
   return (
     <div>
@@ -43,30 +69,28 @@ const ProductCustomerService: React.FC = () => {
             本公司的競爭優勢為即時提供客戶需求及掌握關鍵技術發展趨勢，研發部門專責開發新一代產品之應用技術，創新產品應用領域，同時掌握關鍵技術發展趨勢以及客戶未來需求走向，提供有利的市場資訊及專業的技術支援，協助客戶產品整合規劃，解決設計、生產上的問題，並以提供整體設計方案為目標。
           </p>
           <div className="mt-md">
-            <div tabIndex={0} className="collapse collapse-arrow shadow  p-4">
+            <div tabIndex={0} className="collapse collapse-arrow shadow text-blue  p-4">
               <div className="collapse-title flex">
                 <span className="text-lg">未來研發計畫及投入之研發費用</span>
               </div>
-              <div className="collapse-content content">
+              <div className="collapse-content content text-black">
                 <>
                   <p>
                     2022年度依消費性電子產品市場需求訂定不同之研發專案，研發費用計投入新台幣88,789仟元，預計2023
                     年度將再投入約80,000仟元持續開發快篩試劑、試劑檢測儀、醫療雲端服務、電動車電池組、EXN交換站及影像產品研發與製造等產品。近三年個體財務報告所載之累計投入研發費用：
                   </p>
-                  <img
-                    src={img02}
-                    className="max-w-[800px] w-full mt-md"
-                    alt="img"
-                  />
+                  <div className="mt-4">
+                    <Table columns={columns} data={data} color="#3B79E4" />
+                  </div>
                 </>
               </div>
             </div>
 
-            <div tabIndex={0} className="collapse collapse-arrow shadow  p-4">
+            <div tabIndex={0} className="collapse collapse-arrow shadow text-blue  p-4">
               <div className="collapse-title flex">
                 <span className="text-lg">重大創新技術開發</span>
               </div>
-              <div className="collapse-content content">
+              <div className="collapse-content content text-black">
                 目前持續研發之新產品為全民健康快速篩檢系統、試劑檢測儀、醫療雲端服務、次世代生物科技、電動車電池組、雲端能源交換管理系統(EnergyeXchangeNetwork)、安全性鋰電池材料、低電壓電力推進系統整合方案及大型儲能設備與能源管理系統(EMS)等產品。
                 對公司績效的貢獻度，而給予合理報酬，相關績效考核及薪酬合理性均經薪資報酬委員會及董事會審核，並隨
                 時視實際經營狀況及法令適時檢討酬金制度，以謀公司永續經營與風險控管之平衡。依本公司章程第二十條，
@@ -75,11 +99,11 @@ const ProductCustomerService: React.FC = () => {
               </div>
             </div>
 
-            <div tabIndex={0} className="collapse collapse-arrow shadow  p-4">
+            <div tabIndex={0} className="collapse collapse-arrow shadow text-blue  p-4">
               <div className="collapse-title flex">
                 <span className="text-lg">完成 ISO-13485 的認證</span>
               </div>
-              <div className="collapse-content content">
+              <div className="collapse-content content text-black">
                 研發部門成立迄今，除以提供客戶技術支援外，亦積極尋求新產品的合作開發案，以多元化的產品應用觀念與其核心關鍵技術，同時導入系統整合設計，協助客戶用最短的時間及最有效率的方式，完成產品開發與量產，帶來新商機；另外在遠距智慧醫療產品線的布建需求下，完成ISO-13485的認證，以利後續相關服務及產品的銷售推動，目前已取得科專計畫及專利項目。(EnergyeXchangeNetwork)、安全性鋰電池材料、低電壓電力推進系統整合方案及大型儲能設備與能源管理系統(EMS)等產品。
                 對公司績效的貢獻度，而給予合理報酬，相關績效考核及薪酬合理性均經薪資報酬委員會及董事會審核，並隨
                 時視實際經營狀況及法令適時檢討酬金制度，以謀公司永續經營與風險控管之平衡。依本公司章程第二十條，

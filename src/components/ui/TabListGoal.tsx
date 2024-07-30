@@ -8,9 +8,10 @@ interface Goal {
 
 interface TabTableProps {
   goals: Record<string, Goal[]>;
+  color?: string;
 }
 
-const TabListGoal: React.FC<TabTableProps> = ({ goals }) => {
+const TabListGoal: React.FC<TabTableProps> = ({ goals, color='#FF8D50' }) => {
   const [selectedGoal, setSelectedGoal] = useState(Object.keys(goals)[Object.keys(goals).length - 1]);
 
 
@@ -44,19 +45,14 @@ const TabListGoal: React.FC<TabTableProps> = ({ goals }) => {
             <div
               key={goal}
               onClick={() => handleGoalClick(goal)}
-              className={`relative text-center px-6 font-semibold text-[18px] tracking-wide py-2 cursor-pointer group duration-300 ${
-                selectedGoal === goal
-                  ? "text-orange"
-                  : "text-[#D9D9D9] hover:text-orange"
-              }`}
+              className={`relative text-center px-6 font-semibold text-[18px] tracking-wide py-2 cursor-pointer group duration-300 `}
+              style={{color: selectedGoal === goal ? color : '#d9d9d9'}}
             >
               <span className="relative z-10">{goal}</span>
               <span
-                className={`absolute -bottom-[2px] left-0 w-full h-[2px] duration-300 ${
-                  selectedGoal === goal
-                    ? "bg-orange"
-                    : "bg-transparent group-hover:bg-orange"
-                }`}
+                className={`absolute -bottom-[2px] left-0 w-full h-[2px] duration-300 `}
+                
+              style={{backgroundColor: selectedGoal === goal ? color : '#d9d9d9'}}
               ></span>
             </div>
           ))}
@@ -80,7 +76,7 @@ const TabListGoal: React.FC<TabTableProps> = ({ goals }) => {
                   {item.highlight ? (
                     <>
                       <p className="col-span-9 content">{item.description}</p>
-                      <p className="col-span-3 text-right font-bold text-orange text-[24px]">
+                      <p className="col-span-3 text-right font-bold text-[24px]" style={{color: color}}>
                         {item.highlight}
                       </p>
                     </>

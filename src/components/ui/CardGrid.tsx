@@ -5,15 +5,16 @@ interface CardContent {
   subtitle: string;
   description: string;
   span: number;
+  icon?: React.ReactNode; // 可选的 icon 属性
 }
 
 interface CardGridProps {
   cards: CardContent[];
+  iconColor?: string;
+  color?: string;
 }
 
-const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
-
-
+const CardGrid: React.FC<CardGridProps> = ({ cards, color = '#f5f5f5', iconColor='#ffffff' }) => {
   const renderDescriptionWithLineBreaks = (text: string) => {
     return text.split('\n').map((line, index) => (
       <React.Fragment key={index}>
@@ -28,16 +29,19 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
       {cards.map((card, index) => (
         <div
           key={index}
-          className="bg-[#f5f5f5] rounded-[30px] flex flex-col p-8 pt-24 hover:bg-blue duration-500 hover:scale-[1.1] hover:shadow-xl"
-          style={{ gridColumn: `span ${card.span}` }}
+          className="rounded-[30px] flex flex-col p-8 pt-10"
+          style={{ gridColumn: `span ${card.span}`, backgroundColor: color,  }}
         >
+          {card.icon && <div className="mb-4 text-[80px] flex justify-end" style={{color: iconColor}}>{card.icon}</div>} {/* 有条件地渲染 icon */}
           <p className="text-[32px] font-semibold">
             {card.title}
             <br />
             {card.subtitle}
           </p>
           <div className="h-[1px] w-[60%] bg-black my-6"></div>
-          <p className="text-[14px] font-light tracking-wider">{renderDescriptionWithLineBreaks(card.description)}</p>
+          <p className="text-[14px] font-light tracking-wider">
+            {renderDescriptionWithLineBreaks(card.description)}
+          </p>
         </div>
       ))}
     </div>

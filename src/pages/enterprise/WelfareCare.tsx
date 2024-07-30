@@ -50,12 +50,13 @@ const WelfareCare: React.FC = () => {
           <TabContainerIcon
             goals={["員工保障", "獎酬福利", "各項補助", "快樂職場", "休假制度"]}
             icons={icons}
+            tabColor="#FF507C"
           >
             <div data-goal="員工保障">
               <table className="border-t-[2px] border-light_gray w-full">
                 <tbody>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       享健保、勞保、退休金提撥
                     </td>
                     <td className="py-8 text-[16px]">
@@ -63,7 +64,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       職災保險
                     </td>
                     <td className="py-8 text-[16px]">
@@ -73,7 +74,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       員工團體保險
                     </td>
                     <td className="py-8 text-[16px]">
@@ -85,7 +86,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       急難救助
                     </td>
                     <td className="py-8 text-[16px]">
@@ -99,7 +100,7 @@ const WelfareCare: React.FC = () => {
               <table className="border-t-[2px] border-light_gray w-full">
                 <tbody>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       年節獎金
                     </td>
                     <td className="py-8 text-[16px]">
@@ -107,13 +108,13 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       生日禮金
                     </td>
                     <td className="py-8 text-[16px]">於員工生日時給予禮金。</td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       結婚禮金
                     </td>
                     <td className="py-8 text-[16px]">
@@ -121,7 +122,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       生育禮金
                     </td>
                     <td className="py-8 text-[16px]">
@@ -129,7 +130,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       喪葬禮金
                     </td>
                     <td className="py-8 text-[16px]">
@@ -137,7 +138,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       持股信託
                     </td>
                     <td className="py-8 text-[16px]">
@@ -145,7 +146,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       績效獎金
                     </td>
                     <td className="py-8 text-[16px]">
@@ -153,7 +154,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       年終獎金
                     </td>
                     <td className="py-8 text-[16px]">
@@ -168,7 +169,7 @@ const WelfareCare: React.FC = () => {
               <table className="border-t-[2px] border-light_gray w-full">
                 <tbody>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       業務人員手機、油資費用、停車費補助
                     </td>
                     <td className="py-8 text-[16px]">
@@ -176,13 +177,13 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       員工筆電補助
                     </td>
                     <td className="py-8 text-[16px]">提供業務人員筆電補助。</td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       退休金
                     </td>
                     <td className="py-8 text-[16px]">依法提撥勞工退休金。</td>
@@ -194,7 +195,7 @@ const WelfareCare: React.FC = () => {
               <table className="border-t-[2px] border-light_gray w-full">
                 <tbody>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       人性化的上、下班彈性出勤制度
                     </td>
                     <td className="py-8 text-[16px]">
@@ -202,7 +203,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       多元化的公司活動
                     </td>
                     <td className="py-8 text-[16px]">
@@ -216,7 +217,7 @@ const WelfareCare: React.FC = () => {
               <table className="border-t-[2px] border-light_gray w-full">
                 <tbody>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       週休二日
                     </td>
                     <td className="py-8 text-[16px]">
@@ -225,7 +226,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       特休 / 年假
                     </td>
                     <td className="py-8 text-[16px]">
@@ -233,7 +234,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       男性員工陪產假
                     </td>
                     <td className="py-8 text-[16px]">
@@ -241,7 +242,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       女性生理假
                     </td>
                     <td className="py-8 text-[16px]">
@@ -250,7 +251,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
-                    <td className="py-8 font-bold text-orange text-[18px] align-center whitespace-pre pr-12">
+                    <td className="py-8 font-bold text-pink text-[18px] align-center whitespace-pre pr-12">
                       家庭照顧假
                     </td>
                     <td className="py-8 text-[16px]">

@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 import Footer from '../navigation/Footer';
 import Nav from '../navigation/NavBar';
+import { NavMega } from '../navigation/NavMega';
 
 
 const Layout: React.FC = () => {

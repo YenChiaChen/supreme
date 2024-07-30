@@ -3,7 +3,6 @@ import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
 import TabContainer from "../../components/ui/TabContainer";
 
-import Img03 from "../../assets/img/testing/greenhouse-gases-03.png";
 import {
   faLightbulbOn,
 } from "@fortawesome/pro-solid-svg-icons";
@@ -62,11 +61,6 @@ const GreenhouseGases: React.FC = () => {
         下游運輸與分配」、「商務旅行」)，其中以下游運輸和配送產生的排放為最大量，占範疇三總排放量之
         69.51%。
       </p>
-    </>
-  );
-  const CC: React.FC = () => (
-    <>
-      <img src={Img03} className="max-w-[700px] mt-md" alt="Energy " />
     </>
   );
 
@@ -160,9 +154,9 @@ const GreenhouseGases: React.FC = () => {
             範疇一及範疇二溫室氣體排放統計
           </p>
           <BarChart />
-          <Table columns={columns} data={data2} />
+          <Table columns={columns} data={data2} color="#3BC376" />
 
-          <TabContainer goals={goals}>
+          <TabContainer goals={goals} tabColor="#3BC376">
             <div data-goal="2023">
               <Goal2023 />
             </div>
@@ -175,15 +169,15 @@ const GreenhouseGases: React.FC = () => {
             範疇一及範疇二之減量行動方案
           </p>
           <div className="flex justify-center gap-8">
-            <div className="bg-blue p-12 rounded-xl flex-1 basis-1/2">
-              <div className="flex flex-col text-dark_blue gap-6  text-center">
-                <FontAwesomeIcon icon={faLightbulbOn} className="h-[80px]" />
+            <div className="bg-light_green p-12 rounded-xl flex-1 basis-1/2">
+              <div className="flex flex-col text-[18px] gap-6  text-center">
+                <FontAwesomeIcon icon={faLightbulbOn} className="h-[80px] text-green  text-green " />
                 <p>督促大樓公共區域採用節能設備</p>
               </div>
             </div>
-            <div className="bg-blue p-12 rounded-xl flex-1 basis-1/2">
-              <div className="flex flex-col text-dark_blue gap-6  text-center">
-                <FontAwesomeIcon icon={faBus} className="h-[80px]" />
+            <div className="bg-light_green p-12 rounded-xl flex-1 basis-1/2">
+              <div className="flex flex-col text-[18px] gap-6  text-center">
+                <FontAwesomeIcon icon={faBus} className="h-[80px] text-green" />
                 <p>鼓勵搭乘大眾交通運輸或共乘</p>
               </div>
             </div>
@@ -193,33 +187,33 @@ const GreenhouseGases: React.FC = () => {
             範疇三溫室氣體排放統計（自願揭露）
           </p>
           <GasChart2 />
-          <Table columns={columns} data={data} />
+          <Table columns={columns} data={data} color="#3BC376" />
 
           <p className="mt-xl sub-title text-center mb-12">
             範疇三減量行動方案
           </p>
           <div className="flex justify-center gap-8">
-            <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
-              <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faLeaf} className="h-[80px]" />
+            <div className="bg-light_green p-12 rounded-xl flex-1 basis-1/4">
+              <div className="flex flex-col text-[18px]  gap-6 text-center">
+                <FontAwesomeIcon icon={faLeaf} className="h-[80px] text-green" />
                 <p>持續投入尋找新綠能產業代理機會</p>
               </div>
             </div>
-            <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
-              <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faTruck} className="h-[80px]" />
+            <div className="bg-light_green p-12 rounded-xl flex-1 basis-1/4">
+              <div className="flex flex-col text-[18px]  gap-6 text-center">
+                <FontAwesomeIcon icon={faTruck} className="h-[80px] text-green" />
                 <p>選擇與提供綠色服務之運輸承攬業者合作</p>
               </div>
             </div>
-            <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
-              <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faBolt} className="h-[80px]" />
+            <div className="bg-light_green p-12 rounded-xl flex-1 basis-1/4">
+              <div className="flex flex-col text-[18px]  gap-6 text-center">
+                <FontAwesomeIcon icon={faBolt} className="h-[80px] text-green" />
                 <p>評估採購綠電或購買綠色憑證</p>
               </div>
             </div>
-            <div className="bg-blue p-12 rounded-xl flex-1 basis-1/4">
-              <div className="flex flex-col text-dark_blue gap-6 text-center">
-                <FontAwesomeIcon icon={faShippingFast} className="h-[80px]" />
+            <div className="bg-light_green p-12 rounded-xl flex-1 basis-1/4">
+              <div className="flex flex-col text-[18px]  gap-6 text-center">
+                <FontAwesomeIcon icon={faShippingFast} className="h-[80px] text-green" />
                 <p>產品出口合併提貨減少車輛往返</p>
               </div>
             </div>
@@ -228,7 +222,7 @@ const GreenhouseGases: React.FC = () => {
           <p className="mt-xl sub-title text-center mb-12">
             溫室氣體盤查外部查證
           </p>
-          <TabContainer goals={["2023", "2022", "2021"]}>
+          <TabContainer goals={["2023", "2022", "2021"]} tabColor="#3BC376">
             <div data-goal="2023">
               
           <div className="overflow-x-auto mt-md">
@@ -252,7 +246,7 @@ const GreenhouseGases: React.FC = () => {
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">盤查報告</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap"><a className="text-dark_blue font-semibold" target="_blank" href='http://www.supreme.com.tw/File/2022%E5%B9%B4%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E7%9B%A4%E6%9F%A5%E7%A2%BA%E4%BF%A1%E5%A0%B1%E5%91%8APwC.pdf'>檔案連結</a></td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap"><a className="text-green font-semibold" target="_blank" href='http://www.supreme.com.tw/File/2022%E5%B9%B4%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E7%9B%A4%E6%9F%A5%E7%A2%BA%E4%BF%A1%E5%A0%B1%E5%91%8APwC.pdf'>檔案連結</a></td>
                 </tr>
                 
               </tbody>
@@ -282,7 +276,7 @@ const GreenhouseGases: React.FC = () => {
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">盤查報告</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap"><a className="text-dark_blue font-semibold" target="_blank" href='http://www.supreme.com.tw/File/2022%E5%B9%B4%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E7%9B%A4%E6%9F%A5%E7%A2%BA%E4%BF%A1%E5%A0%B1%E5%91%8APwC.pdf'>檔案連結</a></td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap"><a className="text-green font-semibold" target="_blank" href='http://www.supreme.com.tw/File/2022%E5%B9%B4%E6%BA%AB%E5%AE%A4%E6%B0%A3%E9%AB%94%E7%9B%A4%E6%9F%A5%E7%A2%BA%E4%BF%A1%E5%A0%B1%E5%91%8APwC.pdf'>檔案連結</a></td>
                 </tr>
                 
               </tbody>
@@ -312,7 +306,7 @@ const GreenhouseGases: React.FC = () => {
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">盤查報告</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap"><a className="text-dark_blue font-semibold" target="_blank" href='http://www.supreme.com.tw/File/2021%E5%B9%B4BSI%E8%81%B2%E6%98%8E%E6%9B%B8.pdf'>檔案連結</a></td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap"><a className="text-green font-semibold" target="_blank" href='http://www.supreme.com.tw/File/2021%E5%B9%B4BSI%E8%81%B2%E6%98%8E%E6%9B%B8.pdf'>檔案連結</a></td>
                 </tr>
                 
               </tbody>

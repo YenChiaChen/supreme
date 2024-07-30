@@ -1,11 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
-import img01 from "../../assets/img/testing/compensation-committee-01.png";
-import img02 from "../../assets/img/testing/compensation-committee-02.png";
-import img03 from "../../assets/img/testing/compensation-committee-03.png";
-import img04 from "../../assets/img/testing/compensation-committee-04.png";
-import CollapsibleList from "../../components/ui/CollapsibleList ";
 import TabContainer from "../../components/ui/TabContainer";
 import Table from "../../components/ui/Table";
 import React from "react";
@@ -17,32 +12,7 @@ const AuditCommittee: React.FC = () => {
     { label: "功能性委員會" },
     { label: "審計委員會" },
   ];
-  const items = [
-    {
-      title: <p>一、審閱財務報告</p>,
-      children: (
-        <p>
-          董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
-        </p>
-      ),
-    },
-    {
-      title: <p>二、委任簽證會計師</p>,
-      children: (
-        <p>
-          董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
-        </p>
-      ),
-    },
-    {
-      title: <p>三、評估內部控制制度之有效性</p>,
-      children: (
-        <p>
-          董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
-        </p>
-      ),
-    },
-  ];
+  
   const columns = [
     { header: "身份別", accessor: "identity" },
     { header: "姓名", accessor: "name" },
@@ -215,9 +185,9 @@ const AuditCommittee: React.FC = () => {
           </p>
 
           <p className="mt-xl sub-title text-center">第二屆審計委員會成員</p>
-          <Table columns={columns} data={data} />
+          <Table columns={columns} data={data}  color="#3B79E4" />
           <p className="mt-xl sub-title text-center">審議事項列表</p>
-          <div className="grid grid-cols-2 gap-6 mt-md text-dark_blue">
+          <div className="grid grid-cols-2 gap-6 mt-md text-blue">
             {data2.map((row, rowIndex) => (
               <React.Fragment key={rowIndex}>
                 {row.map((item, itemIndex) => (
@@ -236,7 +206,7 @@ const AuditCommittee: React.FC = () => {
           <p className="mt-xl sub-title text-center">
             各年度審計委員會審議情形
           </p>
-          <TabContainer goals={goals}>
+          <TabContainer goals={goals}  tabColor="#3B79E4">
             <div data-goal="2024">
               <>
                 <div className="flex flex-col gap-4">
@@ -245,7 +215,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4 "
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">一、審閱財務報告</span>
+                      <span className="text-lg text-blue">一、審閱財務報告</span>
                     </div>
                     <div className="collapse-content content">
                       董事會造送本公司112年度營業報告書、財務報告及盈餘分配議案，其中112年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
@@ -256,7 +226,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">二、委任簽證會計師</span>
+                      <span className="text-lg text-blue">二、委任簽證會計師</span>
                     </div>
                     <div className="collapse-content content">
                       審計委員會被賦予監督簽證會計師事務所獨立性及適任性之職責，以確保財務報表的公正性。為確保簽證會計師事務所的獨立性及適任性，審計委員會係參照會計師法第
@@ -270,7 +240,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">
+                      <span className="text-lg text-blue">
                         三、評估內部控制制度之有效性
                       </span>
                     </div>
@@ -289,7 +259,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">一、審閱財務報告</span>
+                      <span className="text-lg text-blue">一、審閱財務報告</span>
                     </div>
                     <div className="collapse-content content">
                       董事會造送本公司111年度營業報告書、財務報告及盈餘分配議案，其中111年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
@@ -300,7 +270,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">二、委任簽證會計師</span>
+                      <span className="text-lg text-blue">二、委任簽證會計師</span>
                     </div>
                     <div className="collapse-content content">
                       審計委員會被賦予監督簽證會計師事務所獨立性及適任性之職責，以確保財務報表的公正性。為確保簽證會計師事務所的獨立性及適任性，審計委員會係參照會計師法第
@@ -314,7 +284,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">
+                      <span className="text-lg text-blue">
                         三、評估內部控制制度之有效性
                       </span>
                     </div>
@@ -333,7 +303,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">一、審閱財務報告</span>
+                      <span className="text-lg text-blue">一、審閱財務報告</span>
                     </div>
                     <div className="collapse-content content">
                       董事會造送本公司110年度營業報告書、財務報告及盈餘分配議案，其中110年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
@@ -344,7 +314,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">二、委任簽證會計師</span>
+                      <span className="text-lg text-blue">二、委任簽證會計師</span>
                     </div>
                     <div className="collapse-content content">
                       審計委員會被賦予監督簽證會計師事務所獨立性及適任性之職責，以確保財務報表的公正性。為確保簽證會計師事務所的獨立性及適任性，審計委員會係參照會計師法第
@@ -359,7 +329,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">
+                      <span className="text-lg text-blue">
                         三、評估內部控制制度之有效性
                       </span>
                     </div>
@@ -378,7 +348,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">一、審閱財務報告</span>
+                      <span className="text-lg text-blue">一、審閱財務報告</span>
                     </div>
                     <div className="collapse-content content">
                       董事會造送本公司109年度營業報告書、財務報告及盈餘分配議案，其中109年度財務報表經董事會委任之安侯建業聯合會計師事務所于紀隆會計師及黃泳華會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
@@ -389,7 +359,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">二、委任簽證會計師</span>
+                      <span className="text-lg text-blue">二、委任簽證會計師</span>
                     </div>
                     <div className="collapse-content content">
                       審計委員會被賦予監督簽證會計師事務所獨立性及適任性之職責，以確保財務報表的公正性。為確保簽證會計師事務所的獨立性及適任性，審計委員會係參照會計師法第
@@ -404,7 +374,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">
+                      <span className="text-lg text-blue">
                         三、評估內部控制制度之有效性
                       </span>
                     </div>
@@ -423,7 +393,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">一、審閱財務報告</span>
+                      <span className="text-lg text-blue">一、審閱財務報告</span>
                     </div>
                     <div className="collapse-content content">
                       董事會造送本公司108年度營業報告書、財務報告及盈餘分配議案，其中108年度財務報表經董事會委任之安侯建業聯合會計師事務所余聖河會計師及陳振乾會計師查核完竣，並出具查核報告。經本審計委員會查核認為尚無不合。
@@ -434,7 +404,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">二、委任簽證會計師</span>
+                      <span className="text-lg text-blue">二、委任簽證會計師</span>
                     </div>
                     <div className="collapse-content content">
                       審計委員會被賦予監督簽證會計師事務所獨立性之職責，以確保財務報表的公正性。為確保簽證會計師事務所的獨立性，審計委員會係參照會計師法第
@@ -449,7 +419,7 @@ const AuditCommittee: React.FC = () => {
                     className="collapse collapse-open shadow  p-4"
                   >
                     <div className="collapse-title flex">
-                      <span className="text-lg">
+                      <span className="text-lg text-blue">
                         三、評估內部控制制度之有效性
                       </span>
                     </div>
@@ -466,21 +436,21 @@ const AuditCommittee: React.FC = () => {
           <p className="notes mt-md">
             本屆委員任期：2022年06月17日至2025年06月16日，截至2024年03月11日，出席情形如下：
           </p>
-         <Table columns={columns2} data={data3} />
+         <Table columns={columns2} data={data3}  color="#3B79E4" />
 
           <p className="mt-xl sub-title text-center">審計委員會績效評估</p>
-          <TabContainer goals={["2023", "2022", "2021", "2020"]}>
+          <TabContainer goals={["2023", "2022", "2021", "2020"]} tabColor="#3B79E4">
             <div data-goal="2023">
-            <Table columns={columns3} data={data2023} />
+            <Table columns={columns3} data={data2023}  color="#3B79E4" />
             </div>
             <div data-goal="2022">
-            <Table columns={columns3} data={data2022} />
+            <Table columns={columns3} data={data2022}  color="#3B79E4" />
             </div>
             <div data-goal="2021">
-            <Table columns={columns3} data={data2021} />
+            <Table columns={columns3} data={data2021}  color="#3B79E4" />
             </div>
             <div data-goal="2020">
-            <Table columns={columns3} data={data2020} />
+            <Table columns={columns3} data={data2020}  color="#3B79E4" />
             </div>
           </TabContainer>
         </div>

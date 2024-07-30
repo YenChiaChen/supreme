@@ -223,10 +223,10 @@ const GreenEnergy: React.FC = () => {
           </p>
           
           <p className="mt-xl sub-title text-center">已取得之科專計畫項目</p>
-          <Table columns={columns} data={data} />
+          <Table columns={columns} data={data} color="#3BC376" />
 
           <p className="mt-xl sub-title text-center">已取得之專利項目</p>
-          <Table columns={columnsList} data={patentList} />
+          <Table columns={columnsList} data={patentList} color="#3BC376" />
         </div>
       </div>
     </div>

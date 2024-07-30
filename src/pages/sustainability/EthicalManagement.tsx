@@ -2,14 +2,11 @@ import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
 import React from "react";
+import BoardStru from "../../assets/img/testing/boardStru.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpRightFromSquare,
-  faComment,
-  faComments,
-  faHandshake,
   faPlay,
-  faUserClock,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faBadgeCheck,
@@ -41,7 +38,7 @@ const EthicalManagement: React.FC = () => {
         <div className="container mx-auto relative mt-md px-[10%]">
           <div className="relative z-10 py-24 grid grid-cols-3 items-center">
             <div>
-              <p className="text-2xl font-bold text-dark_blue tracking-widest">
+              <p className="text-2xl font-bold text-blue tracking-widest">
                 整體目標
               </p>
               <ul className="mt-6 ml-6  list-disc pr-12">
@@ -53,12 +50,12 @@ const EthicalManagement: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="border-t-[2px] border-dark_blue h-full flex justify-center flex-col relative">
+            <div className="border-t-[2px] border-blue h-full flex justify-center flex-col relative">
               <FontAwesomeIcon
                 icon={faBullseyeArrow}
-                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
               />
-              <p className="text-2xl font-bold text-dark_blue tracking-widest pl-8">
+              <p className="text-2xl font-bold text-blue tracking-widest pl-8">
                 短期目標
               </p>
               <ul className="mt-6 ml-6  list-disc  px-8">
@@ -67,16 +64,16 @@ const EthicalManagement: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="border-t-[2px] border-dark_blue h-full flex justify-center flex-col relative">
+            <div className="border-t-[2px] border-blue h-full flex justify-center flex-col relative">
               <FontAwesomeIcon
                 icon={faBullseyeArrow}
-                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
               />
               <FontAwesomeIcon
                 icon={faPlay}
-                className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+                className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
               />
-              <p className="text-2xl font-bold text-dark_blue tracking-widest  pl-8">
+              <p className="text-2xl font-bold text-blue tracking-widest  pl-8">
                 中長期目標
               </p>
               <ul className="mt-6 ml-6  list-disc  px-8">
@@ -85,7 +82,7 @@ const EthicalManagement: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
+          <div className="absolute top-0 left-0 w-[110%] bg-light_blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
         </div>
 
         <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">
@@ -98,17 +95,17 @@ const EthicalManagement: React.FC = () => {
           </p>
 
           <p className="sub-title text-center mt-xl">各年度誠信經營執行情形</p>
-          <TabContainer goals={["2023", "2022"]}>
+          <TabContainer goals={["2023", "2022"]} tabColor="#3B79E4">
             <div data-goal="2023">
               <p className="content">
                 本公司每年不定期以教育訓練課程或電子郵件形式對董事、經理人及受僱人進行「誠信經營守則」及「防範內線交易管理」等相關法令宣導。2023年度已分別於02月14日（第一梯次）、02月21日（第二梯次），向全體員工進行「誠信經營暨公平交易、反貪腐」及「防範內線交易管理」之教育訓練宣導課程，課程內容包括建立誠信經營之企業文化及健全發展、內線交易形成原因、認定過程及交易實例說明，並將課程簡報發送予員工作為參考，2023年誠信經營相關課程實體受訓人數共160位，其餘人員皆以數位方式進行溝通宣導，累計總時數共計80小時。
               </p>
-              <p className="mt-md text-orange text-[20px] font-semibold">
+              <p className="mt-md text-blue text-[20px] font-semibold">
                 本年度通知財務報告封閉期間執行情形如下：
               </p>
               <table className="min-w-full border-collapse mt-6">
                 <thead>
-                  <tr className="bg-orange text-white content">
+                  <tr className="bg-blue text-white content">
                     <th className="border border-white px-4 py-2 rounded-tl-2xl  whitespace-pre">
                       日期
                     </th>
@@ -135,7 +132,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -154,7 +151,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -173,7 +170,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -192,7 +189,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -200,14 +197,14 @@ const EthicalManagement: React.FC = () => {
                 </tbody>
               </table>
 
-              <p className="mt-xl text-orange text-[20px] font-semibold">
+              <p className="mt-xl text-blue text-[20px] font-semibold">
                 本年度履行誠信經營之執行情形已於2023年3月9日董事會進行報告說明，內容摘要如下：
               </p>
               <ul className="border-t-[2px] border-light_gray mt-6">
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     為持續履行企業誠信經營政策，本公司除訂有「公司治理實務守則」、「誠信經營守則」、「誠信經營作業程序及行為指南」、
@@ -218,7 +215,7 @@ const EthicalManagement: React.FC = () => {
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     本公司除加強內部教育訓練外，並持續監督相關部門於履行政策推行之運作，並於董事會進行報告。
@@ -227,7 +224,7 @@ const EthicalManagement: React.FC = () => {
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     本公司透過年報、公開資訊觀測站、公司網站…等，及時揭露相關資訊，以提供股東及利害關係人了解公司運作狀況。
@@ -236,7 +233,7 @@ const EthicalManagement: React.FC = () => {
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     本公司設立“稽核信箱”之檢舉管道，於2022年度並未接獲任何投訴檢舉事項。
@@ -245,7 +242,7 @@ const EthicalManagement: React.FC = () => {
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     本公司網站業已設置「投資人專區」，並新增英文重大訊息資訊，提升資訊透明度。
@@ -254,7 +251,7 @@ const EthicalManagement: React.FC = () => {
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     本公司為落實公司治理，已全面採行董事提名制度，且業已設置公司治理人員及主管。
@@ -263,7 +260,7 @@ const EthicalManagement: React.FC = () => {
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     股東常會已採行電子投票方式，鼓勵股東參與公司治理及提高股東出席比率。
@@ -272,7 +269,7 @@ const EthicalManagement: React.FC = () => {
                 <li className="border-b border-light_gray py-6 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
-                    className="h-[40px] text-orange"
+                    className="h-[40px] text-blue"
                   />
                   <p className="content">
                     2022年共舉辦二場(07/20、07/21)企業誠信經營宣導課程，共計參與課程之員工人數達123人。
@@ -284,12 +281,12 @@ const EthicalManagement: React.FC = () => {
               <p className="content">
                 本年度已分別於2022年07月20日（第一梯次）、07月21日（第二梯次），合計123人時，向本公司全體員工進行「誠信經營守則」及「防範內線交易管理」之教育訓練宣導課程，課程內容包括建立誠信經營之企業文化及健全發展、內線交易形成原因、認定過程及交易實例說明，並將課程簡報以郵件發送予員工作為參考。
               </p>
-              <p className="mt-md text-orange text-[20px] font-semibold">
+              <p className="mt-md text-blue text-[20px] font-semibold">
                 本年度通知財務報告封閉期間執行情形如下：
               </p>
               <table className="min-w-full border-collapse mt-6">
                 <thead>
-                  <tr className="bg-orange text-white content">
+                  <tr className="bg-blue text-white content">
                     <th className="border border-white px-4 py-2 rounded-tl-2xl  whitespace-pre">
                       日期
                     </th>
@@ -316,7 +313,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -335,7 +332,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -354,7 +351,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -373,7 +370,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -393,7 +390,7 @@ const EthicalManagement: React.FC = () => {
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
-                          className="text-orange h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
                         />
                       </a>
                     </td>
@@ -404,12 +401,14 @@ const EthicalManagement: React.FC = () => {
           </TabContainer>
         </div>
 
-        <div className="bg-blue mt-xl bg-opacity-40">
+        <div className="bg-light_blue mt-xl bg-opacity-40">
           <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">
-            <div className="grid grid-cols-2 gap-4 py-16">
-              <div>
-                <p className="sub-title text-orange">內部稽核之稽核組織</p>
+            <div className="grid grid-cols-2 gap-x-0 gap-y-8 py-16">
+            <p className="sub-title text-blue col-span-2">內部稽核之稽核組織</p>
+              <div className="flex flex-col justify-center pr-24">
+                <img src={BoardStru} alt='Board Stru' className="w-full" />
               </div>
+              <div className="flex flex-col justify-center">
               <ul className="list-disc gap-8 content">
                 <li>
                   本公司設置隸屬於董事會之稽核室，配置適任且專任之稽核人員，目前編制為稽核主管一人、稽核人員二人，
@@ -422,6 +421,7 @@ const EthicalManagement: React.FC = () => {
                   內部稽核人員均符合法令規定之適任條件，每年持續進修並參加金管會認定機構所舉辦之內部稽核講習，以提升稽核品質及能力。
                 </li>
               </ul>
+              </div>
             </div>
           </div>
         </div>

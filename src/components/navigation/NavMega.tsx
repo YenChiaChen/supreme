@@ -14,7 +14,7 @@ const AnimatedLink: React.FC<LinkProps> = ({ text, url }) => {
   return (
     <Link
       to={url}
-      className="relative inline-flex items-center group w-fit"
+      className="relative inline-flex items-center group w-fit !text-sm"
     >
       {text}
       <span className="absolute text-dark_blue -right-[20px] opacity-0 transform translate-x-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
@@ -82,10 +82,10 @@ export function NavMega() {
             <li><Link to="/news">最新動態</Link></li>
             <li className="mega_menu_dropdown mega_menu_demo_2 has_dropdown">
               <Link to="/enterprise">幸福企業<i className="fas fa-angle-down"></i></Link>
-              <div className="mega_menu sub_menu px-6 shadow-lg flex justify-center w-fit">
+              <div className="mega_menu sub_menu px-6 shadow-lg flex justify-center w-fit rounded-b-xl">
                 <div className="grid grid-cols-4 gap-6">
                 <div className="mega_menu_item">
-                  <h3 className="text-lg">友善職場</h3>
+                  <h3 className="">友善職場</h3>
                   <AnimatedLink text="職業安全衛生" url="/enterprise/occupational-safety" />
                   <AnimatedLink text="健康職場" url="/enterprise/healthy-workplace" />
                   <AnimatedLink text="人權政策" url="/enterprise/human-rights-policy" />
@@ -109,7 +109,7 @@ export function NavMega() {
             </li>
             <li className="mega_menu_dropdown mega_menu_demo_2 has_dropdown">
               <Link to="/sustainability">永續經營<i className="fas fa-angle-down"></i></Link>
-              <div className="mega_menu sub_menu">
+              <div className="mega_menu sub_menu px-6 shadow-lg flex justify-center w-fit rounded-b-xl">
                 <div className="grid grid-cols-5">
                 <div className="mega_menu_item">
                   <h3>永續經營</h3>
@@ -125,7 +125,7 @@ export function NavMega() {
                   <AnimatedLink text="審計委員會" url="/sustainability/audit-committee" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3>利害關係人專區</h3>
+                  <h3 className="">利害關係人專區</h3>
                   <AnimatedLink text="利害關係人議合" url="/sustainability/stakeholder-engagement" />
                   <AnimatedLink text="重大主題" url="/sustainability/key-topics" />
                   <AnimatedLink text="利害關係人問卷" url="/sustainability/questionnaire" />

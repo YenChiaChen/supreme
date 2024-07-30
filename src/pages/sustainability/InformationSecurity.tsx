@@ -23,7 +23,7 @@ const InformationSecurity: React.FC = () => {
       content:
         "定期辦理資訊安全教育訓練：確保員工了解資安重要性，全面提升員工資訊安全威脅意識。 9 名成員，於每年年初及年中檢討各項風險 議題，投入部門人力監控及增加保險預算轉嫁風險。",
       icon: faCircleCheck,
-      iconColor: "#FF8D50",
+      iconColor: "#3B79E4",
       iconSize: "30px",
     },
     {
@@ -31,7 +31,7 @@ const InformationSecurity: React.FC = () => {
       content:
         "每年辦理一次資訊安全演習：專注於關鍵的策略，模擬實際資安危機事件，如：網路釣魚和社交工程攻擊，藉以協助員工進行資安威脅辨識，藉由資安演練掌握公司資安弱點。",
       icon: faCircleCheck,
-      iconColor: "#FF8D50",
+      iconColor: "#3B79E4",
       iconSize: "30px",
     },
   ];
@@ -126,12 +126,12 @@ const InformationSecurity: React.FC = () => {
 
         <div className="container mx-auto relative mt-md px-[10%]">
           <div className="relative z-10 py-24 grid grid-cols-3 items-center">
-            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative">
+            <div className="border-t-[2px] border-blue h-full flex  flex-col relative">
               <FontAwesomeIcon
                 icon={faBullseyeArrow}
-                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
               />
-              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+              <p className="text-2xl font-bold text-blue tracking-widest mt-12">
                 短期目標
               </p>
               <ul className="mt-6 ml-6  list-disc">
@@ -143,12 +143,12 @@ const InformationSecurity: React.FC = () => {
                 <li className="my-2">執行社交工程演練</li>
               </ul>
             </div>
-            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative">
+            <div className="border-t-[2px] border-blue h-full flex  flex-col relative">
               <FontAwesomeIcon
                 icon={faBullseyeArrow}
-                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
               />
-              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+              <p className="text-2xl font-bold text-blue tracking-widest mt-12">
                 中期目標
               </p>
               <ul className="mt-6 ml-6  list-disc">
@@ -160,16 +160,16 @@ const InformationSecurity: React.FC = () => {
                 <li className="my-2">社交工程演練點擊率 &lt;10%</li>
               </ul>
             </div>
-            <div className="border-t-[2px] border-dark_blue h-full flex  flex-col relative">
+            <div className="border-t-[2px] border-blue h-full flex  flex-col relative">
               <FontAwesomeIcon
                 icon={faBullseyeArrow}
-                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+                className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
               />
               <FontAwesomeIcon
                 icon={faPlay}
-                className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-dark_blue h-[30px]"
+                className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
               />
-              <p className="text-2xl font-bold text-dark_blue tracking-widest mt-12">
+              <p className="text-2xl font-bold text-blue tracking-widest mt-12">
                 長期目標
               </p>
               <ul className="mt-6 ml-6  list-disc">
@@ -179,7 +179,7 @@ const InformationSecurity: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
+          <div className="absolute top-0 left-0 w-[110%] bg-light_blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
         </div>
 
         <div className="container mx-auto px-[10%]">
@@ -187,11 +187,11 @@ const InformationSecurity: React.FC = () => {
           <p className="mt-md content mb-12">
             成立「資通安全專案小組」，每年定期舉行資訊安全教育訓練並透過委託第三方資訊安全業者協助檢測及內部稽核檢查，落實執行資訊安全相關規定。根據「資通安全管理辦法」對公司現行資訊安全進行稽核作業，進而針對資訊安全缺失進行改善。同步辦理資訊安全教育訓練與資訊安全演習，模擬實際資安危機事件融入到員工培訓中以達最佳成效
           </p>
-          <SlideUpList items={items2} />
+          <SlideUpList items={items2}  />
           <p className="mt-xl sub-title text-center mb-12">
             資訊安全相關年度績效
           </p>
-          <TabListGoal goals={goals} />
+          <TabListGoal goals={goals} color="#3B79E4" />
           <p className="mt-xl sub-title text-center">資訊安全治理制度</p>
           <p className="mt-md content mb-12">
             為防範資訊資產遭受各項安全威脅，確保企業正常營運，成立「資通安全專案小組」，藉由訂定並維護資通安全管理辦法、推動及協調資通安全政策、擬定及調整資通安全計畫、檢討重大資通安全事件對本公司之影響性、監督資安管理運作情形，透過日常演練、滲透測試、資安檢測、弱點掃瞄等方式，並宣導同仁提高資安意識，以達確保資訊合法存取；如遭受外力入侵或事故發生時，能做迅速必要之應變處置，在最短時間內回復系統正常運作，以降低該事故可能帶來之損害。期望透過專業的資安單位之管理、規劃、督導及推動執行，建構出全方位的資安防護機制並提升同仁良好的資安意識。
@@ -219,7 +219,7 @@ const InformationSecurity: React.FC = () => {
           </p>
           <div className="overflow-x-auto mt-md">
             <table className="min-w-full border-collapse">
-              <thead className="bg-orange text-white content">
+              <thead className="bg-blue text-white content">
                 <tr>
                   <th className="py-2 px-4 border border-white rounded-tl-lg"></th>
                   <th className="py-2 px-4 border border-white rounded-tr-lg">
@@ -259,19 +259,19 @@ const InformationSecurity: React.FC = () => {
                   應用系統安全管理
                   </td>
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
-                    <p className="text-dark_blue font-semibold">原始程式碼之存取更新</p>
+                    <p className="text-blue font-semibold">原始程式碼之存取更新</p>
                     <ul className="list-disc pl-6">
                       <li>原始程式均依規定存放於應用程式伺服器，並嚴格實施權限控管。</li>
                       <li>更新時必須依相關規定辦理，並將原始程式從應用程式伺服器，拷貝至測試環境更改。</li>
                       <li>新增或修改完成之應用程式，必須經由嚴格測試及主管核可後，始交付系統管理員執行安裝程序。</li>
                       <li>系統管理員於新原始程式與執行碼安裝於應用程式伺服器前，須將舊原始程式備份。</li>
                     </ul>
-                    <p className="text-dark_blue font-semibold">程式執行權之控管</p>
+                    <p className="text-blue font-semibold">程式執行權之控管</p>
                     <ul className="list-disc pl-6">
                       <li>建立安全控管檔案，以便系統管理員管理。</li>
                       <li>程式執行權配合使用者工作之需要，依相關規定申請，由系統管理員設定執行授權。</li>
                     </ul>
-                    <p className="text-dark_blue font-semibold">資料存取之控管</p>
+                    <p className="text-blue font-semibold">資料存取之控管</p>
                     <ul className="list-disc pl-6">
                       <li>資料均透過應用系統之權限管理，並保留存取記錄。</li>
                       <li>管制非應用系統的資料存取，並保留存取記錄。</li>

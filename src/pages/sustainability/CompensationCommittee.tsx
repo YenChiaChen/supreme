@@ -186,10 +186,10 @@ const CompensationCommittee: React.FC = () => {
           </div>
 
           <p className="mt-xl sub-title text-center">第五屆薪酬委員會成員</p>
-          <Table columns={columns} data={data} />
+          <Table columns={columns} data={data}  color="#3B79E4" />
 
           <p className="mt-xl sub-title text-center">薪酬委員會運作情形</p>
-          <Table columns={columns2} data={data2} />
+          <Table columns={columns2} data={data2}  color="#3B79E4" />
           <p className="mt-8 notes">
             符合之資格條件： <br />
             1.商務、法務、財務、會計或公司業務所需相關科系之公私立大專院校講師以上。
@@ -205,18 +205,18 @@ const CompensationCommittee: React.FC = () => {
           </p>
 
           <p className="mt-xl sub-title text-center">薪酬委員會績效評估</p>
-          <TabContainer goals={goals}>
+          <TabContainer goals={goals}  tabColor="#3B79E4">
             <div data-goal="2023">
-            <Table columns={columns3} data={data2023} />
+            <Table columns={columns3} data={data2023}  color="#3B79E4" />
             </div>
             <div data-goal="2022">
-            <Table columns={columns3} data={data2022} />
+            <Table columns={columns3} data={data2022}  color="#3B79E4" />
             </div>
             <div data-goal="2021">
-            <Table columns={columns3} data={data2021} />
+            <Table columns={columns3} data={data2021}  color="#3B79E4" />
             </div>
             <div data-goal="2020">
-            <Table columns={columns3} data={data2020} />
+            <Table columns={columns3} data={data2020}  color="#3B79E4" />
             </div>
           </TabContainer>
         </div>

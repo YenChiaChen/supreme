@@ -79,11 +79,11 @@ const TableTennis: React.FC = () => (
       球教練陪同練習，精進個人球技、培養運動家精神。
     </p>
     <div className="flex flex-wrap gap-4">
-    <img src={TableTennis01} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={TableTennis02} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={TableTennis03} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={TableTennis04} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={TableTennis05} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
+    <img src={TableTennis01} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={TableTennis02} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={TableTennis03} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={TableTennis04} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={TableTennis05} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
     </div>
   </>
 );
@@ -94,13 +94,13 @@ const BasketBall: React.FC = () => (
       友誼
     </p>
     <div className="flex flex-wrap gap-4">
-    <img src={BasketBall01} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={BasketBall02} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={BasketBall03} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={BasketBall04} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={BasketBall05} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={BasketBall06} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={BasketBall07} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
+    <img src={BasketBall01} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={BasketBall02} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={BasketBall03} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={BasketBall04} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={BasketBall05} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={BasketBall06} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={BasketBall07} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
     </div>
   </>
 );
@@ -111,12 +111,12 @@ const Badminton: React.FC = () => (
       一於專用標準羽球館舉辦相關活動，讓公司同仁們能在比賽和訓練中共同成長。
     </p>
     <div className="flex flex-wrap gap-4">
-    <img src={Badminton01} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Badminton02} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Badminton03} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Badminton04} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Badminton05} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Badminton06} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
+    <img src={Badminton01} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Badminton02} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Badminton03} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Badminton04} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Badminton05} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Badminton06} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
     </div>
   </>
 );
@@ -128,11 +128,11 @@ const Run: React.FC = () => (
       益路跑活動提供豐富參賽物資獎勵。
     </p>
     <div className="flex flex-wrap gap-4">
-    <img src={Running01} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Running02} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Running03} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Running04} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Running05} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
+    <img src={Running01} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Running02} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Running03} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Running04} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Running05} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
     </div>
   </>
 );
@@ -143,14 +143,14 @@ const Golf: React.FC = () => (
       於每月第二週舉辦球敘齊聚各球場，不僅可在絕美大自然景色中放鬆身心，也能互相切磋球技。
     </p>
     <div className="flex flex-wrap gap-4">
-    <img src={Golf01} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Golf02} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Golf03} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Golf04} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Golf05} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Golf06} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Golf07} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Golf08} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
+    <img src={Golf01} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Golf02} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Golf03} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Golf04} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Golf05} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Golf06} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Golf07} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Golf08} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
     </div>
   </>
 );
@@ -160,11 +160,11 @@ const BoardGame: React.FC = () => (
     桌遊是一種能在輕鬆愉快的氛圍中鍛鍊思維和促進交流的活動。熱愛桌遊的同仁們，定期於每月第三週舉辦桌遊聚會，在這些聚會中，不僅能探索各式各樣的桌上遊戲，挑戰自己的策略和運氣，也能與同事們一起享受樂趣、增進彼此的感情。無論你是桌遊新手還是老手，我們都歡迎你的加入，一起體驗桌遊的無窮魅力。
     </p>
     <div className="flex flex-wrap gap-4">
-    <img src={Board01} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Board02} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Board03} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Board04} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
-    <img src={Board05} className="w-[400px] rounded-xl hover:scale-[1.3] duration-300 hover:shadow-xl object-cover" alt="table_tennis" />
+    <img src={Board01} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Board02} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Board03} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Board04} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
+    <img src={Board05} className="w-[400px] rounded-xl  object-cover" alt="table_tennis" />
     </div>
   </>
 );
@@ -205,7 +205,7 @@ const HealthWorkplace: React.FC = () => {
         <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <p className="mt-xl sub-title text-center">職業安全衛生政策</p>
+          <p className="mt-xl sub-title text-center">健康職場認證</p>
           <p className="mt-md content">
             健康職場認證是基於世界衛生組織的「職場周全健康促進推動模式」，強調整合「生理工作環境」、「社會心理工作環境」、「個人健康資源」，以及「企業社區參與」的四大層面。本公司於2023年新申請健康職場標章審核通過，我們承諾提供完善的健康資源，不斷改善生理及社會心理工作環境，同時擴及員工眷屬、社區，實踐企業社會責任。
           </p>
@@ -219,55 +219,45 @@ const HealthWorkplace: React.FC = () => {
             )。為保護員工個人健康相關資訊的隱私與機密性，醫護諮詢過程皆秉持醫療保密原則，諮詢内容除醫護人員與諮詢本人外禁止向公司或第三者透露任何資訊。
           </p>
 
-          <p className="tracking-wide text-orange font-semibold text-[20px] text-center mt-xl">
+          <p className="tracking-wide text-pink font-semibold text-[20px] text-center mt-xl">
             自律神經健康講座
           </p>
-          <div className="flex gap-8 mt-md justify-center">
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 rotate-[6deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
+          <div className="grid grid-cols-3 gap-8 mt-md justify-center">
               <img
                 src={Healthy01}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className=""
               />
-            </div>
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 -rotate-[6deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
               <img
                 src={Healthy02}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className=""
               />
-            </div>
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 rotate-[4deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
               <img
                 src={Healthy03}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className=""
               />
-            </div>
           </div>
 
-          <p className="tracking-wide text-orange font-semibold text-[20px] text-center mt-xl">
+          <p className="tracking-wide text-pink font-semibold text-[20px] text-center mt-xl">
             醫護諮詢
           </p>
           <div className="flex gap-8 mt-md justify-center">
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 rotate-[6deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
               <img
                 src={Nurse01}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className="w-[500px] h-[350px] object-cover"
               />
-            </div>
-            <div className="bg-white shadow-xl rounded-md px-4 pt-4 pb-12 -rotate-[6deg] hover:rotate-0 duration-300 hover:scale-[1.4] hover:shadow-2xl">
               <img
                 src={Nurse02}
                 alt="healthy"
-                className="w-[400px] h-[250px] object-cover"
+                className="w-[500px] h-[350px] object-cover"
               />
-            </div>
           </div>
 
           <p className="mt-xl sub-title text-center">運動社團</p>
-          <TabContainerIcon goals={goals} icons={icons}>
+          <TabContainerIcon goals={goals} icons={icons} tabColor="#FF507C">
             <div data-goal="籃球社">
               <BasketBall />
             </div>

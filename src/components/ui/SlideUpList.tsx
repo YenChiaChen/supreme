@@ -12,6 +12,7 @@ interface ListItem {
   download?: string;
   iconSize?: string;
   iconColor?: string;
+  titleColor?: string;
 }
 
 interface SlideUpListProps {
@@ -55,9 +56,9 @@ const SlideUpListItem: React.FC<SlideUpListItemProps> = ({ item, delay }) => {
         />
       )}
       {item.title ? (
-        <div className="grid grid-cols-12  items-center w-full font-medium">
-          <p className="col-span-4 text-[20px]">{item.title}</p>
-          <p className="col-span-8 notes whitespace-pre-line">{item.content}</p>
+        <div className="grid grid-cols-12  items-center w-full font-medium" style={{color: item.titleColor}}>
+          <p className="col-span-2 text-[20px]">{item.title}</p>
+          <p className="col-span-10 notes whitespace-pre-line">{item.content}</p>
         </div>
       ) : (
         <span className="flex-1 text-[16px] tracking-wider leading-[32px]">{item.content}</span>
@@ -68,7 +69,7 @@ const SlideUpListItem: React.FC<SlideUpListItemProps> = ({ item, delay }) => {
           download
           target="_blank"
         >
-         <FontAwesomeIcon icon={faCloudArrowDown} className="text-[34px] text-orange duration-300 hover:scale-[1.1] mr-2" />
+         <FontAwesomeIcon icon={faCloudArrowDown} className="text-[34px] duration-300 hover:scale-[1.1] mr-2" style={{color: item.iconColor}} />
         </a>
       )}
     </motion.li>

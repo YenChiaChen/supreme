@@ -9,24 +9,19 @@ interface Column {
 interface TableProps {
   columns: Column[];
   data: { [key: string]: any }[];
+  color?: string
 }
 
-const Table: React.FC<TableProps> = ({ columns, data }) => {
+const Table: React.FC<TableProps> = ({ columns, data, color='#FF8D50' }) => {
   return (
     <div className="overflow-x-auto mt-md">
       <table className="min-w-full border-collapse">
-        <thead className="bg-orange text-white content">
+        <thead className="text-white content" style={{backgroundColor: color}}>
           <tr>
             {columns.map((column, index) => (
               <th
                 key={column.accessor}
-                className={`py-2 px-4 border border-white ${
-                  index === 0
-                    ? "rounded-tl-lg"
-                    : index === columns.length - 1
-                    ? "rounded-tr-lg"
-                    : ""
-                }`}
+                className={`py-2 px-4 border border-white `}
               >
                 {column.header}
               </th>

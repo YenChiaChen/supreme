@@ -30,7 +30,7 @@ const MessageFromChairmain: React.FC = () => {
     <div>
       <HeroBanner
         title="經營者的話"
-        description={`建立誠實信用的企業文化可以強化客戶的信任度，提高服務滿意度，增加營業銷售額，創造股東最大利益，達到永續經營的目標。`}
+        description={``}
         backgroundImage={Bg}
         center={true}
       />

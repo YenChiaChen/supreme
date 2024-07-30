@@ -6,15 +6,124 @@ import Accident from "../../assets/img/testing/accident.png";
 import Img01 from "../../assets/img/testing/2022-aci.png";
 import TabContainer from "../../components/ui/TabContainer";
 
-const ShortTermGoals: React.FC = () => (
-  <>
-    <p className="my-6 content">目前沒有資料！過一陣子再來看看吧！</p>
-  </>
-);
-
 const MidTermGoals: React.FC = () => (
   <>
-    <img src={Img01} alt="testing" className="w-full mt-md" />
+    <p className="text-pink text-[20px] font-bold">2022年職業傷害統計</p>
+    <table className="min-w-full border-collapse mt-6">
+      <thead>
+        <tr className="bg-pink text-white content">
+          <th className="border border-white px-4 py-2 rounded-tl-2xl">
+            職業危害類型
+          </th>
+          <th className="border border-white px-4 py-2">項目</th>
+          <th className="border border-white px-4 py-2">人數</th>
+          <th className="border border-white px-4 py-2 rounded-tr-2xl">比率</th>
+        </tr>
+      </thead>
+      <tbody className="content">
+        <tr>
+          <td className="border border-light_gray px-4 py-2" rowSpan={3}>
+            職業傷害
+          </td>
+          <td className="border border-light_gray px-4 py-2">
+            職業傷害所造成的死亡
+          </td>
+          <td className="border border-light_gray px-4 py-2">0</td>
+          <td className="border border-light_gray px-4 py-2">0.00%</td>
+        </tr>
+        <tr>
+          <td className="border border-light_gray px-4 py-2">嚴重的職業傷害</td>
+          <td className="border border-light_gray px-4 py-2">0</td>
+          <td className="border border-light_gray px-4 py-2">0.00%</td>
+        </tr>
+        <tr>
+          <td className="border border-light_gray px-4 py-2">
+            可記錄之職業傷害
+          </td>
+          <td className="border border-light_gray px-4 py-2">0</td>
+          <td className="border border-light_gray px-4 py-2">0.00%</td>
+        </tr>
+        <tr>
+          <td className="border border-light_gray px-4 py-2" rowSpan={2}>
+            職業病
+          </td>
+          <td className="border border-light_gray px-4 py-2">
+            職業病所造成的死亡
+          </td>
+          <td className="border border-light_gray px-4 py-2">0</td>
+          <td className="border border-light_gray px-4 py-2">0.00%</td>
+        </tr>
+        <tr>
+          <td className="border border-light_gray px-4 py-2">可記錄之職業病</td>
+          <td className="border border-light_gray px-4 py-2">0</td>
+          <td className="border border-light_gray px-4 py-2">0.00%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p className="notes mt-6">
+      註 1：
+      嚴重的職業傷害意指因職業傷害而導致工作者無法或難以於六個月内恢復至受傷前健康狀態的傷害。
+    </p>
+    <p className="notes mt-1">
+      註 2： 2022 年度全職員工 ( 共計 196 人 ) 之總工作時數為 412,664 小時。
+    </p>
+    <p className="notes mt-1">
+      註 3： 職業傷害所造成的死亡比率 = 職業傷害所造成的死亡人數 / 工作小時
+      *1,000,000。
+    </p>
+    <p className="notes mt-1">
+      註 4： 嚴重的職業傷害比率 = 嚴重的職業傷害數 / 工作小時 *1,000,000。
+    </p>
+    <p className="notes mt-1">
+      註 5： 可記錄之職業傷害比率 = 可記錄之職業傷害數 / 工作小時 *1,000,000。
+    </p>
+
+    <p className="text-pink text-[20px] font-bold mt-md">2022 年缺勤統計</p>
+    <table className="min-w-full border-collapse mt-6">
+      <thead>
+        <tr className="bg-pink text-white content">
+          <th className="border border-white px-4 py-2 rounded-tl-2xl">
+            &nbsp;
+          </th>
+          <th className="border border-white px-4 py-2">2020</th>
+          <th className="border border-white px-4 py-2">2021</th>
+          <th className="border border-white px-4 py-2 rounded-tr-2xl">2022</th>
+        </tr>
+      </thead>
+      <tbody className="content">
+        <tr>
+          <td className="border border-light_gray px-4 py-2">缺勤日</td>
+          <td className="border border-light_gray px-4 py-2">263.5</td>
+          <td className="border border-light_gray px-4 py-2">118.6</td>
+          <td className="border border-light_gray px-4 py-2">151.7</td>
+        </tr>
+        <tr>
+          <td className="border border-light_gray px-4 py-2">
+            年底在職員工人數
+          </td>
+          <td className="border border-light_gray px-4 py-2">179 </td>
+          <td className="border border-light_gray px-4 py-2">196</td>
+          <td className="border border-light_gray px-4 py-2">196</td>
+        </tr>
+        <tr>
+          <td className="border border-light_gray px-4 py-2">工作天數</td>
+          <td className="border border-light_gray px-4 py-2">251</td>
+          <td className="border border-light_gray px-4 py-2">248</td>
+          <td className="border border-light_gray px-4 py-2">249</td>
+        </tr>
+        <tr>
+          <td className="border border-light_gray px-4 py-2">缺勤率</td>
+          <td className="border border-light_gray px-4 py-2">0.59%</td>
+          <td className="border border-light_gray px-4 py-2">0.24%</td>
+          <td className="border border-light_gray px-4 py-2">0.31%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p className="notes mt-6">
+      註 1：缺勤日 = 病假 + 公傷假；應上工日數 = 工作天數 ( 未扣除特休 )=
+      年底在職員工人數 * 人事行政局公告工作天數。
+    </p>
   </>
 );
 
@@ -30,9 +139,6 @@ const OccupationalSafety: React.FC = () => {
     { label: "友善職場" },
     { label: "職業安全衛生" },
   ];
-
-
-  const goals = ["2023", "2022", "2021"];
 
   return (
     <div>
@@ -115,28 +221,21 @@ const OccupationalSafety: React.FC = () => {
             為將職業災害所造成的衝擊及風險降至最低，針對各營運據點進行危害鑑別，2022
             年度無鑑別出重大危害。
           </p>
-          <img src={Accident} className="mt-md w-full" alt="accident" />
+          <div className="flex justify-center">
+            <img
+              src={Accident}
+              className="mt-md w-full max-w-[1000px]"
+              alt="accident"
+            />
+          </div>
           <p className="mt-xl sub-title text-center">
             年度職安衛生相關統計報告
           </p>
-          <TabContainer goals={["2022", "2021"]}>
+          <TabContainer goals={["2022"]}>
             <div data-goal="2022">
               <MidTermGoals />
             </div>
-            <div data-goal="2021">
-              <LongTermGoals />
-            </div>
           </TabContainer>
-
-
-    
-
-
-
-
-
-
-
         </div>
       </div>
     </div>

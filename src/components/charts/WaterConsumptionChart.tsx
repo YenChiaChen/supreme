@@ -11,7 +11,7 @@ interface WaterConsumptionChartProps {
   data: WaterConsumptionData[];
 }
 
-const colors = ['#b6d7de', '#93bec7', '#6da0ab', '#4C8591', '#2a606b'];
+const colors = ['#ade0c3', '#85d4a7', '#5fc98d', '#3bc376'];
 
 const WaterConsumptionChart: React.FC<WaterConsumptionChartProps> = ({ data }) => {
   return (

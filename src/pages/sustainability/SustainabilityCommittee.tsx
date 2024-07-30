@@ -28,35 +28,35 @@ const SustainabilityCommittee: React.FC = () => {
       id: 1,
       content: "擬定永續發展相關制度並配合有關規範修訂之",
       icon: faClipboardCheck,
-      iconColor: "#FF8D50",
+      iconColor: "#3B79E4",
       iconSize: "30px",
     },
     {
       id: 2,
       content: "定期評估永續計劃執行成效，且每年向董事會報告年度執行成果",
       icon: faChartLine,
-      iconColor: "#FF8D50",
+      iconColor: "#3B79E4",
       iconSize: "30px",
     },
     {
       id: 3,
       content: "其他經董事會決議指示本委員會應辦理之事項",
       icon: faTasks,
-      iconColor: "#FF8D50",
+      iconColor: "#3B79E4",
       iconSize: "30px",
     },
     {
       id: 4,
       content: "監督永續發展政策方向與推動計劃，且定期追蹤執行進度",
       icon: faEye,
-      iconColor: "#FF8D50",
+      iconColor: "#3B79E4",
       iconSize: "30px",
     },
     {
       id: 5,
       content: "審定永續報告書",
       icon: faFileSignature,
-      iconColor: "#FF8D50",
+      iconColor: "#3B79E4",
       iconSize: "30px",
     },
   ];
@@ -201,7 +201,7 @@ const SustainabilityCommittee: React.FC = () => {
   
   const LongTermGoals: React.FC = () => (
     <>
-     <Table columns={columns3} data={data3} />
+     <Table columns={columns3} data={data3} color='#3B79E4' />
 
     </>
   );
@@ -259,14 +259,14 @@ const SustainabilityCommittee: React.FC = () => {
           </p>
 
           <p className="mt-xl sub-title text-center">永續發展委員會成員</p>
-          <Table columns={columns} data={data} />
+          <Table columns={columns} data={data} color="#3B79E4" />
 
           <p className="mt-xl sub-title text-center">永續發展委員會運作情形</p>
-          <Table columns={columns2} data={data2} />
+          <Table columns={columns2} data={data2} color="#3B79E4" />
 
           <p className="mt-xl sub-title text-center">永續發展委員會績效評估</p>
        
-          <TabContainer goals={goals}>
+          <TabContainer goals={goals} tabColor="#3B79E4">
             <div data-goal="2023">
               <LongTermGoals />
             </div>

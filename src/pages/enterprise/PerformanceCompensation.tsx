@@ -37,16 +37,16 @@ const PerformanceCompensation: React.FC = () => {
             <br />
             對於表現優良的員工，符合晉升標準，將由直屬主管提出晉升申請，再經部門主管進行審核，公司將會進行綜合評估，考慮員工的評核結果、工作表現以及其他相關因素，以確定是否給予晉升機會。整個流程是基於公平和全面性的評估。
           </p>
-          <p className="mt-xl sub-title text-center">員工考核内容</p>
+          <p className="mt-xl sub-title text-center">員工考核內容</p>
           <div className="flex justify-center flex-wrap gap-10 mt-md">
             <div
-              className="box-border duration-300 hover:border-dark_blue
-             border border-white hover:bg-white bg-blue rounded-[20px] p-12 bg-opacity-60 w-[500px]"
+              className="box-border 
+              bg-pink rounded-[20px] p-12 bg-opacity-10 border border-pink w-[500px]"
             >
               <div className="flex justify-end">
                 <FontAwesomeIcon
                   icon={faChartLine}
-                  className="h-[80px] text-dark_blue"
+                  className="h-[80px] text-pink"
                 />
               </div>
               <p className="text-[32px] font-semibold">工作成果</p>
@@ -56,13 +56,13 @@ const PerformanceCompensation: React.FC = () => {
               </p>
             </div>
             <div
-              className="box-border duration-300 hover:border-dark_blue
-             border border-white hover:bg-white bg-blue rounded-[20px] p-12 bg-opacity-60 w-[500px]"
+              className="box-border 
+              bg-pink rounded-[20px] p-12 bg-opacity-10 border border-pink w-[500px]"
             >
               <div className="flex justify-end">
                 <FontAwesomeIcon
                   icon={faTools}
-                  className="h-[80px] text-dark_blue"
+                  className="h-[80px] text-pink"
                 />
               </div>
               <p className="text-[32px] font-semibold">技能和能力</p>
@@ -72,13 +72,13 @@ const PerformanceCompensation: React.FC = () => {
               </p>
             </div>
             <div
-              className="box-border duration-300 hover:border-dark_blue
-             border border-white hover:bg-white bg-blue rounded-[20px] p-12 bg-opacity-60 w-[500px]"
+              className="box-border
+              bg-pink rounded-[20px] p-12 bg-opacity-10 border border-pink w-[500px]"
             >
               <div className="flex justify-end">
                 <FontAwesomeIcon
                   icon={faThumbsUp}
-                  className="h-[80px] text-dark_blue"
+                  className="h-[80px] text-pink"
                 />
               </div>
               <p className="text-[32px] font-semibold">態度和貢獻</p>
@@ -88,13 +88,13 @@ const PerformanceCompensation: React.FC = () => {
               </p>
             </div>
             <div
-              className="box-border duration-300 hover:border-dark_blue
-             border border-white hover:bg-white bg-blue rounded-[20px] p-12 bg-opacity-60 w-[500px]"
+              className="box-border
+              bg-pink rounded-[20px] p-12 bg-opacity-10 border border-pink w-[500px]"
             >
               <div className="flex justify-end">
                 <FontAwesomeIcon
                   icon={faBullseye}
-                  className="h-[80px] text-dark_blue"
+                  className="h-[80px] text-pink"
                 />
               </div>
               <p className="text-[32px] font-semibold">目標達成度</p>
@@ -105,10 +105,6 @@ const PerformanceCompensation: React.FC = () => {
             </div>
           </div>
 
-          <p className="mt-xl sub-title text-center">年度員工績效考核情形</p>
-          <p className="mt-md content">
-            除到職、復職未滿三個月之人員及顧問外，皆完成年度績效考核。
-          </p>
 
           <p className="mt-xl sub-title text-center">員工薪酬</p>
           <p className="mt-md content">
@@ -128,7 +124,7 @@ const PerformanceCompensation: React.FC = () => {
 
           <table className="min-w-full border-collapse mt-md">
             <thead>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th
                   className="border border-white px-4 py-2 rounded-tl-2xl"
                   rowSpan={2}
@@ -142,7 +138,7 @@ const PerformanceCompensation: React.FC = () => {
                   基層人員
                 </th>
               </tr>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-pink text-white content">
                 <th className="border border-white px-4 py-2">男性</th>
                 <th className="border border-white px-4 py-2">比率</th>
                 <th className="border border-white px-4 py-2">女性</th>

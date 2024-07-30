@@ -2,21 +2,11 @@ import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/bg.png";
 import TabContainer from "../../components/ui/TabContainer";
-import cols from "../../assets/img/testing/testcol.png";
 import hakimo from "../../assets/img/testing/hakimo.png";
-import hakimoProcess from "../../assets/img/testing/group64.png";
 import hakimoPercent from "../../assets/img/testing/hakimoPercent.png";
-import energycol from "../../assets/img/testing/energycol.png";
-import WaterConsumptionChart from "../../components/charts/WaterConsumptionChart";
 
 import {
-  faComputer,
-  faLightbulb,
   faPlay,
-  faPlugCircleXmark,
-  faPowerOff,
-  faStairs,
-  faWind,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faBinBottlesRecycle,
@@ -25,17 +15,9 @@ import {
   faMemoCircleCheck,
   faPalletBoxes,
 } from "@fortawesome/pro-solid-svg-icons";
-import SlideUpList from "../../components/ui/SlideUpList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContainerIcon from "../../components/ui/TabContainerIcon";
 import Table from "../../components/ui/Table";
-const data = [
-  { year: "2019", consumption: 0.532 },
-  { year: "2020", consumption: 0.654 },
-  { year: "2021", consumption: 0.819 },
-  { year: "2022", consumption: 2.867 },
-  { year: "2023", consumption: 3.111 },
-];
 const WasteManagement: React.FC = () => {
   const ShortTermGoals: React.FC = () => (
     <>
@@ -43,19 +25,6 @@ const WasteManagement: React.FC = () => {
     </>
   );
 
-  const MidTermGoals: React.FC = () => (
-    <>
-      <p className="mt-md content">
-        2022 年各營運據點之能源消耗總量為 1,954.23
-        GJ，外購電力占大宗，主要用於辦公事務設備的電力消耗占 90.15
-        %；其餘為公務車之汽油使用占
-        9.85%。台北總部能源消耗占90.28%，其餘新莊、龍潭及台南三處辦事處因佔地面積小及人員較少，故合計占比僅有
-        6%。2022年度能源消耗量高於以往年度，能源密集度為2.48 GJ /
-        新台幣億元，主要係今年新增盤查範圍，以致用電量增加，加上COVID-19疫情趨緩，商業往來恢復正常，公務車使用次數增加，故汽油耗用量大幅增加。
-      </p>
-      <img src={cols} className="w-full mt-md" alt="Energy " />
-    </>
-  );
 
   const LongTermGoals: React.FC = () => (
     <>
@@ -138,7 +107,7 @@ const WasteManagement: React.FC = () => {
             管委會設置垃圾分類集中區域統一處理；內湖總部倉儲中心不定期產生棧板、包材、電子零件等相關之廢棄物，
             此類廢棄物屬於可回收廢棄物，係委託合法之廢棄物清運商，將此類物品予以回收處理。
           </p>
-          <p className="mt-xl text-xl font-bold text-orange tracking-wider">
+          <p className="mt-xl text-xl font-bold text-green tracking-wider">
             價值鏈廢棄物流向圖：
           </p>
           <img src={hakimo} className="w-full mt-md" alt="Energy " />
@@ -153,7 +122,7 @@ const WasteManagement: React.FC = () => {
             所委託的甲級清運廠商,建立回報機制或監督機制,確保
             廠商安全合法的執行廢棄物處理。
           </p>
-          <TabContainer goals={goals}>
+          <TabContainer goals={goals} tabColor="#3BC376">
             <div data-goal="2023">
               <ShortTermGoals />
             </div>
@@ -219,7 +188,7 @@ const WasteManagement: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute top-0 left-0 w-[110%] bg-blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
+          <div className="absolute top-0 left-0 w-[110%] bg-light_blue rounded-r-[50px] -ml-[10%] z-0 min-h-full bg-opacity-40"></div>
         </div>
 
         <div className="container mx-auto px-[10%]">
@@ -230,7 +199,7 @@ const WasteManagement: React.FC = () => {
             定期記錄廢棄物數量與清運數據，並委託合格之廢棄物回收廠商進行處置。
           </p>
 
-          <TabContainerIcon goals={goals2} icons={icons}>
+          <TabContainerIcon goals={goals2} icons={icons}  tabColor="#3BC376">
             <div data-goal="辦公室無紙化">
               <p className="content">
                 本公司為減少資源浪費，辦公室紙張採購選用森林驗證認可計畫標章(
@@ -262,7 +231,7 @@ const WasteManagement: React.FC = () => {
             </div>
           </TabContainerIcon>
           <p className="mt-xl sub-title text-center">廢棄物減量專案</p>
-          <Table columns={columns2} data={data3} />
+          <Table columns={columns2} data={data3}  color="#3BC376" />
         </div>
       </div>
     </div>

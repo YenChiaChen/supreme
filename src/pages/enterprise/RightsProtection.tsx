@@ -1,9 +1,9 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/bg-employee.png";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faComments, faHandshake, faUserClock } from "@fortawesome/free-solid-svg-icons";
+import {faComments, faHandshake, faUserClock } from "@fortawesome/free-solid-svg-icons";
 const RightsProtection: React.FC = () => {
   const breadcrumbItems = [
     { label: "幸福企業", href: "/enterprise" },
@@ -18,6 +18,8 @@ const RightsProtection: React.FC = () => {
         description={`本公司致力於打造能讓員工安心、幸福共融的工作環境。遵循「勞動基準法」與「國際人權公約」，\n制訂明確的工作規則及各項管理政策，以保障員工相關合法權益。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">
@@ -25,7 +27,7 @@ const RightsProtection: React.FC = () => {
           <div className="mt-xl w-full text-center mb-4">
             <FontAwesomeIcon
               icon={faComments}
-              className="text-orange h-[80px]"
+              className="text-pink h-[80px]"
             />
           </div>
           <p className="sub-title text-center">員工溝通管道</p>
@@ -37,7 +39,7 @@ const RightsProtection: React.FC = () => {
           <div className="mt-xl w-full text-center mb-4">
             <FontAwesomeIcon
               icon={faUserClock}
-              className="text-orange h-[80px]"
+              className="text-pink h-[80px]"
             />
           </div>
           <p className="sub-title text-center">勞工退休制度</p>
@@ -53,7 +55,7 @@ const RightsProtection: React.FC = () => {
           <div className="mt-xl w-full text-center mb-4">
             <FontAwesomeIcon
               icon={faHandshake}
-              className="text-orange h-[80px]"
+              className="text-pink h-[80px]"
             />
           </div>
           <p className="sub-title text-center">保障勞資關係</p>

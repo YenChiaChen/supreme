@@ -26,7 +26,7 @@ const HeroBanner: React.FC<BannerProps> = ({
 
   return (
     <div
-      className="w-full aspect-[12/6] min-h-[65vh] max-h-[70vh]  bg-cover bg-center bg-fixed"
+      className="w-full h-[500px]  bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {center ? (

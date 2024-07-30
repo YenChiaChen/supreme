@@ -35,41 +35,41 @@ const Board: React.FC = () => {
             董事會成員同時也應普遍具備執行職務所必須之知識、技能及素養，為達到公司治理之理想目標，其應具備之能力如下：
           </p>
 
-          <div className="flex gap-6 mt-12 text-dark_blue flex-wrap justify-center">
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faScaleBalanced} className="h-[50px]" />
+          <div className="flex gap-6 mt-12 text-blue flex-wrap justify-center">
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faScaleBalanced} className="h-[50px] text-blue" />
               營運判斷能力
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faExclamationTriangle} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faExclamationTriangle} className="h-[50px] text-blue" />
               危機處理能力
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faGlobe} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faGlobe} className="h-[50px] text-blue" />
               國際市場觀
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faChartLine} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faChartLine} className="h-[50px] text-blue" />
               會計及財務分析能力
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faIndustry} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faIndustry} className="h-[50px] text-blue" />
               產業知識
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faChessKing} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faChessKing} className="h-[50px] text-blue" />
               領導能力
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faBriefcase} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faBriefcase} className="h-[50px] text-blue" />
               經營管理能力
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faGavel} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faGavel} className="h-[50px] text-blue" />
               法律知識
             </div>
-            <div className="duration-300 hover:scale-[1.05] hover:shadow-xl bg-blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square">
-              <FontAwesomeIcon icon={faCheckCircle} className="h-[50px]" />
+            <div className=" bg-light_blue bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+              <FontAwesomeIcon icon={faCheckCircle} className="h-[50px] text-blue" />
               決策能力
             </div>
           </div>
@@ -92,7 +92,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex">
                   <span className="w-32  text-lg">董事長</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     葛均
                   </span>
                 </div>
@@ -129,7 +129,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex">
                   <span className="w-32  text-lg">董事</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     謝錦宗{" "}
                   </span>
                 </div>
@@ -152,7 +152,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex">
                   <span className="w-32  text-lg">獨立董事</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     王淮
                   </span>
                 </div>
@@ -179,7 +179,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex">
                   <span className="w-32  text-lg">獨立董事</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     楊耀松
                   </span>
                 </div>
@@ -205,7 +205,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex">
                   <span className="w-32 text-lg">副董事長</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     邢懷成
                   </span>
                 </div>
@@ -240,7 +240,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex">
                   <span className="w-32 text-lg">董事</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     胡正陽
                   </span>
                 </div>
@@ -264,7 +264,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex">
                   <span className="w-32  text-lg">獨立董事</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     林佩蓉
                   </span>
                 </div>
@@ -292,7 +292,7 @@ const Board: React.FC = () => {
               <input type="checkbox" />
                 <div className="collapse-title flex ">
                   <span className="w-32  text-lg">獨立董事</span>
-                  <span className="ml-4 text-orange tracking-widest text-2xl">
+                  <span className="ml-4 text-blue tracking-widest text-2xl">
                     黃國誠
                   </span>
                 </div>
@@ -320,7 +320,7 @@ const Board: React.FC = () => {
           <div className="relative z-10 py-12 grid grid-cols-2 gap-36 items-center">
             <div>
               <p className="sub-title"> 組織透明 落實多元</p>
-              <p className="bg-dark_blue h-[1px] w-full my-6"></p>
+              <p className="bg-blue h-[1px] w-full my-6"></p>
               <p className="content">
                 至上董事會成員均具有產業專業背景及經營實務經驗，且分別擅長科技、財務會計、國際市場觀和法律等領域。
                 <br />
@@ -330,26 +330,26 @@ const Board: React.FC = () => {
             </div>
 
             <div className="">
-              <div className="flex items-center justify-between border-b-[1px] border-dashed border-dark_blue py-6">
+              <div className="flex items-center justify-between border-b-[1px] border-dashed border-blue py-6">
                 <p className="text-[16px]">具員工身份之董事占比為</p>
-                <p className="text-2xl font-bold text-dark_blue"><Stat num={37.5} suffix={"%"} decimals={1}  /></p>
+                <p className="text-2xl font-bold text-blue"><Stat num={37.5} suffix={"%"} decimals={1}  /></p>
               </div>
-              <div className="flex items-center justify-between border-b-[1px] border-dashed border-dark_blue py-6">
+              <div className="flex items-center justify-between border-b-[1px] border-dashed border-blue py-6">
                 <p className="text-[16px]">獨立董事占比為</p>
-                <p className="text-2xl font-bold text-dark_blue"><Stat num={50} suffix={"%"} decimals={0}  /></p>
+                <p className="text-2xl font-bold text-blue"><Stat num={50} suffix={"%"} decimals={0}  /></p>
               </div>
-              <div className="flex items-center justify-between border-b-[1px] border-dashed border-dark_blue py-6">
+              <div className="flex items-center justify-between border-b-[1px] border-dashed border-blue py-6">
                 <p className="text-[16px]">女性董事占比為</p>
-                <p className="text-2xl font-bold text-dark_blue"><Stat num={12.5} suffix={"%"} decimals={1}  /></p>
+                <p className="text-2xl font-bold text-blue"><Stat num={12.5} suffix={"%"} decimals={1}  /></p>
               </div>
-              <div className="flex items-center justify-between border-b-[1px] border-dashed border-dark_blue py-6">
+              <div className="flex items-center justify-between border-b-[1px] border-dashed border-blue py-6">
                 <p className="text-[16px]">長期目標：將女性董事比率提升為</p>
-                <p className="text-2xl font-bold text-dark_blue"><Stat num={25} suffix={"%"} decimals={0}  /></p>
+                <p className="text-2xl font-bold text-blue"><Stat num={25} suffix={"%"} decimals={0}  /></p>
               </div>
             </div>
           </div>
 
-          <div className="absolute top-0 right-[5%] w-[100vw] bg-blue rounded-r-[50px] z-0 min-h-full bg-opacity-40"></div>
+          <div className="absolute top-0 right-[5%] w-[100vw] bg-light_blue rounded-r-[50px] z-0 min-h-full bg-opacity-40"></div>
         </div>
 
         <div className="container mx-auto px-[10%]">
@@ -363,7 +363,7 @@ const Board: React.FC = () => {
           </p>
           <table className="min-w-full border-collapse mt-md">
             <thead>
-              <tr className="bg-orange text-white content">
+              <tr className="bg-blue text-white content">
                 <th className="border border-white px-4 py-2 rounded-tl-2xl">
                   姓名/條件
                 </th>
@@ -478,11 +478,11 @@ const Board: React.FC = () => {
             為強化治理階層之職能與專業能力，以隨時了解法令規章修訂及公司管理業務要點，董事會成員每年持續參加《上市上櫃公司董事、監察人進修推行要點》所指定機構舉辦進修課程，課程內容涵蓋公司治理主題相關之財務、風險管理、業務、商務、會計、法律或企業永續等。同時公司治理主管也積極針對公司治理、財報審查、企業永續發展等内容持續進修。
           </p>
 
-          <TabContainer goals={["2023", "2022"]}>
+          <TabContainer goals={["2023", "2022"]} tabColor='#3B79E4'>
             <div data-goal="2023">
             <div className="overflow-x-auto mt-md">
             <table className="min-w-full border-collapse">
-              <thead className="bg-orange text-white content">
+              <thead className="bg-blue text-white content">
                 <tr>
                   <th className="py-2 px-4 border border-white rounded-tl-lg">職稱</th>
                   <th className="py-2 px-4 border border-white">姓名</th>
@@ -627,7 +627,7 @@ const Board: React.FC = () => {
             <div data-goal="2022">
             <div className="overflow-x-auto mt-md">
             <table className="min-w-full border-collapse">
-              <thead className="bg-orange text-white content">
+              <thead className="bg-blue text-white content">
                 <tr>
                   <th className="py-2 px-4 border border-white rounded-tl-lg">職稱</th>
                   <th className="py-2 px-4 border border-white">姓名</th>
