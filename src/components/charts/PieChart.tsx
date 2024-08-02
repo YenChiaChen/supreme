@@ -14,10 +14,10 @@ interface PieChartProps {
 const PieChart: React.FC<PieChartProps> = ({ data }) => {
   return (
     <div className="w-[380px] h-[380px] relative">
-        <div className="absolute left-1/2 top-[45%] w-[230px] h-[130px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-2">
+        <div className="absolute left-1/2 top-[45%] w-[180px] h-[130px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-2">
         {data.map((item) => (
         <div key={item.id} className="flex items-center">
-          <div className="text-md">{item.label}</div>
+          <div className="text-xs">{item.label}</div>
           <div style={{ color: item.color }} className="text-4xl ml-4"><Stat num={item.value} suffix={""} decimals={1} /><span className="text-black text-sm">%</span></div>
         </div>
       ))}

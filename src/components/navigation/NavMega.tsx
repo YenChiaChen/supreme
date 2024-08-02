@@ -44,7 +44,7 @@ export function NavMega() {
         </div>
         <div className="main_menu">
           <ul>
-            <li className="mega_menu_dropdown mega_menu_demo_2 has_dropdown">
+            {/* <li className="mega_menu_dropdown mega_menu_demo_2 has_dropdown">
               <Link to="/enterprise">點亮永續<i className="fas fa-angle-down"></i></Link>
               <div className="mega_menu w-fit">
                 <div className="grid grid-cols-3 gap-x-6">
@@ -79,7 +79,25 @@ export function NavMega() {
               <li><a href="#">特別報導</a></li>
             </ul>
           </li>
+            <li><Link to="/news">最新動態</Link></li> */}
+
+    <li className="has_dropdown group">
+            <a href="#" className="!pr-[30px]">幸福企業 <FontAwesomeIcon icon={faChevronDown} className="text-orange  duration-300 group-hover:rotate-180 absolute right-[13px] top-1/2 -translate-y-1/2"   /></a>
+            <ul className="sub_menu">
+            <li><a href="#">人力資源分布</a></li>
+              <li className="has_dropdown"><a href="#">友善職場</a>
+                <ul className="sub_menu">
+                  <li><a href="#">職業安全衛生</a></li>
+                  <li><a href="#">健康職場</a></li>
+                  <li><a href="#">人權政策</a></li>
+                </ul>
+              </li>
+             
+              <li><a href="#">特別報導</a></li>
+            </ul>
+          </li>
             <li><Link to="/news">最新動態</Link></li>
+
             <li className="mega_menu_dropdown mega_menu_demo_2 has_dropdown">
               <Link to="/enterprise">幸福企業<i className="fas fa-angle-down"></i></Link>
               <div className="mega_menu sub_menu px-6 shadow-lg flex justify-center w-fit rounded-b-xl">
@@ -145,8 +163,8 @@ export function NavMega() {
             </li>
             <li className="mega_menu_dropdown mega_menu_demo_2 has_dropdown">
               <Link to="/symbiosis">永續共生<i className="fas fa-angle-down"></i></Link>
-              <div className="mega_menu sub_menu">
-                <div className="grid grid-cols-5">
+           <div className="mega_menu sub_menu px-6 shadow-lg flex justify-center  rounded-b-xl">
+                <div className="grid grid-cols-2">
                 <div className="mega_menu_item">
                   <h3>永續共生</h3>
                   <AnimatedLink text="氣候變遷對策" url="/symbiosis/climate-change" />
