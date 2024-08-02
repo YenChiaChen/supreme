@@ -9,7 +9,7 @@ import SupremeLogo from "../../assets/img/logo/supreme.png";
 import "./mega.css";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { faAngleRight } from "@fortawesome/pro-solid-svg-icons";
+import { faAngleRight, faArrowDownToLine } from "@fortawesome/pro-solid-svg-icons";
 
 interface LinkProps {
   text: string;
@@ -220,15 +220,11 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
             {getLanguageOptions()}
 
               <li className="!ml-4 !mr-4 relative group">
-                <button className="!py-2 !px-5 !rounded-full text-[14px] duration-300 bg-orange text-white !text-white relative z-30">
-                  永續報告書下載
+                <button className="!py-2 !px-5  text-[14px] duration-300 bg-white border border-orange text-orange  relative z-30 hover:bg-orange duration-300 hover:text-white">
+                    {t("common.esgReportDownload")}
+                    <FontAwesomeIcon icon={faArrowDownToLine} className="ml-2" />
                 </button>
-                <div className="absolute w-[80%] right-0 h-full top-0 flex items-center justify-end rounded-full border-[1px] duration-300 border-orange group-hover:translate-x-1/3 z-20">
-                  <FontAwesomeIcon
-                    icon={faCloudArrowDown}
-                    className="text-orange pr-3"
-                  />
-                </div>
+              
               </li>
             </ul>
           </div>

@@ -67,5 +67,7 @@
   "energyAndWasteManagement": "Energy and Waste Management",
   "energyManagement": "Energy Management",
   "wasteManagement": "Waste Management",
-  "waterResourceManagement": "Water Resource Management"
+  "waterResourceManagement": "Water Resource Management",
+
+  "esgReportDownload": "ESG Report"
 }
