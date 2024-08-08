@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.1dc400a5.css",
-    "main.js": "/supreme/static/js/main.f79aa469.js",
+    "main.css": "/supreme/static/css/main.e4b523c0.css",
+    "main.js": "/supreme/static/js/main.467a8a43.js",
     "static/media/氣候變遷對策.jpg": "/supreme/static/media/氣候變遷對策.b30090cf81df4a107f21.jpg",
     "static/media/廢棄物.jpg": "/supreme/static/media/廢棄物.17d4a12baaa323036395.jpg",
     "static/media/經營者的話.jpg": "/supreme/static/media/經營者的話.86ade8ead450fe9bb880.jpg",
@@ -76,11 +76,11 @@
     "static/media/logo_mashup.png": "/supreme/static/media/logo_mashup.7a5db9278ef00bcc4e3f.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.1dc400a5.css.map": "/supreme/static/css/main.1dc400a5.css.map",
-    "main.f79aa469.js.map": "/supreme/static/js/main.f79aa469.js.map"
+    "main.e4b523c0.css.map": "/supreme/static/css/main.e4b523c0.css.map",
+    "main.467a8a43.js.map": "/supreme/static/js/main.467a8a43.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dc400a5.css",
-    "static/js/main.f79aa469.js"
+    "static/css/main.e4b523c0.css",
+    "static/js/main.467a8a43.js"
   ]
 }
