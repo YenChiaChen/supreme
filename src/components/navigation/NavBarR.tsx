@@ -1,10 +1,6 @@
 // Navbar.tsx
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEarthAmericas,
-  faCloudArrowDown,
-} from "@fortawesome/free-solid-svg-icons";
 import SupremeLogo from "../../assets/img/logo/supreme.png";
 import "./mega.css";
 import { Link } from "react-router-dom";
