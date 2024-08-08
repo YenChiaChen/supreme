@@ -1,0 +1,43 @@
+{
+    "hero": {
+      "subtitle": "Our company is committed to creating a work environment where employees feel safe, happy, and integrated. We adhere to the 'Labor Standards Act' and 'International Human Rights Conventions,' establishing clear work rules and various management policies to protect the legitimate rights and interests of employees."
+    },
+    "certification": {
+      "title": "Healthy Workplace Certification",
+      "description": "The Healthy Workplace Certification is based on the World Health Organization's 'Comprehensive Workplace Health Promotion Model,' emphasizing the integration of 'physical work environment,' 'social and psychological work environment,' 'personal health resources,' and 'corporate community involvement.' Our company applied for and passed the Healthy Workplace Label review in 2023. We are committed to providing comprehensive health resources, continuously improving physical and social psychological work environments, and extending our efforts to employees' families and communities, fulfilling corporate social responsibility."
+    },
+    "services": {
+      "title": "Health Check and Medical Services",
+      "description": "Our company has long been committed to protecting employees' physical and mental health, striving to create a healthy and happy workplace. In addition to labor and health insurance, we provide group insurance for employees, free health check-ups for new employees, and regular free health check-ups for current employees (once every 2 years). Additionally, since 2021, we have introduced the 'Labor Health Protection - On-site Medical Consultation,' including four major health protection plans: workload assessment and management, prevention of ergonomic hazards, maternity health protection, and prevention of workplace violence. We provide on-site services twice a month. In 2022, nursing staff provided a total of 24 medical consultations (48 hours), and doctors provided 2 consultations (4 hours). To protect the privacy and confidentiality of employees' personal health-related information, all medical consultations adhere to medical confidentiality principles, and consultation content is not disclosed to the company or third parties without the consent of the consulting individual.",
+      "healthSeminar": "Autonomic Nervous Health Seminar",
+      "healthcareConsulation": "Medical Consultation"
+    },
+    "clubs": {
+      "title": "Sports Clubs",
+      "tabelTennis": {
+        "title": "Table Tennis Club",
+        "description": "With the original intention of 'making friends through table tennis,' the club promotes emotional exchanges among members through regular friendly matches and gatherings. Professional table tennis coaches are also hired to accompany practice, improving personal skills and fostering sportsmanship."
+      },
+      "basketball": {
+        "title": "Basketball Club",
+        "description": "Club members' agile figures appear every Wednesday at the dedicated indoor basketball court at Neihu Sports Center, enhancing camaraderie among colleagues while sweating it out."
+      },
+      "badminton": {
+        "title": "Badminton Club",
+        "description": "To allow colleagues to relax physically and mentally amid busy work, and to expand their social circles and make friends through club activities, the Badminton Club holds regular activities every Monday at a dedicated standard badminton hall, enabling company colleagues to grow together in competitions and training."
+      },
+      "jogging": {
+        "title": "Jogging Club",
+        "description": "'If you want to run fast, run alone; if you want to run far, run together.' Jogging has gradually become popular, bringing many benefits to runners, including weight loss and maintaining good health. The Jogging Club not only has club uniforms but also provides supplies during group training and participates in various public jogging events, offering rich participation rewards."
+      },
+      "golf": {
+        "title": "Golf Club",
+        "description": "Golf is a leisure sport that can relieve physical and mental stress amidst a busy work life. Golf enthusiasts among colleagues regularly hold golf gatherings at various courses every second week of the month, allowing them to relax in the beautiful natural scenery and improve their skills."
+      },
+      "boardGame": {
+        "title": "Board Game Club",
+        "description": "Board games are activities that can train thinking and promote communication in a relaxed and enjoyable atmosphere. Board game enthusiasts among colleagues regularly hold board game gatherings every third week of the month. In these gatherings, members can explore a variety of board games, challenge their strategies and luck, enjoy the fun with colleagues, and strengthen mutual feelings. Whether you are a board game novice or a veteran, we welcome you to join us and experience the endless charm of board games."
+      }
+    }
+  }
+  

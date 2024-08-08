@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續共生/綠能低碳計畫.jpg";
 import Table from "../../components/ui/Table";
 
 
@@ -209,6 +209,8 @@ const GreenEnergy: React.FC = () => {
         description={`半導體零組件代理商之競爭優勢係即時提供客戶需求及掌握關鍵技術發展趨勢，優良的產品品質與技術，\n與提供客戶更多元的產品及完善的服務才能提昇客戶忠誠度，為公司帶來豐厚的利潤。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

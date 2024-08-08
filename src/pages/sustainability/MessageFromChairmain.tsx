@@ -1,9 +1,8 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/經營者的話.jpg";
 import Img01 from "../../assets/img/testing/chairmain.png";
 
-import SlideUpList from "../../components/ui/SlideUpList";
 
 const MessageFromChairmain: React.FC = () => {
   const items2 = [
@@ -33,6 +32,8 @@ const MessageFromChairmain: React.FC = () => {
         description={``}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

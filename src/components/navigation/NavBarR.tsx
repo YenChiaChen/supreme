@@ -60,28 +60,18 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       case 'zh_TW':
         return (
           <span className="px-4">
-           <a href="#" onClick={() => changeLanguage('zh_CN')} className='border-r-[1px] border-light_gray pr-2 hover:text-dark_blue duration-300'>簡</a>
            <a href="#" className="pl-2" onClick={() => changeLanguage('en')}>EN</a>
-          </span>
-        );
-      case 'zh_CN':
-        return (
-            <span className="px-4">
-          <a href="#" onClick={() => changeLanguage('zh_TW')} className='border-r-[1px] border-light_gray pr-2 hover:text-dark_blue duration-300'>繁</a>
-          <a href="#" className="pl-2" onClick={() => changeLanguage('en')}>EN</a>
           </span>
         );
       case 'en':
         return (
             <span className="px-4">
-          <a href="#" onClick={() => changeLanguage('zh_TW')} className='border-r-[1px] border-light_gray pr-2 hover:text-dark_blue duration-300'>繁</a>
-          <a href="#" className="pl-2" onClick={() => changeLanguage('zh_CN')}>簡</a>
+          <a href="#" onClick={() => changeLanguage('zh_TW')} className=''>繁</a>
           </span>
         );
       default:
         return (
           <span className="px-4">
-           <a href="#" onClick={() => changeLanguage('zh_CN')} className='border-r-[1px] border-light_gray pr-2 hover:text-dark_blue duration-300'>簡</a>
            <a href="#" className="pl-2" onClick={() => changeLanguage('en')}>EN</a>
           </span>
         );
@@ -116,11 +106,11 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
       <div className="container mx-auto">
         <div className="row px-10">
           <div className="logo flex items-center">
-            <a href="#">
+            <a href="http://www.supreme.com.tw/" target="_blank">
               <img src={SupremeLogo} className="w-[160px]" alt="Supreme Logo" />
             </a>
             <div className="mx-4 text-light_gray w-[2px] bg-light_gray h-[30px]"></div>
-            <p className="text-[18px]">{ t("common.sustainability")}</p>
+            <Link to="/"><p className="text-[18px] font-medium">{ t("common.sustainability")}</p></Link>
           </div>
           <div className="mobile_btn">
             <i className="fas fa-bars"></i>
@@ -139,17 +129,17 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                   <AnimatedLink text={t("common.humanRightsPolicy")} url="/enterprise/human-rights-policy" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3 className="">{t("common.welfareAndCare")}</h3>
-                  <AnimatedLink text={t("common.employeeRightsProtection")} url="/enterprise/welfare-care" />
-                  <AnimatedLink text={t("common.talentDevelopment")} url="/enterprise/rights-protection" />
+                 <h3 className="text-black text-sm font-bold text-orange">{t("common.employeePolicy")}</h3>
+                  <AnimatedLink text={t("common.welfareAndCare")} url="/enterprise/welfare-care" />
+                  <AnimatedLink text={t("common.employeeRightsProtection")} url="/enterprise/rights-protection" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3 className="">{t("common.employeePolicy")}</h3>
+                 <h3 className="text-black text-sm font-bold text-orange">{t("common.talentDevelopment")}</h3>
                   <AnimatedLink text={t("common.diversifiedGrowth")} url="/enterprise/diverse-growth" />
                   <AnimatedLink text={t("common.performanceEvaluationAndCompensation")} url="/enterprise/performance-compensation" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3 className="">{ t("common.happyEnterprise")}</h3>
+                 <h3 className="text-black text-sm font-bold text-orange">{ t("common.happyEnterprise")}</h3>
                   <AnimatedLink text={ t("common.humanResourcesDistribution")} url="/enterprise/hr-distribution" />
                 </div>
                 </div>
@@ -161,31 +151,31 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
               <div className="mega_menu sub_menu px-6 shadow-lg flex justify-center rounded-b-xl">
                 <div className="grid grid-cols-5">
                 <div className="mega_menu_item">
-                  <h3>{ t("common.sustainableManagement")}</h3>
+                  <h3 className="text-black text-sm font-bold text-orange">{ t("common.sustainableManagement")}</h3>
                   <AnimatedLink text={ t("common.messageFromManagement")} url="/sustainability/message-from-chairman" />
                   <AnimatedLink text={ t("common.corporateGovernance")} url="/sustainability/governance" />
                   <AnimatedLink text={ t("common.integrityManagement")} url="/sustainability/ethical-management" />
                   <AnimatedLink text={ t("common.boardOfDirectors")} url="/sustainability/board" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3>{ t("common.functionalCommittee")}</h3>
+                  <h3 className="text-black text-sm font-bold text-orange">{ t("common.functionalCommittee")}</h3>
                   <AnimatedLink text={ t("common.sustainableDevelopmentCommittee")} url="/sustainability/sustainbility-committee" />
                   <AnimatedLink text={ t("common.compensationCommittee")} url="/sustainability/compensation-committee" />
                   <AnimatedLink text={ t("common.auditCommittee")} url="/sustainability/audit-committee" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3 className="">{ t("common.stakeholderSection")}</h3>
+                 <h3 className="text-black text-sm font-bold text-orange">{ t("common.stakeholderSection")}</h3>
                   <AnimatedLink text={ t("common.stakeholderMeetings")} url="/sustainability/stakeholder-engagement" />
                   <AnimatedLink text={ t("common.materialTopics")} url="/sustainability/key-topics" />
                   <AnimatedLink text={ t("common.stakeholderQuestionnaire")} url="/sustainability/questionnaire" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3>{ t("common.technologyRisk")}</h3>
+                  <h3 className="text-black text-sm font-bold text-orange">{ t("common.technologyRisk")}</h3>
                   <AnimatedLink text={ t("common.riskManagement")} url="/sustainability/risk-management" />
                   <AnimatedLink text={ t("common.informationSecurityManagement")} url="/sustainability/information-security" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3>{ t("common.sustainableSupplyChain")}</h3>
+                  <h3 className="text-black text-sm font-bold text-orange">{ t("common.sustainableSupplyChain")}</h3>
                   <AnimatedLink text={ t("common.supplyChainManagement")} url="/sustainability/supply-chain" />
                   <AnimatedLink text={ t("common.productAndCustomerService")} url="/sustainability/product-customer-service" />
                 </div>
@@ -198,13 +188,13 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
             <div className="mega_menu sub_menu px-6 shadow-lg flex justify-center  rounded-b-xl">
                 <div className="grid grid-cols-2">
                 <div className="mega_menu_item">
-                  <h3>{ t("common.sustainableCoexistence")}</h3>
+                  <h3 className="text-black text-sm font-bold text-orange">{ t("common.sustainableCoexistence")}</h3>
                   <AnimatedLink text={ t("common.climateChangeStrategy")} url="/symbiosis/climate-change" />
                   <AnimatedLink text={ t("common.greenhouseGasAndActionPlan")} url="/symbiosis/greenhouse-gases" />
                   <AnimatedLink text={ t("common.greenEnergyLowCarbonPlan")} url="/symbiosis/green-energy" />
                 </div>
                 <div className="mega_menu_item">
-                  <h3>{ t("common.energyAndWasteManagement")}</h3>
+                  <h3 className="text-black text-sm font-bold text-orange">{ t("common.energyAndWasteManagement")}</h3>
                   <AnimatedLink text={ t("common.energyManagement")} url="/symbiosis/energy-management" />
                   <AnimatedLink text={ t("common.wasteManagement")}url="/symbiosis/waste-management" />
                   <AnimatedLink text={ t("common.waterResourceManagement")} url="/symbiosis/water-management" />

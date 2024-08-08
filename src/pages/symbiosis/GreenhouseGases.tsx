@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續共生/溫室氣體&行動方案.jpg";
 import TabContainer from "../../components/ui/TabContainer";
 
 import {
@@ -10,14 +10,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BarChart from "./GasChart";
 import Table from "../../components/ui/Table";
 import { GasChart2 } from "./GasChart";
-import { faBold, faBolt, faBus, faLeaf, faShippingFast, faTruck } from "@fortawesome/free-solid-svg-icons";
-const data = [
-  { year: "2019", consumption: 0.532 },
-  { year: "2020", consumption: 0.654 },
-  { year: "2021", consumption: 0.819 },
-  { year: "2022", consumption: 2.867 },
-  { year: "2023", consumption: 3.111 },
-];
+import { faBolt, faBus, faLeaf, faShippingFast, faTruck } from "@fortawesome/free-solid-svg-icons";
+
 const GreenhouseGases: React.FC = () => {
   const Goal2022: React.FC = () => (
     <>
@@ -145,6 +139,8 @@ const GreenhouseGases: React.FC = () => {
         description={`為了善盡地球公民的責任，響應國家淨零碳排之目標，\n自 2020 年起本公司開始自主性溫室氣體盤查，主動揭露溫室氣體排放資訊。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

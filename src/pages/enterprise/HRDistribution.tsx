@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/幸福企業/人力資源分佈.jpg";
 import React from "react";
 import PieChart from "../../components/charts/PieChart";
 import TabContainer from "../../components/ui/TabContainer";
@@ -11,21 +11,21 @@ const HRDistribution: React.FC = () => {
   const { t } = useTranslation();
 
   const breadcrumbItems = [
-    { label: "幸福企業", href: "/enterprise" },
-    { label: "人力資源分佈" },
+    { label: t("common.happyEnterprise"), href: "/enterprise" },
+    { label: t("hr_distribution.hero.title") },
   ];
   const pieData = [
     { id: t("common.fullTime"), label: t("common.fullTime"), value: 96.4, color: "#FF507C" },
-    { id: "約聘", label: t("common.contract"), value: 3.6, color: "#FF7C9D" },
+    { id: t("common.contract"), label: t("common.contract"), value: 3.6, color: "#FF7C9D" },
   ];
 
   const pieData2 = [
-    { id: "全職", label: t("common.fullTime"), value: 100, color: "#FF507C" },
-    { id: "兼職", label: t("common.partTime"), value: 0, color: "#FF7C9D" },
+    { id: t("common.fullTime"), label: t("common.fullTime"), value: 100, color: "#FF507C" },
+    { id: t("common.partTime"), label: t("common.partTime"), value: 0, color: "#FF7C9D" },
   ];
   const pieData3 = [
-    { id: "男性", label: t("common.male"), value: 67.8, color: "#FF507C" },
-    { id: "女性", label: t("common.female"), value: 32.2, color: "#FF7C9D" },
+    { id: t("common.male"), label: t("common.male"), value: 67.8, color: "#FF507C" },
+    { id: t("common.female"), label: t("common.female"), value: 32.2, color: "#FF7C9D" },
   ];
   const pieData4 = [
     { id: "<35", label: "<35", value: 27.0, color: "#FF507C" },
@@ -35,21 +35,21 @@ const HRDistribution: React.FC = () => {
 
   const pieData5 = [
     {
-      id: "主管",
+      id: t("common.supervisor"),
       label: t("common.supervisor"),
       value: 39.2,
       color: "#FF507C",
     },
     {
-      id: "非主管",
+      id: t("common.nonSupervisor"),
       label: t("common.nonSupervisor"),
       value: 60.8,
       color: "#FF7C9D",
     },
   ];
   const pieData6 = [
-    { id: "女性", label: t("common.female"), value: 18.1, color: "#FF507C" },
-    { id: "男性", label: t("common.male"), value: 81.9, color: "#FF7C9D" },
+    { id: t("common.female"), label: t("common.female"), value: 18.1, color: "#FF507C" },
+    { id: t("common.male"), label: t("common.male"), value: 81.9, color: "#FF7C9D" },
   ];
   const pieData7 = [
     { id: "21-30", label: "21-30", value: 35.7, color: "#FF507C" },
@@ -58,57 +58,57 @@ const HRDistribution: React.FC = () => {
     { id: ">51", label: ">51", value: 14.3, color: "#FFD3DE" },
   ];
   const pieData8 = [
-    { id: "女性", label: t("common.female"), value: 39.3, color: "#FF507C" },
-    { id: "男性", label: t("common.male"), value: 60.7, color: "#FF7C9D" },
+    { id: t("common.female"), label: t("common.female"), value: 39.3, color: "#FF507C" },
+    { id: t("common.male"), label: t("common.male"), value: 60.7, color: "#FF7C9D" },
   ];
 
   const pieData2023 = [
-    { id: "正職", label: t("common.fullTime"), value: 95.45, color: "#FF507C" },
-    { id: "約聘", label: t("common.contract"), value: 4.55, color: "#FF7C9D" },
+    { id: t("common.fullTime"), label: t("common.fullTime"), value: 95.45, color: "#FF507C" },
+    { id: t("common.contract"), label: t("common.contract"), value: 4.55, color: "#FF7C9D" },
   ];
 
   const pieData20232 = [
-    { id: "全職", label: t("common.fullTime"), value: 100, color: "#FF507C" },
-    { id: "兼職", label: t("common.partTime"), value: 0, color: "#FF7C9D" },
+    { id: t("common.fullTime"), label: t("common.fullTime"), value: 100, color: "#FF507C" },
+    { id: t("common.partTime"), label: t("common.partTime"), value: 0, color: "#FF7C9D" },
   ];
   const pieData20233 = [
-    { id: "男性", label: t("common.male"), value: 69.7, color: "#FF507C" },
-    { id: "女性", label: t("common.female"), value: 30.3, color: "#FF7C9D" },
+    { id: t("common.male"), label: t("common.male"), value: 69.7, color: "#FF507C" },
+    { id: t("common.female"), label: t("common.female"), value: 30.3, color: "#FF7C9D" },
   ];
   const pieData20234 = [
-    { id: "台灣", label: t("common.taiwan"), value: 90.9, color: "#FF507C" },
-    { id: "中國", label: t("common.china"), value: 9.1, color: "#FF7C9D" },
+    { id: t("common.taiwan"), label: t("common.taiwan"), value: 90.9, color: "#FF507C" },
+    { id: t("common.china"), label: t("common.china"), value: 9.1, color: "#FF7C9D" },
   ];
 
   const pieData20235 = [
     {
-      id: "主管",
+      id: t("common.supervisor"),
       label: t("common.supervisor"),
       value: 35.36,
       color: "#FF507C",
     },
     {
-      id: "業務行銷",
+      id: t("common.salesMarketing"),
       label: t("common.salesMarketing"),
       value: 17.68,
       color: "#FF7C9D",
     },
     {
-      id: "行政管理",
+      id: t("common.administration"),
       label: t("common.administration"),
       value: 29.8,
       color: "#FFA7BD",
     },
     {
-      id: "研發人員",
+      id: t("common.rdStaff"),
       label: t("common.rdStaff"),
       value: 17.16,
       color: "#FFD3DE",
     },
   ];
   const pieData20236 = [
-    { id: "女性", label: t("common.female"), value: 17.1, color: "#FF507C" },
-    { id: "男性", label: t("common.male"), value: 82.9, color: "#FF7C9D" },
+    { id: t("common.female"), label: t("common.female"), value: 17.1, color: "#FF507C" },
+    { id: t("common.male"), label: t("common.male"), value: 82.9, color: "#FF7C9D" },
   ];
   const pieData20237 = [
     { id: "21-30", label: "21-30", value: 39.3, color: "#FF507C" },
@@ -117,19 +117,19 @@ const HRDistribution: React.FC = () => {
     { id: ">51", label: ">51", value: 10.7, color: "#FFD3DE" },
   ];
   const pieData20238 = [
-    { id: "女性", label: t("common.female"), value: 17.9, color: "#FF507C" },
-    { id: "男性", label: t("common.male"), value: 82.1, color: "#FF7C9D" },
+    { id: t("common.female"), label: t("common.female"), value: 17.9, color: "#FF507C" },
+    { id: t("common.male"), label: t("common.male"), value: 82.1, color: "#FF7C9D" },
   ];
 
   const pieData2021 = [
     {
-      id: "非定期契約",
+      id:  t("common.fixedTermContract"),
       label: t("common.fixedTermContract"),
       value: 95.9,
       color: "#FF507C",
     },
     {
-      id: "定期契約",
+      id: t("common.permanentContract"),
       label: t("common.permanentContract"),
       value: 4.1,
       color: "#FF7C9D",
@@ -137,31 +137,31 @@ const HRDistribution: React.FC = () => {
   ];
 
   const pieData20212 = [
-    { id: "全職", label: t("common.fullTime"), value: 100, color: "#FF507C" },
-    { id: "兼職", label: t("common.partTime"), value: 0, color: "#FF7C9D" },
+    { id: t("common.fullTime"), label: t("common.fullTime"), value: 100, color: "#FF507C" },
+    { id: t("common.partTime"), label: t("common.partTime"), value: 0, color: "#FF7C9D" },
   ];
   const pieData20213 = [
-    { id: "男性", label: t("common.male"), value: 70.4, color: "#FF507C" },
-    { id: "女性", label: t("common.female"), value: 29.6, color: "#FF7C9D" },
+    { id: t("common.male"), label: t("common.male"), value: 70.4, color: "#FF507C" },
+    { id: t("common.female"), label: t("common.female"), value: 29.6, color: "#FF7C9D" },
   ];
 
   const pieData20215 = [
     {
-      id: "經理級以上",
+      id: t("common.managementLevelAndAbove"),
       label: t("common.managementLevelAndAbove"),
       value: 33.7,
       color: "#FF507C",
     },
     {
-      id: "一般員工",
+      id: t("common.generalEmployees"),
       label: t("common.generalEmployees"),
       value: 66.3,
       color: "#FF7C9D",
     },
   ];
   const pieData20216 = [
-    { id: "女性", label: t("common.female"), value: 15.1, color: "#FF507C" },
-    { id: "男性", label: t("common.male"), value: 84.9, color: "#FF7C9D" },
+    { id: t("common.female"), label: t("common.female"), value: 15.1, color: "#FF507C" },
+    { id:t("common.male"), label: t("common.male"), value: 84.9, color: "#FF7C9D" },
   ];
   const pieData20217 = [
     { id: "21-30", label: "21-30", value: 18.7, color: "#FF507C" },
@@ -170,8 +170,8 @@ const HRDistribution: React.FC = () => {
     { id: ">51", label: ">51", value: 22.9, color: "#FFD3DE" },
   ];
   const pieData20218 = [
-    { id: "女性", label: t("common.female"), value: 68.7, color: "#FF507C" },
-    { id: "男性", label: t("common.male"), value: 32.3, color: "#FF7C9D" },
+    { id: t("common.female"), label: t("common.female"), value: 68.7, color: "#FF507C" },
+    { id: t("common.male"), label: t("common.male"), value: 32.3, color: "#FF7C9D" },
   ];
 
   return (
@@ -181,6 +181,8 @@ const HRDistribution: React.FC = () => {
         description={t("hr_distribution.hero.subtitle")}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">

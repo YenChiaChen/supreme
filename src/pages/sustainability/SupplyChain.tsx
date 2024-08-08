@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/供應鏈管理.jpg";
 import Supply from "../../assets/img/testing/supply1.png";
 import Supply2 from "../../assets/img/testing/supply2.png";
 import Table from "../../components/ui/Table";
@@ -156,6 +156,8 @@ const SupplyChain: React.FC = () => {
 共同遵循相關規範及促進經濟、社會及環境之平衡與永續發展。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

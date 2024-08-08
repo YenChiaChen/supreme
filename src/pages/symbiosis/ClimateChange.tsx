@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續共生/氣候變遷對策.jpg";
 import Img01 from "../../assets/img/testing/climate-change-01.png";
 import Img02 from "../../assets/img/testing/climate-change-02.png";
 
@@ -39,6 +39,8 @@ const ClimateChange: React.FC = () => {
         description={`為因應氣候變遷對產業的經營風險，本公司由永續發展委員會轄下工作推動小組負責召集相關各單位。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/幸福企業/福利措施與關懷.jpg";
 import React from "react";
 import {
   faShieldAlt,
@@ -40,6 +40,8 @@ const WelfareCare: React.FC = () => {
         description={`設立職工福利委員會，推行各項員工福利措施，\n包括結婚、生育、生日、喪葬、旅遊、急難補助、電影欣賞、社團活動、年節/慶生禮券等。\n此外亦提供員工教育訓練、團體意外險、員工入股、持股信托、分紅等多種福利項目。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">

@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續共生/廢棄物.jpg";
 import TabContainer from "../../components/ui/TabContainer";
 import hakimo from "../../assets/img/testing/hakimo.png";
 import hakimoPercent from "../../assets/img/testing/hakimoPercent.png";
@@ -95,6 +95,8 @@ const WasteManagement: React.FC = () => {
         description={`本公司以追求能源與資源最佳使用效率作為努力目標，\n因此，持續執行節電措施及提高能源效率，同時思 考未來如何增加綠色能源的比例。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

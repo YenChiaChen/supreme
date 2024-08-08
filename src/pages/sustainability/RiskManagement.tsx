@@ -1,7 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
-import Goal from "../../assets/img/testing/golatest.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/風險管理.jpg";
 import Board from "../../assets/img/testing/board-test.png";
 import SlideUpList from "../../components/ui/SlideUpList";
 import { faCircleCheck, faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -92,6 +91,8 @@ const RiskManagement: React.FC = () => {
         description={`本公司為半導體通路商，主要資金來源為銀行借款，依此資金來採購產品，故客戶交易衍生的風險管理成為公司最重要的課題完善風險管理可降低客戶交易風險，提升公司獲利能力，對於社會關懷付出正面貢獻，提供員工更好的待遇和福利。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

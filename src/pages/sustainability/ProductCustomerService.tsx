@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/產品與客戶服務.jpg";
 import img01 from "../../assets/img/testing/product-customer-service-01.png";
 import Table from "../../components/ui/Table";
 const ProductCustomerService: React.FC = () => {
@@ -44,6 +44,8 @@ const ProductCustomerService: React.FC = () => {
         description={`本公司於2011年完成設置薪資報酬委員會，並由董事會訂定「薪資報酬委員會組織規程」，\n藉以強化公司治理，健全公司董事及經理人薪資報酬制度。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

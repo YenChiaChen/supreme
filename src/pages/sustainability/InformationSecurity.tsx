@@ -1,12 +1,10 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
-import Goal from "../../assets/img/testing/goaltest-2.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/資訊安全管理.jpg";
 import { faCircleCheck, faPlay } from "@fortawesome/free-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
 import TabListGoal from "../../components/ui/TabListGoal";
 import Security from "../../assets/img/testing/security.png";
-import Security2 from "../../assets/img/testing/security2.png";
 import Security3 from "../../assets/img/testing/security3.png";
 import Security4 from "../../assets/img/testing/security4.png";
 import { faBullseyeArrow } from "@fortawesome/pro-solid-svg-icons";
@@ -114,6 +112,8 @@ const InformationSecurity: React.FC = () => {
         description={`資訊安全之重要性在於保護公司機密資料及系統不受駭客威脅，以預防資安事件造成損失及確保公司正常營運。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

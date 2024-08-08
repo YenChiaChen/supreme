@@ -13,7 +13,7 @@ interface PieChartProps {
 
 const PieChart: React.FC<PieChartProps> = ({ data }) => {
   return (
-    <div className="w-[380px] h-[380px] relative">
+    <div className="w-[380px] h-[410px] relative">
         <div className="absolute left-1/2 top-[45%] w-[180px] h-[130px] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-2">
         {data.map((item) => (
         <div key={item.id} className="flex items-center">
@@ -24,7 +24,7 @@ const PieChart: React.FC<PieChartProps> = ({ data }) => {
         </div>
       <ResponsivePie
         data={data}
-        margin={{ top: 40, right: 0, bottom: 80, left: 0 }}
+        margin={{ top: 40, right: 0, bottom: 100, left: 0 }}
         innerRadius={0.9}
         padAngle={0.7}
         cornerRadius={3}
@@ -57,11 +57,11 @@ const PieChart: React.FC<PieChartProps> = ({ data }) => {
         legends={[
           {
             anchor: "bottom",
-            direction: "row",
+            direction: "column",
             justify: false,
             translateX: 25,
-            translateY: 56,
-            itemsSpacing: 8,
+            translateY: 90,
+            itemsSpacing: 3,
             itemWidth: 100,
             itemHeight: 18,
             itemTextColor: "#999",

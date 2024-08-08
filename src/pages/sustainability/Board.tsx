@@ -1,8 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
-import Img01 from "../../assets/img/testing/Group 87.png";
-import Img03 from "../../assets/img/testing/board-02.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/董事會.jpg";
 import { faBriefcase, faChartLine, faCheckCircle, faChessKing, faExclamationTriangle, faGavel, faGlobe, faIndustry, faScaleBalanced } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContainer from "../../components/ui/TabContainer";
@@ -20,6 +18,8 @@ const Board: React.FC = () => {
         description={`董事會為至上最高治理單位，首要職責在於監督公司守法、資訊透明、即時揭露重要訊息及誠信經營。\n另於董事會下設置「審計委員會」、「薪資報酬委員會」，由全體獨立董事組成，本公司訂定之「公司章程」及「董事選任程序」皆已規範全體董事選舉採候選人提名制度。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

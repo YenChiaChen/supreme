@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/審計委員會.jpg";
 import TabContainer from "../../components/ui/TabContainer";
 import Table from "../../components/ui/Table";
 import React from "react";
@@ -168,6 +168,8 @@ const AuditCommittee: React.FC = () => {
         description={`本公司於2019年完成設置審計委員會，並由董事會訂定「審計委員會組織規程」，藉以強化公司治理，健全公司管理制度。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

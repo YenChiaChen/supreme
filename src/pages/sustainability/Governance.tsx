@@ -1,96 +1,20 @@
 import HeroBanner from "../../components/ui/HeroBanner";
-import StatDisplay from "../../components/ui/StatDisplay";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import CardGrid from "../../components/ui/CardGrid";
 import TabListGoal from "../../components/ui/TabListGoal";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/公司治理.jpg";
 import Img01 from "../../assets/img/bg/bg01.png";
 import Img02 from "../../assets/img/testing/board.png";
 import {
-  faBuilding,
   faCircleCheck,
   faPlay,
 } from "@fortawesome/free-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
 import TabContainer from "../../components/ui/TabContainer";
-import TrainingTable from "../../components/ui/TrainingTable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullseyeArrow } from "@fortawesome/pro-solid-svg-icons";
 const Governance: React.FC = () => {
-  const data = [
-    {
-      name: "陳力行",
-      trainings: [
-        {
-          organization: "財團法人中華民國會計研究發展基金會",
-          course: "企業財報編制常見缺失與內稽內控法令遵循實務",
-          startTime: "2022/03/10",
-          endTime: "2022/03/10",
-          hours: "6",
-        },
-        {
-          organization: "財團法人中華民國會計研究發展基金會",
-          course: "企業財報編制常見缺失與內稽內控法令遵循實務",
-          startTime: "2022/03/10",
-          endTime: "2022/03/10",
-          hours: "6",
-        },
-        {
-          organization: "財團法人中華民國會計研究發展基金會",
-          course: "企業財報編制常見缺失與內稽內控法令遵循實務",
-          startTime: "2022/03/10",
-          endTime: "2022/03/10",
-          hours: "6",
-        },
-      ],
-    },
-    {
-      name: "陳力行",
-      trainings: [
-        {
-          organization: "財團法人中華民國會計研究發展基金會",
-          course: "企業財報編制常見缺失與內稽內控法令遵循實務",
-          startTime: "2022/03/10",
-          endTime: "2022/03/10",
-          hours: "6",
-        },
-        {
-          organization: "財團法人中華民國會計研究發展基金會",
-          course: "企業財報編制常見缺失與內稽內控法令遵循實務",
-          startTime: "2022/03/10",
-          endTime: "2022/03/10",
-          hours: "6",
-        },
-        {
-          organization: "財團法人中華民國會計研究發展基金會",
-          course: "企業財報編制常見缺失與內稽內控法令遵循實務",
-          startTime: "2022/03/10",
-          endTime: "2022/03/10",
-          hours: "6",
-        },
-      ],
-    },
-  ];
+ 
 
-  const ShortTermGoals: React.FC = () => (
-    <>
-      <p className="my-6 content">目前沒有資料！過一陣子再來看看吧！</p>
-    </>
-  );
-
-  const MidTermGoals: React.FC = () => (
-    <>
-      <p className="my-6 content">
-        <TrainingTable data={data} />
-      </p>
-    </>
-  );
-
-  const LongTermGoals: React.FC = () => (
-    <>
-      <p className="my-6 content">目前沒有資料！過一陣子再來看看吧！</p>
-    </>
-  );
   const goals = {
     "2021": [
       {
@@ -173,27 +97,6 @@ const Governance: React.FC = () => {
     { label: "公司治理" },
   ];
 
-  const cards = [
-    {
-      title: "短期目標",
-      subtitle: "",
-      span: 4,
-      description: "落實各項永續發展項目之執行 與董事會之監督及參與。",
-    },
-    {
-      title: "中期目標",
-      subtitle: "",
-      span: 4,
-      description: "公司治理評鑑進入前５% 並獲得永續獎。",
-    },
-    {
-      title: "長期目標",
-      subtitle: "",
-      span: 4,
-      description:
-        "董事會成員具員工身分之董事 占比降低至 25%；女性董事比例提升至 25%。",
-    },
-  ];
 
   const items = [
     { id: 1, content: "・依法辦理董事會及股東會之會議相關事宜。" },
@@ -265,31 +168,13 @@ const Governance: React.FC = () => {
 
   return (
     <div>
-      {/* <div className="w-full h-[65vh] min-h-[800px] bg-blue">
-          <div className="w-full h-full ">
-          <div className="container h-full mx-auto px-[10%] grid grid-cols-2 gap-12">
-            <div className="flex items-start justify-end flex-col">
-              <p className="text-[60px] font-bold text-white tracking-wide">公司治理</p>
-              <p className="text-white tracking-wide mt-6 mb-24 leading-9">良好的公司治理是公司穩健營運發展的基礎，優秀的企業不該只以獲利情形定義，更需要能永續經營、落實公司治理原則及善盡企業責任。 至上相信公司治理與環境、社會、人權呈正向關係，愈加優化的公司治理將能為市場提供更高品質的產品及服務，亦可提升股東權益，為公司帶來正面效益。</p>
-            </div>
-            <div className="flex items-end justify-end overflow-hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 384 512"
-                fill="white"
-                className="-mb-[150px] w-[90%]"
-              >
-                <path d="M64 32C46.3 32 32 46.3 32 64l0 384c0 17.7 14.3 32 32 32l64 0 0-64c0-35.3 28.7-64 64-64s64 28.7 64 64l0 64 64 0c17.7 0 32-14.3 32-32l0-384c0-17.7-14.3-32-32-32L64 32zM224 416c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64 64 0 0-64zm-96 96l-64 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L320 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64l-64 0-32 0-64 0-32 0zM64 120c0-13.3 10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24l0-48zm32 8l0 32 32 0 0-32-32 0zM248 96l48 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24l0-48c0-13.3 10.7-24 24-24zm8 64l32 0 0-32-32 0 0 32zM64 248c0-13.3 10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24l0-48zm32 8l0 32 32 0 0-32-32 0zm152-32l48 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24l0-48c0-13.3 10.7-24 24-24zm8 64l32 0 0-32-32 0 0 32z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <HeroBanner
         title="公司治理"
         description={`良好的公司治理是公司穩健營運發展的基礎，優秀的企業不該只以獲利情形定義，更需要能永續經營、落實公司治理原則及善盡企業責任。 至上相信公司治理與環境、社會、人權呈正向關係，愈加優化的公司治理將能為市場提供更高品質的產品及服務，亦可提升股東權益，為公司帶來正面效益。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

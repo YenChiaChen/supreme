@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg-employee.png";
+import Bg from "../../assets/img/bg/subPage/幸福企業/員工權益保障.jpg";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faComments, faHandshake, faUserClock } from "@fortawesome/free-solid-svg-icons";

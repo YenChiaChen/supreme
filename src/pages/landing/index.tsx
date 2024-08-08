@@ -10,9 +10,45 @@ import Nav from "../../components/navigation/NavBar";
 import Survey from "./Survey";
 import Table from "./Table";
 import TableGenerator from "./TableGenerator";
+import Navbar from "../../components/navigation/NavBarR";
 
 
 const LandingPage: React.FC = () => {
+
+  const menuItems = [
+    {
+      "title": "幸福企業",
+      "href": "#",
+      "subMenu": [
+        {
+          "title": "人力資源分布",
+          "href": "#"
+        },
+        {
+          "title": "友善職場",
+          "href": "#",
+          "subMenu": [
+            {
+              "title": "職業安全衛生",
+              "href": "/enterprise/hr-distribution"
+            },
+            {
+              "title": "健康職場",
+              "href": "#"
+            },
+            {
+              "title": "人權政策",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "title": "特別報導",
+          "href": "#"
+        }
+      ]
+    }
+  ]
   const [isSurveyOpen, setSurveyOpen] = useState(false);
   useEffect(() => {
     AOS.init({
@@ -22,7 +58,7 @@ const LandingPage: React.FC = () => {
   }, []);
   return (
     <div>
-      <Nav />
+      <Navbar items={menuItems} />
         <Survey isOpen={isSurveyOpen} onClose={() => setSurveyOpen(false)} />
       <div className="bg-gradient-to-b from-dark_blue h-[100vh] w-full">
     

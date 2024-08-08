@@ -1,6 +1,6 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續共生/水資源.jpg";
 import TabContainer from "../../components/ui/TabContainer";
 
 import WaterConsumptionChart from "../../components/charts/WaterConsumptionChart";
@@ -20,14 +20,6 @@ const WaterManagement: React.FC = () => {
   ];
 
 
-  const A1: React.FC = () => (
-    <>
-      <p className="my-6 content">
-        倉儲中心原使用木棧板，為減少廢棄棧板數量，於2017年改購置鐵塑棧板使廢棄棧板量大幅減少，截至2022年無再採購存儲作業所需棧板，往年進貨所乘載貨物的木製棧板也持續回收再出貨利用。
-      </p>
-    </>
-  );
-
   return (
     <div>
       <HeroBanner
@@ -35,6 +27,8 @@ const WaterManagement: React.FC = () => {
         description={`本公司以追求能源與資源最佳使用效率作為努力目標，\n因此，持續執行節電措施及提高能源效率，同時思 考未來如何增加綠色能源的比例。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

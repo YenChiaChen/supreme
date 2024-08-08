@@ -1,10 +1,9 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/幸福企業/績效檢核與薪酬.jpg";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SalaryChart from "../../components/charts/SalaryChart";
-import SalaryComparisonChart from "../../components/charts/SalaryComparisonChart";
 import {
   faBullseye,
   faChartLine,
@@ -22,9 +21,11 @@ const PerformanceCompensation: React.FC = () => {
     <div>
       <HeroBanner
         title="績效檢核與薪酬"
-        description={`本公司致力於打造能讓員工安心、幸福共融的工作環境。遵循「勞動基準法」與「國際人權公約」，\n制訂明確的工作規則及各項管理政策，以保障員工相關合法權益。`}
+        description={`本公司致力於打造能讓員工安心、幸福共融的工作環境。遵循「勞動基準法」與「國際人權公約」，制訂明確的工作規則及各項管理政策，以保障員工相關合法權益。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">

@@ -1,15 +1,11 @@
 import HeroBanner from "../../components/ui/HeroBanner";
-import StatDisplay from "../../components/ui/StatDisplay";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import CardGrid from "../../components/ui/CardGrid";
-import TabListGoal from "../../components/ui/TabListGoal";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/重大主題.jpg";
 import ESGMatrixDetail from "../../components/charts/ESGMatrix";
 import ESGFactor from "../../data/ESGFactor.json";
 import { ESGFactorType } from "../../types";
 import TabContainer from "../../components/ui/TabContainer";
 import ESGMatrixNDetail from "../../components/charts/ESGMatrixN";
-import Table from "../../components/ui/Table";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
@@ -46,6 +42,8 @@ const KeyTopics: React.FC = () => {
         description={`本公司依規劃-執行-查核-行動管理模式運作，鑑別利害關係人及蒐集檢視利害關係人所關切議題。為確保各項重大性議題之落實及目標達成情形，本公司定期辦理經濟、社會及環境面向重大議題討論、各單位目標達成情形及未來方向擬定，並彙整相關成果資料、與利害關係人議合結果及 ESG 討論建議事項給權責主管審核。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">

@@ -1,10 +1,7 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/永續發展委員會.jpg";
 import img01 from "../../assets/img/testing/sustainbility-committee01.png";
-import img02 from "../../assets/img/testing/sustainbility-committee02.png";
-import img03 from "../../assets/img/testing/sustainbility-committee03.png";
-import img04 from "../../assets/img/testing/sustainbility-committee04.png";
 import {
   faChartLine,
   faClipboardCheck,
@@ -14,7 +11,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import SlideUpList from "../../components/ui/SlideUpList";
 import Table from "../../components/ui/Table";
-import CollapsibleList from "../../components/ui/CollapsibleList ";
 import TabContainer from "../../components/ui/TabContainer";
 const SustainabilityCommittee: React.FC = () => {
   const breadcrumbItems = [
@@ -214,6 +210,8 @@ const SustainabilityCommittee: React.FC = () => {
         description={`本公司於2022 年11 月8 日經董事會決議通過成立「董事會功能性委員會- 永續發展委員會」。\n於2023年11月8日經決議通過修改【永續發展委員會組織規程】。`}
         backgroundImage={Bg}
         center={true}
+        titleColor="#ffffff"
+        contentColor="#ffffff"
       />
       <div className="bg-white">
         <div className="container mx-auto px-[10%] mt-8 pt-18">
