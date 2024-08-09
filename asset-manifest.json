@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/supreme/static/css/main.92957d8a.css",
-    "main.js": "/supreme/static/js/main.fb22e736.js",
+    "main.js": "/supreme/static/js/main.31002162.js",
     "static/media/氣候變遷對策.jpg": "/supreme/static/media/氣候變遷對策.b30090cf81df4a107f21.jpg",
     "static/media/廢棄物.jpg": "/supreme/static/media/廢棄物.17d4a12baaa323036395.jpg",
     "static/media/經營者的話.jpg": "/supreme/static/media/經營者的話.86ade8ead450fe9bb880.jpg",
@@ -77,10 +77,10 @@
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
     "main.92957d8a.css.map": "/supreme/static/css/main.92957d8a.css.map",
-    "main.fb22e736.js.map": "/supreme/static/js/main.fb22e736.js.map"
+    "main.31002162.js.map": "/supreme/static/js/main.31002162.js.map"
   },
   "entrypoints": [
     "static/css/main.92957d8a.css",
-    "static/js/main.fb22e736.js"
+    "static/js/main.31002162.js"
   ]
 }
