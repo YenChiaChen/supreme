@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.e4b523c0.css",
-    "main.js": "/supreme/static/js/main.467a8a43.js",
+    "main.css": "/supreme/static/css/main.92957d8a.css",
+    "main.js": "/supreme/static/js/main.fb22e736.js",
     "static/media/氣候變遷對策.jpg": "/supreme/static/media/氣候變遷對策.b30090cf81df4a107f21.jpg",
     "static/media/廢棄物.jpg": "/supreme/static/media/廢棄物.17d4a12baaa323036395.jpg",
     "static/media/經營者的話.jpg": "/supreme/static/media/經營者的話.86ade8ead450fe9bb880.jpg",
@@ -51,7 +51,6 @@
     "static/media/sells02.png": "/supreme/static/media/sells02.0216a2dac4f55b0d85d6.png",
     "static/media/02.jpg": "/supreme/static/media/02.4f89917f3fa5f0198771.jpg",
     "static/media/blockchain01.png": "/supreme/static/media/blockchain01.e80ffc1617210f5acd2b.png",
-    "static/media/sustainbility-committee01.png": "/supreme/static/media/sustainbility-committee01.c69d7f1117b485e6d024.png",
     "static/media/green-leaf.png": "/supreme/static/media/green-leaf.4d9794046154bdee8f94.png",
     "static/media/supply1.png": "/supreme/static/media/supply1.85ad0055a3a8a9f4c51a.png",
     "static/media/審計委員會.jpg": "/supreme/static/media/審計委員會.eb1acc9b0c4901a3f53b.jpg",
@@ -69,6 +68,7 @@
     "static/media/123456.png": "/supreme/static/media/123456.679529a2f60e962c7e2d.png",
     "static/media/hakimoPercent.png": "/supreme/static/media/hakimoPercent.1b4927d51b2e999583cf.png",
     "static/media/accident.png": "/supreme/static/media/accident.d9e9b84dc35ac9a88db8.png",
+    "static/media/sustainbility-committee01.png": "/supreme/static/media/sustainbility-committee01.9fb98c7ba39a491c78bc.png",
     "static/media/climate-change-02.png": "/supreme/static/media/climate-change-02.51c6f7dd180fc1d25e15.png",
     "static/media/hakimo.png": "/supreme/static/media/hakimo.913fb3bb7222a18ab752.png",
     "static/media/supreme.png": "/supreme/static/media/supreme.a2e2120655f014286b77.png",
@@ -76,11 +76,11 @@
     "static/media/logo_mashup.png": "/supreme/static/media/logo_mashup.7a5db9278ef00bcc4e3f.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.e4b523c0.css.map": "/supreme/static/css/main.e4b523c0.css.map",
-    "main.467a8a43.js.map": "/supreme/static/js/main.467a8a43.js.map"
+    "main.92957d8a.css.map": "/supreme/static/css/main.92957d8a.css.map",
+    "main.fb22e736.js.map": "/supreme/static/js/main.fb22e736.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4b523c0.css",
-    "static/js/main.467a8a43.js"
+    "static/css/main.92957d8a.css",
+    "static/js/main.fb22e736.js"
   ]
 }
