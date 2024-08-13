@@ -3,6 +3,7 @@ import SupremeLogo from '../../assets/img/logo/supreme-white.png'
 import { Link } from 'react-router-dom';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 
 interface FooterLinkSectionProps {
   title: { name: string; url: string }
@@ -23,36 +24,39 @@ const FooterLinkSection: React.FC<FooterLinkSectionProps> = ({ title, links }) =
 };
 
 const Footer: React.FC = () => {
+
+  const { t } = useTranslation();
+
   const sections = [
   
     {
-      title: {name: '幸福企業', url: '/enterprise'},
+      title: {name: t("common.happyEnterprise"), url: '/enterprise'},
       links: [
-        { name: '友善職場', url: '/enterprise/occupational-safety' },
-        { name: '員工政策', url: '/enterprise/welfare-care' },
-        { name: '人才培育', url: '/enterprise/diverse-growth' },
-        { name: '人力資源分佈', url: '/enterprise/hr-distribution' },
+        { name: t("common.friendlyWorkplace"), url: '/enterprise/occupational-safety' },
+        { name: t("common.employeePolicy"), url: '/enterprise/welfare-care' },
+        { name:  t("common.talentDevelopment"), url: '/enterprise/diverse-growth' },
+        { name:  t("common.humanResourcesDistribution"), url: '/enterprise/hr-distribution' },
       ],
     },
     {
-      title: {name: '永續經營', url: '/sustainability'},
+      title: {name: t("common.sustainableManagement"), url: '/sustainability'},
       links: [
-        { name: '經營者的話', url: '/sustainability/message-from-chairman' },
-        { name: '功能性委員會', url: '/sustainability/sustainbility-committee' },
-        { name: '利害關係人專區', url: '/sustainability/stakeholder-engagement' },
-        { name: '科技風險', url: '/sustainability/risk-management' },
-        { name: '永續供應鏈', url: '/sustainability/supply-chain' },
+        { name: t("common.messageFromManagement"), url: '/sustainability/message-from-chairman' },
+        { name:  t("common.functionalCommittee"), url: '/sustainability/sustainbility-committee' },
+        { name:  t("common.stakeholderSection"), url: '/sustainability/stakeholder-engagement' },
+        { name:  t("common.technologyRisk"), url: '/sustainability/risk-management' },
+        { name: t("common.sustainableSupplyChain"), url: '/sustainability/supply-chain' },
       ],
     },
     {
-      title: {name: '永續共生', url: '/symbiosis'},
+      title: {name:  t("common.sustainableCoexistence"), url: '/symbiosis'},
       links: [
-        { name: '氣候變遷對策', url: '/symbiosis/climate-change' },
-        { name: '溫室氣體＆行動方案', url: '/symbiosis/greenhouse-gases' },
-        { name: '綠能低碳計畫', url: '/symbiosis/green-energy' },
-        { name: '能源管理', url: '/symbiosis/energy-management' },
-        { name: '廢棄物管理', url: '/symbiosis/waste-management' },
-        { name: '水資源管理', url: '/symbiosis/water-management' },
+        { name:  t("common.climateChangeStrategy"), url: '/symbiosis/climate-change' },
+        { name: t("common.greenhouseGasAndActionPlan"), url: '/symbiosis/greenhouse-gases' },
+        { name: t("common.greenEnergyLowCarbonPlan"), url: '/symbiosis/green-energy' },
+        { name: t("common.energyManagement"), url: '/symbiosis/energy-management' },
+        { name:  t("common.wasteManagement"), url: '/symbiosis/waste-management' },
+        { name:  t("common.waterResourceManagement"), url: '/symbiosis/water-management' },
       ],
     },
   ];

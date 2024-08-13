@@ -16,7 +16,7 @@ const DiverseGrowth: React.FC = () => {
 
   const breadcrumbItems = [
     { label:  t("common.happyEnterprise"), href: "/enterprise" },
-    { label: t("common.employeePolicy")},
+    { label: t("common.talentDevelopment")},
     { label: t("common.diversifiedGrowth") },
   ];
 

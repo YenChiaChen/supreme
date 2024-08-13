@@ -235,7 +235,7 @@ const SustainabilityCommittee: React.FC = () => {
 
           <p className="mt-xl sub-title text-center">永續發展委員會組織圖</p>
           <div className="flex justify-center">
-            <img src={img01} className="w-full max-w-[700px] mt-md" alt="img" />
+            <img src={img01} className="w-full mt-md" alt="img" />
           </div>
           <p className="mt-md content">
             永續發展委員會一年至少二次向董事會報告執行成果及未來工作計劃。永續發展小組之

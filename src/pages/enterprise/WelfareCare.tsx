@@ -47,7 +47,7 @@ const WelfareCare: React.FC = () => {
         <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <p className="mt-xl sub-title text-center">本公司員工福利措施</p>
+          <p className="mt-xl sub-title text-center">員工福利措施</p>
 
           <TabContainerIcon
             goals={["員工保障", "獎酬福利", "各項補助", "快樂職場", "休假制度"]}
@@ -70,9 +70,7 @@ const WelfareCare: React.FC = () => {
                       職災保險
                     </td>
                     <td className="py-8 text-[16px]">
-                      勞工保險職業災害保險係屬納費互助之社會保險制度，亦具集體連帶分擔風險
-                      性質。當被保險人發生職業災害或傷病等保險事故時，可依規定申請醫療或現
-                      金給付之補償，使本人或遺屬得到適度之生活安全保障。
+                      勞工保險職業災害保險係屬納費互助之社會保險制度，亦具集體連帶分擔風險性質。當被保險人發生職業災害或傷病等保險事故時，可依規定申請醫療或現金給付之補償，使本人或遺屬得到適度之生活安全保障。
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
@@ -81,10 +79,7 @@ const WelfareCare: React.FC = () => {
                     </td>
                     <td className="py-8 text-[16px]">
                       除了法定的保險保障 ( 包含勞工保險、全民健康保險
-                      )，另外亦幫每一位同仁加
-                      入團保保險，其中團體保險包括了：壽險、重大疾病險、傷害保險、意外保險、
-                      重大燒燙，疾病住院險及癌症醫療等保險，讓同仁擁有全方位的保險保障。保
-                      費均由公司全額負擔。
+                      )，另外亦幫每一位同仁加入團體保險，其中團體保險包括了：壽險、重大疾病險、傷害保險、意外保險、重大燒燙，疾病住院險及癌症醫療等保險，讓同仁擁有全方位的保險保障。保費均由公司全額負擔。
                     </td>
                   </tr>
                   <tr className="border-b border-light_gray">
