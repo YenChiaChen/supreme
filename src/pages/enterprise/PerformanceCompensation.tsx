@@ -115,7 +115,7 @@ const PerformanceCompensation: React.FC = () => {
             為貫徹本公司之平等薪酬政策，不論員工位階，男性和女性的基本薪資和報酬都不會因性別而有所差異，體現公司致力於實現公正平等的職場文化，確保所有員工都能夠獲得公平對待的薪酬待遇。
           </p>
 
-          <p className="mt-xl sub-title text-center">
+          <p className="mt-xl sub-title text-center mb-6">
             非擔任主管職務之全時員工平均薪資及中位數統計
           </p>
           <SalaryChart />
@@ -127,7 +127,7 @@ const PerformanceCompensation: React.FC = () => {
             <thead>
               <tr className="bg-pink text-white content">
                 <th
-                  className="border border-white px-4 py-2 rounded-tl-2xl"
+                  className="border border-white px-4 py-2 "
                   rowSpan={2}
                 >
                   年度
@@ -148,28 +148,28 @@ const PerformanceCompensation: React.FC = () => {
             </thead>
             <tbody className="content">
               <tr>
-                <td className="border border-light_gray px-4 py-2">2021</td>
-                <td className="border border-light_gray px-4 py-2">24,000</td>
-                <td className="border border-light_gray px-4 py-2">43,163</td>
-                <td className="border border-light_gray px-4 py-2">180%</td>
-                <td className="border border-light_gray px-4 py-2">38,530</td>
-                <td className="border border-light_gray px-4 py-2">161%</td>
+                <td className="border border-light_gray px-4 py-2 text-center">2021</td>
+                <td className="border border-light_gray px-4 py-2 text-center">24,000 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">43,163 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">180%</td>
+                <td className="border border-light_gray px-4 py-2 text-center">38,530 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">161%</td>
               </tr>
               <tr>
-                <td className="border border-light_gray px-4 py-2">2022</td>
-                <td className="border border-light_gray px-4 py-2">25,250</td>
-                <td className="border border-light_gray px-4 py-2">44,335</td>
-                <td className="border border-light_gray px-4 py-2">176%</td>
-                <td className="border border-light_gray px-4 py-2">42,280</td>
-                <td className="border border-light_gray px-4 py-2">167%</td>
+                <td className="border border-light_gray px-4 py-2 text-center">2022</td>
+                <td className="border border-light_gray px-4 py-2 text-center">25,250 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">44,335 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">176%</td>
+                <td className="border border-light_gray px-4 py-2 text-center">42,280 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">167%</td>
               </tr>
               <tr>
-                <td className="border border-light_gray px-4 py-2">2023</td>
-                <td className="border border-light_gray px-4 py-2">26,400</td>
-                <td className="border border-light_gray px-4 py-2">48,490</td>
-                <td className="border border-light_gray px-4 py-2">184%</td>
-                <td className="border border-light_gray px-4 py-2">42,864</td>
-                <td className="border border-light_gray px-4 py-2">162%</td>
+                <td className="border border-light_gray px-4 py-2 text-center">2023</td>
+                <td className="border border-light_gray px-4 py-2 text-center">26,400 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">48,490 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">184%</td>
+                <td className="border border-light_gray px-4 py-2 text-center">42,864 元</td>
+                <td className="border border-light_gray px-4 py-2 text-center">162%</td>
               </tr>
             </tbody>
           </table>

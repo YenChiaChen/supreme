@@ -166,8 +166,8 @@ const DiverseGrowth: React.FC = () => {
                 <td className="border border-light_gray px-4 py-2">2/14</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={2}>{t("diverse_growth.performanceReport.table2023.infoSecuritySeminar")}</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={2}>{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={2}>160</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={2}>480</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={2}>160</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={2}>480</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">2/21</td>
@@ -177,8 +177,8 @@ const DiverseGrowth: React.FC = () => {
                 <td className="border border-light_gray px-4 py-2">2/14</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={2}>{t("diverse_growth.performanceReport.table2023.integrityManagementAndFairTrade")}</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={2}>{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={2}>160</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={2}>80</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={2}>160</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={2}>80</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">2/21</td>
@@ -188,8 +188,8 @@ const DiverseGrowth: React.FC = () => {
                 <td className="border border-light_gray px-4 py-2">3/16</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={4}>{t("diverse_growth.performanceReport.table2023.mindMappingInWorkplace")}</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={4}>{t("common.salesDepartmentEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={4}>69</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={4}>483</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={4}>69</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={4}>483</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">3/24</td>
@@ -205,8 +205,8 @@ const DiverseGrowth: React.FC = () => {
                 <td className="border border-light_gray px-4 py-2">8/02</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={3}>{t("diverse_growth.performanceReport.table2023.highImpactPresentationSkills")}</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={3}>{t("common.salesStaff")}</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={3}>36</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={3}>378</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={3}>36</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={3}>378</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">8/10</td>
@@ -219,8 +219,8 @@ const DiverseGrowth: React.FC = () => {
                 <td className="border border-light_gray px-4 py-2">9/06</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={2}>{t("diverse_growth.performanceReport.table2023.occupationalSafetySeminar")}</td>
                 <td className="border border-light_gray px-4 py-2" rowSpan={2}>{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={2}>153</td>
-                <td className="border border-light_gray px-4 py-2" rowSpan={2}>469</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={2}>153</td>
+                <td className="border border-light_gray px-4 py-2 text-center" rowSpan={2}>469</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">9/07</td>
@@ -230,32 +230,32 @@ const DiverseGrowth: React.FC = () => {
                 <td className="border border-light_gray px-4 py-2">9/23</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2023.teamBuildingCamp")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2">141</td>
-                <td className="border border-light_gray px-4 py-2">846</td>
+                <td className="border border-light_gray px-4 py-2 text-center">141</td>
+                <td className="border border-light_gray px-4 py-2 text-center">846</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">{t("common.culturalDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">3/24</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2023.newEmployeeTraining0314")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2">9</td>
-                <td className="border border-light_gray px-4 py-2">54</td>
+                <td className="border border-light_gray px-4 py-2 text-center">9</td>
+                <td className="border border-light_gray px-4 py-2 text-center">54</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">{t("common.culturalDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">6/06</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2023.newEmployeeTraining0606")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2">9</td>
-                <td className="border border-light_gray px-4 py-2">54</td>
+                <td className="border border-light_gray px-4 py-2 text-center">9</td>
+                <td className="border border-light_gray px-4 py-2 text-center">54</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">{t("common.culturalDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">11/22</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2023.newEmployeeTraining1122")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2">9</td>
-                <td className="border border-light_gray px-4 py-2">54</td>
+                <td className="border border-light_gray px-4 py-2 text-center">9</td>
+                <td className="border border-light_gray px-4 py-2 text-center">54</td>
               </tr>
             </tbody>
           </table>
@@ -329,36 +329,36 @@ const DiverseGrowth: React.FC = () => {
                 <td className="border border-light_gray px-4 py-2">{t("common.competitivenessDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2022.blockchainAndCryptocurrency")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.salesStaff")}、{t("common.volunteers")}</td>
-                <td className="border border-light_gray px-4 py-2">86</td>
-                <td className="border border-light_gray px-4 py-2">3</td>
+                <td className="border border-light_gray px-4 py-2 text-center">86</td>
+                <td className="border border-light_gray px-4 py-2 text-center">3</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">{t("common.competitivenessDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2022.internationalTradePractices")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.salesDepartmentEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2">73</td>
-                <td className="border border-light_gray px-4 py-2">7</td>
+                <td className="border border-light_gray px-4 py-2 text-center">73</td>
+                <td className="border border-light_gray px-4 py-2 text-center">7</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">{t("common.culturalDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2022.integrityManagementAndInsiderTradingPrevention")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.allEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2">123</td>
-                <td className="border border-light_gray px-4 py-2">0.5</td>
+                <td className="border border-light_gray px-4 py-2 text-center">123</td>
+                <td className="border border-light_gray px-4 py-2 text-center">0.5</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">{t("common.skillsDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2022.strategicSalesAndNegotiationSkills")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.salesStaff")}</td>
-                <td className="border border-light_gray px-4 py-2">42</td>
-                <td className="border border-light_gray px-4 py-2">7</td>
+                <td className="border border-light_gray px-4 py-2 text-center">42</td>
+                <td className="border border-light_gray px-4 py-2 text-center">7</td>
               </tr>
               <tr>
                 <td className="border border-light_gray px-4 py-2">{t("common.culturalDevelopment")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("diverse_growth.performanceReport.table2022.newEmployeeTraining")}</td>
                 <td className="border border-light_gray px-4 py-2">{t("common.newEmployees")}</td>
-                <td className="border border-light_gray px-4 py-2">17</td>
-                <td className="border border-light_gray px-4 py-2">6</td>
+                <td className="border border-light_gray px-4 py-2 text-center">17</td>
+                <td className="border border-light_gray px-4 py-2 text-center">6</td>
               </tr>
             </tbody>
           </table>

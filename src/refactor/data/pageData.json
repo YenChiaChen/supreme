@@ -1,0 +1,74 @@
+[
+    {
+      "type": "Columns",
+      "props": {
+        "columns": 2,
+        "gap": "gap-4"
+      },
+      "children": [
+        {
+          "type": "Paragraph",
+          "props": {
+            "text": "Paragraph in Column"
+          }
+        },
+        {
+          "type": "Paragraph",
+          "props": {
+            "text": "Paragraph in Column"
+          }
+        },
+        {
+          "type": "H2",
+          "props": {
+            "text": "Subtitle in Column"
+          }
+        },
+        {
+          "type": "H2",
+          "props": {
+            "text": "Subtitle in Column"
+          }
+        },
+        {
+          "type": "Paragraph",
+          "props": {
+            "text": "Paragraph in Column"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Columns",
+      "props": {
+        "columns": 2,
+        "gap": "gap-4"
+      },
+      "children": [
+        {
+          "type": "H2",
+          "props": {
+            "text": "Subtitle in Column"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "props": {
+        "text": "This is a sample paragraph."
+      }
+    },
+    {
+      "type": "Paragraph",
+      "props": {
+        "text": "This is a sample paragraph."
+      }
+    },
+    {
+      "type": "H2",
+      "props": {
+        "text": "Sample Subtitle"
+      }
+    }
+  ]

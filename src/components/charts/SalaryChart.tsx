@@ -23,8 +23,25 @@ const data = [
   },
 ];
 
+const CustomTooltip = ({ point }: { point: any }) => (
+  <div
+    style={{
+      background: "white",
+      padding: "9px 12px",
+      border: "1px solid #ccc",
+    }}
+  >
+    <strong>{point.data.x}</strong> 年
+    <br />
+    薪資: {point.data.y} 仟元
+  </div>
+);
+
 const SalaryChart: React.FC = () => (
-  <div style={{ height: "400px" }}>
+  <div style={{ position: "relative", height: "400px" }}>
+    <div className="notes" style={{ position: "absolute", top: 10, right: 110, zIndex: 1 }}>
+      單位: 仟元
+    </div>
     <ResponsiveLine
       data={data}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
@@ -62,6 +79,7 @@ const SalaryChart: React.FC = () => (
       pointBorderColor={{ from: "serieColor" }}
       pointLabelYOffset={-12}
       useMesh={true}
+      tooltip={CustomTooltip}
       legends={[
         {
           anchor: "bottom-right",

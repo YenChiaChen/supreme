@@ -64,6 +64,33 @@ const RightsProtection: React.FC = () => {
             條之規定，當公司即將發生重大營運變化時，依法行使終止勞動契約之最短預告期，保障員工就業權利與勞動條件，同時努力將衝擊降至最低程度。此外，建立與員工長期溝通之機制，以合理有效的方式告知員工可能對他們產生造成重大影響之營運變動。
             2022年度無營運重大變動之情事發生。
           </p>
+
+          <table className="min-w-full border-collapse mt-md">
+            <thead>
+              <tr className="bg-pink text-white content">
+                <th className="border border-white px-4 py-2">員工年資</th>
+                <th className="border border-white px-4 py-2" >預告期間</th>
+              </tr>
+            </thead>
+            <tbody className="content">
+              <tr>
+                <td className="border border-light_gray px-4 py-2 text-center">繼續工作三個月以上一年未滿</td>
+                <td className="border border-light_gray px-4 py-2 text-center">十日前預告</td>
+              </tr>
+              <tr>
+                <td className="border border-light_gray px-4 py-2 text-center">繼續工作一年以上三年未滿</td>
+                <td className="border border-light_gray px-4 py-2 text-center">二十日前預告</td>
+              </tr>
+              <tr>
+                <td className="border border-light_gray px-4 py-2 text-center">繼續工作三年以上</td>
+                <td className="border border-light_gray px-4 py-2 text-center">三十日前預告</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+          
         </div>
       </div>
     </div>

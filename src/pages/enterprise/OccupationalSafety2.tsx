@@ -39,7 +39,7 @@ const OccupationalSafety: React.FC = () => {
             <br />
             {t("occupational_safety.policy.description03")}
           </p>
-          <p className="mt-xl content">
+          <p className="mt-xl content whitespace-pre-wrap">
           {t("occupational_safety.policy.table.title")}
           </p>
           <div className="mt-md grid grid-cols-12 border-[1px] border-pink">
