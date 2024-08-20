@@ -99,5 +99,8 @@
   "absenteeDays": "Absentee Days",
   "yearEndEmployees": "Year-End Employees",
   "workingDays": "Working Days",
-  "absenceRate": "Absence Rate"
+  "absenceRate": "Absence Rate",
+
+  
+  "note": "Note"
 }

@@ -5,8 +5,8 @@
     "policy": {
       "title": "Occupational Safety and Health Policy",
       "description01": "Our company prioritizes the health and safety of employees, striving to create a comfortable and safe, zero-accident working environment. We follow the 'Occupational Safety and Health Act' and relevant group regulations to establish policies, with the General Affairs unit dedicated to researching and discussing environmental safety and health-related matters, including:",
-      "description02": "1. Regular inspections of the office environment, with necessary reviews and improvements proposed.",
-      "description03": "2. Irregularly promoting the importance of environmental safety via email, encouraging employees to express their opinions actively. Our occupational safety and health management system currently covers 178 employees, including all employees except consultants and overseas staff.",
+      "description02": "Regular inspections of the office environment, with necessary reviews and improvements proposed.",
+      "description03": "Irregularly promoting the importance of environmental safety via email, encouraging employees to express their opinions actively. Our occupational safety and health management system currently covers 178 employees, including all employees except consultants and overseas staff.",
       "table": {
         "title": "The company's office environment mainly includes office and warehouse locations. The following occupational safety and health regulations are established for office locations and warehouse environments:",
         "rows01": {
@@ -15,9 +15,9 @@
           "description02": "The company's location is in the Neihu Park Building, with a complete fire safety system (e.g., emergency power, smoke exhaust equipment, escape indicator lights, fire extinguishers, safe escape routes) as per regulations.",
           "description03": "Fire equipment inspection: once a year; Fire drills: once every six months.",
           "description04": "Building Management Committee:",
-          "description05": "- Security personnel: Three shifts from 07:00 to 19:00 / one night shift. The front door closes at 20:00, entry through the back door with a security room at the back.",
-          "description06": "- Building patrols, visitor registration.",
-          "description07": "- Vehicle entry and exit control.",
+          "description05": "Security personnel: Three shifts from 07:00 to 19:00 / one night shift. The front door closes at 20:00, entry through the back door with a security room at the back.",
+          "description06": "Building patrols, visitor registration.",
+          "description07": "Vehicle entry and exit control.",
           "description08": "Two employees hold firefighter certificates."
         },
         "rows02": {
@@ -48,15 +48,15 @@
           "items03": "Recordable occupational injuries",
           "items04": "Deaths caused by occupational diseases",
           "items05": "Recordable occupational diseases",
-          "note01": "Note 1: Serious occupational injuries refer to injuries that make it impossible or difficult for the worker to return to their pre-injury health state within six months.",
-          "note02": "Note 2: The total working hours of full-time employees (total 196 people) in 2022 was 412,664 hours.",
-          "note03": "Note 3: Death rate caused by occupational injuries = number of deaths caused by occupational injuries / working hours * 1,000,000.",
-          "note04": "Note 4: Serious occupational injury rate = number of serious occupational injuries / working hours * 1,000,000.",
-          "note05": "Note 5: Recordable occupational injury rate = number of recordable occupational injuries / working hours * 1,000,000."
+          "note01": "Serious occupational injuries refer to injuries that make it impossible or difficult for the worker to return to their pre-injury health state within six months.",
+          "note02": "The total working hours of full-time employees (total 196 people) in 2022 was 412,664 hours.",
+          "note03": "Death rate caused by occupational injuries = number of deaths caused by occupational injuries / working hours * 1,000,000.",
+          "note04": "Serious occupational injury rate = number of serious occupational injuries / working hours * 1,000,000.",
+          "note05": "Recordable occupational injury rate = number of recordable occupational injuries / working hours * 1,000,000."
         },
         "absenceStatistic": {
           "title": "2022 Absence Statistics",
-          "note01": "Note 1: Absentee days = sick leave + work injury leave; Expected working days = working days (excluding special leave) = number of year-end employees * working days announced by the Directorate-General of Personnel Administration."
+          "note01": "Absentee days = sick leave + work injury leave; Expected working days = working days (excluding special leave) = number of year-end employees * working days announced by the Directorate-General of Personnel Administration."
         }
       }
     }

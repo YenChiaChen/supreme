@@ -36,8 +36,6 @@ import RightsProtection from "./pages/enterprise/RightsProtection";
 import DiverseGrowth from "./pages/enterprise/DiverseGrowth";
 import PerformanceCompensation from "./pages/enterprise/PerformanceCompensation";
 import EthicalManagement from "./pages/sustainability/EthicalManagement";
-import AdminPage from "./refactor/admin";
-import DynamicPage from "./refactor/enterprise/OccupationalSafety";
 
 function App() {
   return (
@@ -46,8 +44,6 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/" element={<Layout />}>
-        <Route path="admin" element={<AdminPage />} />
-        <Route path="admin/test" element={<DynamicPage />} />
           <Route path="enterprise" element={<EnterprisePage />} />
           <Route path="enterprise/talent-development" element={<TalentDevelopment />} />
           <Route path="enterprise/human-rights-policy" element={<HumanRightsPolicy />} />

@@ -97,5 +97,8 @@
   "absenteeDays": "缺勤日",
   "yearEndEmployees": "年底在職員工人數",
   "workingDays": "工作天數",
-  "absenceRate": "缺勤率"
+  "absenceRate": "缺勤率",
+
+
+  "note": "註"
 }
