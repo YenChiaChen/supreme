@@ -4,20 +4,19 @@ import { CardProps, CardGridProps } from '../type'
 
 
 
-const Card: React.FC<CardProps> = ({ title, description, icon, iconColor, list }) => {
+const Card: React.FC<CardProps> = ({ title, description, icon, iconColor='#555555', list }) => {
   return (
-    <div className="bg-white shadow-md overflow-hidden relative group">
-        <div className='z-10 absolute w-[30px] h-[10px] right-0 top-8 ' style={{ backgroundColor: iconColor }}></div>
-        <div className='z-0 absolute w-[0px] h-[0px] rounded-full right-0 bottom-0 translate-x-1/2 translate-y-1/2 duration-500 group-hover:w-[1500px] group-hover:h-[1500px]' style={{ backgroundColor: iconColor }}></div>
+    <div className={`shadow-md overflow-hidden relative group rounded-xl`} >
+        
       <div className="py-12 px-12 z-10 relative">
       {icon && (
-        <div className={`text-[80px] mt-4 flex justify-center duration-500 group-hover:text-white text-pink`} >
+        <div className={`text-[80px] mt-4 flex justify-center duration-500`} style={{color: iconColor}}>
           {icon}
         </div>
       )}
-        <h3 className="text-xl text-center font-semibold mt-8 text-[#555555] duration-500 group-hover:text-white">{title}</h3>
-        {description && (<p className="text-[#555555] duration-500 group-hover:text-white">{description}</p>)}
-        {list && <List items={list.items} listType={list.listType} className='group-hover:text-white duration-500' />}
+        <h3 className="text-xl text-center font-semibold mt-8 text-[#555555] duration-500">{title}</h3>
+        {description && (<p className="text-[#555555] duration-500">{description}</p>)}
+        {list && <List items={list.items} listType={list.listType} className='' />}
         
       </div>
       
