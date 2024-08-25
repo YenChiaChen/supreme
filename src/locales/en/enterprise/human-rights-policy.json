@@ -4,30 +4,33 @@
   },
   "policy": {
     "title": "Human Rights Policy",
-    "description01": "Upholding core values and implementing relevant international standards and guidelines to ensure sustainable development, we protect the fundamental human rights of all employees, customers, and stakeholders. We establish positive employee relations and create a highly participatory work environment. We comply with the principles disclosed in international human rights conventions such as the 'Universal Declaration of Human Rights,' 'UN Guiding Principles on Business and Human Rights,' 'UN Global Compact and International Labour Organization,' and the 'Responsible Business Alliance Code of Conduct (RBA Code of Conduct),' maintaining consistency or even higher standards.",
+    "description01": "Upholding core values and implementing relevant international standards and guidelines to ensure sustainable development, we protect the fundamental human rights of all employees, customers, and stakeholders. We establish positive employee relations and create a highly participatory work environment. We comply with the principles disclosed in international human rights conventions such as the 'Universal Declaration of Human Rights,' 'UN Guiding Principles on Business and Human Rights,' 'UN Global Compact and International Labour Organization,' and the 'Responsible Business Alliance Code of Conduct (RBA Code of Conduct),' maintaining consistency or even higher standards.\n\nWe respect internationally recognized fundamental human rights, including freedom of association, care for vulnerable groups, prohibition of child labor, elimination of all forms of forced labor, and eradication of employment and occupation discrimination. We strictly adhere to labor regulations in the company’s location, as follows: formulating relevant management policies according to applicable laws and international human rights conventions and strictly abiding by labor laws to protect the legitimate rights and interests of employees. In accordance with the 'Personal Data Protection Act,' we strictly manage employees' basic information. Personnel information retrieval requires approval from responsible supervisors, and the personnel system is managed according to responsibilities, prohibiting unauthorized disclosure of employees' personal information.",
     "description02": "We respect internationally recognized fundamental human rights, including freedom of association, care for vulnerable groups, prohibition of child labor, elimination of all forms of forced labor, and eradication of employment and occupation discrimination. We strictly adhere to labor regulations in the company’s location, as follows: formulating relevant management policies according to applicable laws and international human rights conventions and strictly abiding by labor laws to protect the legitimate rights and interests of employees. In accordance with the 'Personal Data Protection Act,' we strictly manage employees' basic information. Personnel information retrieval requires approval from responsible supervisors, and the personnel system is managed according to responsibilities, prohibiting unauthorized disclosure of employees' personal information."
   },
   "approaches": {
     "title": "Specific Approaches to Human Rights Implementation",
     "card01": {
       "title": "Employee Care",
-      "description": "• Strengthen the promotion of the 'Gender Equality in Employment Act' and the 'Sexual Harassment Prevention Act' to protect employees from discrimination and harassment.\n• Health-oriented: free health check-ups for new employees, regular health check-ups for employees (once every two years; annually for those aged 65 and above and senior executives)."
+      "items01": "Strengthen the promotion of the 'Gender Equality in Employment Act' and the 'Sexual Harassment Prevention Act' to protect employees from discrimination and harassment.",
+      "items02": "Employee health-oriented: free health checkups for new employees, regular health checkups for employees (once every two years; once a year for those aged 65 and above, and for senior management)."
     },
     "card02": {
-      "title": "Protection of Employee Rights",
-      "description": "• Provide diverse activities: club activities, family participation activities.\n• Employee training: the company has established an education and training management method to encourage continuous learning among employees.\n• Sharing company benefits: employee profit-sharing rewards (distributed according to annual profits), employee stock trust (company allocates corresponding reward funds), and other benefits to motivate employees and enhance cohesion."
+      "title": "Employee Rights Protection",
+      "items01": "Offer diverse activities: club activities, family involvement activities.",
+      "items02": "Employee training: The company has established training management methods to encourage continuous learning.",
+      "items03": "Profit sharing: The company implements profit-sharing bonuses (distributed based on the annual profit situation), employee stock ownership trust (with the company contributing a matching bonus), and other benefits to motivate employees and enhance cohesion."
     },
     "card03": {
-      "title": "Elimination of Illegal Discrimination",
-      "description": "• Care for vulnerable groups, eliminate illegal discrimination, and strictly adhere to the 'Labor Standards Act' and international human rights standards, ensuring no employment discrimination based on race, class, language, religion, political affiliation, gender, sexual orientation, age, marital status, or appearance."
+      "title": "Eliminate Unlawful Discrimination",
+      "items01": "Care for disadvantaged groups and eliminate unlawful discrimination, strictly adhering to the 'Labor Standards Act' and international human rights norms, without employment discrimination based on race, class, language, religion, political affiliation, gender, sexual orientation, age, marital status, appearance, etc."
     },
     "card04": {
       "title": "Prohibition of Child Labor",
-      "description": "• Strictly adhere to the 'Labor Standards Act' and international human rights standards. In the company's human resources interview process regulations, no child labor under the age of 16 is employed."
+      "items01": "Strictly adhere to the 'Labor Standards Act' and international human rights norms, enforcing these in the company's HR interview process guidelines, and not employing child labor under the age of 16."
     },
     "card05": {
       "title": "Prohibition of Forced Labor",
-      "description": "• Strictly adhere to the 'Labor Standards Act' and international human rights standards, eliminating all forms of forced labor."
+      "items01": "Strictly adhere to the 'Labor Standards Act' and international human rights norms to eliminate all forms of forced labor."
     }
   },
   "mitigation": {

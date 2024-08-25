@@ -9,16 +9,16 @@ interface BreadcrumbsProps {
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
   return (
-    <div className="flex gap-2 items-center text-[#5b5b5b] font-light">
+    <div className="flex gap-2 items-center   bg-gray w-fit px-6 py-2 rounded-xl">
       {items.map((item, index) => (
         <React.Fragment key={index}>
-          {index > 0 && <FontAwesomeIcon icon={faChevronRight} />}
+          {index > 0 && <FontAwesomeIcon icon={faChevronRight} className='px-3 text-sm text-[#bdbdbd]'  />}
           {item.href ? (
-            <Link to={item.href} className="hover:underline">
+            <Link to={item.href} className="hover:border-orange py-1 border-b-[2px] border-transparent duration-300 text-[#5b5b5b]">
               {item.label}
             </Link>
           ) : (
-            <p>{item.label}</p>
+            <p className='py-1 border-b-[2px] border-transparent text-[#a8a7a7]'>{item.label}</p>
           )}
         </React.Fragment>
       ))}

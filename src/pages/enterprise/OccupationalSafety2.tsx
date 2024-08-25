@@ -2,12 +2,14 @@ import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/subPage/幸福企業/職業安全衛生.jpg";
 import React from "react";
-import Accident from "../../assets/img/testing/accident.png";
-import TabContainer from "../../components/ui/TabContainer";
 import { useTranslation } from "react-i18next";
+
+import investigationZhImage from '../../assets/img/enterprise/occupational-safety/accident-investigation-process-zh.png'
+import investigationEnImage from '../../assets/img/enterprise/occupational-safety/accident-investigation-process-en.png'
 
 import {
   H2,
+  H3,
   P,
   List,
   Container,
@@ -15,15 +17,27 @@ import {
   LabeledContentTable,
   Image,
   Table2,
+  YearTabContainer
 } from "../../components/ui";
 
 const OccupationalSafety: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const breadcrumbItems = [
     { label: t("common.happyEnterprise"), href: "/enterprise" },
     { label: t("common.friendlyWorkplace") },
     { label: t("common.occupationalSafetyAndHealth") },
   ];
+
+  const getImageSrc = () => {
+    switch (i18n.language) {
+      case 'zh':
+        return investigationZhImage;
+      case 'en':
+        return investigationEnImage;
+      default:
+        return investigationZhImage;
+    }
+  };
 
   const rows = [
     {
@@ -208,17 +222,19 @@ const OccupationalSafety: React.FC = () => {
         <Section>
           <H2 text={t("occupational_safety.riskManagement.title")} />
           <P text={t("occupational_safety.riskManagement.description")} />
-          <Image src={Accident} alt="Accident" />
+          <H3 text={t("occupational_safety.riskManagement.imageTitle")} color="#FF507C"/>
+
+          <Image src={getImageSrc()} alt="accident-investigation-process" maxWidth="1200px" />
         </Section>
 
 
 
 
-        <H2 text={t("occupational_safety.performanceReport.title")} />
+        <H2 text={t("occupational_safety.performanceReport.title")}  />
        
 
-        <TabContainer goals={["2022"]}>
-          <div data-goal="2022">
+        <YearTabContainer years={["2022"]} tabColor="#FF507C">
+          <div data-year="2022">
             <>
               <Section>
                 <Table2
@@ -263,7 +279,7 @@ const OccupationalSafety: React.FC = () => {
               </Section>
             </>
           </div>
-        </TabContainer>
+        </YearTabContainer>
       </Container>
     </div>
   );

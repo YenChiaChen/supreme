@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-interface GoalWrapperProps {
-  goal: string;
-  children: React.ReactNode;
-}
 interface GoalTableProps {
   goals: string[];
   children: React.ReactNode;
   tabColor?: string;
 }
-
-const GoalWrapper: React.FC<GoalWrapperProps> = ({ goal, children }) => {
-  return <div data-goal={goal}>{children}</div>;
-};
 
 const TabContainer: React.FC<GoalTableProps> = ({
   goals,
@@ -44,7 +36,7 @@ const TabContainer: React.FC<GoalTableProps> = ({
           </div>
         ))}
       </div>
-      <div className="mt-[50px] tracking-wide">
+      <div className="tracking-wide">
         <AnimatePresence mode="wait">
           {React.Children.map(children, (child) =>
             React.isValidElement(child) &&

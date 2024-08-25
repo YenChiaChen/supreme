@@ -35,7 +35,8 @@
     },
     "riskManagement": {
       "title": "Related Risk Impact Management",
-      "description": "To minimize the impact and risk caused by occupational accidents, hazard identification is conducted at each operational site. No major hazards were identified in 2022."
+      "description": "To minimize the impact and risk caused by occupational accidents, hazard identification is conducted at each operational site. No major hazards were identified in 2022.",
+      "imageTitle" : "Accident Investigation Process"
     },
     "performanceReport": {
       "title": "Annual Occupational Safety and Health Statistics Report",

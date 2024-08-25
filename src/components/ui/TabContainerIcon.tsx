@@ -1,22 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { faBasketball } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-interface GoalWrapperProps {
-  goal: string;
-  children: React.ReactNode;
-}
 interface GoalTableProps {
   goals: string[];
   children: React.ReactNode;
   icons: React.ReactNode[];
   tabColor?: string;
 }
-
-const GoalWrapper: React.FC<GoalWrapperProps> = ({ goal, children }) => {
-  return <div data-goal={goal}>{children}</div>;
-};
 
 const TabContainerIcon: React.FC<GoalTableProps> = ({ goals, children, icons,  tabColor = "#FF8D50" }) => {
   const [selectedGoal, setSelectedGoal] = useState(goals[0]);

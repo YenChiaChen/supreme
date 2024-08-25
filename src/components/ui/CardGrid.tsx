@@ -5,7 +5,7 @@ interface CardContent {
   subtitle: string;
   description: string;
   span: number;
-  icon?: React.ReactNode; // 可选的 icon 属性
+  icon?: React.ReactNode;
 }
 
 interface CardGridProps {
@@ -32,7 +32,7 @@ const CardGrid: React.FC<CardGridProps> = ({ cards, color = '#f5f5f5', iconColor
           className="rounded-[30px] flex flex-col p-8 pt-10"
           style={{ gridColumn: `span ${card.span}`, backgroundColor: color,  }}
         >
-          {card.icon && <div className="mb-4 text-[80px] flex justify-end" style={{color: iconColor}}>{card.icon}</div>} {/* 有条件地渲染 icon */}
+          {card.icon && <div className="mb-4 text-[80px] flex justify-end" style={{color: iconColor}}>{card.icon}</div>}
           <p className="text-[32px] font-semibold">
             {card.title}
             <br />

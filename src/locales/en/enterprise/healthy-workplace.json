@@ -10,7 +10,8 @@
       "title": "Health Check and Medical Services",
       "description": "Our company has long been committed to protecting employees' physical and mental health, striving to create a healthy and happy workplace. In addition to labor and health insurance, we provide group insurance for employees, free health check-ups for new employees, and regular free health check-ups for current employees (once every 2 years). Additionally, since 2021, we have introduced the 'Labor Health Protection - On-site Medical Consultation,' including four major health protection plans: workload assessment and management, prevention of ergonomic hazards, maternity health protection, and prevention of workplace violence. We provide on-site services twice a month. In 2022, nursing staff provided a total of 24 medical consultations (48 hours), and doctors provided 2 consultations (4 hours). To protect the privacy and confidentiality of employees' personal health-related information, all medical consultations adhere to medical confidentiality principles, and consultation content is not disclosed to the company or third parties without the consent of the consulting individual.",
       "healthSeminar": "Autonomic Nervous Health Seminar",
-      "healthcareConsulation": "Medical Consultation"
+      "healthcareConsulation": "Medical Consultation",
+        "healthCheck" : "Employee Health Check"
     },
     "clubs": {
       "title": "Sports Clubs",
@@ -28,7 +29,7 @@
       },
       "jogging": {
         "title": "Jogging Club",
-        "description": "'If you want to run fast, run alone; if you want to run far, run together.' Jogging has gradually become popular, bringing many benefits to runners, including weight loss and maintaining good health. The Jogging Club not only has club uniforms but also provides supplies during group training and participates in various public jogging events, offering rich participation rewards."
+        "description": "The establishment of the Running Club helps colleagues maintain a consistent exercise routine, strengthening their bodies while collectively participating in diverse charity running events."
       },
       "golf": {
         "title": "Golf Club",

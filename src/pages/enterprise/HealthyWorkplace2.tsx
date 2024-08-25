@@ -2,11 +2,17 @@ import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/subPage/幸福企業/健康職場.jpg";
 import React from "react";
-import Healthy01 from "../../assets/img/testing/healthy01.jpg";
-import Healthy02 from "../../assets/img/testing/healthy02.jpg";
-import Healthy03 from "../../assets/img/testing/healthy03.jpg";
-import Nurse01 from "../../assets/img/testing/nurse01.jpg";
-import Nurse02 from "../../assets/img/testing/nurse02.jpg";
+
+import seminarImage01 from "../../assets/img/enterprise/healthy-workplace/health-seminar-01.jpg";
+import seminarImage02 from "../../assets/img/enterprise/healthy-workplace/health-seminar-02.jpg";
+import seminarImage03 from "../../assets/img/enterprise/healthy-workplace/health-seminar-03.jpg";
+import consulationImage01 from "../../assets/img/enterprise/healthy-workplace/health-consulation-01.jpg";
+import consulationImage02 from "../../assets/img/enterprise/healthy-workplace/health-consulation-02.jpg";
+import checkImage01 from "../../assets/img/enterprise/healthy-workplace/healthy-check-01.jpg";
+import checkImage02 from "../../assets/img/enterprise/healthy-workplace/healthy-check-02.jpg";
+
+import healthyIcon from "../../assets/img/enterprise/healthy-workplace/icon.jpg";
+
 import TableTennis01 from "../../assets/img/club/TableTennis/01.jpg";
 import TableTennis02 from "../../assets/img/club/TableTennis/02.jpg";
 import TableTennis03 from "../../assets/img/club/TableTennis/03.jpg";
@@ -62,6 +68,19 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContainerIcon from "../../components/ui/TabContainerIcon";
 
+import {
+  H2,
+  H3,
+  P,
+  List,
+  Container,
+  Section,
+  LabeledContentTable,
+  Image,
+  Gallery,
+  Table2,
+} from "../../components/ui";
+
 const HealthWorkplace: React.FC = () => {
   const { t } = useTranslation();
   const breadcrumbItems = [
@@ -89,283 +108,142 @@ const HealthWorkplace: React.FC = () => {
         titleColor="#ffffff"
         contentColor="#ffffff"
       />
-      <div className="bg-white">
-        <div className="container mx-auto mt-8 pt-18 xl:px-[10%] 2xl:px-[5%] px-[0%]">
-          <Breadcrumbs items={breadcrumbItems} />
+      <Container>
+        <Breadcrumbs items={breadcrumbItems} />
 
-          <p className="mt-xl sub-title text-center">{t("safety_workplace.certification.title")}</p>
-          <p className="mt-md content">
-          {t("safety_workplace.certification.description")}
-          </p>
-          <p className="mt-xl sub-title text-center"> {t("safety_workplace.services.title")}</p>
-          <p className="mt-md content">
-          {t("safety_workplace.services.description")}
-          </p>
+        <Section>
+          <Image
+            src={healthyIcon}
+            alt="healthy-certification-icon"
+            maxWidth="80px"
+            className="-mb-32"
+          />
+          <H2 text={t("safety_workplace.certification.title")} />
+          <P text={t("safety_workplace.certification.description")} />
+        </Section>
 
-          <p className="tracking-wide text-pink font-semibold text-[20px] text-center mt-xl">
-          {t("safety_workplace.services.healthSeminar")}
-          </p>
-          <div className="grid grid-cols-3 gap-8 mt-md justify-center">
-            <img src={Healthy01} alt="healthy" className="" />
-            <img src={Healthy02} alt="healthy" className="" />
-            <img src={Healthy03} alt="healthy" className="" />
-          </div>
+        <Section>
+          <H2 text={t("safety_workplace.services.title")} />
+          <P text={t("safety_workplace.services.description")} />
+          <H3
+            text={t("safety_workplace.services.healthSeminar")}
+            color="#FF507C"
+          />
+          <Gallery images={[seminarImage01, seminarImage02, seminarImage03]} />
+          <H3
+            text={t("safety_workplace.services.healthcareConsulation")}
+            color="#FF507C"
+          />
+          <Gallery images={[consulationImage01, consulationImage02]} />
+          <H3
+            text={t("safety_workplace.services.healthCheck")}
+            color="#FF507C"
+          />
+          <Gallery images={[checkImage01, checkImage02]} />
+        </Section>
 
-          <p className="tracking-wide text-pink font-semibold text-[20px] text-center mt-xl">
-          {t("safety_workplace.services.healthcareConsulation")}
-          </p>
-          <div className="flex gap-8 mt-md justify-center">
-            <img
-              src={Nurse01}
-              alt="healthy"
-              className="w-[500px] h-[350px] object-cover"
-            />
-            <img
-              src={Nurse02}
-              alt="healthy"
-              className="w-[500px] h-[350px] object-cover"
-            />
-          </div>
+        <Section>
+          <H2 text={t("safety_workplace.clubs.title")} />
 
-          <p className="mt-xl sub-title text-center"> {t("safety_workplace.clubs.title")}</p>
-          <TabContainerIcon goals={[t("safety_workplace.clubs.tabelTennis.title"),t("safety_workplace.clubs.basketball.title"),t("safety_workplace.clubs.badminton.title"),t("safety_workplace.clubs.jogging.title"),t("safety_workplace.clubs.golf.title"),t("safety_workplace.clubs.boardGame.title")]} icons={icons} tabColor="#FF507C">
+          <TabContainerIcon
+            goals={[
+              t("safety_workplace.clubs.tabelTennis.title"),
+              t("safety_workplace.clubs.basketball.title"),
+              t("safety_workplace.clubs.badminton.title"),
+              t("safety_workplace.clubs.jogging.title"),
+              t("safety_workplace.clubs.golf.title"),
+              t("safety_workplace.clubs.boardGame.title"),
+            ]}
+            icons={icons}
+            tabColor="#FF507C"
+          >
             <div data-goal={t("safety_workplace.clubs.basketball.title")}>
               <>
-                <p className="my-6 content">
-                {t("safety_workplace.clubs.basketball.description")}
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <img
-                    src={BasketBall01}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={BasketBall02}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={BasketBall03}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={BasketBall04}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={BasketBall05}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={BasketBall06}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={BasketBall07}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                </div>
+                <P text={t("safety_workplace.clubs.basketball.description")} />
+                <Gallery
+                  images={[
+                    BasketBall01,
+                    BasketBall02,
+                    BasketBall03,
+                    BasketBall04,
+                    BasketBall05,
+                    BasketBall06,
+                    BasketBall07,
+                  ]}
+                />
               </>
             </div>
             <div data-goal={t("safety_workplace.clubs.badminton.title")}>
               <>
-                <p className="my-6 content">
-                 {t("safety_workplace.clubs.badminton.description")}
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <img
-                    src={Badminton01}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Badminton02}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Badminton03}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Badminton04}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Badminton05}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Badminton06}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                </div>
+                <P text={t("safety_workplace.clubs.badminton.description")} />
+                <Gallery
+                  images={[
+                    Badminton01,
+                    Badminton02,
+                    Badminton03,
+                    Badminton04,
+                    Badminton05,
+                    Badminton06,
+                  ]}
+                />
               </>
             </div>
             <div data-goal={t("safety_workplace.clubs.jogging.title")}>
               <>
-                <p className="my-6 content">
-                {t("safety_workplace.clubs.jogging.description")}
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <img
-                    src={Running01}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Running02}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Running03}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Running04}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Running05}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                </div>
+                <P text={t("safety_workplace.clubs.jogging.description")} />
+                <Gallery
+                  images={[
+                    Running01,
+                    Running02,
+                    Running03,
+                    Running04,
+                    Running05,
+                  ]}
+                />
               </>
             </div>
             <div data-goal={t("safety_workplace.clubs.tabelTennis.title")}>
               <>
-                <p className="my-6 content">
-                {t("safety_workplace.clubs.tabelTennis.description")}
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <img
-                    src={TableTennis01}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={TableTennis02}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={TableTennis03}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={TableTennis04}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={TableTennis05}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                </div>
+                <P text={t("safety_workplace.clubs.tabelTennis.description")} />
+                <Gallery
+                  images={[
+                    TableTennis01,
+                    TableTennis02,
+                    TableTennis03,
+                    TableTennis04,
+                    TableTennis05,
+                  ]}
+                />
               </>
             </div>
             <div data-goal={t("safety_workplace.clubs.golf.title")}>
               <>
-                <p className="my-6 content">
-                 {t("safety_workplace.clubs.golf.description")}
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <img
-                    src={Golf01}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Golf02}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Golf03}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Golf04}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Golf05}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Golf06}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Golf07}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Golf08}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                </div>
+                <P text={t("safety_workplace.clubs.golf.description")} />
+                <Gallery
+                  images={[
+                    Golf01,
+                    Golf02,
+                    Golf03,
+                    Golf04,
+                    Golf05,
+                    Golf06,
+                    Golf07,
+                    Golf08,
+                  ]}
+                />
               </>
             </div>
             <div data-goal={t("safety_workplace.clubs.boardGame.title")}>
               <>
-                <p className="my-6 content">
-                 {t("safety_workplace.clubs.boardGame.description")}
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <img
-                    src={Board01}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Board02}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Board03}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Board04}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                  <img
-                    src={Board05}
-                    className="w-[400px] rounded-xl  object-cover"
-                    alt="table_tennis"
-                  />
-                </div>
+                <P text={t("safety_workplace.clubs.boardGame.description")} />
+                <Gallery
+                  images={[Board01, Board02, Board03, Board04, Board05]}
+                />
               </>
             </div>
           </TabContainerIcon>
-        </div>
-      </div>
+        </Section>
+      </Container>
     </div>
   );
 };
