@@ -6,7 +6,7 @@ import { faBlockBrickFire, faHouseChimneyHeart } from "@fortawesome/pro-solid-sv
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
-import Nav from "../../components/navigation/NavBar";
+import Nav from "../../components/navigation/NavBarOld";
 import Survey from "./Survey";
 import Table from "./Table";
 import TableGenerator from "./TableGenerator";
