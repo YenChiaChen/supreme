@@ -16,7 +16,14 @@ export const H2: React.FC<TextProps> = ({ text, color = '#555555' }) => {
 
 export const P: React.FC<TextProps> = ({ text, color = '#555555' }) => {
   return (
-    <p className="whitespace-pre-wrap mt-16 tracking-wide text-md leading-7" style={{ color }}>{ text }</p>
+    <p className="whitespace-pre-wrap mt-16 tracking-wide text-md leading-7" style={{ color }}>
+        {text.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
+    </p>
   )
 }
 

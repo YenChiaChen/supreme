@@ -59,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
 const NavItemComponent: React.FC<{ item: NavItem }> = ({ item }) => {
     return (
       <li className='nav-link'>
-        <Link to={item.link} className='flex justify-between items-center'>
+        <Link to={item.link} className='flex justify-between items-center hover:bg-gray'>
           {item.title}
           {item.children && (
             <FontAwesomeIcon

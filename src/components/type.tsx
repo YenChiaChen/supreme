@@ -27,11 +27,14 @@ export interface CardProps {
   description?: string
   icon?: React.ReactNode
   iconColor?: string
+  bgColor?: string
   list?: ListProps
 }
 
 export interface CardGridProps {
   cards: CardProps[]
+  iconColor?: string
+  bgColor?: string
 }
 
 export interface TabProps {

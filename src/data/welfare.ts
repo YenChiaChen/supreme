@@ -1,4 +1,4 @@
-import { faBowlFood, faForkKnife } from "@fortawesome/pro-solid-svg-icons";
+import { faBowlFood, faCartShopping, faForkKnife, faMobile, faPlane } from "@fortawesome/pro-solid-svg-icons";
 import { InfoListProps } from "../components/type";
 
 
@@ -130,5 +130,47 @@ export const storeData: Store[] = [
       { text: "購買書籍類單本即79折優惠。" },
     ],
     icon: faForkKnife
+  },
+  {
+    title: "潮味決 內湖江南分社(潮滷商行)",
+    content: [
+      { text: "內用、外帶消費滿120元，贈送高麗菜一份，不予其他活動合併使用。" },
+      { text: "外送消費滿500元，立即享9折優惠。" },
+    ],
+    icon: faForkKnife
+  },
+  {
+    title: "易遊網旅行社股份有限公司",
+    content: [
+      { text: "國內旅遊（含國內團體旅遊和自由行）優惠折扣團費 2%（不含航空假期、郵輪式列車、高鐵訂房）。" },
+      { text: "國外旅遊（含國外團體旅遊和自由行）優惠折扣團費 2%（不含航空假期）。" },
+    ],
+    icon: faPlane
+  },
+  {
+    title: "喜鴻旅行社有限公司",
+    content: [
+      { text: "國外自由行套裝旅遊可享新台幣 300 元（特價促銷產品、早鳥優惠不適用此折扣，但會員線上報名 1% 之折扣優惠仍適用）,加贈喜鴻購物電商購物金 100 元。" },
+      { text: "國外機票價格可享最高 1% 折扣優惠。" },
+      { text: "國外票劵價格可享最高 3% 折扣優惠。" },
+      { text: "國外團體旅遊其他優惠。" },
+      { text: "國內團體旅遊最高可享新台幣 200 元。" },
+    ],
+    icon: faPlane
+  },
+  {
+    title: "威拜購物",
+    content: [
+      { text: "提供企業團購，以優惠價訂購商品。" },
+    ],
+    icon: faCartShopping
+  },
+  {
+    title: "手機急診室",
+    content: [
+      { text: "依官網維修定價折扣NT$ 200。" },
+      { text: "維修後皆貼保固貼紙，可保固三個月。" },
+    ],
+    icon: faMobile
   },
 ];

@@ -107,18 +107,12 @@ const HumanRightsPolicy: React.FC = () => {
           <H2 text={t("human_right_policy.policy.title")} />
           <P text={t("human_right_policy.policy.description01")} />
         </Section>
-      </Container>
 
-      <Section>
-        <BgSection color="#f7f7f7">
+        <Section>
           <H2 text={t("human_right_policy.approaches.title")} />
-          <Container>
-            <CardGrid cards={cardss} />
-          </Container>
-        </BgSection>
-      </Section>
+          <CardGrid cards={cardss} bgColor='#FFEDF2' iconColor='#FF507C' />
+        </Section>
 
-      <Container>
         <Section>
           <H2 text={t("human_right_policy.mitigation.title")} />
           <P text={t("human_right_policy.mitigation.description")} />

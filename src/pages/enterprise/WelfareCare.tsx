@@ -83,7 +83,7 @@ const WelfareCare: React.FC = () => {
           <Section>
             <H2 text="員工專享特約商店" />
             <P text="福委會與外部廠商合作，提供同仁在「飲食、旅遊、其他」三方面的優惠，照顧同仁的日常生活，讓消費變得更便利、實惠，提供同仁更多優惠選擇。" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-md">
+            <div className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-6 mt-md">
               {storeData.map((store, index) => (
                 <div key={index} className="flex flex-col">
                   <CollapseList title={store.title} content={store.content} icon={store.icon} />
@@ -92,19 +92,11 @@ const WelfareCare: React.FC = () => {
             </div>
           </Section>
 
-          <p className="mt-xl sub-title text-center">母性健康保護計畫</p>
+          <Section>
+            <H2 text={"母性健康保護計畫"} />
+            <P text={'本公司依法落實《性別工作平等法》，並倡議聯合國可持續發展目標 ( SDGs ) 中促進性別平等。鼓勵並支持員工孕育下一代，提供育嬰假、陪產假、生理假等。依據勞基法規定，在每一位子女滿 3 歲前，都有權申請育嬰留職停薪，停薪期最長可達 2 年。育嬰留職停薪期間，員工均可繼續參加原有的社會保險。此外，員工復職後，提供外部幼兒園之托兒服務，協助員工在工作的同時兼顧孩子的照顧，讓員工能夠更好地平衡工作和家庭的需求。\n\n於本公司所在\n的辦公大樓中設有專用哺乳室，為同仁提供上班時間內的哺(集)乳需求。哺乳室內配置舒適靠背椅、桌子、電源插座、母乳儲存專用冰箱以及有蓋垃圾桶等設備，符合《哺集乳室與托兒設施措施設置標準及經費補助辦法》之規定。'} />
+          </Section>
 
-          <p className="mt-md content">
-            本公司依法落實《性別工作平等法》，並倡議聯合國可持續發展目標 ( SDGs
-            ) 中促進性別平等。鼓勵並支
-            持員工孕育下一代，提供育嬰假、陪產假、生理假等。
-            依據勞基法規定，在每一位子女滿 3
-            歲前，都有權申請育嬰留職停薪，停薪期最長可達 2
-            年。育嬰留職停薪期間，員工均可繼續參加原有的社會保險。此外，員工復職後，提供外部幼兒園之托兒服務，協助員工在工作的同時兼顧孩子的照顧，讓員工能夠更好地平衡工作和家庭的需求。
-          </p>
-          <p className="mt-4 content">
-            於本公司所在的辦公大樓中設有專用哺乳室，為同仁提供上班時間內的哺(集)乳需求。哺乳室內配置舒適靠背椅、桌子、電源插座、母乳儲存專用冰箱以及有蓋垃圾桶等設備，符合《哺集乳室與托兒設施措施設置標準及經費補助辦法》之規定。
-          </p>
           <img src={Girl} className="w-full mt-md" alt="girl" />
         </div>
       </div>

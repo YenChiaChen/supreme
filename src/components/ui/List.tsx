@@ -34,7 +34,7 @@ export const InfoList: React.FC<{ rows: InfoListProps[] }> = ({ rows }) => {
                   {row.title}
                 </td>
               )}
-              <td className='py-8 text-[16px]'>
+              <td className='py-8 text-[16px] text-[#555555] font-light'>
                 {row.content}
               </td>
             </tr>
