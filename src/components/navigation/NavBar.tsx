@@ -26,6 +26,8 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
             <a href='http://www.supreme.com.tw' target='_blank' rel='noreferrer'>
               <img src={SupremeLogo} alt='Supreme' className='w-[160px]' />
             </a>
+            <div className="text-light_gray w-[2px] bg-light_gray h-[30px]"></div>
+            <Link to="/"><p className="text-[18px] font-light">永續至上</p></Link>
           </div>
         </div>
         <div className='hidden xl:flex justify-center'>

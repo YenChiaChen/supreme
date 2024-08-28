@@ -1,21 +1,8 @@
 [
     {
       "title": "點亮永續",
-      "link": "/esg",
-      "dropdown": [
-        {
-          "title": "永續績效",
-          "link": "/esg/performance"
-        },
-        {
-          "title": "社會共榮",
-          "link": "/esg/chairman-message"
-        },
-        {
-          "title": "特別報導",
-          "link": "/esg/blueprint"
-        }
-      ]
+      "link": "/esg"
+      
     },
     {
       "title": "最新動態",

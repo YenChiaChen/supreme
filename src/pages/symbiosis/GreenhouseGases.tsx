@@ -230,7 +230,7 @@ const GreenhouseGases: React.FC = () => {
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">盤查範圍</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">範疇一級範疇二</td>
+                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">範疇一、範疇二</td>
                 </tr>
                 <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
                   <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">保證等級</td>

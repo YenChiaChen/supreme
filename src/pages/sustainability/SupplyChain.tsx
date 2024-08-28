@@ -191,7 +191,7 @@ const SupplyChain: React.FC = () => {
           />
           <p className="mt-xl sub-title text-center">供應商的管理與評鑑</p>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 mt-md">
             <div
               tabIndex={0}
               className="collapse collapse-arrow shadow text-blue  p-4 relative group"

@@ -17,7 +17,7 @@ import {
 } from "@fortawesome/pro-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContainerIcon from "../../components/ui/TabContainerIcon";
-import Table from "../../components/ui/Table";
+import Table, { Table2 } from "../../components/ui/Table";
 const WasteManagement: React.FC = () => {
   const ShortTermGoals: React.FC = () => (
     <>
@@ -88,6 +88,56 @@ const WasteManagement: React.FC = () => {
     },
   ]
 
+  const tableData = {
+    headers: [
+      { content: "廢棄物總類" },
+      { content: "單位" },
+      { content: "2022年" },
+      { content: "2023年" },
+    ],
+    rows: [
+      [
+        { content: "一般廢棄物（Ｈ類）" },
+        { content: "公噸 t", rowSpan: 6 },
+        { content: 0.812 },
+        { content: '1.345 (註4)' },
+      ],
+      [
+        { content: "公告應回收或再利用廢棄物（Ｒ類）" },
+        { content: 2.700  },
+        { content: '0.412 (註3)' },
+      ],
+      [
+        { content: "混合五金廢料（Ｅ類）" },
+        { content: "-"  },
+        { content: '0.056 (註2)' },
+      ],
+      [
+        { content: "廢棄物總重" },
+        { content: 3.512 },
+        { content: 1.813 },
+      ],
+      [
+        { content: "廢棄物的處置移轉" },
+        { content: 2.700  },
+        { content: '0.412 (註3)' },
+      ],
+      [
+        { content: "廢棄物的直接處置" },
+        { content: 0.812  },
+        { content: '1.401 (註4)' },
+      ],
+      [
+        { content: "廢棄物回收利用百分比" },
+        { content: '百分比%' },
+        { content: '76.88%'},
+        { content: '22.72%' },
+      ],
+     
+    ],
+  };
+
+
   return (
     <div>
       <HeroBanner
@@ -126,7 +176,32 @@ const WasteManagement: React.FC = () => {
           </p>
           <TabContainer goals={goals} tabColor="#3BC376">
             <div data-goal="2023">
-              <ShortTermGoals />
+            <Table2
+                  data={tableData}
+                  color="#3BC376"
+                  unit=""
+                  isCenter={true}
+                  notes={[
+                    {
+                      text: '統計範圍包含台北總公司。',
+                    },
+                    {
+                      text: '本公司有害廢棄物係由上游供應鏈在生產過程中產出，含微量有害廢棄物0.056公噸。',
+                    },
+                    {
+                      text: '公告應回收或再利用廢棄物（R類）之產生及處置移轉總重量較上期減少，係因2022年度以公司內部預估值（含外包裝實秤）作為統計揭露，為考量數據準確性，於2023年度改以清運公司實際處理重量統計揭露。',
+                    },
+                    {
+                      text: '一般廢棄物（H類）之產生及直接處置總重量較上期增加，係因2023年度整體營運成長及員工人數增加，相對生活垃圾增加所致。',
+                    },
+                    {
+                      text: '廢棄物的直接處置為權責單位自訂週期，並分別統計數量後，交由大樓管委會委託之清運公司離場處理。',
+                    },
+                    {
+                      text: '廢棄物回收利用百分比＝生產產生的廢棄物中被回收的廢棄物重量 / 生產過程產生的廢棄物總重量，小數點以後取兩位。',
+                    },
+                  ]}
+                />
             </div>
             <div data-goal="2022">
               <MidTermGoals2 />

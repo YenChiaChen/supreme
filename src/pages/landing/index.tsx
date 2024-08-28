@@ -6,11 +6,12 @@ import { faBlockBrickFire, faHouseChimneyHeart } from "@fortawesome/pro-solid-sv
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
-import Nav from "../../components/navigation/NavBarOld";
 import Survey from "./Survey";
 import Table from "./Table";
 import TableGenerator from "./TableGenerator";
-import Navbar from "../../components/navigation/NavBarR";
+import Navbar from "../../components/navigation/NavBar";
+import navItems from '../../data/nav.json'
+
 
 
 const LandingPage: React.FC = () => {
@@ -58,7 +59,7 @@ const LandingPage: React.FC = () => {
   }, []);
   return (
     <div>
-      <Navbar items={menuItems} />
+      <Navbar items={navItems} />
         <Survey isOpen={isSurveyOpen} onClose={() => setSurveyOpen(false)} />
       <div className="bg-gradient-to-b from-dark_blue h-[100vh] w-full">
     

@@ -13,21 +13,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import SlideUpList from "../../components/ui/SlideUpList";
+import { Table2 } from "../../components/ui";
 
 const EnergyManagement: React.FC = () => {
-
-  const MidTermGoals: React.FC = () => (
-    <>
-      <p className="mt-md content">
-        2022 年各營運據點之能源消耗總量為 1,954.23
-        GJ，外購電力占大宗，主要用於辦公事務設備的電力消耗占 90.15
-        %；其餘為公務車之汽油使用占
-        9.85%。台北總部能源消耗占90.28%，其餘新莊、龍潭及台南三處辦事處因佔地面積小及人員較少，故合計占比僅有
-        6%。2022年度能源消耗量高於以往年度，能源密集度為2.48 GJ /
-        新台幣億元，主要係今年新增盤查範圍，以致用電量增加，加上COVID-19疫情趨緩，商業往來恢復正常，公務車使用次數增加，故汽油耗用量大幅增加。
-      </p>
-    </>
-  );
 
 
 
@@ -90,6 +78,53 @@ const EnergyManagement: React.FC = () => {
     { label: "能源管理" },
   ];
 
+  const tableData = {
+    headers: [
+      { content: "內部能源耗用總量", colSpan: 2 },
+      { content: "2021年" },
+      { content: "2022年" },
+      { content: "2023年(合計)" },
+      { content: "2023年總公司" },
+      { content: "2023年3個辦事處" },
+    ],
+    rows: [
+      [
+        { content: "非再生能源" , rowSpan: 2},
+        { content: "汽油 (GJ)"},
+        { content: '25.15'},
+        { content: '192.56' },
+        { content: '250.37' },
+        { content: '250.37' },
+        { content: '-' },
+      ],
+      [
+        { content: "外購電力 (GJ)"},
+        { content: '1,643.48'},
+        { content: '1,761.67' },
+        { content: '2,042.77' },
+        { content: '1,743.61 ' },
+        { content: '299.16' },
+      ],
+      [
+        { content: "總能源消耗量 (GJ)", colSpan: 2},
+        { content: '1,668.63'},
+        { content: '1,954.23' },
+        { content: '2,293.14' },
+        { content: '1,993.98' },
+        { content: '299.16' },
+      ],
+      [
+        { content: "能源密集度(GJ/新台幣億元)", colSpan: 2},
+        { content: '1.83'},
+        { content: '2.48' },
+        { content: '3.56' },
+        { content: '3.10' },
+        { content: '0.46' },
+      ],
+     
+    ],
+  };
+
 
 
   return (
@@ -107,49 +142,46 @@ const EnergyManagement: React.FC = () => {
           <Breadcrumbs items={breadcrumbItems} />
 
           <p className="mt-xl sub-title text-center">能源管理</p>
-          <p className="mt-md text-2xl font-semibold text-green">能源消耗量及能源密集度</p>
-          <div className="overflow-x-auto mt-4">
-            <table className="min-w-full border-collapse">
-              <thead className="bg-green text-white content">
-                <tr>
-                  <th className="py-2 px-4 border border-white rounded-tl-lg" colSpan={2}>內部能源耗用總量</th>
-                  <th className="py-2 px-4 border border-white">2021年</th>
-                  <th className="py-2 px-4 border border-white rounded-tr-lg">2022年</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap" rowSpan={2}>非再生能源</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">汽油(GJ)</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">25.15</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">192.56</td>
-                </tr>
-                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">外購電力(GJ)</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1,643.48</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1,761.67</td>
-                </tr>
-                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap" colSpan={2}>總能源消耗量(GJ)</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1668.63</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1954.23</td>
-                </tr>
-                <tr className="hover:bg-[#e6e6e6] duration-300 content bg-white">
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap" colSpan={2}>能源密集度(GJ/新台幣億元)</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">1.83</td>
-                  <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">2.48</td>
-                </tr>
-                
-              </tbody>
-            </table>
-          </div>
+        
+
+          <Table2
+                  data={tableData}
+                  color="#3BC376"
+                  title='能源消耗量及能源密集度'
+                  unit=""
+                  isCenter={true}
+                  notes={[
+                    {
+                      text: '能源消耗量統計範圍涵蓋：台北總部及新莊、龍潭、台南3處辦事處。',
+                    },
+                    {
+                      text: '本數據統計自2023年台電用電資料及油品採購紀錄。',
+                    },
+                    {
+                      text: '熱值採用經濟部能源局能源產品單位熱值表： 車用汽油熱值=7,800 kcal/L、電力熱值=860 kcal/kWh；1 kcal=4.187 KJ；1 KJ=1×10 GJ。',
+                    },
+                    {
+                      text: '2023年個體營業收入為：新台幣644.27億元。',
+                    },
+                    {
+                      text: '能源密集度計算公式：能源總消耗量/年度營業收入(=2,293.14/644.27億)。',
+                    },
+                  ]}
+                />
           
           <TabContainer goals={["2023", "2022"]} tabColor="#3BC376">
             <div data-goal="2023">
-             <p className="content">2023 年各營運據點之能源消耗總量為 2293.14 GJ，外購電力占大宗，無採用再生能源。外購電力主要用於辦公事務設備，電力消耗占 89.08%；其餘為公務車之汽油使用為 250.37 GJ，占 10.92%。台北總部大樓能源消耗占 86.95%，其餘新莊、龍潭及台南三處辦事處因佔地面積小及人員較少，合計占比僅有 13.05%。2023 年度能源消耗量高於以往年度，能源密集度為 1.08 GJ/新台幣億元，主要係因營收成長人員相對增加，為因應實質需求，資訊部門擴增伺服器等硬體設備，以致用電量增加，而伴隨公司營收成長，商業往來趨於頻繁，公務車使用次數增加，故汽油耗用量隨之增加。</p>
+             <p className="content mt-6">2023 年各營運據點之能源消耗總量為 2293.14 GJ，外購電力占大宗，無採用再生能源。外購電力主要用於辦公事務設備，電力消耗占 89.08%；其餘為公務車之汽油使用為 250.37 GJ，占 10.92%。台北總部大樓能源消耗占 86.95%，其餘新莊、龍潭及台南三處辦事處因佔地面積小及人員較少，合計占比僅有 13.05%。2023 年度能源消耗量高於以往年度，能源密集度為 1.08 GJ/新台幣億元，主要係因營收成長人員相對增加，為因應實質需求，資訊部門擴增伺服器等硬體設備，以致用電量增加，而伴隨公司營收成長，商業往來趨於頻繁，公務車使用次數增加，故汽油耗用量隨之增加。</p>
             </div>
             <div data-goal="2022">
-              <MidTermGoals />
+            <p className="mt-6 content">
+        2022 年各營運據點之能源消耗總量為 1,954.23
+        GJ，外購電力占大宗，主要用於辦公事務設備的電力消耗占 90.15
+        %；其餘為公務車之汽油使用占
+        9.85%。台北總部能源消耗占90.28%，其餘新莊、龍潭及台南三處辦事處因佔地面積小及人員較少，故合計占比僅有
+        6%。2022年度能源消耗量高於以往年度，能源密集度為2.48 GJ /
+        新台幣億元，主要係今年新增盤查範圍，以致用電量增加，加上COVID-19疫情趨緩，商業往來恢復正常，公務車使用次數增加，故汽油耗用量大幅增加。
+      </p>
             </div>
           </TabContainer>
 

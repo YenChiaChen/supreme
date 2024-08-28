@@ -127,6 +127,7 @@ interface TableProps {
   title?: string;
   unit?: string;
   notes?: Note[]
+  isCenter?: boolean
 }
 
 export const Table2: React.FC<TableProps> = ({
@@ -136,10 +137,12 @@ export const Table2: React.FC<TableProps> = ({
   title = "",
   unit = "",
   notes = [],
+  isCenter = false
 }) => {
   const { headers, rows } = data;
   
   const { t } = useTranslation();
+  const alignmentClass = isCenter ? "text-center" : "";
 
   return (
     <div className="mt-8">
@@ -147,7 +150,7 @@ export const Table2: React.FC<TableProps> = ({
       <Sup text={unit} />
       <table className={`w-full border-collapse mt-4 ${className}`}>
         <thead>
-          <tr style={{ backgroundColor: color }} className="text-white">
+          <tr style={{ backgroundColor: color }} className={`text-white ${alignmentClass}`}>
             {headers.map((header, index) => (
               <th
                 key={index}
@@ -172,7 +175,7 @@ export const Table2: React.FC<TableProps> = ({
         </thead>
         <tbody>
           {rows.map((row, rowIndex) => (
-            <tr key={rowIndex}>
+            <tr key={rowIndex} className={alignmentClass}>
               {row.map((cell, cellIndex) => {
                 const isNumeric = typeof cell.content === "number";
                 return (
