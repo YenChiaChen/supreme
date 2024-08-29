@@ -186,7 +186,7 @@ const IntellectualProperty: React.FC = () => {
             <SlideUpList items={data3} />
           </div>
 
-          <p className="mt-xl sub-title text-center">智慧財產管理計畫相關執行報告</p>
+          <p className="mt-xl sub-title text-center">執行報告</p>
           <div className="mt-md">
             <SlideUpList items={data4} />
           </div>

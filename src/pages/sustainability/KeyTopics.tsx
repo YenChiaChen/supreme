@@ -308,7 +308,7 @@ const KeyTopics: React.FC = () => {
           <p className="mt-xl sub-title text-center mb-4">
             年度重大主題衝擊評估結果
           </p>
-          <TabContainer goals={goals}>
+          <TabContainer goals={goals} tabColor="#3B79E4">
             <div data-goal="正面衝擊矩陣">
               <ESGMatrixDetail data={ESGFactorData} />
             </div>

@@ -9,60 +9,8 @@
       "link": "/news"
     },
     {
-      "title": "幸福企業",
-      "link": "/enterprise",
-      "dropdown": [
-        {
-          "title": "人力資源分佈",
-          "link": "/enterprise/hr-distribution"
-        },
-        {
-          "title": "員工政策",
-          "link": "#",
-          "children": [
-            {
-              "title": "福利措施與關懷",
-              "link": "/enterprise/welfare-care"
-            },
-            {
-              "title": "員工權益保障",
-              "link": "/enterprise/rights-protection"
-            }
-          ]
-        },
-        {
-          "title": "人才培育",
-          "link": "#",
-          "children": [
-            {
-              "title": "多元化成長",
-              "link": "/enterprise/diverse-growth"
-            },
-            {
-              "title": "績效檢核與薪酬",
-              "link": "/enterprise/performance-compensation"
-            }
-          ]
-        },
-        {
-          "title": "友善職場",
-          "link": "#",
-          "children": [
-            {
-              "title": "職業安全衛生",
-              "link": "/enterprise/occupational-safety"
-            },
-            {
-              "title": "健康職場",
-              "link": "/enterprise/healthy-workplace"
-            },
-            {
-              "title": "人權政策",
-              "link": "/enterprise/human-rights-policy"
-            }
-          ]
-        }
-      ]
+      "title": "社會共榮",
+      "link": "/"
     },
     {
       "title": "永續經營",
@@ -145,6 +93,62 @@
             {
               "title": "產品與客戶服務",
               "link": "/sustainability/product-customer-service"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "幸福企業",
+      "link": "/enterprise",
+      "dropdown": [
+        {
+          "title": "人力資源分佈",
+          "link": "/enterprise/hr-distribution"
+        },
+        {
+          "title": "員工政策",
+          "link": "#",
+          "children": [
+            {
+              "title": "福利措施與關懷",
+              "link": "/enterprise/welfare-care"
+            },
+            {
+              "title": "員工權益保障",
+              "link": "/enterprise/rights-protection"
+            }
+          ]
+        },
+        {
+          "title": "人才培育",
+          "link": "#",
+          "children": [
+            {
+              "title": "多元化成長",
+              "link": "/enterprise/diverse-growth"
+            },
+            {
+              "title": "績效檢核與薪酬",
+              "link": "/enterprise/performance-compensation"
+            }
+          ]
+        },
+        {
+          "title": "友善職場",
+          "link": "#",
+          "children": [
+            {
+              "title": "職業安全衛生",
+              "link": "/enterprise/occupational-safety"
+            },
+            {
+              "title": "健康職場",
+              "link": "/enterprise/healthy-workplace"
+            },
+            {
+              "title": "人權政策",
+              "link": "/enterprise/human-rights-policy"
             }
           ]
         }

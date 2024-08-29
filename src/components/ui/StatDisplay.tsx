@@ -5,9 +5,15 @@ interface StatProps {
   num: number;
   suffix: string;
   decimals?: number;
+  color?: string;
 }
 
-export const Stat: React.FC<StatProps> = ({ num, suffix, decimals = 0 }) => {
+export const Stat: React.FC<StatProps> = ({
+  num,
+  suffix,
+  decimals = 0,
+  color = '#FF8D50',  // 默認顏色
+}) => {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref);
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -26,19 +32,23 @@ export const Stat: React.FC<StatProps> = ({ num, suffix, decimals = 0 }) => {
       },
     });
   }, [num, decimals, isInView, hasAnimated]);
+
   return (
     <>
-      <span ref={ref} className="mr-1"></span>
-      {suffix}
+      {/* 使用 style 屬性來應用顏色 */}
+      <span ref={ref} className="mr-1" style={{ color }}></span>
+      <span style={{color}} className="text-sm ml-2">{suffix}</span>
     </>
   );
 };
+
 
 interface StatDisplayProps {
   stats: Array<{
     label: string;
     num: number;
     suffix: string;
+    color?: string
     staticString?: string;
   }>;
 }
@@ -51,7 +61,7 @@ const StatDisplay: React.FC<StatDisplayProps> = ({ stats }) => {
           <div className="flex-1 flex justify-center">
             <div className="text-left text-[16px] text-[#5b5b5b] font-light">
               <p className="tracking-wide">{stat.label}</p>
-              <p className="text-[32px] font-semibold text-orange pt-1">
+              <p className="text-[32px] font-semibold pt-1">
                 {stat.staticString ? (
                   stat.staticString
                 ) : (
@@ -59,6 +69,7 @@ const StatDisplay: React.FC<StatDisplayProps> = ({ stats }) => {
                     num={stat.num}
                     suffix={stat.suffix}
                     decimals={stat.num % 1 !== 0 ? 1 : 0}
+                    color={stat.color}
                   />
                 )}
               </p>

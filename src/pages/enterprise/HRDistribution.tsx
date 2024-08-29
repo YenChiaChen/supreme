@@ -7,8 +7,23 @@ import TabContainer from "../../components/ui/TabContainer";
 
 import { useTranslation } from "react-i18next";
 
+interface PieData {
+  id: string;
+  label: string;
+  value: number;
+  color: string;
+}
+
 const HRDistribution: React.FC = () => {
   const { t } = useTranslation();
+
+  const calculatePercentage = (data: PieData[]): PieData[] => {
+    const total = data.reduce((sum, item) => sum + item.value, 0);
+    return data.map(item => ({
+      ...item,
+      value: parseFloat(((item.value / total) * 100).toFixed(1)), 
+    }));
+  };
 
   const breadcrumbItems = [
     { label: t("common.happyEnterprise"), href: "/enterprise" },
@@ -174,6 +189,44 @@ const HRDistribution: React.FC = () => {
     { id: t("common.male"), label: t("common.male"), value: 32.3, color: "#FF7C9D" },
   ];
 
+
+
+const pieData001 = calculatePercentage([
+  { id: '21-30', label: '21-30', value: 1, color: '#FF507C'},
+  { id: "31-40", label: "31-40", value: 7, color: "#FF7C9D" },
+  { id: "41-50", label: "41-50", value: 8, color: "#FFA7BD" },
+  { id: ">51", label: ">51", value: 10, color: "#FFD3DE" },
+]);
+
+const pieData002 = calculatePercentage([
+  { id: '男性', label: '男性', value: 18, color: '#FF507C'},
+  { id: "女性", label: "女性", value: 8, color: "#FF7C9D" },
+]);
+
+const pieData003 = calculatePercentage([
+  { id: '21-30', label: '21-30', value: 5, color: '#FF507C'},
+  { id: "31-40", label: "31-40", value: 3, color: "#FF7C9D" },
+  { id: "41-50", label: "41-50", value: 11, color: "#FFA7BD" },
+  { id: ">51", label: ">51", value: 9, color: "#FFD3DE" },
+]);
+
+const pieData004 = calculatePercentage([
+  { id: '男性', label: '男性', value: 22, color: '#FF507C'},
+  { id: "女性", label: "女性", value: 6, color: "#FF7C9D" },
+]);
+
+const pieData005 = calculatePercentage([
+  { id: '21-30', label: '21-30', value: 5, color: '#FF507C'},
+  { id: "31-40", label: "31-40", value: 6, color: "#FF7C9D" },
+  { id: "41-50", label: "41-50", value: 13, color: "#FFA7BD" },
+  { id: ">51", label: ">51", value: 7, color: "#FFD3DE" },
+]);
+
+const pieData006 = calculatePercentage([
+  { id: '男性', label: '男性', value: 25, color: '#FF507C'},
+  { id: "女性", label: "女性", value: 6, color: "#FF7C9D" },
+]);
+
   return (
     <div>
       <HeroBanner
@@ -271,6 +324,27 @@ const HRDistribution: React.FC = () => {
                     <PieChart data={pieData20238} />
                   </div>
                 </div>
+
+
+                <p className="text-[20px] font-semibold text-center text-pink mt-xl">
+                  離職員工
+                </p>
+
+                <div className="flex flex-wrap gap-4 mt-8 justify-center">
+                  <div className="items-center flex flex-col">
+                    <p className="text-[18px]">
+                      年齡分佈
+                    </p>
+                    <PieChart data={pieData001} />
+                  </div>
+                  <div className="items-center flex flex-col">
+                    <p className="text-[18px]">
+                      
+                      性別分佈
+                    </p>
+                    <PieChart data={pieData002} />
+                  </div>
+                </div>
               </div>
             </div>
             <div data-goal="2022">
@@ -348,6 +422,27 @@ const HRDistribution: React.FC = () => {
                     <PieChart data={pieData8} />
                   </div>
                 </div>
+
+
+                <p className="text-[20px] font-semibold text-center text-pink mt-xl">
+                  離職員工
+                </p>
+
+                <div className="flex flex-wrap gap-4 mt-8 justify-center">
+                  <div className="items-center flex flex-col">
+                    <p className="text-[18px]">
+                      年齡分佈
+                    </p>
+                    <PieChart data={pieData003} />
+                  </div>
+                  <div className="items-center flex flex-col">
+                    <p className="text-[18px]">
+                      
+                      性別分佈
+                    </p>
+                    <PieChart data={pieData004} />
+                  </div>
+                </div>
               </div>
             </div>
             <div data-goal="2021">
@@ -418,6 +513,27 @@ const HRDistribution: React.FC = () => {
                       {t("common.genderDistribution")}
                     </p>
                     <PieChart data={pieData20218} />
+                  </div>
+                </div>
+
+
+                <p className="text-[20px] font-semibold text-center text-pink mt-xl">
+                  離職員工
+                </p>
+
+                <div className="flex flex-wrap gap-4 mt-8 justify-center">
+                  <div className="items-center flex flex-col">
+                    <p className="text-[18px]">
+                      年齡分佈
+                    </p>
+                    <PieChart data={pieData005} />
+                  </div>
+                  <div className="items-center flex flex-col">
+                    <p className="text-[18px]">
+                      
+                      性別分佈
+                    </p>
+                    <PieChart data={pieData006} />
                   </div>
                 </div>
               </div>

@@ -96,10 +96,10 @@ const EthicalManagement: React.FC = () => {
             【誠信經營】暨【防範內線交易】之教育訓練情形本公司每年至少一次對董事、經理人及受僱人辦理「誠信經營守則」及「防範內線交易管理」等相關法令宣導，對新任受僱人則由人事於職前訓練時予以教育宣導。
           </p>
 
-          <p className="sub-title text-center mt-xl">各年度誠信經營執行情形</p>
+          <p className="sub-title text-center mt-xl">誠信經營執行情形</p>
           <TabContainer goals={["2023", "2022"]} tabColor="#3B79E4">
             <div data-goal="2023">
-              <p className="content">
+              <p className="content mt-6">
                 本公司每年不定期以教育訓練課程或電子郵件形式對董事、經理人及受僱人進行「誠信經營守則」及「防範內線交易管理」等相關法令宣導。2023年度已分別於02月14日（第一梯次）、02月21日（第二梯次），向全體員工進行「誠信經營暨公平交易、反貪腐」及「防範內線交易管理」之教育訓練宣導課程，課程內容包括建立誠信經營之企業文化及健全發展、內線交易形成原因、認定過程及交易實例說明，並將課程簡報發送予員工作為參考，2023年誠信經營相關課程實體受訓人數共160位，其餘人員皆以數位方式進行溝通宣導，累計總時數共計80小時。
               </p>
               <p className="mt-md text-blue text-[20px] font-semibold">
@@ -280,7 +280,7 @@ const EthicalManagement: React.FC = () => {
               </ul>
             </div>
             <div data-goal="2022">
-              <p className="content">
+              <p className="content mt-6">
                 本年度已分別於2022年07月20日（第一梯次）、07月21日（第二梯次），合計123人時，向本公司全體員工進行「誠信經營守則」及「防範內線交易管理」之教育訓練宣導課程，課程內容包括建立誠信經營之企業文化及健全發展、內線交易形成原因、認定過程及交易實例說明，並將課程簡報以郵件發送予員工作為參考。
               </p>
               <p className="mt-md text-blue text-[20px] font-semibold">
