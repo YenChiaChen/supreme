@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/supreme/static/css/main.36489cd7.css",
-    "main.js": "/supreme/static/js/main.75066e21.js",
+    "main.js": "/supreme/static/js/main.3e111c1f.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/earth.png": "/supreme/static/media/earth.77f43f1b2f0f39833589.png",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
@@ -53,6 +53,7 @@
     "static/media/誠信經營.jpg": "/supreme/static/media/誠信經營.23dbec327c2a379c2ad6.jpg",
     "static/media/水資源.jpg": "/supreme/static/media/水資源.a283ed53ff24e7e0fa71.jpg",
     "static/media/sells01.png": "/supreme/static/media/sells01.f3ceada2e0782b2f4c41.png",
+    "static/media/template.png": "/supreme/static/media/template.367ef5824e32f483e804.png",
     "static/media/healthy-check-02.jpg": "/supreme/static/media/healthy-check-02.d0f5085f589cef45d760.jpg",
     "static/media/health-seminar-03.jpg": "/supreme/static/media/health-seminar-03.ed1c4490fd7ecfb81730.jpg",
     "static/media/董事會.jpg": "/supreme/static/media/董事會.d7e5e71a9a1759426edb.jpg",
@@ -62,6 +63,7 @@
     "static/media/2022-1.png": "/supreme/static/media/2022-1.50e68bef44b32e15ada0.png",
     "static/media/board-test.png": "/supreme/static/media/board-test.aa883fe7c536c08e0c40.png",
     "static/media/security3.png": "/supreme/static/media/security3.f8d92e6391d8a42f7bb2.png",
+    "static/media/智慧財產權管理.jpg": "/supreme/static/media/智慧財產權管理.865ab0d3c7a2989affba.jpg",
     "static/media/icon.jpg": "/supreme/static/media/icon.b931287d28a81cb85481.jpg",
     "static/media/supply2.png": "/supreme/static/media/supply2.45e9f4ad5ce2c5f95738.png",
     "static/media/board.png": "/supreme/static/media/board.bfa68ca2ad57b6ea0204.png",
@@ -80,10 +82,10 @@
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
     "main.36489cd7.css.map": "/supreme/static/css/main.36489cd7.css.map",
-    "main.75066e21.js.map": "/supreme/static/js/main.75066e21.js.map"
+    "main.3e111c1f.js.map": "/supreme/static/js/main.3e111c1f.js.map"
   },
   "entrypoints": [
     "static/css/main.36489cd7.css",
-    "static/js/main.75066e21.js"
+    "static/js/main.3e111c1f.js"
   ]
 }
