@@ -12,7 +12,7 @@ export const Stat: React.FC<StatProps> = ({
   num,
   suffix,
   decimals = 0,
-  color = '#FF8D50',  // 默認顏色
+  color = '#FF8D50',  
 }) => {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref);
@@ -35,7 +35,6 @@ export const Stat: React.FC<StatProps> = ({
 
   return (
     <>
-      {/* 使用 style 屬性來應用顏色 */}
       <span ref={ref} className="mr-1" style={{ color }}></span>
       <span style={{color}} className="text-sm ml-2">{suffix}</span>
     </>
