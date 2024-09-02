@@ -148,7 +148,7 @@ const DiverseGrowth: React.FC = () => {
           <p className="mt-xl text-center sub-title">       {t("diverse_growth.performanceReport.title")}</p>
           <TabContainer goals={["2023", "2022"]} tabColor="#FF507C">
             <div data-goal="2023">
-            <p className="text-pink text-[18px] tracking-widest font-semibold">2023 {t("diverse_growth.performanceReport.training")}</p>
+            <p className="text-pink text-[18px] tracking-widest font-semibold mt-12">{t("diverse_growth.performanceReport.training")}</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
               <tr className="bg-pink text-white content">
@@ -262,7 +262,7 @@ const DiverseGrowth: React.FC = () => {
           <p className="notes mt-1">{t("diverse_growth.performanceReport.table2023.trainingNote")}</p>
 
           
-          <p className="text-pink text-[18px] tracking-widest font-semibold mt-md">2023 {t("diverse_growth.performanceReport.trainingHoursAndGenderRatio")}</p>
+          <p className="text-pink text-[18px] tracking-widest font-semibold mt-md">{t("diverse_growth.performanceReport.trainingHoursAndGenderRatio")}</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
               <tr className="bg-pink text-white content">
@@ -313,7 +313,7 @@ const DiverseGrowth: React.FC = () => {
           <p className="notes mt-1">{t("diverse_growth.performanceReport.table2023.note1")}<br />{t("diverse_growth.performanceReport.table2023.note2")}<br/>{t("diverse_growth.performanceReport.table2023.note3")}</p>
             </div>
             <div data-goal="2022">
-              <p className="text-pink text-[18px] tracking-widest font-semibold">2022 {t("diverse_growth.performanceReport.training")}</p>
+              <p className="text-pink text-[18px] tracking-widest font-semibold mt-12">{t("diverse_growth.performanceReport.training")}</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
               <tr className="bg-pink text-white content">
@@ -365,7 +365,7 @@ const DiverseGrowth: React.FC = () => {
           <p className="notes mt-1">{t("diverse_growth.performanceReport.table2023.trainingNote")}</p>
 
           
-          <p className="text-pink text-[18px] tracking-widest font-semibold mt-md">2022 {t("diverse_growth.performanceReport.trainingHoursAndGenderRatio")}</p>
+          <p className="text-pink text-[18px] tracking-widest font-semibold mt-md">{t("diverse_growth.performanceReport.trainingHoursAndGenderRatio")}</p>
             <table className="min-w-full border-collapse mt-6">
             <thead>
               <tr className="bg-pink text-white content">

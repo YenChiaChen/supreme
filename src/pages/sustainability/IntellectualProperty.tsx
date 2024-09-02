@@ -3,7 +3,7 @@ import StatDisplay from "../../components/ui/StatDisplay";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import SlideUpList from "../../components/ui/SlideUpList";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import Bg from "../../assets/img/bg/bg.png";
+import Bg from "../../assets/img/bg/subPage/永續經營/智慧財產權管理.jpg";
 
 const data = [
   {
@@ -167,6 +167,9 @@ const IntellectualProperty: React.FC = () => {
       description={`本公司為有效管理本公司智慧財產權，於2020年11月經董事會通過訂定「智慧財產管理計畫」。範圍包含：專利權、商標權、著作權及營業秘密，對象涵蓋本公司員工及參與本公司研究計畫之外部人士所產出或取得之各種智慧財產。`}
       backgroundImage={Bg}
       center={true}
+      titleColor="#ffffff"
+      contentColor="#ffffff"
+
     />
     <div className="bg-white">
       <div className="container mx-auto px-[10%] mt-8 pt-18">

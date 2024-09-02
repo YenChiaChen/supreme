@@ -1,121 +1,190 @@
-import { faAnglesDown, faEarthAmericas, faSquarePollVertical } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAnglesDown,
+  faEarthAmericas,
+  faSquarePollVertical,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SupremeWhiteLogo from "../../assets/img/logo/supreme-white.png";
-import earth from "../../assets/img/testing/earth.png"
-import { faBlockBrickFire, faHouseChimneyHeart } from "@fortawesome/pro-solid-svg-icons";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import earth from "../../assets/img/testing/earth.png";
+import {
+  faBlockBrickFire,
+  faEarthAmerica,
+  faHouseChimneyHeart,
+} from "@fortawesome/pro-light-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-import Survey from "./Survey";
-import Table from "./Table";
-import TableGenerator from "./TableGenerator";
 import Navbar from "../../components/navigation/NavBar";
-import navItems from '../../data/nav.json'
-
-
+import navItems from "../../data/nav.json";
+import Footer from "../../components/navigation/Footer";
+import BgImage from "../../assets/img/bg/building.png";
+import WorkImage from "../../assets/img/bg/mainpage/work.png";
+import { BgSection, Container, H1, Section } from "../../components/ui";
+import SectionWithSidebar from "../../components/ui/SectionWithSidebar";
 
 const LandingPage: React.FC = () => {
-
-  const menuItems = [
-    {
-      "title": "幸福企業",
-      "href": "#",
-      "subMenu": [
-        {
-          "title": "人力資源分布",
-          "href": "#"
-        },
-        {
-          "title": "友善職場",
-          "href": "#",
-          "subMenu": [
-            {
-              "title": "職業安全衛生",
-              "href": "/enterprise/hr-distribution"
-            },
-            {
-              "title": "健康職場",
-              "href": "#"
-            },
-            {
-              "title": "人權政策",
-              "href": "#"
-            }
-          ]
-        },
-        {
-          "title": "特別報導",
-          "href": "#"
-        }
-      ]
-    }
-  ]
-  const [isSurveyOpen, setSurveyOpen] = useState(false);
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration
-      easing: 'ease-in-out', // easing function
-    });
+    AOS.init({ duration: 1000 });
   }, []);
+
   return (
     <div>
       <Navbar items={navItems} />
-        <Survey isOpen={isSurveyOpen} onClose={() => setSurveyOpen(false)} />
-      <div className="bg-gradient-to-b from-dark_blue h-[100vh] w-full">
-    
-        <div className="w-full h-[100vh] grid grid-cols-2 container mx-auto px-[5%]">
-          <div className="flex justify-center text-white flex-col mt-[15%]">
-            <p className="text-5xl font-bold tracking-widest">永續至上</p>
-            <p className="content mt-6">
-              致力環境保護發展， 守護每位員工權益， 承諾給予社會正面價值。
-            </p>
-            <p className="content mt-6 border-[1px] border-white w-fit px-4 rounded-full py-1 duration-300 hover:bg-white hover:text-dark_blue cursor-pointer flex items-center"  onClick={() => setSurveyOpen(true)}>
-             利害關係人問卷調查<FontAwesomeIcon icon={faSquarePollVertical} className="ml-2 text-[25px]" />
-            </p>
-          </div>
-          <div className="flex items-center justify-center mt-[15%]"><img src={earth} className="w-[70%] floating" /></div>
-          <div className="flex justify-center col-span-2"><FontAwesomeIcon icon={faAnglesDown} className="text-white h-[40px]" bounce /></div>
+      <div
+        className="w-full h-[80vh] bg-cover bg-center min-h-[1000px] flex items-center justify-center relative"
+        style={{ backgroundImage: `url(${BgImage})` }}
+      >
+        <div
+          className="flex flex-col text-center gap-8"
+          data-aos="fade-in"
+          data-aos-delay="300"
+        >
+          <H1 text="永續至上，共展未來" color="#ffffff" />
+          <H1 text="Make the world better." color="#ffffff" />
         </div>
-      </div>
-      <div className="container mx-auto px-[5%]">
-        <p className="text-center text-3xl text-black tracking-[5px] font-semibold mt-xl">相信深耕  共展未來</p>
-        <p className="text-center content mt-8"> 致力實現經濟、社會和環境之間的平衡，承諾在創造價值的同時兼顧永續發展，<br />為員工、合作夥伴、社區帶來正面的影響。</p>
-        <div className="mt-24 grid grid-cols-3 gap-12">
-          <div className="bg-[#BACFD4] rounded-[15px] px-10 pt-20 pb-8">
-            <div className="flex justify-center">
-              <FontAwesomeIcon icon={faEarthAmericas} className="text-white h-[150px]" />
-              </div>
-              <p className="text-black text-2xl font-semibold tracking-widest mt-12"> 環境保護</p>
-              <p className="note mt-8"> 致力環境保護，承諾將積極減少溫室氣體排放、推動資源循環利用、減少廢棄物的產生，力求企業的永續發展及為環境保護盡一份力。</p>
-           
-          </div>
-          <div className="bg-[#BACFD4] rounded-[15px] px-10 pt-20 pb-8">
-            <div className="flex justify-center">
-              <FontAwesomeIcon icon={faHouseChimneyHeart} className="text-white h-[150px]" />
-              </div>
-              <p className="text-black text-2xl font-semibold tracking-widest mt-12"> 員工至上</p>
-              <p className="note mt-8"> 注重人權規範及員工權益，承諾創建一個對等、健康的工作環境，建立有效溝通管道，聆聽基層意見，並提供多元化培訓增進員工價值。</p>
-           
-          </div>
-          <div className="bg-[#BACFD4] rounded-[15px] px-10 pt-20 pb-8">
-            <div className="flex justify-center">
-              <FontAwesomeIcon icon={faBlockBrickFire} className="text-white h-[150px]" />
-              </div>
-              <p className="text-black text-2xl font-semibold tracking-widest mt-12"> 風險管理</p>
-              <p className="note mt-8"> 謹慎落實風險管理，靈活投資策略，確保績效提升，穩定公司營運根基。同時遵守商業行為有關法令，維護相關利害關係人權益。</p>
-           
+
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-white rounded-full translate-y-1/2 shadow-xl px-8 py-4 w-[90%] md:min-w-[600px] md:w-[70%]">
+          <div className="flex gap-4 items-center">
+            <p className="text-orange font-bold text-xl">・最新消息</p>
+            <span className="text-light_gray">|</span>
+            <p className="text-md trakcing-wide text-black">
+              至上電子榮獲2023年幸福企業銀獎肯定
+            </p>
           </div>
         </div>
       </div>
 
-<Table />
+      <Container>
+        <Section>
+          <p className="text-center text-dark_blue text-3xl font-bold mt-12 tracking-wide">
+            2025 永續目標
+          </p>
+          <p className="text-[#555555] text-center mt-3 text-lg tracking-wide">
+            Strategy
+          </p>
 
-<TableGenerator />
+          <div className="flex justify-center gap-6 my-12 flex-grow">
+            <div
+              className="relative rounded-xl overflow-hidden bg-dark_blue w-[350px] min-w-[350px] bg-cover bg-center group h-[430px] duration-500"
+              style={{ backgroundImage: `url(${BgImage})` }}
+            >
+              <div className="absolute inset-0 transition duration-500 backdrop-filter group-hover:backdrop-blur-md"></div>
+
+              <div className="gap-4 transition-transform duration-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:transform group-hover:translate-y-[-190%] group-hover:translate-x-[-107%]">
+                <FontAwesomeIcon
+                  icon={faEarthAmerica}
+                  className="text-white text-[50px] transition-transform duration-500 translate-x-[70%] group-hover:translate-x-[-16%] group-hover:scale-[0.7]"
+                />
+                <p className="text-white text-3xl font-semi-bold tracking-widest transition-transform duration-500 mt-2">
+                  關心在地
+                </p>
+              </div>
+
+              <div className="absolute bottom-0 left-0 right-0 p-4 transition-transform duration-500 translate-y-full group-hover:translate-y-[-5%] px-[20px]">
+                <div className="absolute delay-500 duration-500 w-[0px] bg-white h-[1px] left-0 top-[-20px] group-hover:w-[300px]"></div>
+                <p className="text-white ">
+                  範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字
+                  範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className="relative rounded-xl overflow-hidden bg-dark_blue w-[350px] min-w-[350px] bg-cover bg-center group h-[430px] duration-500"
+              style={{ backgroundImage: `url(${BgImage})` }}
+            >
+              <div className="absolute inset-0 transition duration-500 backdrop-filter group-hover:backdrop-blur-md"></div>
+
+              <div className="gap-4 transition-transform duration-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:transform group-hover:translate-y-[-190%] group-hover:translate-x-[-107%]">
+                <FontAwesomeIcon
+                  icon={faEarthAmerica}
+                  className="text-white text-[50px] transition-transform duration-500 translate-x-[70%] group-hover:translate-x-[-16%] group-hover:scale-[0.7]"
+                />
+                <p className="text-white text-3xl font-semi-bold tracking-widest transition-transform duration-500 mt-2">
+                  關懷培力
+                </p>
+              </div>
+
+              <div className="absolute bottom-0 left-0 right-0 p-4 transition-transform duration-500 translate-y-full group-hover:translate-y-[-5%] px-[20px]">
+                <div className="absolute delay-500 duration-500 w-[0px] bg-white h-[1px] left-0 top-[-20px] group-hover:w-[300px]"></div>
+                <p className="text-white ">
+                  範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字
+                  範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字
+                </p>
+              </div>
+            </div>{" "}
+            <div
+              className="relative rounded-xl overflow-hidden bg-dark_blue w-[350px] min-w-[350px] bg-cover bg-center group h-[430px] duration-500"
+              style={{ backgroundImage: `url(${BgImage})` }}
+            >
+              <div className="absolute inset-0 transition duration-500 backdrop-filter group-hover:backdrop-blur-md"></div>
+
+              <div className="gap-4 transition-transform duration-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:transform group-hover:translate-y-[-190%] group-hover:translate-x-[-107%]">
+                <FontAwesomeIcon
+                  icon={faEarthAmerica}
+                  className="text-white text-[50px] transition-transform duration-500 translate-x-[70%] group-hover:translate-x-[-16%] group-hover:scale-[0.7]"
+                />
+                <p className="text-white text-3xl font-semi-bold tracking-widest transition-transform duration-500 mt-2">
+                  關注根基
+                </p>
+              </div>
+
+              <div className="absolute bottom-0 left-0 right-0 p-4 transition-transform duration-500 translate-y-full group-hover:translate-y-[-5%] px-[20px]">
+                <div className="absolute delay-500 duration-500 w-[0px] bg-white h-[1px] left-0 top-[-20px] group-hover:w-[300px]"></div>
+                <p className="text-white ">
+                  範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字
+                  範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字
+                </p>
+              </div>
+            </div>
+          </div>
+        </Section>
+      </Container>
+
+      <BgSection color="#F1F1F1">
+        <Container>
+          <div
+            className="grid gap-6"
+            style={{ gridTemplateColumns: "auto 1fr" }}
+          >
+            <div className="flex flex-col justify-between">
+              <div className="flex flex-col">
+                <p className="font-bold text-2xl text-dark_blue gap-1">
+                  焦點故事
+                </p>
+                <p>story</p>
+              </div>
+              <div className="flex flex-col gap-6">
+                <p className="font-semibold text-xl text-orange">影音區</p>
+                <div className="bg-white rounded-xl p-6 flex flex-col text-[#262626] gap-1 font-bold tracking-wide text-xl w-[130%] z-10">
+                  <p>至上電子 x</p>
+                  <p>國立臺灣師範大學</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className="font-semibold text-[#262626] text-xl tracking-wide">
+                「動手做STEAM多元智能晨光時間」計畫
+              </p>
+              <img src={WorkImage} alt="Project" className="w-[100%] mt-6" />
+            </div>
+
+            <div>&nbsp;</div>
+            <div className="mt-4 text-[#262626] trackling-wide leading-8">
+              本公司與國立臺灣師範大學科技應用與人力資源發展學系攜手合作，展開「動手做STEAM多元智能晨光時間」。本計畫由臺師大科技系的蔡其瑞助理教授領導，旨在啟發長安國中特教學生發展多元智能，提升其自我肯定，促進社交技巧，同時體驗動手做的樂趣。
+            </div>
+
+            <div>&nbsp;</div>
+            <div className="flex justify-end mb-36">
+              <div className="bg-orange rounded-full px-8 py-2 text-white mt-8">了解更多</div>
+            </div>
+          </div>
+        </Container>
+      </BgSection>
+
+<SectionWithSidebar />
 
 
-
-
-
+      <Footer />
     </div>
   );
 };

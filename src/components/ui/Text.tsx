@@ -2,6 +2,14 @@ import React from 'react'
 import { TextProps } from '../type'
 
 
+
+export const H1: React.FC<TextProps> = ({ text, color = '#555555' }) => { 
+    return (
+      <p className={`font-bold text-5xl tracking-wide`} style={{ color }}>{ text }</p>
+    )
+  }
+
+
 export const H3: React.FC<TextProps> = ({ text, color = '#555555' }) => { 
     return (
       <p className={`font-semibold text-xl tracking-wide mt-24`} style={{ color }}>{ text }</p>

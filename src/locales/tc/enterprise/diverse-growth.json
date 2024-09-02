@@ -50,8 +50,8 @@
     },
     "performanceReport": {
       "title": "年度執行情形報告",
-      "training": "年度員工受訓內部課程",
-      "trainingHoursAndGenderRatio": "年度各層級員工受訓（內部＋外部）時數與性別比",
+      "training": "員工受訓內部課程",
+      "trainingHoursAndGenderRatio": "各層級員工受訓（內部＋外部）時數與性別比",
       "table2023": {
         "infoSecuritySeminar": "資訊安全宣導講座",
         "integrityManagementAndFairTrade": "誠信經營暨公平交易、反貪腐",

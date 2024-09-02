@@ -31,12 +31,12 @@ const ScrollToTop: React.FC = () => {
   return (
     <button
     onClick={scrollToTop}
-    className={`fixed bottom-8 right-8 w-12 h-12 bg-orange hover:scale-105 duration-300 text-white rounded-full shadow-lg  ${
+    className={`fixed bottom-8 right-8 w-14 h-14 bg-dark_blue hover:scale-105 duration-300 text-white rounded-full shadow-xl  ${
       isVisible ? 'opacity-100' : 'opacity-0'
     }`}
     aria-label="Scroll to top"
   >
-     <FontAwesomeIcon icon={faChevronUp} />
+     <FontAwesomeIcon icon={faChevronUp} className='text-2xl' />
     </button>
   );
 };
