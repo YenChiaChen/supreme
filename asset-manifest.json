@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.6c95034a.css",
-    "main.js": "/supreme/static/js/main.009a9078.js",
+    "main.css": "/supreme/static/css/main.205e43e9.css",
+    "main.js": "/supreme/static/js/main.8d6b3463.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
     "static/media/2022-3.png": "/supreme/static/media/2022-3.08830b312fc3f07fc77c.png",
@@ -10,8 +10,10 @@
     "static/media/薪酬委員會.jpg": "/supreme/static/media/薪酬委員會.e181f6d40fb3ea93a903.jpg",
     "static/media/氣候變遷對策.jpg": "/supreme/static/media/氣候變遷對策.1b1982f0a61db8e92523.jpg",
     "static/media/girl.png": "/supreme/static/media/girl.41294bf1217fd71e928c.png",
+    "static/media/bg02.png": "/supreme/static/media/bg02.43777c44b4689bcdcf45.png",
     "static/media/溫室氣體&行動方案.jpg": "/supreme/static/media/溫室氣體&行動方案.b2faf9750536f5ce47cb.jpg",
     "static/media/經營者的話.jpg": "/supreme/static/media/經營者的話.d2b0c6d37fd756830b70.jpg",
+    "static/media/bg04.png": "/supreme/static/media/bg04.7b5eda8e77a4268f5297.png",
     "static/media/chairmain.png": "/supreme/static/media/chairmain.40c942572852b06cb374.png",
     "static/media/福利措施與關懷.jpg": "/supreme/static/media/福利措施與關懷.ae02e76db371cbde89a5.jpg",
     "static/media/廢棄物.jpg": "/supreme/static/media/廢棄物.162b67fdf089f4b5e9c9.jpg",
@@ -19,6 +21,7 @@
     "static/media/重大主題.jpg": "/supreme/static/media/重大主題.409479a0c28395cb9a42.jpg",
     "static/media/07.jpg": "/supreme/static/media/07.0e413b1979dda5499bfe.jpg",
     "static/media/building.png": "/supreme/static/media/building.4b5b910f85328c8e43ea.png",
+    "static/media/bg03.png": "/supreme/static/media/bg03.a343f23cd05c30e12135.png",
     "static/media/bg01.png": "/supreme/static/media/bg01.202e27df6eee39581f95.png",
     "static/media/06.jpg": "/supreme/static/media/06.361dd2a656c847545b51.jpg",
     "static/media/供應鏈管理.jpg": "/supreme/static/media/供應鏈管理.b85d4db9174665f751f6.jpg",
@@ -81,11 +84,11 @@
     "static/media/boardStru.png": "/supreme/static/media/boardStru.56e898bad9fb031e88b5.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.6c95034a.css.map": "/supreme/static/css/main.6c95034a.css.map",
-    "main.009a9078.js.map": "/supreme/static/js/main.009a9078.js.map"
+    "main.205e43e9.css.map": "/supreme/static/css/main.205e43e9.css.map",
+    "main.8d6b3463.js.map": "/supreme/static/js/main.8d6b3463.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c95034a.css",
-    "static/js/main.009a9078.js"
+    "static/css/main.205e43e9.css",
+    "static/js/main.8d6b3463.js"
   ]
 }
