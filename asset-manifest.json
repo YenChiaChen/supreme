@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.205e43e9.css",
-    "main.js": "/supreme/static/js/main.8d6b3463.js",
+    "main.css": "/supreme/static/css/main.95edbad9.css",
+    "main.js": "/supreme/static/js/main.93d76bf0.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
     "static/media/2022-3.png": "/supreme/static/media/2022-3.08830b312fc3f07fc77c.png",
@@ -76,7 +76,9 @@
     "static/media/hakimoPercent.png": "/supreme/static/media/hakimoPercent.1b4927d51b2e999583cf.png",
     "static/media/綠能低碳計畫.jpg": "/supreme/static/media/綠能低碳計畫.23fe867ee3bdca983460.jpg",
     "static/media/sustainbility-committee01.png": "/supreme/static/media/sustainbility-committee01.9fb98c7ba39a491c78bc.png",
+    "static/media/key-topic-2022.png": "/supreme/static/media/key-topic-2022.f5c133320e56a8fafcd1.png",
     "static/media/climate-change-02.png": "/supreme/static/media/climate-change-02.51c6f7dd180fc1d25e15.png",
+    "static/media/key-topic-2023.png": "/supreme/static/media/key-topic-2023.9fbca89fe8eed5e9d55e.png",
     "static/media/hakimo.png": "/supreme/static/media/hakimo.913fb3bb7222a18ab752.png",
     "static/media/accident-investigation-process-en.png": "/supreme/static/media/accident-investigation-process-en.eb17aca0ec4c57493275.png",
     "static/media/accident-investigation-process-zh.png": "/supreme/static/media/accident-investigation-process-zh.197fbc6a4352d150e3cc.png",
@@ -84,11 +86,11 @@
     "static/media/boardStru.png": "/supreme/static/media/boardStru.56e898bad9fb031e88b5.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.205e43e9.css.map": "/supreme/static/css/main.205e43e9.css.map",
-    "main.8d6b3463.js.map": "/supreme/static/js/main.8d6b3463.js.map"
+    "main.95edbad9.css.map": "/supreme/static/css/main.95edbad9.css.map",
+    "main.93d76bf0.js.map": "/supreme/static/js/main.93d76bf0.js.map"
   },
   "entrypoints": [
-    "static/css/main.205e43e9.css",
-    "static/js/main.8d6b3463.js"
+    "static/css/main.95edbad9.css",
+    "static/js/main.93d76bf0.js"
   ]
 }
