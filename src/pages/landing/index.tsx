@@ -5,9 +5,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import earth from "../../assets/img/testing/earth.png";
+import TopicHighlightsSection from "./TopicHighlightsSection";
 import {
   faBlockBrickFire,
+  faCloudArrowDown,
   faEarthAmerica,
+  faFaceSmile,
   faHouseChimneyHeart,
 } from "@fortawesome/pro-light-svg-icons";
 import AOS from "aos";
@@ -20,6 +23,7 @@ import BgImage from "../../assets/img/bg/building.png";
 import WorkImage from "../../assets/img/bg/mainpage/work.png";
 import { BgSection, Container, H1, Section } from "../../components/ui";
 import SectionWithSidebar from "../../components/ui/SectionWithSidebar";
+import PrizeSwiper from "./PrizeSwiper";
 
 const LandingPage: React.FC = () => {
   useEffect(() => {
@@ -175,13 +179,122 @@ const LandingPage: React.FC = () => {
 
             <div>&nbsp;</div>
             <div className="flex justify-end mb-36">
-              <div className="bg-orange rounded-full px-8 py-2 text-white mt-8">了解更多</div>
+              <div className="bg-orange rounded-full px-8 py-2 text-white mt-8r">
+                了解更多
+              </div>
             </div>
           </div>
         </Container>
       </BgSection>
 
-<SectionWithSidebar />
+      <SectionWithSidebar />
+
+      <TopicHighlightsSection />
+
+      <div className="bg-[#F1F1F1] py-24">
+        <Container>
+          <div className="grid grid-cols-2 gap-12">
+            <div className="flex flex-col justify-between">
+              <div className="flex flex-col">
+                <p className="font-bold text-2xl text-dark_blue gap-1">
+                  永續專欄特別報導
+                </p>
+                <p className="text-[#555555] font-light tracking-wide">story</p>
+              </div>
+
+              <div className="rounded-xl shadow-md bg-white overflow-hidden">
+                <img
+                  src={BgImage}
+                  alt="Temp Image"
+                  className="w-full h-[200px] object-cover"
+                />
+                <div className="p-8">
+                  <p className="text-lg">新能源部門投資發展</p>
+                  <p className="mt-4 font-light text-sm">
+                    針對輕型載具應用及市場，本公司成立電機應用研發部門，延攬專業電子，電機，軟韌體相關人才，加大力度投資低壓電力驅動系統自主研發。
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-orange rounded-full px-8 py-2 text-white w-fit">
+                了解更多
+              </div>
+            </div>
+            <div className="flex flex-col justify-between gap-8">
+              <div className="rounded-xl shadow-md bg-white overflow-hidden">
+                <img
+                  src={BgImage}
+                  alt="Temp Image"
+                  className="w-full h-[200px] object-cover"
+                />
+                <div className="p-8">
+                  <p className="text-lg">新能源部門投資發展</p>
+                  <p className="mt-4 font-light text-sm">
+                    針對輕型載具應用及市場，本公司成立電機應用研發部門，延攬專業電子，電機，軟韌體相關人才，加大力度投資低壓電力驅動系統自主研發。
+                  </p>
+                </div>
+              </div>
+              <div className="rounded-xl shadow-md bg-white overflow-hidden">
+                <img
+                  src={BgImage}
+                  alt="Temp Image"
+                  className="w-full h-[200px] object-cover"
+                />
+                <div className="p-8">
+                  <p className="text-lg">新能源部門投資發展</p>
+                  <p className="mt-4 font-light text-sm">
+                    針對輕型載具應用及市場，本公司成立電機應用研發部門，延攬專業電子，電機，軟韌體相關人才，加大力度投資低壓電力驅動系統自主研發。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+
+      <div className="pt-24 bg-white">
+        <Container>
+          <div className="flex flex-col">
+            <p className="font-bold text-2xl text-dark_blue gap-1">
+              成果與肯定
+            </p>
+            <p className="text-[#555555] font-light tracking-wide">award</p>
+          </div>
+        </Container>
+      </div>
+
+      <PrizeSwiper />
+
+      <div className="py-24 bg-white">
+        <Container>
+          <div className="flex flex-col">
+            <p className="font-bold text-2xl text-dark_blue gap-1">
+            永續報告書下載專區
+            </p>
+            <p className="text-[#555555] font-light tracking-wide">download</p>
+          </div>
+
+          <div className="flex flex-wrap gap-4 mt-8 text-[#555555] font-light">
+            <div className="bg-gray rounded-xl flex justify-between items-center p-6 w-[40%] duration-300 hover:bg-orange hover:text-white group hover:shadow-xl cursor-pointer">
+              <p className="text-xl tracking-wide">2022年永續報告書</p>
+              <FontAwesomeIcon icon={faCloudArrowDown} className="text-orange h-[30px] group-hover:text-white duration-300" />
+            </div>
+            <div className="bg-gray rounded-xl flex justify-between items-center p-6 w-[40%] duration-300 hover:bg-orange hover:text-white group hover:shadow-xl cursor-pointer">
+              <p className="text-xl tracking-wide">2022年永續報告書</p>
+              <FontAwesomeIcon icon={faCloudArrowDown} className="text-orange h-[30px] group-hover:text-white duration-300" />
+            </div>
+            <div className="bg-gray rounded-xl flex justify-between items-center p-6 w-[40%] duration-300 hover:bg-orange hover:text-white group hover:shadow-xl cursor-pointer">
+              <p className="text-xl tracking-wide">2022年永續報告書</p>
+              <FontAwesomeIcon icon={faCloudArrowDown} className="text-orange h-[30px] group-hover:text-white duration-300" />
+            </div>
+            <div className="bg-gray rounded-xl flex justify-between items-center p-6 w-[40%] duration-300 hover:bg-orange hover:text-white group hover:shadow-xl cursor-pointer">
+              <p className="text-xl tracking-wide">2022年永續報告書</p>
+              <FontAwesomeIcon icon={faCloudArrowDown} className="text-orange h-[30px] group-hover:text-white duration-300" />
+            </div>
+          </div>
+        </Container>
+      </div>
+
 
 
       <Footer />
