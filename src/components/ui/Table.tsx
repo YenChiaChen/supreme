@@ -1,6 +1,7 @@
 import React from "react";
 import { H3, Sup } from "./Text";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface Column {
   header: string;
@@ -109,6 +110,7 @@ interface TableCell {
   content: React.ReactNode;
   colSpan?: number;
   rowSpan?: number;
+  icon?: React.ReactNode
 }
 
 interface TableData {
@@ -140,14 +142,13 @@ export const Table2: React.FC<TableProps> = ({
   isCenter = false
 }) => {
   const { headers, rows } = data;
-  
   const { t } = useTranslation();
   const alignmentClass = isCenter ? "text-center" : "";
 
   return (
     <div className="mt-8">
-      <H3 text={title} color={color} />
-      <Sup text={unit} />
+      {title && <h3 style={{ color }}>{title}</h3>}
+      {unit && <sup>{unit}</sup>}
       <table className={`w-full border-collapse mt-4 ${className}`}>
         <thead>
           <tr style={{ backgroundColor: color }} className={`text-white ${alignmentClass}`}>
@@ -160,14 +161,11 @@ export const Table2: React.FC<TableProps> = ({
                 style={{
                   borderColor: "white",
                   borderBottom: `1px solid ${color}`,
-                  borderLeft:
-                    index === 0 ? `1px solid ${color}` : "1px solid white",
-                  borderRight:
-                    index === headers.length - 1
-                      ? `1px solid ${color}`
-                      : "1px solid white",
+                  borderLeft: index === 0 ? `1px solid ${color}` : "1px solid white",
+                  borderRight: index === headers.length - 1 ? `1px solid ${color}` : "1px solid white",
                 }}
               >
+                {header.icon && <span className="inline-block mr-2">{header.icon}</span>}
                 {header.content}
               </th>
             ))}
@@ -183,11 +181,10 @@ export const Table2: React.FC<TableProps> = ({
                     key={cellIndex}
                     colSpan={cell.colSpan}
                     rowSpan={cell.rowSpan}
-                    className={`border px-4 py-4 text-[#555555] text-md ${
-                      isNumeric ? "text-center" : ""
-                    }`}
+                    className={`border px-4 py-4 text-[#555555] text-md ${isNumeric ? "text-center" : ""}`}
                     style={{ borderColor: color }}
                   >
+                    {cell.icon && <span className="inline-block mr-2">{cell.icon}</span>}
                     {cell.content}
                   </td>
                 );
@@ -201,7 +198,7 @@ export const Table2: React.FC<TableProps> = ({
         <div className="mt-4">
           {notes.map((note, index) => (
             <p key={index} className="text-sm text-gray-700 font-light mt-1">
-              {t("common.note")} {index + 1}：{note.text}
+              {t("common.note")} {index + 1}: {note.text}
             </p>
           ))}
         </div>
