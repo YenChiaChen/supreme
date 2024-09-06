@@ -15,6 +15,8 @@ import TabContainer from "../../components/ui/TabContainer";
 
 import { Table2, P, List, H2, Section } from "../../components/ui";
 
+import Table from "../../components/ui/Table";
+
 const icons = [
   <FontAwesomeIcon icon={faUserFriends} className="h-[50px]" />,
   <FontAwesomeIcon icon={faTruck} className="h-[50px]" />,
@@ -35,9 +37,9 @@ const goals = [
   "客戶",
   "供應商",
   "員工",
-  "投資人",
+  "投資人 / 股東",
   "政府與主管機關",
-  "非營利組織",
+  "非營利組織 / 社區",
 ];
 const StakeholderEngagement: React.FC = () => {
   const breadcrumbItems = [
@@ -80,6 +82,41 @@ const StakeholderEngagement: React.FC = () => {
       [{ content: "副理" }, { content: "郵件：devinachiu@supreme.com.tw" }],
     ],
   };
+
+
+  const columns = [
+    { header: "類別", accessor: "item" },
+    { header: "窗口", accessor: "name" },
+    { header: "聯絡方式", accessor: "contact" },
+  ];
+
+  const data = [
+    {
+      item: "發言人",
+      name: "張家偉\n資深業務副總",
+      contact:
+        "電話：(02)2657-8809\n郵件：wayne@supreme.com.tw",
+    },
+    {
+      item: "代理發言人",
+      name: "羅育宗\n財務協理",
+      contact:
+        "電話：(02)2657-8809\n郵件：michael@supreme.com.tw",
+    },
+    {
+      item: "股務代理機構",
+      name: "群益金鼎證券(股)公司",
+      contact:
+        "地址：台北市大安區敦化南路二段97號地下2樓\n電話：(02)2702-3999\n郵件：wayne@supreme.com.tw",
+    },
+    {
+      item: "公司股務",
+      name: "邱莉絜\n副理",
+      contact:
+        "電話：(02)2657-8809\n郵件：devinachiu@supreme.com.tw",
+    },
+  ];
+
 
   return (
     <div>
@@ -144,7 +181,7 @@ const StakeholderEngagement: React.FC = () => {
                         </ul>
 
                         <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">
-                          2023年利害關係人溝通實績
+                          利害關係人溝通實績
                         </p>
                         <ul className="list-disc content pt-4 pl-6">
                           <li>
@@ -191,7 +228,7 @@ const StakeholderEngagement: React.FC = () => {
                         </ul>
 
                         <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">
-                          2023年利害關係人溝通實績
+                          利害關係人溝通實績
                         </p>
                         <ul className="list-disc content pt-4 pl-6">
                           <li>違反法令遭處份事件：0</li>
@@ -242,7 +279,7 @@ const StakeholderEngagement: React.FC = () => {
                         </ul>
 
                         <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">
-                          2023年利害關係人溝通實績
+                          利害關係人溝通實績
                         </p>
                         <ul className="list-disc content pt-4 pl-6">
                           <li>教育訓練總時數：3,527／H</li>
@@ -266,7 +303,7 @@ const StakeholderEngagement: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div data-goal="投資人">
+                  <div data-goal="投資人 / 股東">
                     <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
                       <div className="border-r border-blue pr-8">
                         <p className="border-b border-blue pb-4 font-semibold text-blue">
@@ -305,7 +342,7 @@ const StakeholderEngagement: React.FC = () => {
                         </ul>
 
                         <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">
-                          2023年利害關係人溝通實績
+                          利害關係人溝通實績
                         </p>
                         <ul className="list-disc content pt-4 pl-6">
                           <li>發布年度永續報告書</li>
@@ -355,7 +392,7 @@ const StakeholderEngagement: React.FC = () => {
                         </ul>
 
                         <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">
-                          2023年利害關係人溝通實績
+                          利害關係人溝通實績
                         </p>
                         <ul className="list-disc content pt-4 pl-6">
                           <li>選擇信譽卓越之供應商</li>
@@ -367,7 +404,7 @@ const StakeholderEngagement: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div data-goal="非營利組織">
+                  <div data-goal="非營利組織 / 社區">
                     <div className="grid grid-cols-2 bg-light_blue bg-opacity-40 rounded-[20px] border border-blue p-8">
                       <div className="border-r border-blue pr-8">
                         <p className="border-b border-blue pb-4 font-semibold text-blue">
@@ -402,7 +439,7 @@ const StakeholderEngagement: React.FC = () => {
                         </ul>
 
                         <p className="border-b border-blue pb-4 font-semibold text-blue mt-12">
-                          2023年利害關係人溝通實績
+                          利害關係人溝通實績
                         </p>
                         <ul className="list-disc content pt-4 pl-6">
                           <li>
@@ -434,18 +471,12 @@ const StakeholderEngagement: React.FC = () => {
             <H2 text="溝通管道" />
 
             <TabContainerIcon
-              goals={["投資人", "員工", "供應商", "客戶"]}
+              goals={["投資人 / 股東", "員工", "供應商", "客戶"]}
               icons={iconsCommunicate}
               tabColor="#3B79E4"
             >
-              <div data-goal="投資人">
-                <Table2
-                  data={tableData}
-                  color="#3B79E4"
-                  title=""
-                  unit=""
-                  isCenter={false}
-                />
+              <div data-goal="投資人 / 股東">
+              <Table data={data} columns={columns} color="#3B79E4" />
               </div>
               <div data-goal="員工">
                 <P text="內部員工可透過以下管道進行意見回饋或申訴：" />

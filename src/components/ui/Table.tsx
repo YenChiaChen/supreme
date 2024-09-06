@@ -173,7 +173,7 @@ export const Table2: React.FC<TableProps> = ({
         </thead>
         <tbody>
           {rows.map((row, rowIndex) => (
-            <tr key={rowIndex} className={alignmentClass}>
+            <tr key={rowIndex} className={`${alignmentClass}`}>
               {row.map((cell, cellIndex) => {
                 const isNumeric = typeof cell.content === "number";
                 return (
