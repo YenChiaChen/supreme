@@ -202,14 +202,14 @@ const SectionWithSidebar: React.FC = () => {
 
   return (
     <section
-      className="w-full min-h-screen flex section-container"
+      className="w-full flex section-container"
       style={{
         backgroundImage: `url(${contents[selectedIndex].backgroundImage})`,
       }}
     >
       <Container>
         <div className="flex items-start h-full">
-          <div className="grid grid-cols-2 w-full mt-12">
+          <div className="grid grid-cols-2 w-full mt-24 mb-24">
             <div className="col-span-2 text-white">
               <p className="text-3xl font-bold tracking-wide mb-1">
                 永續亮點績效

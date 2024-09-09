@@ -47,7 +47,7 @@ interface StatDisplayProps {
     label: string;
     num: number;
     suffix: string;
-    color?: string
+    color?: string;
     staticString?: string;
   }>;
 }
@@ -58,9 +58,12 @@ const StatDisplay: React.FC<StatDisplayProps> = ({ stats }) => {
       {stats.map((stat, index) => (
         <React.Fragment key={index}>
           <div className="flex-1 flex justify-center">
-            <div className="text-left text-[16px] text-[#5b5b5b] font-light">
+            <div className="text-left text-[16px] text-[#5b5b5b]">
               <p className="tracking-wide">{stat.label}</p>
-              <p className="text-[32px] font-semibold pt-1">
+              <p
+                className="text-[32px] font-semibold pt-1"
+                style={{ color: stat.color || '#555555' }}
+              >
                 {stat.staticString ? (
                   stat.staticString
                 ) : (
@@ -84,6 +87,7 @@ const StatDisplay: React.FC<StatDisplayProps> = ({ stats }) => {
 };
 
 export default StatDisplay;
+
 
 
 

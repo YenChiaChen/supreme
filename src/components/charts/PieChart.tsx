@@ -18,7 +18,7 @@ const PieChart: React.FC<PieChartProps> = ({ data }) => {
         {data.map((item) => (
         <div key={item.id} className="flex items-center">
           <div className="text-xs">{item.label}</div>
-          <div style={{ color: item.color }} className="text-4xl ml-4"><Stat num={item.value} suffix={""} decimals={1} /><span className="text-black text-sm">%</span></div>
+          <div style={{ color: item.color }} className="text-4xl ml-4 font-semibold"><Stat num={item.value} suffix={""} decimals={1} color="#FF507C" /><span className="text-black text-sm">%</span></div>
         </div>
       ))}
         </div>

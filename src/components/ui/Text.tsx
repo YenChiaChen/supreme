@@ -35,6 +35,19 @@ export const P: React.FC<TextProps> = ({ text, color = '#555555' }) => {
   )
 }
 
+export const Desc: React.FC<TextProps> = ({ text, color = '#555555' }) => {
+  return (
+    <p className="whitespace-pre-wrap tracking-wide text-md leading-7" style={{ color }}>
+        {text.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
+    </p>
+  )
+}
+
 
 export const Sup: React.FC<TextProps> = ({ text, color = '#b3b3b3' }) => {
     return (
