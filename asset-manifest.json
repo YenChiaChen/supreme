@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.c26da10a.css",
-    "main.js": "/supreme/static/js/main.0113f4db.js",
+    "main.css": "/supreme/static/css/main.0584e545.css",
+    "main.js": "/supreme/static/js/main.c1501409.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/2022-2.png": "/supreme/static/media/2022-2.271af27ef861f3145552.png",
     "static/media/2022-3.png": "/supreme/static/media/2022-3.08830b312fc3f07fc77c.png",
@@ -86,11 +86,11 @@
     "static/media/boardStru.png": "/supreme/static/media/boardStru.56e898bad9fb031e88b5.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.c26da10a.css.map": "/supreme/static/css/main.c26da10a.css.map",
-    "main.0113f4db.js.map": "/supreme/static/js/main.0113f4db.js.map"
+    "main.0584e545.css.map": "/supreme/static/css/main.0584e545.css.map",
+    "main.c1501409.js.map": "/supreme/static/js/main.c1501409.js.map"
   },
   "entrypoints": [
-    "static/css/main.c26da10a.css",
-    "static/js/main.0113f4db.js"
+    "static/css/main.0584e545.css",
+    "static/js/main.c1501409.js"
   ]
 }
