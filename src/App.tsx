@@ -36,6 +36,7 @@ import RightsProtection from "./pages/enterprise/RightsProtection";
 import DiverseGrowth from "./pages/enterprise/DiverseGrowth";
 import PerformanceCompensation from "./pages/enterprise/PerformanceCompensation";
 import EthicalManagement from "./pages/sustainability/EthicalManagement";
+import NewsPage from "./pages/news";
 
 function App() {
   return (
@@ -85,7 +86,7 @@ function App() {
           <Route path="symbiosis/greenhouse-gases" element={<GreenhouseGases />} />
           <Route path="symbiosis/green-energy" element={<GreenEnergy />} />
           <Route path="symbiosis/*" element={<MaintainPage />} />
-          <Route path="news/*" element={<MaintainPage />} />
+          <Route path="news" element={<NewsPage />} />
 
 
 

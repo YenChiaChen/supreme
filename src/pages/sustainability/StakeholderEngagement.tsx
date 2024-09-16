@@ -1,35 +1,30 @@
 import HeroBanner from "../../components/ui/HeroBanner";
 import Breadcrumbs from "../../components/navigation/BreadCrumb";
 import Bg from "../../assets/img/bg/subPage/永續經營/利害關係人議合.jpg";
-import {
-  faChartPie,
-  faGavel,
-  faHandsHelping,
-  faTruck,
-  faUserFriends,
-  faUsers,
-} from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TabContainerIcon from "../../components/ui/TabContainerIcon";
+import { SideTabWithIcon } from "../../components/ui/TabContainerIcon";
 import TabContainer from "../../components/ui/TabContainer";
 
 import { Table2, P, List, H2, Section } from "../../components/ui";
 
 import Table from "../../components/ui/Table";
+import { faChartPie, faGavel, faHandsHelping, faTruck, faUsers, faUserFriends } from "@fortawesome/pro-light-svg-icons";
 
 const icons = [
-  <FontAwesomeIcon icon={faUserFriends} className="h-[50px]" />,
-  <FontAwesomeIcon icon={faTruck} className="h-[50px]" />,
-  <FontAwesomeIcon icon={faUsers} className="h-[50px]" />,
-  <FontAwesomeIcon icon={faChartPie} className="h-[50px]" />,
-  <FontAwesomeIcon icon={faGavel} className="h-[50px]" />,
-  <FontAwesomeIcon icon={faHandsHelping} className="h-[50px]" />,
+  <FontAwesomeIcon icon={faUserFriends} className="w-[40px] h-fit" />,
+  <FontAwesomeIcon icon={faTruck} className="w-[40px] h-fit" />,
+  <FontAwesomeIcon icon={faUsers} className="w-[40px] h-fit" />,
+  <FontAwesomeIcon icon={faChartPie} className="w-[40px] h-fit" />,
+  <FontAwesomeIcon icon={faGavel} className="w-[40px] h-fit" />,
+  <FontAwesomeIcon icon={faHandsHelping} className="w-[40px] h-fit" />,
 ];
 
 const iconsCommunicate = [
   <FontAwesomeIcon icon={faChartPie} className="h-[50px]" />,
   <FontAwesomeIcon icon={faUsers} className="h-[50px]" />,
-  <FontAwesomeIcon icon={faUsers} className="h-[50px]" />,
+  <FontAwesomeIcon icon={faTruck} className="h-[50px]" />,
   <FontAwesomeIcon icon={faUserFriends} className="h-[50px]" />,
 ];
 
@@ -132,7 +127,7 @@ const StakeholderEngagement: React.FC = () => {
         <div className="container mx-auto px-[10%] mt-8 pt-18">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <p className="mt-xl sub-title text-center">利害關係人鑑別與選擇</p>
+          <p className="mt-xl sub-title text-center">利害關係人鑑別</p>
           <p className="mt-md content">
             至上參考AA1000SES (Stakeholder Engagement Standards, SES)
             標準進行利害關係人鑑別，針對「依賴性、責任性、影響力、多元觀點、關注張力」五項評估構面篩選鑑別出本年度六大利害關係人群體，包括客戶、供應商、員工、投資人/股東/券商、政府與主管機關以及非營利組織與社區。
@@ -144,7 +139,7 @@ const StakeholderEngagement: React.FC = () => {
           <div className="mt-24">
             <TabContainer goals={["2023"]} tabColor="#3B79E4">
               <div data-goal="2023">
-                <TabContainerIcon
+                <SideTabWithIcon
                   goals={goals}
                   icons={icons}
                   tabColor="#3B79E4"
@@ -462,7 +457,7 @@ const StakeholderEngagement: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                </TabContainerIcon>
+                </SideTabWithIcon>
               </div>
             </TabContainer>
           </div>
