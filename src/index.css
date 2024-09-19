@@ -13,4 +13,14 @@
 .font-en{
   font-family: 'Wix Madefor Display';
 }
+.align-transition {
+  transition: align-items 0.5s ease-in-out;
+}
 
+.align-transition.items-center {
+  align-items: center;
+}
+
+.align-transition.items-start {
+  align-items: flex-start;
+}

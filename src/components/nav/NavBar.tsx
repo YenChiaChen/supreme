@@ -30,12 +30,12 @@ const NavBar = () => {
   const [activeItem, setActiveItem] = useState<string | null>(null);
 
   const items = [
-    { title: '點亮永續', content: '點亮永續的內容' },
     { title: '最新動態', content: '最新動態的內容' },
     { title: '社會共榮', content: '社會共榮的內容' },
     { title: '幸福企業', content: '幸福企業的內容' },
     { title: '永續經營', content: '永續經營的內容' },
     { title: '永續共生', content: '永續共生的內容' },
+    { title: '下載專區', content: '下載專區的內容' },
   ];
 
   const contentVariants = {
