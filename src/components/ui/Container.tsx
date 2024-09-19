@@ -10,3 +10,27 @@ interface ContainerProps {
       </div>
     );
   };
+
+  interface SectionProps {
+    children: React.ReactNode;
+    className?: string;
+    color?: string;
+  }
+  
+  export const Section: React.FC<SectionProps> = ({ children, className = "" }) => {
+    return (
+      <div className={`py-8 ${className}`}>
+        {children}
+      </div>
+    );
+  };
+  
+  
+  export const BgSection:  React.FC<SectionProps> = ({ children, className = "", color= "#ffffff" }) => {
+    return (
+      <div className={`py-8 w-full ${className}`} style={{backgroundColor: color}}>
+        {children}
+      </div>
+    );
+  };
+  
