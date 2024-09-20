@@ -26,6 +26,13 @@ module.exports = {
       },
       animation: {
         typing: "typing 2s steps(20) alternate, blink .7s infinite"
+      },
+      colors: {
+        orange: {
+          DEFAULT: '#FF8D50',
+          light: '#FFA871',
+          dark: '#E6733C', 
+        },
       }
     },
   },

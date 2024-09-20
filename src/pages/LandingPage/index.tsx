@@ -12,15 +12,16 @@ import {
   faHandshakeAngle,
   faUserGear,
 } from "@fortawesome/pro-light-svg-icons";
-import NavBar from "../../components/nav/NavBar";
+import Navbar from "../../components/nav/NavBar";
 import { Container } from "../../components/ui/Container";
+import NavData from '../../data/nav.json'
 
 const LandingPage: React.FC = () => {
   return (
     <>
-      <NavBar />
+      <Navbar items={NavData} />
       <div
-        className="relative w-full h-[85vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed"
+        className="relative w-full h-[90vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage: `url(${BuildingImage})` }}
       >
         {/* <video
@@ -38,7 +39,7 @@ const LandingPage: React.FC = () => {
           className="absolute top-0 left-0 w-full h-full object-cover"
         /> */}
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white mt-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 font-tc tracking-wide">
             永續至上，共展未來
           </h1>

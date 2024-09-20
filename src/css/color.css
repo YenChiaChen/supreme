@@ -1,0 +1,15 @@
+:root {
+    --orange: #FF8D50;
+    --pink: #FF507C;
+    --purple: #A36ACA;
+    --green: #2ECF74;
+  }
+  
+  .bg-orange {
+    background-color: var(--orange);
+  }
+  
+  .text-orange {
+    color: var(--orange);
+  }
+  

@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+
+.font-tc{
+  font-family: 'Noto Sans TC';
+}
+.font-en{
+  font-family: 'Wix Madefor Display';
+}

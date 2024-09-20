@@ -1,0 +1,189 @@
+[
+    {
+      "title": "最新動態",
+      "link": "/news"
+    },
+    {
+      "title": "社會共榮",
+      "link": "/"
+    },
+    {
+      "title": "永續經營",
+      "link": "/sustainability",
+      "dropdown": [
+        {
+          "title": "經營者的話",
+          "link": "/sustainability/message-from-chairman"
+        },
+        {
+          "title": "公司治理",
+          "link": "/sustainability/governance"
+        },
+        {
+          "title": "誠信經營",
+          "link": "/sustainability/ethical-management"
+        },
+        {
+          "title": "董事會",
+          "link": "/sustainability/board"
+        },
+        {
+          "title": "功能性委員會",
+          "link": "#",
+          "children": [
+            {
+              "title": "永續發展委員會",
+              "link": "/sustainability/sustainbility-committee"
+            },
+            {
+              "title": "薪酬委員會",
+              "link": "/sustainability/compensation-committee"
+            },
+            {
+              "title": "審計委員會",
+              "link": "/sustainability/audit-committee"
+            }
+          ]
+        },
+        {
+          "title": "利害關係人專區",
+          "link": "#",
+          "children": [
+            {
+              "title": "利害關係人議合",
+              "link": "/sustainability/stakeholder-engagement"
+            },
+            {
+              "title": "重大主題",
+              "link": "/sustainability/key-topics"
+            }
+          ]
+        },
+        {
+          "title": "科技風險",
+          "link": "#",
+          "children": [
+            {
+              "title": "智慧財產管理",
+              "link": "/sustainability/intellectual-property"
+            },
+            {
+              "title": "風險管理",
+              "link": "/sustainability/risk-management"
+            },
+            {
+              "title": "資訊安全管理",
+              "link": "/sustainability/information-security"
+            }
+          ]
+        },
+        {
+          "title": "永續供應鏈",
+          "link": "#",
+          "children": [
+            {
+              "title": "供應鏈管理",
+              "link": "/sustainability/supply-chain"
+            },
+            {
+              "title": "產品與客戶服務",
+              "link": "/sustainability/product-customer-service"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "幸福企業",
+      "link": "/enterprise",
+      "dropdown": [
+        {
+          "title": "人力資源分佈",
+          "link": "/enterprise/hr-distribution"
+        },
+        {
+          "title": "員工政策",
+          "link": "#",
+          "children": [
+            {
+              "title": "福利措施與關懷",
+              "link": "/enterprise/welfare-care"
+            },
+            {
+              "title": "員工權益保障",
+              "link": "/enterprise/rights-protection"
+            }
+          ]
+        },
+        {
+          "title": "人才培育",
+          "link": "#",
+          "children": [
+            {
+              "title": "多元化成長",
+              "link": "/enterprise/diverse-growth"
+            },
+            {
+              "title": "績效檢核與薪酬",
+              "link": "/enterprise/performance-compensation"
+            }
+          ]
+        },
+        {
+          "title": "友善職場",
+          "link": "#",
+          "children": [
+            {
+              "title": "職業安全衛生",
+              "link": "/enterprise/occupational-safety"
+            },
+            {
+              "title": "健康職場",
+              "link": "/enterprise/healthy-workplace"
+            },
+            {
+              "title": "人權政策",
+              "link": "/enterprise/human-rights-policy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "永續共生",
+      "link": "/symbiosis",
+      "dropdown": [
+        {
+          "title": "氣候變遷對策",
+          "link": "/symbiosis/climate-change"
+        },
+        {
+          "title": "溫室氣體 & 行動方案",
+          "link": "/symbiosis/greenhouse-gases"
+        },
+        {
+          "title": "能源與廢棄物管理",
+          "link": "#",
+          "children": [
+            {
+              "title": "能源管理",
+              "link": "/symbiosis/energy-management"
+            },
+            {
+              "title": "廢棄物管理",
+              "link": "/symbiosis/waste-management"
+            },
+            {
+              "title": "水資源管理",
+              "link": "/symbiosis/water-management"
+            }
+          ]
+        },
+        {
+          "title": "綠能低碳計畫",
+          "link": "/symbiosis/green-energy"
+        }
+      ]
+    }
+  ]
+  
