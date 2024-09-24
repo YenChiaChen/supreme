@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.1b8961b4.css",
-    "main.js": "/supreme/static/js/main.00c6ce51.js",
+    "main.css": "/supreme/static/css/main.71a9aab0.css",
+    "main.js": "/supreme/static/js/main.403648a6.js",
     "static/media/performanceCard_03.png": "/supreme/static/media/performanceCard_03.a62cd9a770f65a4bf193.png",
     "static/media/img_Charity08.jpg": "/supreme/static/media/img_Charity08.e416308355863d8d32f3.jpg",
     "static/media/card_beach.png": "/supreme/static/media/card_beach.c4dd0d4fc48cfd745ecb.png",
@@ -42,11 +42,11 @@
     "static/media/img_Charity01.jpg": "/supreme/static/media/img_Charity01.7efcd3a9dc206b1f4665.jpg",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.1b8961b4.css.map": "/supreme/static/css/main.1b8961b4.css.map",
-    "main.00c6ce51.js.map": "/supreme/static/js/main.00c6ce51.js.map"
+    "main.71a9aab0.css.map": "/supreme/static/css/main.71a9aab0.css.map",
+    "main.403648a6.js.map": "/supreme/static/js/main.403648a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b8961b4.css",
-    "static/js/main.00c6ce51.js"
+    "static/css/main.71a9aab0.css",
+    "static/js/main.403648a6.js"
   ]
 }
