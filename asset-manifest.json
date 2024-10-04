@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/supreme/static/css/main.3da1f986.css",
-    "main.js": "/supreme/static/js/main.a5379aac.js",
+    "main.js": "/supreme/static/js/main.893fe95a.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/performanceCard_03.png": "/supreme/static/media/performanceCard_03.a62cd9a770f65a4bf193.png",
     "static/media/img_Charity08.jpg": "/supreme/static/media/img_Charity08.e416308355863d8d32f3.jpg",
@@ -114,10 +114,10 @@
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
     "main.3da1f986.css.map": "/supreme/static/css/main.3da1f986.css.map",
-    "main.a5379aac.js.map": "/supreme/static/js/main.a5379aac.js.map"
+    "main.893fe95a.js.map": "/supreme/static/js/main.893fe95a.js.map"
   },
   "entrypoints": [
     "static/css/main.3da1f986.css",
-    "static/js/main.a5379aac.js"
+    "static/js/main.893fe95a.js"
   ]
 }
