@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.7393741e.css",
-    "main.js": "/supreme/static/js/main.c48bb01e.js",
+    "main.css": "/supreme/static/css/main.3da1f986.css",
+    "main.js": "/supreme/static/js/main.a5379aac.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/performanceCard_03.png": "/supreme/static/media/performanceCard_03.a62cd9a770f65a4bf193.png",
     "static/media/img_Charity08.jpg": "/supreme/static/media/img_Charity08.e416308355863d8d32f3.jpg",
@@ -76,12 +76,12 @@
     "static/media/審計委員會.jpg": "/supreme/static/media/審計委員會.45436a04584d3397254f.jpg",
     "static/media/information-security-structure.png": "/supreme/static/media/information-security-structure.ed95fc98b5169332a480.png",
     "static/media/健康職場.jpg": "/supreme/static/media/健康職場.00fd72e917b6394dba32.jpg",
-    "static/media/risk-management-structure.png": "/supreme/static/media/risk-management-structure.aa883fe7c536c08e0c40.png",
     "static/media/information-security-publicize.png": "/supreme/static/media/information-security-publicize.f8d92e6391d8a42f7bb2.png",
+    "static/media/board-structure.png": "/supreme/static/media/board-structure.5bf69ff9073f8d2d1a94.png",
+    "static/media/risk-management-structure.png": "/supreme/static/media/risk-management-structure.4a39386da917324666dc.png",
     "static/media/智慧財產權管理.jpg": "/supreme/static/media/智慧財產權管理.865ab0d3c7a2989affba.jpg",
     "static/media/icon.jpg": "/supreme/static/media/icon.b931287d28a81cb85481.jpg",
     "static/media/supply-chain.png": "/supreme/static/media/supply-chain.45e9f4ad5ce2c5f95738.png",
-    "static/media/board-structure.png": "/supreme/static/media/board-structure.bfa68ca2ad57b6ea0204.png",
     "static/media/climate-change-flowchart.png": "/supreme/static/media/climate-change-flowchart.6f62546ee2ba423112df.png",
     "static/media/利害關係人議合.jpg": "/supreme/static/media/利害關係人議合.2c13f446f3304ab13de4.jpg",
     "static/media/whistleblower-banner.png": "/supreme/static/media/whistleblower-banner.679529a2f60e962c7e2d.png",
@@ -113,11 +113,11 @@
     "static/media/img_Charity01.jpg": "/supreme/static/media/img_Charity01.7efcd3a9dc206b1f4665.jpg",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.7393741e.css.map": "/supreme/static/css/main.7393741e.css.map",
-    "main.c48bb01e.js.map": "/supreme/static/js/main.c48bb01e.js.map"
+    "main.3da1f986.css.map": "/supreme/static/css/main.3da1f986.css.map",
+    "main.a5379aac.js.map": "/supreme/static/js/main.a5379aac.js.map"
   },
   "entrypoints": [
-    "static/css/main.7393741e.css",
-    "static/js/main.c48bb01e.js"
+    "static/css/main.3da1f986.css",
+    "static/js/main.a5379aac.js"
   ]
 }
