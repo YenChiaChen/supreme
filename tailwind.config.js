@@ -33,9 +33,31 @@ module.exports = {
           light: '#FFA871',
           dark: '#E6733C', 
         },
+        blue: {
+          DEFAULT: '#3B79E4',
+          light: '#ECF2FD',
+        },
+        purple: {
+          DEFAULT: '#A36ACA'
+        },
+        lake:{
+          DEFAULT:'#4C8591'
+        },
+        pink:{
+          DEFAULT:'#FF507C',
+          light: '#FFF5F8'
+        },
+        green:{
+          DEFAULT: '#3BC376',
+          light: "#F0FBF4"
+        }
       }
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
+  daisyui: {
+    themes: ["light"],
+  },
+  
 }
 

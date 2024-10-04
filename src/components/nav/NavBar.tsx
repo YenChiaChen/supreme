@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/pro-solid-svg-icons";
+import {
+  faAngleRight,
+  faArrowDownToLine,
+} from "@fortawesome/pro-solid-svg-icons";
 import SupremeLogo from "../../assets/img/logo/supreme.png";
 import "./NavBar.css";
-import { faArrowDownToLine } from "@fortawesome/pro-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+import { Container } from "../ui/Container";
 
 type NavItem = {
   title: string;
@@ -18,8 +22,43 @@ type NavbarProps = {
 };
 
 const NavBar: React.FC<NavbarProps> = ({ items }) => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+
+    if (currentScrollPos > prevScrollPos) {
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+  const { t, i18n } = useTranslation();
+  const [isEnglish, setIsEnglish] = useState(false);
+  const handleLanguageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const checked = event.target.checked;
+    setIsEnglish(checked);
+    const language = checked ? "en" : "zh_TW";
+    i18n.changeLanguage(language);
+  };
   return (
-    <header className="fixed w-[90%] top-6 left-1/2 -translate-x-1/2 rounded-full shadow-xl px-8 z-50 duration-300 transform bg-white text-[#555555]">
+    <header
+      className={`w-full fixed z-50 left-0 top-0 shadow-xl duration-300 transform bg-white text-[#555555]  ${
+        isVisible ? "translate-y-0" : "-translate-y-[150%]"
+      }`}
+    >
+      <Container>
       <div className="flex items-center justify-between">
         <div className="items-center flex">
           <div className="flex gap-4">
@@ -32,7 +71,7 @@ const NavBar: React.FC<NavbarProps> = ({ items }) => {
             </a>
             <div className="w-[1px] h-full bg-gray-300">&nbsp;</div>
             <Link to="/">
-              <p className="">永續至上</p>
+              <p className="">{t("common.esgSupreme")}</p>
             </Link>
           </div>
         </div>
@@ -49,25 +88,36 @@ const NavBar: React.FC<NavbarProps> = ({ items }) => {
 
         <div className="flex items-center">
           <div className="flex gap-6 items-center">
-            <button className="px-4  py-2 rounded-full duration-300 bg-white border text-sm border-orange text-orange  relative z-30  hover:bg-orange duration-300 hover:text-white">
-              永續報告書下載
+            <label className="swap text-gray-400">
+              <input
+                type="checkbox"
+                checked={isEnglish}
+                onChange={handleLanguageChange}
+              />
+              <div className="swap-on font-tc">繁體中文</div>
+              <div className="swap-off font-en">EN</div>
+            </label>
+            <button className="px-4 py-2 rounded-full duration-300 bg-white border text-sm border-orange text-orange relative z-30 hover:bg-orange hover:text-white">
+              {t("common.esgReportDownload")}
               <FontAwesomeIcon icon={faArrowDownToLine} className="ml-2" />
             </button>
           </div>
         </div>
       </div>
+      </Container>
     </header>
   );
 };
 
 const NavItemComponent: React.FC<{ item: NavItem }> = ({ item }) => {
+  const { t } = useTranslation();
   return (
     <li className="nav-link">
       <Link
         to={item.link}
         className="flex justify-between items-center hover:bg-gray border-y-[3px] border-transparent hover:border-b-orange duration-300"
       >
-        {item.title}
+        {t(item.title)}
         {item.children && (
           <FontAwesomeIcon
             icon={faAngleRight}
@@ -86,7 +136,7 @@ const NavItemComponent: React.FC<{ item: NavItem }> = ({ item }) => {
                     <ul>
                       {dropdownItem.children.map((childItem, index) => (
                         <li key={index} className="dropdown-link">
-                          <Link to={childItem.link}>{childItem.title}</Link>
+                          <Link to={childItem.link}>{t(childItem.title)}</Link>
                         </li>
                       ))}
                       <div className="arrow"></div>

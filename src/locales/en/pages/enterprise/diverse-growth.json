@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "Diverse Growth",
+    "subtitle": "Our company is committed to creating a safe, happy, and inclusive work environment. We follow the 'Labor Standards Act' and the 'International Human Rights Convention' to establish clear work rules and management policies to protect the legitimate rights and interests of employees."
+  },
+  "trainingProgram": {
+    "title": "Diverse Training Programs",
+    "section01": "Adhering to the concept of 'Learning Together, Growing Together,' our company emphasizes the professional skills and career development of employees. We offer diverse internal training programs, including professional skills training, management training, language training, and executive training. These programs are designed for both management and general employees to meet different skills and professional needs. We also actively encourage employees to participate in external professional courses and seminars to enhance their knowledge and skills.",
+    "section02": "In 2022, employees at all levels received a total of 1,583 training hours. To avoid making training a mere formality or disconnected from corporate goals, we base our training on corporate operational goals and development strategies, and provide professional services such as talent development and educational consulting. Through various training activities, we aim to build a 'learning organization' that continuously innovates and improves. Our talent development system not only focuses on training but also on career development and employee welfare. Policies typically include salary and benefits, career development plans, work flexibility, employee care, and support, ensuring comprehensive support for employees in learning and development, thereby implementing a 'people-oriented' corporate culture."
+  },
+  "talentCultivationCard": {
+    "title": "Three Levels of Talent Cultivation",
+    "card01": {
+      "title": "Education and Training",
+      "content": "Emphasizing the spirit of 'benchmark learning,' we learn the best experiences, common technical process guidance, management experience skills, and product/service development trends from within and outside the industry, fully leveraging the benefits of learning to achieve strategic goals."
+    },
+    "card02": {
+      "title": "Mentorship",
+      "content": "Emphasizing the spirit of 'auxiliary education,' experienced professionals in various fields provide in-depth guidance and consulting on business needs, shortening the learning process and bridging gaps."
+    },
+    "card03": {
+      "title": "Expert Development",
+      "content": "Emphasizing the spirit of 'deep development,' we help employees continually grow professionally through competency development, improving job performance and enhancing the company's overall competitive advantage."
+    }
+  },
+  "talentCultivationProgram": {
+    "title": "Four Major Training Categories",
+    "card01": {
+      "title": "Cultural Development",
+      "content": "Emphasizing the cultivation of organizational values, corporate culture, and ethics, fostering employee recognition of the organization, and promoting positive work attitudes and teamwork."
+    },
+    "card02": {
+      "title": "Skills Development",
+      "content": "Enhancing employees' professional skills and knowledge to ensure they are competent and continuously improving."
+    },
+    "card03": {
+      "title": "Management Training",
+      "content": "Developing leadership, interpersonal skills, and decision-making abilities for management personnel."
+    },
+    "card04": {
+      "title": "Competitiveness Development",
+      "content": "Helping employees improve workplace abilities and competitiveness, resolving workplace disputes and conflicts, and preventing negative impacts on labor relations."
+    }
+  },
+  "careerDevelopment": {
+    "title": "Diverse Career Development",
+    "description": "Our company places great importance on employee training and learning plans, aiming to grow together with employees towards long-term goals. We provide career planning and development programs to help employees set long-term career goals and directions. Internal transfers and job opportunities are available, allowing employees to find new career development opportunities within the company, including cross-departmental transfers, job rotations, and international assignments. In the event of organizational restructuring or layoffs, the company offers adaptive training and support, such as career transition training and employment counseling, ensuring employees can smoothly transition to new work environments.",
+    "lecture01": "Blockchain and Cryptocurrency Course",
+    "lecture02": "Strategic Sales and Negotiation Skills Course"
+  },
+  "performanceReport": {
+    "title": "Annual Performance Report",
+    "training": "Internal Training Courses",
+    "trainingHoursAndGenderRatio": "Training Hours and Gender Ratio for Employees of All Levels (Internal + External)",
+    "table2023": {
+      "infoSecuritySeminar": "Information Security Awareness Seminar",
+      "integrityManagementAndFairTrade": "Integrity Management and Fair Trade, Anti-Corruption",
+      "mindMappingInWorkplace": "Efficient Use of Mind Mapping in the Workplace",
+      "highImpactPresentationSkills": "High Impact Presentation Skills",
+      "occupationalSafetySeminar": "Occupational Safety Seminar",
+      "teamBuildingCamp": "Team Building Camp",
+      "newEmployeeTraining0314": "New Employee Training - 3/14",
+      "newEmployeeTraining0606": "New Employee Training - 06/06",
+      "newEmployeeTraining1122": "New Employee Training - 11/22",
+      "trainingNote": "Note: Each year, training content is developed based on four main categories, with the highlighted courses of the year disclosed in the table.",
+      "note1": "Note 1: Managers are defined as Level 6 and above.",
+      "note2": "Note 2: The statistics cover the Taipei Headquarters and the offices in Xinzhuang, Longtan, Hsinchu, and Tainan.",
+      "note3": "Note 3: Average training hours = total training hours for each category / number of employees in each category as of 2023.12.31."
+    },
+    "table2022": {
+      "blockchainAndCryptocurrency": "Blockchain and Cryptocurrency",
+      "internationalTradePractices": "International Trade Practices",
+      "integrityManagementAndInsiderTradingPrevention": "Integrity Management and Insider Trading Prevention",
+      "strategicSalesAndNegotiationSkills": "Strategic Sales and Negotiation Skills",
+      "newEmployeeTraining": "New Employee Training"
+    }
+  }
+}

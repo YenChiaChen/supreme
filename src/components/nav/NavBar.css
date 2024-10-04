@@ -57,7 +57,7 @@
 .dropdown-link > a{
     display: flex;
     background-color: #fff;
-    padding: .8rem 1rem;
+    padding: 1.4rem 1rem;
     align-items: center;
     justify-content: space-between;
     transition: .3s;

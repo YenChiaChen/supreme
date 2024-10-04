@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "title": "Human Resources Distribution",
+    "subtitle": "Our company is committed to creating a safe, happy, and inclusive work environment. We follow the 'Labor Standards Act' and the 'International Human Rights Convention' to establish clear work rules and management policies to protect the legitimate rights and interests of employees."
+  },
+  "features": {
+    "title": "Annual Human Resources Distribution",
+    "description2023": "As of December 31, 2023, Supreme's total number of employees is 198, including 189 full-time employees and 9 contract employees. All employees hold full-time positions. The ratio of female to male employees is approximately 0.43:1.00, with 17.14% of supervisory positions held by women. The composition of employees remained largely unchanged from the previous year. Additionally, there were no non-employee workers in 2023. Compared to the previous reporting period, there were no significant fluctuations in the number of non-employee workers.",
+    "description2022": "As of December 31, 2022, Supreme's total number of employees was 196, including 189 full-time employees and 7 contract employees. All employees held full-time positions. The ratio of female to male employees was approximately 0.47:1.00, with 18.18% of supervisory positions held by women. The composition of employees remained largely unchanged from the previous year. In 2022, 28 new employees were recruited, with a recruitment rate of approximately 14.28%, a decrease from the 48 new employees in 2021 due to the impact of the pandemic, which slowed revenue growth and reduced labor demand. In 2022, there were 28 employee departures, mainly due to performance evaluations and workforce optimization, including 4 R&D personnel transferred to subsidiaries to facilitate their career development.",
+    "description2021": "As of the end of 2021, the total number of employees at Supreme Electronics Co., Ltd. was 196, with men accounting for 70% and women approximately 30%."
+  }
+}

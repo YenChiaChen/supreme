@@ -1,92 +1,96 @@
 [
     {
-      "title": "最新動態",
+      "title": "common.latestNews",
       "link": "/news"
     },
     {
-      "title": "社會共榮",
-      "link": "/"
+      "title": "common.society",
+      "link": "/society"
     },
     {
-      "title": "永續經營",
+      "title": "common.sustainableManagement",
       "link": "/sustainability",
       "dropdown": [
         {
-          "title": "經營者的話",
+          "title": "common.messageFromManagement",
           "link": "/sustainability/message-from-chairman"
         },
         {
-          "title": "公司治理",
+          "title": "common.corporateGovernance",
           "link": "/sustainability/governance"
         },
         {
-          "title": "誠信經營",
+          "title": "common.integrityManagement",
           "link": "/sustainability/ethical-management"
         },
         {
-          "title": "董事會",
+          "title": "common.boardOfDirectors",
           "link": "/sustainability/board"
         },
         {
-          "title": "功能性委員會",
+          "title": "common.functionalCommittee",
           "link": "#",
           "children": [
             {
-              "title": "永續發展委員會",
+              "title": "common.sustainableDevelopmentCommittee",
               "link": "/sustainability/sustainbility-committee"
             },
             {
-              "title": "薪酬委員會",
+              "title": "common.compensationCommittee",
               "link": "/sustainability/compensation-committee"
             },
             {
-              "title": "審計委員會",
+              "title": "common.auditCommittee",
               "link": "/sustainability/audit-committee"
             }
           ]
         },
         {
-          "title": "利害關係人專區",
+          "title": "common.stakeholderSection",
           "link": "#",
           "children": [
             {
-              "title": "利害關係人議合",
+              "title": "common.stakeholderMeetings",
               "link": "/sustainability/stakeholder-engagement"
             },
             {
-              "title": "重大主題",
+              "title": "common.materialTopics",
               "link": "/sustainability/key-topics"
+            },
+            {
+              "title": "common.stakeholderQuestionnaire",
+              "link": "/sustainability/survey"
             }
           ]
         },
         {
-          "title": "科技風險",
+          "title": "common.technologyRisk",
           "link": "#",
           "children": [
             {
-              "title": "智慧財產管理",
+              "title": "common.intellectualProperty",
               "link": "/sustainability/intellectual-property"
             },
             {
-              "title": "風險管理",
+              "title": "common.riskManagement",
               "link": "/sustainability/risk-management"
             },
             {
-              "title": "資訊安全管理",
+              "title": "common.informationSecurityManagement",
               "link": "/sustainability/information-security"
             }
           ]
         },
         {
-          "title": "永續供應鏈",
+          "title": "common.sustainableSupplyChain",
           "link": "#",
           "children": [
             {
-              "title": "供應鏈管理",
+              "title": "common.supplyChainManagement",
               "link": "/sustainability/supply-chain"
             },
             {
-              "title": "產品與客戶服務",
+              "title": "common.productAndCustomerService",
               "link": "/sustainability/product-customer-service"
             }
           ]
@@ -94,55 +98,55 @@
       ]
     },
     {
-      "title": "幸福企業",
+      "title": "common.happyEnterprise",
       "link": "/enterprise",
       "dropdown": [
         {
-          "title": "人力資源分佈",
+          "title": "common.humanResourcesDistribution",
           "link": "/enterprise/hr-distribution"
         },
         {
-          "title": "員工政策",
+          "title": "common.employeePolicy",
           "link": "#",
           "children": [
             {
-              "title": "福利措施與關懷",
+              "title": "common.welfareAndCare",
               "link": "/enterprise/welfare-care"
             },
             {
-              "title": "員工權益保障",
+              "title": "common.employeeRightsProtection",
               "link": "/enterprise/rights-protection"
             }
           ]
         },
         {
-          "title": "人才培育",
+          "title": "common.talentDevelopment",
           "link": "#",
           "children": [
             {
-              "title": "多元化成長",
+              "title": "common.diversifiedGrowth",
               "link": "/enterprise/diverse-growth"
             },
             {
-              "title": "績效檢核與薪酬",
+              "title": "common.performanceEvaluationAndCompensation",
               "link": "/enterprise/performance-compensation"
             }
           ]
         },
         {
-          "title": "友善職場",
+          "title": "common.friendlyWorkplace",
           "link": "#",
           "children": [
             {
-              "title": "職業安全衛生",
+              "title": "common.occupationalSafetyAndHealth",
               "link": "/enterprise/occupational-safety"
             },
             {
-              "title": "健康職場",
+              "title": "common.healthyWorkplace",
               "link": "/enterprise/healthy-workplace"
             },
             {
-              "title": "人權政策",
+              "title": "common.humanRightsPolicy",
               "link": "/enterprise/human-rights-policy"
             }
           ]
@@ -150,37 +154,37 @@
       ]
     },
     {
-      "title": "永續共生",
+      "title": "common.sustainableCoexistence",
       "link": "/symbiosis",
       "dropdown": [
         {
-          "title": "氣候變遷對策",
+          "title": "common.climateChangeStrategy",
           "link": "/symbiosis/climate-change"
         },
         {
-          "title": "溫室氣體 & 行動方案",
+          "title": "common.greenhouseGasAndActionPlan",
           "link": "/symbiosis/greenhouse-gases"
         },
         {
-          "title": "能源與廢棄物管理",
+          "title": "common.energyAndWasteManagement",
           "link": "#",
           "children": [
             {
-              "title": "能源管理",
+              "title": "common.energyManagement",
               "link": "/symbiosis/energy-management"
             },
             {
-              "title": "廢棄物管理",
+              "title": "common.wasteManagement",
               "link": "/symbiosis/waste-management"
             },
             {
-              "title": "水資源管理",
+              "title": "common.waterResourceManagement",
               "link": "/symbiosis/water-management"
             }
           ]
         },
         {
-          "title": "綠能低碳計畫",
+          "title": "common.greenEnergyLowCarbonPlan",
           "link": "/symbiosis/green-energy"
         }
       ]

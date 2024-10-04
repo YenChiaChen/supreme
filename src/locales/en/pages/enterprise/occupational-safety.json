@@ -1,0 +1,65 @@
+{
+    "hero": {
+      "subtitle": "Our company is committed to creating a safe, happy, and inclusive work environment. We follow the 'Labor Standards Act' and the 'International Human Rights Convention' to establish clear work rules and management policies to protect the legitimate rights and interests of employees."
+    },
+    "policy": {
+      "title": "Occupational Safety and Health Policy",
+      "description01": "Our company prioritizes the health and safety of employees, striving to create a comfortable and safe, zero-accident working environment. We follow the 'Occupational Safety and Health Act' and relevant group regulations to establish policies, with the General Affairs unit dedicated to researching and discussing environmental safety and health-related matters, including:",
+      "description02": "Regular inspections of the office environment, with necessary reviews and improvements proposed.",
+      "description03": "Irregularly promoting the importance of environmental safety via email, encouraging employees to express their opinions actively. Our occupational safety and health management system currently covers 178 employees, including all employees except consultants and overseas staff.",
+      "table": {
+        "title": "The company's office environment mainly includes office and warehouse locations. The following occupational safety and health regulations are established for office locations and warehouse environments:",
+        "rows01": {
+          "title": "Office Locations",
+          "description01": "Provide drinking water equipment that meets drinking water standards, with regular cleaning and maintenance.",
+          "description02": "The company's location is in the Neihu Park Building, with a complete fire safety system (e.g., emergency power, smoke exhaust equipment, escape indicator lights, fire extinguishers, safe escape routes) as per regulations.",
+          "description03": "Fire equipment inspection: once a year; Fire drills: once every six months.",
+          "description04": "Building Management Committee:",
+          "description05": "Security personnel: Three shifts from 07:00 to 19:00 / one night shift. The front door closes at 20:00, entry through the back door with a security room at the back.",
+          "description06": "Building patrols, visitor registration.",
+          "description07": "Vehicle entry and exit control.",
+          "description08": "Two employees hold firefighter certificates."
+        },
+        "rows02": {
+          "title": "Warehouse Environment",
+          "description01": "Adhering to the principle of work safety first, the handling and stacking of goods in warehouses are carried out according to the 'Occupational Safety and Health Facilities Regulations' by the Ministry of Labor.",
+          "description02": "Goods stacking height shall not exceed 180 cm or six layers, whichever is achieved first (e.g., goods stacked six layers high but not yet 180 cm shall not be further stacked to 180 cm, and vice versa).",
+          "description03": "Whenever possible, use mechanical means to assist in moving goods, such as trolleys.",
+          "description04": "Promote the prohibition of open-toe shoes in the workplace; closed-toe shoes are preferred."
+        }
+      }
+    },
+    "training": {
+      "title": "Occupational Safety and Health Education and Training",
+      "description": "Regularly conduct safety training and awareness courses for new employees to enhance their knowledge of occupational safety and health and workplace safety awareness, reducing the possibility of safety accidents. In 2022, two employees were assigned to participate in a 12-hour 'Fire Safety Manager' training course, obtaining firefighter certificates to be responsible for the company's fire protection plan formulation and implementation."
+    },
+    "riskManagement": {
+      "title": "Related Risk Impact Management",
+      "description": "To minimize the impact and risk caused by occupational accidents, hazard identification is conducted at each operational site. No major hazards were identified in 2022.",
+      "imageTitle" : "Accident Investigation Process"
+    },
+    "performanceReport": {
+      "title": "Annual Occupational Safety and Health Statistics Report",
+      "type": "Occupation Hazard Types",
+      "table2022": {
+        "injuryStatistic": {
+          "title": "2022 Occupational Injury Statistics",
+          "items01": "Deaths caused by occupational injuries",
+          "items02": "Serious occupational injuries",
+          "items03": "Recordable occupational injuries",
+          "items04": "Deaths caused by occupational diseases",
+          "items05": "Recordable occupational diseases",
+          "note01": "Serious occupational injuries refer to injuries that make it impossible or difficult for the worker to return to their pre-injury health state within six months.",
+          "note02": "The total working hours of full-time employees (total 196 people) in 2022 was 412,664 hours.",
+          "note03": "Death rate caused by occupational injuries = number of deaths caused by occupational injuries / working hours * 1,000,000.",
+          "note04": "Serious occupational injury rate = number of serious occupational injuries / working hours * 1,000,000.",
+          "note05": "Recordable occupational injury rate = number of recordable occupational injuries / working hours * 1,000,000."
+        },
+        "absenceStatistic": {
+          "title": "2022 Absence Statistics",
+          "note01": "Absentee days = sick leave + work injury leave; Expected working days = working days (excluding special leave) = number of year-end employees * working days announced by the Directorate-General of Personnel Administration."
+        }
+      }
+    }
+  }
+  
