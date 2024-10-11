@@ -1,10 +1,13 @@
+
 type NewsComponent =
   | { type: "title"; content: string }
   | { type: "subTitle"; content: string }
   | { type: "heading"; content: string }
   | { type: "paragraph"; content: string }
   | { type: "date"; content: string }
-  | { type: "image"; src: string; alt: string; width?:string; desc?:string }
+  | { type: "image"; src: string; alt: string; width?: string; desc?: string }
+  | { type: "column"; left: NewsComponent[]; right: NewsComponent[] }
+  | { type: "margin";}
 
 type NewsItem = {
   id: number;
@@ -29,6 +32,7 @@ export const newsData: NewsItem[] = [
     components: [
       { type: "title", content: "永續專欄特別報導-新能源" },
       { type: "date", content: "2023年永續報告書" },
+      
       {
         type: "paragraph",
         content: "國際能源總署（IEA）表示，預估2023年全球再生能源發電量將增加5億千瓦，創歷史最高水準。根據IEA公布「2023年世界能源展望」，2020年至2023年再生能源等清淨能源投資成長40%。特別是太陽能發電每日計有超過10億美元（約1,500億日圓）之投資。估計到2030年，再生能源將占新能源增加量之80%，預估包括石油在內，化石燃料需求將在2030年前達到高峰。",
@@ -271,14 +275,21 @@ export const newsData: NewsItem[] = [
       { type: "title", content: "至上淨灘愛地球" },
       { type: "date", content: "新北市石門白沙灣 / 2023年07月15日(六)" },
       {
-        type: "image",
-        src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1727411677/news06_yysiks.jpg",
-        alt: "Energy Image",
-        width: "100%",
-      },
-      {
-        type: "paragraph",
-        content: "自2019年起，至上每年舉辦淨灘/淨山環境維護活動，同時鼓勵同仁邀請家人及親朋好友一同參與，透過實際行動來促進環境的永續保護。活動當天天氣晴朗，志工們不畏酷熱齊心協力，一同為海洋環境出一分力，經統計總共撿拾了37.5公斤的海洋廢棄物。透過這次活動，我們全力還給白沙灘一個乾淨的環境，企盼這樣的美好能夠繼續被愛惜、維護下去。",
+        type: "column",
+        left: [
+          {
+            type: "paragraph",
+            content: "自2019年起，至上每年舉辦淨灘/淨山環境維護活動，同時鼓勵同仁邀請家人及親朋好友一同參與，透過實際行動來促進環境的永續保護。活動當天天氣晴朗，志工們不畏酷熱齊心協力，一同為海洋環境出一分力，經統計總共撿拾了37.5公斤的海洋廢棄物。透過這次活動，我們全力還給白沙灘一個乾淨的環境，企盼這樣的美好能夠繼續被愛惜、維護下去。",
+          },
+        ],
+        right: [
+          {
+            type: "image",
+            src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728012387/%E6%96%B0%E5%8C%97%E5%B8%82%E7%9F%B3%E9%96%80%E7%99%BD%E6%B2%99%E7%81%A3-1_kj3mrc.jpg",
+            alt: "Energy Image",
+            width: "100%",
+          },
+        ]
       },
     ],
   },
@@ -292,17 +303,25 @@ export const newsData: NewsItem[] = [
     category: "Activity",
     components: [
       { type: "title", content: "至上協助辦理愛心捐血活動" },
-      { type: "date", content: "台北市南港玉成公園福德宮 / 2023年10月28日(六)" },
+      { type: "date", content: "台北市南港玉成公園福德宮 / 2023年10月28日(六)" },  
       {
-        type: "image",
-        src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1727411864/news07_xigxol.jpg",
-        alt: "Energy Image",
-        width: "100%",
+        type: "column",
+        left: [
+          {
+            type: "paragraph",
+            content: "本公司關心各種社會議題，並持續投入時間與資源支持公益活動。本次同仁參與捐血志工，協助辦理「拱天慈善功德會」於2023年10月28日（星期六）在南港玉成公園福德宮前舉辦的愛心捐血活動。儘管當天下著小雨，但這無法熄滅所有志工們的熱情，在活動開始前幫忙設置場地、分配任務，以確保捐血者在整個過程中既安全又舒適。活動當天各地的捐血者紛紛響應號召，前來獻出自己的一份愛心，當天總共有266位熱心民眾捐血；共收集到了410袋的血液，這些血液將用於救助有需要的患者，成為一份珍貴的生命禮物。這次不僅是一次捐血行動，也象徵了至上與社區共同參與愛心的精神。期望未來能夠聚集更多熱心的夥伴，將公益熱忱轉化為實際行動，持續為社會帶來溫暖的貢獻。",
+          },
+        ],
+        right: [
+          {
+            type: "image",
+            src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728012387/%E5%8D%94%E8%BE%A6%E6%84%9B%E5%BF%83%E6%8D%90%E8%A1%80%E6%B4%BB%E5%8B%95_aepgvx.jpg",
+            alt: "Energy Image",
+            width: "100%",
+          },
+        ]
       },
-      {
-        type: "paragraph",
-        content: "本公司關心各種社會議題，並持續投入時間與資源支持公益活動。本次同仁參與捐血志工，協助辦理「拱天慈善功德會」於2023年10月28日（星期六）在南港玉成公園福德宮前舉辦的愛心捐血活動。儘管當天下著小雨，但這無法熄滅所有志工們的熱情，在活動開始前幫忙設置場地、分配任務，以確保捐血者在整個過程中既安全又舒適。活動當天各地的捐血者紛紛響應號召，前來獻出自己的一份愛心，當天總共有266位熱心民眾捐血；共收集到了410袋的血液，這些血液將用於救助有需要的患者，成為一份珍貴的生命禮物。這次不僅是一次捐血行動，也象徵了至上與社區共同參與愛心的精神。期望未來能夠聚集更多熱心的夥伴，將公益熱忱轉化為實際行動，持續為社會帶來溫暖的貢獻。",
-      },
+     
     ],
   },
   {
@@ -317,14 +336,21 @@ export const newsData: NewsItem[] = [
       { type: "title", content: "「捐血救人、熱血至上」愛心捐血活動" },
       { type: "date", content: "台北市內湖區港墘路189號1樓 / 2023年12月11日(一)" },
       {
-        type: "image",
-        src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1727411684/news08_wmpvmu.jpg",
-        alt: "Energy Image",
-        width: "100%",
-      },
-      {
-        type: "paragraph",
-        content: "本公司長期關心各式社會議題，持續投入資源支持公益及響應永續發展。為了讓血庫挹注更多血源及時幫助需要救助的病患，本公司與「台北捐血中心」，攜手舉辦「捐血救人、熱血至上」愛心捐血活動，號召公司同仁及社區民眾一起參與，透過實際的行動展現愛心，為社會盡一份心力。此次的捐血活動辦得相當成功，不僅有公司高階主管挽袖相挺，當地民眾也早早到現場排隊等著捐血，捐血袋數超出預期標準，當天總共有54位熱心民眾捐血；共收集到了85袋的血液。未來至上將定期舉辦捐血活動，也呼籲大家一起來「熱血相挺」!",
+        type: "column",
+        left: [
+          {
+            type: "paragraph",
+            content: "本公司長期關心各式社會議題，持續投入資源支持公益及響應永續發展。為了讓血庫挹注更多血源及時幫助需要救助的病患，本公司與「台北捐血中心」，攜手舉辦「捐血救人、熱血至上」愛心捐血活動，號召公司同仁及社區民眾一起參與，透過實際的行動展現愛心，為社會盡一份心力。此次的捐血活動辦得相當成功，不僅有公司高階主管挽袖相挺，當地民眾也早早到現場排隊等著捐血，捐血袋數超出預期標準，當天總共有54位熱心民眾捐血；共收集到了85袋的血液。未來至上將定期舉辦捐血活動，也呼籲大家一起來「熱血相挺」!",
+          },
+        ],
+        right: [
+          {
+            type: "image",
+            src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728012387/%E8%87%AA%E8%BE%A6%E6%84%9B%E5%BF%83%E6%8D%90%E8%A1%80%E6%B4%BB%E5%8B%95-1_s1pm9x.jpg",
+            alt: "Energy Image",
+            width: "100%",
+          },
+        ]
       },
     ],
   },
@@ -335,7 +361,7 @@ export const newsData: NewsItem[] = [
     title: "長安國中「動手做STEAM多元智能晨光時間」計畫",
     bg: "https://res.cloudinary.com/dvgxlmyje/image/upload/v1727411681/news09_ixdrry.jpg",
     desc: "本公司與國立臺灣師範大學科技應用與人力資源發展學系攜手合作，展開「動手做STEAM多元智能晨光時間」。",
-    category: "Activity",
+    category: "Story",
     components: [
       { type: "title", content: "長安國中「動手做STEAM多元智能晨光時間」計畫" },
       { type: "date", content: "臺北市立長安國中 / 自112學年度起，每週一的晨光時間" },
@@ -354,13 +380,31 @@ export const newsData: NewsItem[] = [
         content: "計畫主持人蔡其瑞助理教授表示，此次合作讓特教學生在晨光時間有機會參與動手做課程，提供了一個快樂探索自我和開發潛能的機會。學生們在課程中不僅學到了STEAM知識，還培養了專注力和認知彈性。而家長的積極反饋顯示孩子們對課程充滿喜愛，提升了他們的自信，促進了家庭互動。擔任講師的兩位臺師大的同學分享了他們的經驗，觀察到學生在整個教學過程中持續進步，這樣的轉變顯示出學生在課程中不僅學到了動手做STEAM知識，更培養了專注力和認知彈性，是這項活動最感動和寶貴的回饋。",
       },
       {
-        type: "paragraph",
-        content: "長安國中校方對計畫的執行給予高度評價，感謝至上電子和臺師大的合作和支持，推動「動手做STEAM多元智能晨光職業探索課程」，期待未來繼續合作。",
+        type: "margin",
       },
       {
-        type: "paragraph",
-        content: "本公司在教育推動上非常重視，由於本公司是電子通路代理商，於是自身比喻成「橋樑」，透過贊助為有不同學習需求的孩子們搭建通往實現夢想的橋樑，培養其興趣和熱情。也期望透過此次支持能夠為更多不同學習需求的孩子提供充足的學習資源，並達到抛磚引玉之效。",
+        type: "column",
+        left: [
+          {
+            type: "paragraph",
+            content: "長安國中校方對計畫的執行給予高度評價，感謝至上電子和臺師大的合作和支持，推動「動手做STEAM多元智能晨光職業探索課程」，期待未來繼續合作。",
+          },
+          {
+            type: "paragraph",
+            content: "本公司在教育推動上非常重視，由於本公司是電子通路代理商，於是自身比喻成「橋樑」，透過贊助為有不同學習需求的孩子們搭建通往實現夢想的橋樑，培養其興趣和熱情。也期望透過此次支持能夠為更多不同學習需求的孩子提供充足的學習資源，並達到抛磚引玉之效。",
+          },
+        ],
+        right: [
+          {
+            type: "image",
+            src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728012387/%E9%95%B7%E5%AE%89%E5%9C%8B%E4%B8%AD-STEAM%E6%99%A8%E5%85%89%E8%A8%88%E7%95%AB-1_qngrqd.jpg",
+            alt: "Energy Image",
+            width: "100%",
+          },
+        ]
       },
+     
+     
     ],
   },
   {
@@ -374,19 +418,28 @@ export const newsData: NewsItem[] = [
     components: [
       { type: "title", content: "至上淨山愛地球" },
       { type: "date", content: "新北市劍南蝶園 / 2022年1月15日(六)" },
+
+
       {
-        type: "image",
-        src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1727411676/news10_vodz7o.jpg",
-        alt: "Energy Image",
-        width: "100%",
-      },
-      {
-        type: "paragraph",
-        content: "2021年因COVID-19疫情因素所以當年度並無舉辦活動，待至2022年1月疫情趨向緩和時才舉辦，「2021至上淨山愛地球」活動是步行前往劍南蝶園登山步道淨山。",
-      },
-      {
-        type: "paragraph",
-        content: "當日參與健行及淨山活動同仁與眷屬共計37位，大家自行搭乘大眾交通工具，自捷運劍南路站1號出口集合出發，為保護環境及響應聯合國永續發展目標之SDG 15「陸地生態」，同仁們準備了垃圾袋、棉質手套與鐵夾，將在路途中發現的垃圾收集起來統一處理，當天共清除了32.70公斤的垃圾。",
+        type: "column",
+        left: [
+          {
+            type: "paragraph",
+            content: "2021年因COVID-19疫情因素所以當年度並無舉辦活動，待至2022年1月疫情趨向緩和時才舉辦，「2021至上淨山愛地球」活動是步行前往劍南蝶園登山步道淨山。",
+          },
+          {
+            type: "paragraph",
+            content: "當日參與健行及淨山活動同仁與眷屬共計37位，大家自行搭乘大眾交通工具，自捷運劍南路站1號出口集合出發，為保護環境及響應聯合國永續發展目標之SDG 15「陸地生態」，同仁們準備了垃圾袋、棉質手套與鐵夾，將在路途中發現的垃圾收集起來統一處理，當天共清除了32.70公斤的垃圾。",
+          },
+        ],
+        right: [
+          {
+            type: "image",
+            src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728012413/%E6%96%B0%E5%8C%97%E5%B8%82%E5%8A%8D%E5%8D%97%E8%9D%B6%E5%9C%92-1_iyf2lf.jpg",
+            alt: "Energy Image",
+            width: "100%",
+          },
+        ]
       },
     ],
   },
@@ -401,20 +454,29 @@ export const newsData: NewsItem[] = [
     components: [
       { type: "title", content: "至上淨山愛地球" },
       { type: "date", content: "新北市劍南蝶園 / 2020年8月15日(六)" },
+
       {
-        type: "image",
-        src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1727411685/news11_cajm70.jpg",
-        alt: "Energy Image",
-        width: "100%",
+        type: "column",
+        left: [
+          {
+            type: "paragraph",
+            content: "富含多樣化的植被與高達150種以上蝴蝶的劍南蝶園，是都市近郊彩蝶的搖籃。而台灣蝴蝶保育學會每月皆於固定時程在此進行假日解說導覽服務，帶著大家一起尋找生態的寶藏，更一同維護這優良的生態環境！",
+          },
+          {
+            type: "paragraph",
+            content: "透過這次的淨山，我們親近大自然，認識各類彩蝶及植物的生活環境，並動手移除不該出現的外來物種，願原生物種能保有自身的生存空間，讓蝴蝶世世代代繁衍不息！",
+          },
+        ],
+        right: [
+          {
+            type: "image",
+            src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728012422/%E6%96%B0%E5%8C%97%E5%B8%82%E5%8A%8D%E5%8D%97%E8%9D%B6%E5%9C%92-1_oggec6.jpg",
+            alt: "Energy Image",
+            width: "100%",
+          },
+        ]
       },
-      {
-        type: "paragraph",
-        content: "富含多樣化的植被與高達150種以上蝴蝶的劍南蝶園，是都市近郊彩蝶的搖籃。而台灣蝴蝶保育學會每月皆於固定時程在此進行假日解說導覽服務，帶著大家一起尋找生態的寶藏，更一同維護這優良的生態環境！",
-      },
-      {
-        type: "paragraph",
-        content: "透過這次的淨山，我們親近大自然，認識各類彩蝶及植物的生活環境，並動手移除不該出現的外來物種，願原生物種能保有自身的生存空間，讓蝴蝶世世代代繁衍不息！",
-      },
+     
     ],
   },
   {
@@ -429,19 +491,28 @@ export const newsData: NewsItem[] = [
       { type: "title", content: "至上淨灘愛地球" },
       { type: "date", content: "基隆市大武崙澳底沙灘 / 2019年9月21日(六)" },
       {
-        type: "image",
-        src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1727411677/news12_xz6zan.jpg",
-        alt: "Energy Image",
-        width: "100%",
+        type: "column",
+        left: [
+          {
+            type: "paragraph",
+            content: "對台灣人民來說，921是個傷痛的日子，今年，是921地震後的第20年，我們走過歷史的傷痛，應給予9月21日一個全新的定義，爾後，921不再只是地震的代稱，而是至上員工及眷屬淨灘愛地球的開始！當天雖遇風雨，參與人數仍逾70人，同心協力，一同為海洋環境付出、愛護地球；經統計，此次共撿拾350公斤之海洋廢棄物，以此篇報導【鯨魚擱淺菲律賓海攤，胃裡塞了40公斤的塑膠垃圾】作為換算，相當於拯救9隻鯨魚免於塑膠垃圾的影響！",
+          },
+          {
+            type: "paragraph",
+            content: "透過此場活動，我們全力還給澳底沙灘一個乾淨的環境，企盼這樣的美好能夠繼續被愛惜、維護下去。",
+          },
+        ],
+        right: [
+          {
+            type: "image",
+            src:"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728012431/%E5%9F%BA%E9%9A%86%E5%B8%82%E5%A4%A7%E6%AD%A6%E5%B4%99%E6%BE%B3%E5%BA%95%E6%B2%99%E7%81%98-1_tqjuvx.jpg",
+            alt: "Energy Image",
+            width: "100%",
+          },
+        ]
       },
-      {
-        type: "paragraph",
-        content: "對台灣人民來說，921是個傷痛的日子，今年，是921地震後的第20年，我們走過歷史的傷痛，應給予9月21日一個全新的定義，爾後，921不再只是地震的代稱，而是至上員工及眷屬淨灘愛地球的開始！當天雖遇風雨，參與人數仍逾70人，同心協力，一同為海洋環境付出、愛護地球；經統計，此次共撿拾350公斤之海洋廢棄物，以此篇報導【鯨魚擱淺菲律賓海攤，胃裡塞了40公斤的塑膠垃圾】作為換算，相當於拯救9隻鯨魚免於塑膠垃圾的影響！",
-      },
-      {
-        type: "paragraph",
-        content: "透過此場活動，我們全力還給澳底沙灘一個乾淨的環境，企盼這樣的美好能夠繼續被愛惜、維護下去。",
-      },
+     
+     
     ],
   },
 ];

@@ -22,7 +22,7 @@ import HeroSection from "../../components/ui/HeroSection";
 import Breadcrumbs from "../../components/nav/BreadCrumbs";
 import { HoverCard, LinkCard } from "../../components/ui/Card";
 import { Container, Section, BgSection } from "../../components/ui/Container";
-import { H2, P, Desc, H3 } from "../../components/ui/Text";
+import { H2, P, Desc, H3, List } from "../../components/ui/Text";
 
 const cardData = [
   {
@@ -156,14 +156,17 @@ const SymbiosisPage: React.FC = () => {
                     className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-green h-[30px]"
                   />
                   <p className="text-2xl font-bold text-green tracking-widest mt-12 mb-5">
-                    短期目標
+                  短期目標（2026年）
                   </p>
 
-                  <Desc
-                    text={
-                      "節能 ( 逐年降低用電度數，用電量年減少 2~4%)、減碳 ( 逐年減少存儲運送成本，全公司使用紙張數減少 )。"
-                    }
-                  />
+                  <List items={[
+                    {text: "更換高效照明設備：LED燈具占比100%。"},
+                    {text: "節能：逐年降低用電度數，預計用電量年減少 2~4%。"},
+                    {text: "減碳：逐年減少使用紙張數。"},
+                  ]} title="能源效率提升："/>
+
+                  <P text={"員工培訓：對員工進行氣候變遷和能源管理培訓，提高內部環保意識和技能。"} />
+
 
                   <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-green"></div>
                 </div>
@@ -173,10 +176,14 @@ const SymbiosisPage: React.FC = () => {
                     className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-green h-[30px]"
                   />
                   <p className="text-2xl font-bold text-green tracking-widest mt-12 mb-5">
-                    中期目標
+                  中期目標（2028年）
                   </p>
 
-                  <Desc text={"2025 年起使用運輸業者低碳運輸服務。"} />
+                  <List items={[
+                    {text: "綠色運輸：預計2028年起使用運輸業者低碳運輸服務。 "},
+                    {text: "碳減排計劃：溫室氣體範疇一、二排放量密集度較基準年減少2%。"},
+                    {text: "能源使用優化：透過流程改進，提升設備能源使用效率。"},
+                  ]} />
                   <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-green"></div>
                 </div>
                 <div className="border-t-[2px] border-green h-full flex flex-col relative px-12 py-6 relative">
@@ -189,14 +196,14 @@ const SymbiosisPage: React.FC = () => {
                     className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-green h-[30px]"
                   />
                   <p className="text-2xl font-bold text-green tracking-widest mt-12 mb-5">
-                    長期目標
+                  長期目標（2030年）
                   </p>
 
-                  <Desc
-                    text={
-                      "2030 年起外購綠電，降低範疇二排放，範疇三 ( 類別 9：下游運輸和配送產生的排放 )全面使用低碳運輸服務。"
-                    }
-                  />
+                  <List items={[
+                    {text: "技術創新：持續推動公司綠電研發和創新。"},
+                    {text: "循環經濟實踐：減少廢棄物， 提升資源再利用率。"},
+                    {text: "供應鏈合作：與供應鏈中的其他合作伙伴協作，共同制定減排策略和可持續發展計劃，推動上下游企業的環保努力。"},
+                  ]} />
                   <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-green"></div>
                 </div>
               </div>

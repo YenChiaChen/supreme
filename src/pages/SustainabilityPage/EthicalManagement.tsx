@@ -13,6 +13,7 @@ import { YearTabContainer } from "../../components/ui/Tab";
 import {
   faArrowUpRightFromSquare,
   faBadgeCheck,
+  faPaperPlane,
 } from "@fortawesome/pro-light-svg-icons";
 const EthicalManagement: React.FC = () => {
   return (
@@ -105,10 +106,7 @@ const EthicalManagement: React.FC = () => {
                   "本公司每年不定期以教育訓練課程或電子郵件形式對董事、經理人及受僱人進行「誠信經營守則」及「防範內線交易管理」等相關法令宣導。2023年度已分別於02月14日（第一梯次）、02月21日（第二梯次），向全體員工進行「誠信經營暨公平交易、反貪腐」及「防範內線交易管理」之教育訓練宣導課程，課程內容包括建立誠信經營之企業文化及健全發展、內線交易形成原因、認定過程及交易實例說明，並將課程簡報發送予員工作為參考，2023年誠信經營相關課程實體受訓人數共160位，其餘人員皆以數位方式進行溝通宣導，累計總時數共計80小時。"
                 }
               />
-              <H3
-                text={"通知財務報告封閉期間："}
-                className="text-blue"
-              />
+              <H3 text={"通知財務報告封閉期間："} className="text-blue" />
 
               <table className="min-w-full border-collapse mt-6">
                 <thead>
@@ -210,7 +208,7 @@ const EthicalManagement: React.FC = () => {
                 className="text-blue"
               />
               <ul className="border-t-[2px] border-light_gray mt-6">
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -221,7 +219,7 @@ const EthicalManagement: React.FC = () => {
                     及「道德行為準則」等規範外，並會配合法令修改及實際需求及時修訂相關規範。
                   </p>
                 </li>
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -230,7 +228,7 @@ const EthicalManagement: React.FC = () => {
                     本公司除加強內部教育訓練外，並持續監督相關部門於履行政策推行之運作，並於董事會進行報告。
                   </p>
                 </li>
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -239,7 +237,7 @@ const EthicalManagement: React.FC = () => {
                     本公司透過年報、公開資訊觀測站、公司網站…等，及時揭露相關資訊，以提供股東及利害關係人了解公司運作狀況。
                   </p>
                 </li>
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -248,7 +246,7 @@ const EthicalManagement: React.FC = () => {
                     本公司設立“稽核信箱”之檢舉管道，於2022年度並未接獲任何投訴檢舉事項。
                   </p>
                 </li>
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -257,7 +255,7 @@ const EthicalManagement: React.FC = () => {
                     本公司網站業已設置「投資人專區」，並新增英文重大訊息資訊，提升資訊透明度。
                   </p>
                 </li>
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -266,7 +264,7 @@ const EthicalManagement: React.FC = () => {
                     本公司為落實公司治理，已全面採行董事提名制度，且業已設置公司治理人員及主管。
                   </p>
                 </li>
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -275,7 +273,7 @@ const EthicalManagement: React.FC = () => {
                     股東常會已採行電子投票方式，鼓勵股東參與公司治理及提高股東出席比率。
                   </p>
                 </li>
-                <li className="border-b border-light_gray py-6 flex gap-12 items-center">
+                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
                   <FontAwesomeIcon
                     icon={faBadgeCheck}
                     className="h-[40px] text-blue"
@@ -293,10 +291,7 @@ const EthicalManagement: React.FC = () => {
                 }
               />
 
-              <H3
-                text={"通知財務報告封閉期間："}
-                className="text-blue"
-              />
+              <H3 text={"通知財務報告封閉期間："} className="text-blue" />
 
               <table className="min-w-full border-collapse mt-6">
                 <thead>
@@ -452,15 +447,42 @@ const EthicalManagement: React.FC = () => {
       </BgSection>
 
       <Container>
-      
-
         <Section>
-            <H2 text={"舉報管道與機制"} />
-            <P text={"本公司承諾保護檢舉人不因檢舉情事而遭不當處置，檢舉情事經查證若屬實，並協助公司避免損失，將會給予適當獎勵，以鼓勵內部員工與外部其他利害關係人檢舉不誠信與不當行為。"} />
-            <Image src={WhistleblowerImage} alt="WhistleBlower Banner Image" />
+          <H2 text={"舉報管道與機制"} />
+          <P
+            text={
+              "本公司承諾保護檢舉人不因檢舉情事而遭不當處置，檢舉情事經查證若屬實，並協助公司避免損失，將會給予適當獎勵，以鼓勵內部員工與外部其他利害關係人檢舉不誠信與不當行為。"
+            }
+          />
+          <div className="flex justify-end mt-12">
+            <div
+              className="bg-orange text-white px-6 py-2 font-en rounded-full flex items-center group cursor-pointer hover-shadow"
+              onClick={() =>
+                (document.getElementById("my_modal_2") as HTMLDialogElement).showModal()
+              }
+            >
+              檢舉信箱
+              <FontAwesomeIcon
+                icon={faPaperPlane}
+                className="text-xl ml-2 group-hover:ml-4 duration-300"
+              />
+            </div>
+          </div>
+          <dialog id="my_modal_2" className="modal">
+            <div className="modal-box w-full max-w-6xl">
+             
+    <iframe
+      src="http://www.supreme.com.tw/WP/Report.aspx"
+      title="Website"
+      className="w-full h-[70vh]" 
+    ></iframe>
+            </div>
+            <form method="dialog" className="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
+          <Image src={WhistleblowerImage} alt="WhistleBlower Banner Image" />
         </Section>
-        
-    
       </Container>
     </div>
   );

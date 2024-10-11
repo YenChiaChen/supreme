@@ -209,7 +209,7 @@ const SustainabilityPage: React.FC = () => {
             <H2 text={"永續發展政策"} />
             <P
               text={
-                "此守則已於2022年01月24日經董事會通過訂定，並將相關規範揭露於公司網站及公開資訊觀測站中。由「永續發展委員會」負責督導執行情形;並設置「永續發展執行小組」負責統籌推動各項永續發展相關事務，並由全體員工共同執行遵守。"
+                "本公司於從事企業經營同時，積極實踐永續發展，以符合平衡環境，社會及公司治理發展之國際趨勢，並透過企業公民擔當，提升國家經濟貢獻，改善員工、社區及社會之生活品質，促進以企業責任為本之競爭優勢。此守則已於2022年01月24日經董事會通過訂定，並將相關規範揭露於公司網站及公開資訊觀測站中。人力資源服務單位負責統籌推動各項永續發展相關事務，並由全體員工共同執行遵守。"
               }
             />
             <div className="grid grid-cols-2 mt-36 gap-4 relative  text-[#333333]">
@@ -226,7 +226,7 @@ const SustainabilityPage: React.FC = () => {
                   </p>
                   <Desc
                     text={
-                      "遵循法令規章，秉持誠信原則，強化董事職能。"
+                      "遵循法令規章，秉持誠信原則，強化董事職能，深耕企業文化，健全公司發展，實踐永續經營。"
                     }
                   />
                 </div>
@@ -246,11 +246,11 @@ const SustainabilityPage: React.FC = () => {
                 </div>
                 <div className="col-span-5 content py-8">
                   <p className="text-xl font-semibold text-blue mb-4">
-                    維護社會公益
+                  發展永續環境
                   </p>
                   <Desc
                     text={
-                      "保障員工權益，推動公益活動，參與災難救助，贊助體育活動，提升教育文化，支持弱勢團體。"
+                      "落實產業管理，響應節能減碳，提升資源再利用，降低環境負荷。"
                     }
                   />
                 </div>
@@ -264,11 +264,11 @@ const SustainabilityPage: React.FC = () => {
                 </div>
                 <div className="col-span-5 content py-8">
                   <p className="text-xl font-semibold text-blue mb-4">
-                    加強資訊揭露
+                  維護社會公益
                   </p>
                   <Desc
                     text={
-                      "強化營運效率，提升財務透明，尊重利害關係，即時資訊公開，提供投資判斷，版帳股東權益，降低籌資成本，俾利國際接軌，增進企業價值。"
+                      "保障員工權益，推動公益活動，參與災難救助，贊助體育活動，提升教育文化，支持弱勢團體。"
                     }
                   />
                 </div>
@@ -286,13 +286,13 @@ const SustainabilityPage: React.FC = () => {
                 <div className="col-span-3 w-full bg-gray-100 rounded-xl aspect-square  flex justify-center items-center ">
                   <FontAwesomeIcon icon={faChartBar} className="h-[60px]" />
                 </div>
-                <div className="col-span-5 py-8">
-                  <p className="text-xl font-semibold text-blue mb-4">
-                    發展永續環境
+                <div className="col-span-5 py-8 content">
+                  <p className="text-xl font-semibold  text-blue mb-4">
+                  加強資訊揭露
                   </p>
                   <Desc
                     text={
-                      "落實產業管理，響應節能減碳，提升資源再利用，降低環境負荷。"
+                      "強化營運效率，提升財務透明，尊重利害關係，即時資訊公開，提供投資判斷，版帳股東權益，降低籌資成本，俾利國際接軌，增進企業價值。"
                     }
                   />
                 </div>

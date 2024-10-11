@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 const NewsPage: React.FC = () => {
   const activityNews = newsData.filter((item) => item.category === "Activity");
+  const storyNews = newsData.filter((item) => item.category === "Story");
   const specialNews = newsData.filter(
     (item) => item.category === "SpecialNews"
   );
@@ -25,66 +26,82 @@ const NewsPage: React.FC = () => {
             years={["精選故事", "永續專欄特別報導", "永續消息"]}
             tabColor="#4C8591"
           >
-            <div
-              data-year="精選故事"
-              className="grid grid-cols-3 gap-6 mt-6"
-            ></div>
-            <div
-              data-year="永續專欄特別報導"
-              className="grid grid-cols-3 gap-6 mt-6"
-            >
-              {specialNews.map((newsItem) => (
+            <div data-year="精選故事" className="grid grid-cols-3 gap-6 mt-6">
+              {storyNews.map((newsItem) => (
                 <Link
                   key={newsItem.id}
                   to={`/news/${newsItem.id}`}
-                  className="w-full rounded-[1rem] bg-white shadow overflow-hidden group cursor-pointer duration-300 hover:shadow-xl"
+                  className="w-full rounded-[1rem] bg-white  overflow-hidden group cursor-pointer duration-300"
                   target="_blank"
                 >
-                  <div className="w-full overflow-hidden h-[250px]">
+                  <div className="w-full overflow-hidden aspect-[16/9] rounded-[1rem]">
                     <img
                       src={newsItem.bg}
                       alt="Background Image"
                       className="object-cover w-full h-full group-hover:scale-105 duration-300"
                     />
                   </div>
-                  <div className="p-6">
-                    <div className="text-orange font-light text-sm mb-2">
+                  <div className="pt-4">
+                    <div className="text-gray-400 font-light text-sm mb-2">
                       {newsItem.location}
                     </div>
-                    <p className="text-2xl font-semibold tracking-wider">
+                    <p className="text-2xl font-semibold tracking-wider group-hover:text-orange duration-300">
                       {newsItem.title}
-                    </p>
-                    <p className="mt-2 tracking-wider text-sm">
-                      {newsItem.desc}
                     </p>
                   </div>
                 </Link>
               ))}
             </div>
-            <div data-year="永續消息" className="grid grid-cols-3 gap-6 mt-6">
-              {activityNews.map((newsItem) => (
+            <div
+              data-year="永續專欄特別報導"
+              className="grid grid-cols-3 gap-12 mt-6"
+            >
+              {specialNews.map((newsItem) => (
                 <Link
                   key={newsItem.id}
                   to={`/news/${newsItem.id}`}
-                  className="w-full rounded-[1rem] bg-white shadow overflow-hidden group cursor-pointer duration-300 hover:shadow-xl"
+                  className="w-full rounded-[1rem] bg-white  overflow-hidden group cursor-pointer duration-300"
                   target="_blank"
                 >
-                  <div className="w-full overflow-hidden h-[250px]">
+                  <div className="w-full overflow-hidden aspect-[16/9] rounded-[1rem]">
                     <img
                       src={newsItem.bg}
                       alt="Background Image"
                       className="object-cover w-full h-full group-hover:scale-105 duration-300"
                     />
                   </div>
-                  <div className="p-6">
-                    <div className="text-orange font-light text-sm mb-2">
+                  <div className="pt-4">
+                    <div className="text-gray-400 font-light text-sm mb-2">
                       {newsItem.location}
                     </div>
-                    <p className="text-2xl font-semibold tracking-wider">
+                    <p className="text-2xl font-semibold tracking-wider group-hover:text-orange duration-300">
                       {newsItem.title}
                     </p>
-                    <p className="mt-2 tracking-wider text-sm">
-                      {newsItem.desc}
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div data-year="永續消息" className="grid grid-cols-3 gap-12 mt-6">
+              {activityNews.map((newsItem) => (
+                <Link
+                  key={newsItem.id}
+                  to={`/news/${newsItem.id}`}
+                  className="w-full rounded-[1rem] bg-white  overflow-hidden group cursor-pointer duration-300"
+                  target="_blank"
+                >
+                  <div className="w-full overflow-hidden aspect-[16/9] rounded-[1rem]">
+                    <img
+                      src={newsItem.bg}
+                      alt="Background Image"
+                      className="object-cover w-full h-full group-hover:scale-105 duration-300"
+                    />
+                  </div>
+                  <div className="pt-4">
+                    <div className="text-gray-400 font-light text-sm mb-2">
+                      {newsItem.location}
+                    </div>
+                    <p className="text-2xl font-semibold tracking-wider group-hover:text-orange duration-300">
+                      {newsItem.title}
                     </p>
                   </div>
                 </Link>

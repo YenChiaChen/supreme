@@ -16,121 +16,66 @@ import { faCircleCheck } from "@fortawesome/pro-light-svg-icons";
 import { Table } from "../../components/ui";
 import ProductSupremeImage from "../../assets/img/subPage/永續經營/product-customer-supreme.png";
 const ProductCustomerService: React.FC = () => {
-  const ListTabItems = {
-    "2022": [
-      {
-        description: "垃圾郵件防護",
-        highlight: "117,406 封",
-      },
-      {
-        description: "資訊安全郵件宣導",
-        highlight: "4 次",
-      },
-      {
-        description: "網站滲透測試",
-        highlight: "1 次",
-      },
-      {
-        description: "網站弱點掃描",
-        highlight: "1 次",
-      },
-      {
-        description: "主機系統弱點掃描",
-        highlight: "2 次",
-      },
-      {
-        description: "病毒郵件攔截統計",
-        highlight: "13,045 封",
-      },
-      {
-        description: "郵件連線阻擋統計",
-        highlight: "117,406 次",
-      },
-      {
-        description: "修補系統及軟體漏洞",
-        highlight: "878 個",
-      },
-      {
-        description: "社交工程演練信件",
-        highlight: "960 封",
-      },
-    ],
-    "2023": [
-      {
-        description: "垃圾郵件防護",
-        highlight: "107,517 封",
-      },
-      {
-        description: "資訊安全郵件宣導",
-        highlight: "6 次",
-      },
-      {
-        description: "主機系統弱點掃描",
-        highlight: "1 次",
-      },
-      {
-        description: "病毒郵件攔截統計",
-        highlight: "1484 封",
-      },
-      {
-        description: "郵件連線阻擋統計",
-        highlight: "112,746 次",
-      },
-      {
-        description: "修補系統及軟體漏洞",
-        highlight: "918 個",
-      },
-      {
-        description: "社交工程演練信件",
-        highlight: "510 封",
-      },
-    ],
-  };
 
-  const AnimatedListItems1 = [
-    {
-      id: 1,
-      content:
-        "定期辦理資訊安全教育訓練：確保員工了解資安重要性，全面提升員工資訊安全威脅意識。 9 名成員，於每年年初及年中檢討各項風險 議題，投入部門人力監控及增加保險預算轉嫁風險。",
-      icon: faCircleCheck,
-      iconColor: "#3B79E4",
-      iconSize: "30px",
-    },
-    {
-      id: 2,
-      content:
-        "每年辦理一次資訊安全演習：專注於關鍵的策略，模擬實際資安危機事件，如：網路釣魚和社交工程攻擊，藉以協助員工進行資安威脅辨識，藉由資安演練掌握公司資安弱點。",
-      icon: faCircleCheck,
-      iconColor: "#3B79E4",
-      iconSize: "30px",
-    },
-  ];
 
   const tableData = {
     headers: [
-      { content: "年度項目" },
-      { content: "2020年" },
-      { content: "2021年" },
-      { content: "2022年" },
+      { content: "主要產品" },
+      { content: "重要用途" },
+      { content: "主要供應商" },
     ],
     rows: [
       [
-        { content: "研發費用 ( A )", nowrap: true },
-        { content: "20,688" },
-        { content: "29,522" },
-        { content: "88,789" },
+        { content: "記憶體元件", nowrap: true },
+        {
+          content:
+            "顯示卡、主機板、數據機、筆記型電腦、網路卡、伺服器、手機、平板、TV、數位相機 、LCD 監視器 、ADSL 、CABLE MODEM，電腦、通訊及消費性電子產品作為儲存、記憶使用。",
+        },
+        { content: "SAMSUNG" },
       ],
       [
-        { content: "營業收入淨額 ( B )", nowrap: true },
-        { content: "48,277,022" },
-        { content: "91,147,824" },
-        { content: "78,790,630" },
+        { content: "非記憶體元件", nowrap: true },
+        {
+          content:
+            "主機板、電源供應器、充電器、手機、平板、TV、電腦顯示器、筆記型電腦、網路卡、週邊卡、數據機、數位相機等，應用於資訊、通訊、網路及消費性電子產品等。",
+        },
+        {
+          content:
+            "SAMSUNG、MTK、SKYWORKS、BOSCH、敦泰、奕力、CIRRUS LOGIC、蘇州江蘇和成、驊訊、聚睿、聚積、Chrontel、瀚宇彩晶、群創、奇景、卓榮、HKC、 GALAXYCORE等",
+        },
+      ],
+    ],
+  };
+
+  const tableData2 = {
+    headers: [
+      { content: "面向" },
+      { content: "內容" },
+    ],
+    rows: [
+      [
+        { content: "解決方案及通路", nowrap: true },
+        { content: "提供全面的解決方案及行銷通路。" },
       ],
       [
-        { content: "研發類用占營業收入淨額比率 ( A ) / ( B )", nowrap: true },
-        { content: "0.04%" },
-        { content: "0.03%" },
-        { content: "0.11%" },
+        { content: "新能源/BMS", nowrap: true },
+        { content: "專注於新能源技術及電池管理系統的開發。" },
+      ],
+      [
+        { content: "IC設計/光電科技", nowrap: true },
+        { content: "提升產品與服務，供應下游廠商在IC設計及光電技術的研發和應用。" },
+      ],
+      [
+        { content: "物聯網/智能載具", nowrap: true },
+        { content: "因應物聯網及智能載具的創新和整合，為下游廠商提供全面與高效服務。" },
+      ],
+      [
+        { content: "健康", nowrap: true },
+        { content: "推動智慧生物醫療及人工智慧即時檢測技術的研發。" },
+      ],
+      [
+        { content: "大數據/雲計算/雲服務", nowrap: true },
+        { content: "快速回應市場需求，為客戶提供高效能的數據處理方案。" },
       ],
     ],
   };
@@ -151,7 +96,7 @@ const ProductCustomerService: React.FC = () => {
           <H2 text={"政策與承諾"} />
           <P
             text={
-              "掌握產業趨勢，制定客戶服務策略，承諾支持環境保護之相關法令規定，滿足環境及社會議題要求之規範。所有銷售之產品與服務及行銷與廣告皆依循法規及國際準則為之，不得有欺騙、誤導、詐欺或任何其他破壞消費者信任、損害消費者權益之行為。"
+              "掌半導體零組件代理商之競爭優勢係即時提供客戶需求及掌握關鍵技術發展趨勢，優良的產品品質與技術，與提供客戶更多元的產品及完善的服務才能提昇客戶忠誠度，為公司帶來豐厚的利潤。掌握產業趨勢，制定客戶服務策略，承諾支持環境保護之相關法令規定，滿足環境及社會議題要求之規範。所有銷售之產品與服務及行銷與廣告皆依循法規及國際準則為之，不得有欺騙、誤導、詐欺或任何其他破壞消費者信任、損害消費者權益之行為。"
             }
           />
         </Section>
@@ -162,74 +107,27 @@ const ProductCustomerService: React.FC = () => {
               "在全球半導體市場中，電子零組件通路商扮演著極為重要的角色，保持著持續的動能，並參與國際化的專業分工體系。通路商具有多重功能，包括為上游零組件製造商提供下游市場的動向消息，提供產品開發建議，並建立完整的銷售網路。同時，也為下游的電子產品製造商提供全面性技術服務，以協助開發新產品，並縮短新產品上市的時間。積極扮演上下游之間的溝通橋樑，成為具有高附加價值的專業技術服務通路商，在電子產業價值鏈中占據著重要地位。"
             }
           />
+
+          <Table data={tableData} color="#3B79E4" />
+          <Image src={"https://res.cloudinary.com/dvgxlmyje/image/upload/v1728013758/devices_n6y9au.png"} alt="Product Image" maxWidth="600px" />
+        </Section>
+
+
+        <Section>
+          <H2 text={"未來發展規劃"} />
+          <P
+            text={
+              "在電子資訊產業之產銷分工模式中，至上扮演中間橋樑角色，透過綿密的行銷通路網，將產品銷售予下游資訊、通訊及消費性電子產品製造商，並提供整合與應用等諮詢服務。未來公司規劃朝六大面向來迅速滿足客戶一次購足之需求，作為發展的指標："
+            }
+          />
+
+          <Table data={tableData2} color="#3B79E4" />
+
           <Image
             src={ProductSupremeImage}
             alt="Supreme Product"
             maxWidth="1000px"
           />
-        </Section>
-        <Section>
-          <H2 text={"研發與創新"} />
-          <P
-            text={
-              "本公司的競爭優勢為即時提供客戶需求及掌握關鍵技術發展趨勢，研發部門專責開發新一代產品之應用技術，創新產品應用領域，同時掌握關鍵技術發展趨勢以及客戶未來需求走向，提供有利的市場資訊及專業的技術支援，協助客戶產品整合規劃，解決設計、生產上的問題，並以提供整體設計方案為目標。"
-            }
-          />
-
-          <div className="flex flex-col gap-4 mt-md">
-            <div
-              tabIndex={0}
-              className="collapse collapse-arrow shadow text-blue  p-4 relative group"
-            >
-              <div className="collapse-title flex">
-                <span className="text-lg text-blue">
-                未來研發計畫及投入之研發費用
-                </span>
-              </div>
-              <div className="collapse-content text-black">
-                <P
-                  text={
-                    "2022年度依消費性電子產品市場需求訂定不同之研發專案，研發費用計投入新台幣88,789仟元，預計2023 年度將再投入約80,000仟元持續開發快篩試劑、試劑檢測儀、醫療雲端服務、電動車電池組、EXN交換站及影像產品研發與製造等產品。近三年個體財務報告所載之累計投入研發費用："
-                  }
-                />
-                <Table data={tableData} color="#3B79E4" />
-              </div>
-            </div>
-            <div
-              tabIndex={0}
-              className="collapse collapse-arrow shadow text-blue  p-4 relative group"
-            >
-              <div className="collapse-title flex">
-                <span className="text-lg text-blue">
-                重大創新技術開發
-                </span>
-              </div>
-              <div className="collapse-content text-black">
-                <P
-                  text={
-                    "目前持續研發之新產品為全民健康快速篩檢系統、試劑檢測儀、醫療雲端服務、次世代生物科技、電動車電池組、雲端能源交換管理系統(EnergyeXchangeNetwork)、安全性鋰電池材料、低電壓電力推進系統整合方案及大型儲能設備與能源管理系統(EMS)等產品。 對公司績效的貢獻度，而給予合理報酬，相關績效考核及薪酬合理性均經薪資報酬委員會及董事會審核，並隨 時視實際經營狀況及法令適時檢討酬金制度，以謀公司永續經營與風險控管之平衡。依本公司章程第二十條， 本公司年度扣除員工酬勞及董事酬勞前之本期稅前淨利，應提撥不高於百分之二為董事酬勞，由董事會決議後 分派，並向股東會報告。"
-                  }
-                />
-              </div>
-            </div>
-            <div
-              tabIndex={0}
-              className="collapse collapse-arrow shadow text-blue  p-4 relative group"
-            >
-              <div className="collapse-title flex">
-                <span className="text-lg text-blue">
-                完成 ISO-13485 的認證
-                </span>
-              </div>
-              <div className="collapse-content text-black">
-                <P
-                  text={
-                    "研發部門成立迄今，除以提供客戶技術支援外，亦積極尋求新產品的合作開發案，以多元化的產品應用觀念與其核心關鍵技術，同時導入系統整合設計，協助客戶用最短的時間及最有效率的方式，完成產品開發與量產，帶來新商機；另外在遠距智慧醫療產品線的布建需求下，完成ISO-13485的認證，以利後續相關服務及產品的銷售推動，目前已取得科專計畫及專利項目。(EnergyeXchangeNetwork)、安全性鋰電池材料、低電壓電力推進系統整合方案及大型儲能設備與能源管理系統(EMS)等產品。 對公司績效的貢獻度，而給予合理報酬，相關績效考核及薪酬合理性均經薪資報酬委員會及董事會審核，並隨 時視實際經營狀況及法令適時檢討酬金制度，以謀公司永續經營與風險控管之平衡。依本公司章程第二十條， 本公司年度扣除員工酬勞及董事酬勞前之本期稅前淨利，應提撥不高於百分之二為董事酬勞，由董事會決議後 分派，並向股東會報告。"
-                  }
-                />
-              </div>
-            </div>
-          </div>
         </Section>
       </Container>
     </div>

@@ -70,57 +70,83 @@ type NewsComponent =
   | { type: "heading"; content: string }
   | { type: "paragraph"; content: string }
   | { type: "date"; content: string }
-  | { type: "image"; src: string; alt: string; width?: string; desc?: string };
+  | { type: "image"; src: string; alt: string; width?: string; desc?: string }
+  | { type: "column"; left: NewsComponent[]; right: NewsComponent[] }
+  | { type: "margin";}
 
-const renderComponent = (component: NewsComponent): JSX.Element | null => {
-  switch (component.type) {
-    case "title": {
-      const { content } = component;
-      return (
-        <h1 className="text-3xl font-semibold tracking-wide">{content}</h1>
-      );
-    }
-    case "date": {
-      const { content } = component;
-      return (
-        <>
-          <h1 className="text-md tracking-wide mt-4 text-gray-500">
+
+  const renderComponent = (component: NewsComponent): JSX.Element | null => {
+    switch (component.type) {
+      case "title": {
+        const { content } = component;
+        return (
+          <h1 className="text-3xl font-semibold tracking-wide">{content}</h1>
+        );
+      }
+      case "margin": {
+        return(
+          <div className="my-6">&nbsp;</div>
+        )
+      }
+      case "date": {
+        const { content } = component;
+        return (
+          <>
+            <h1 className="text-md tracking-wide mt-4 text-gray-500">
+              {content}
+            </h1>
+            <div className="my-8 w-full h-[1px] bg-gray-300"></div>
+          </>
+        );
+      }
+      case "paragraph": {
+        const { content } = component;
+        return <p className="mt-4 tracking-wide leading-8">{content}</p>;
+      }
+      case "heading": {
+        const { content } = component;
+        return (
+          <p className="mt-8 tracking-wide leading-8 text-lg font-semibold">
             {content}
-          </h1>
-          <div className="my-8 w-full h-[1px] bg-gray-300"></div>
-        </>
-      );
+          </p>
+        );
+      }
+      case "subTitle": {
+        const { content } = component;
+        return (
+          <p className="mt-16 tracking-wide leading-8 text-xl font-semibold">
+            {content}
+          </p>
+        );
+      }
+      case "image": {
+        const { src, alt, width = "100%", desc = "" } = component;
+        return (
+          <ImageWithSkeleton src={src} alt={alt} width={width} desc={desc} />
+        );
+      }
+      case "column": {
+        const { left, right } = component;
+        return (
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              {left.map((comp, index) => (
+                <div key={index}>{renderComponent(comp)}</div>
+              ))}
+            </div>
+            <div>
+              {right.map((comp, index) => (
+                <div key={index}>{renderComponent(comp)}</div>
+              ))}
+            </div>
+          </div>
+        );
+      }
+      default:
+        return null;
     }
-    case "paragraph": {
-      const { content } = component;
-      return <p className="mt-4 tracking-wide leading-8">{content}</p>;
-    }
-    case "heading": {
-      const { content } = component;
-      return (
-        <p className="mt-8 tracking-wide leading-8 text-lg font-semibold">
-          {content}
-        </p>
-      );
-    }
-    case "subTitle": {
-      const { content } = component;
-      return (
-        <p className="mt-16 tracking-wide leading-8 text-xl font-semibold">
-          {content}
-        </p>
-      );
-    }
-    case "image": {
-      const { src, alt, width = "100%", desc = "" } = component;
-      return (
-        <ImageWithSkeleton src={src} alt={alt} width={width} desc={desc} />
-      );
-    }
-    default:
-      return null;
-  }
-};
+  };
+  
 
 const NewsDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -137,7 +163,7 @@ const NewsDetail: React.FC = () => {
 
   return (
     <div className="bg-gray-100  text-[#555555]">
-      <Container className="py-48  -mb-[80px]">
+      <Container className="pt-48  -mb-[80px]">
         <Link to="/news">
           <div className="p-12 flex items-center group cursor-pointer w-fit">
             <FontAwesomeIcon
@@ -147,7 +173,7 @@ const NewsDetail: React.FC = () => {
             返回列表
           </div>
         </Link>
-        <div className="bg-white rounded-[2rem] shadow-2xl px-12 py-20">
+        <div className="bg-white rounded-t-[2rem] shadow-2xl px-12 pt-20 pb-[300px]">
           {news.components.map((component, index) => (
             <div key={index}>{renderComponent(component)}</div>
           ))}

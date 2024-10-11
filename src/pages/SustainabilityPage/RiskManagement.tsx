@@ -169,8 +169,8 @@ const RiskManagement: React.FC = () => {
         </Section>
         <Section>
           <H2 text={"風險管理組織架構"} />
-            <Image src={RiskManagementStructureImage} alt="Risk Management Structure" />
-            <AnimatedList items={AnimatedListItems1} />
+            <Image src={RiskManagementStructureImage} alt="Risk Management Structure" className="mb-12" />
+            <AnimatedList items={AnimatedListItems1}  />
         </Section>
         <Section>
           <H2 text={"實際執行成效"} />

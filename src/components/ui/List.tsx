@@ -41,9 +41,9 @@ const SlideUpListItem: React.FC<SlideUpListItemProps> = ({ item, delay }) => {
   return (
     <motion.li
       ref={ref}
-      className="border-b-[1px] border-gray-200 py-8 flex items-center"
+      className="border-b-[1px] border-gray-200 py-5 flex items-center"
       style={{
-        transform: isInView ? "none" : "translateY(50px)",
+        transform: isInView ? "none" : "translateY(30px)",
         opacity: isInView ? 1 : 0,
         transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${delay}s`,
       }}

@@ -439,22 +439,7 @@ const StakeholderEngagement: React.FC = () => {
                             {text: "落實SDGs永續目標：" , subItems: [{text: "指標3-良好健康和福祉"}, {text:"指標12-責任消費與生產"}, {text:"指標14-保育海洋生態"}]},
                         ]
                       } />
-                      <ul className="list-disc content pt-4 pl-6">
-                        <li>辦理淨灘公益活動，總計共拾拾37.5公斤海洋廢棄物</li>
-                        <li>
-                          志工參與捐血活動及自辦愛心捐血活動，共收集495袋捐血
-                        </li>
-                        <li>公司股東會贈品購買環保材質(小麥桿)製品</li>
-                        <li>
-                          落實SDGs永續目標：
-                          <br />
-                          指標3-良好健康和福祉
-                          <br />
-                          指標12-責任消費與生產
-                          <br />
-                          指標14-保育海洋生態
-                        </li>
-                      </ul>
+                     
                     </div>
                   </div>
                 </div>

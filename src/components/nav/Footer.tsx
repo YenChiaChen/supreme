@@ -36,6 +36,8 @@ const Footer: React.FC = () => {
               </Link>
             </div>
             <div className="flex gap-6  tracking-wide text-lg">
+
+            <Link to='/sustainability/survey'>
               <div className="group hover:shadow-xl cursor-pointer  flex text-lg tracking-wide items-center pl-5 py-2 pr-2 bg-white bg-opacity-20 overflow-hidden text-white rounded-full backdrop-filter backdrop-blur-lg hover:bg-opacity-20 transition duration-300">
                 利害關係人問卷
                 <div className="ml-6 bg-white h-[35px] w-[35px] rounded-full flex items-center justify-center text-orange-400 duration-300 group-hover:ml-8 group-hover:bg-orange-400 group-hover:text-white">
@@ -45,6 +47,8 @@ const Footer: React.FC = () => {
                   />
                 </div>
               </div>
+              </Link>
+              <Link to='http://www.supreme.com.tw/File/ESG/2023ESG%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf' target="_blank">
               <div className="group hover:shadow-xl cursor-pointer  flex text-lg tracking-wide items-center pl-5 py-2 pr-2 bg-white bg-opacity-20 overflow-hidden text-white rounded-full backdrop-filter backdrop-blur-lg hover:bg-opacity-20 transition duration-300">
                 永續報告書下載
                 <div className="ml-6 bg-white h-[35px] w-[35px] rounded-full flex items-center justify-center text-orange-400 duration-300 group-hover:ml-8 group-hover:bg-orange-400 group-hover:text-white">
@@ -54,6 +58,7 @@ const Footer: React.FC = () => {
                   />
                 </div>
               </div>
+              </Link>
             </div>
           </div>
           <div className="w-full h-[1px] bg-white my-10 bg-opacity-50"></div>

@@ -34,6 +34,7 @@ import PerformanceCardImage02 from "../../assets/img/background/performanceCard_
 import PerformanceCardImage03 from "../../assets/img/background/performanceCard_03.png";
 import PerformanceCardImage04 from "../../assets/img/background/performanceCard_04.png";
 import TopicHighlightsSection from "./TopicHighlightsSection";
+import { Link } from "react-router-dom";
 
 
 const LandingPage: React.FC = () => {
@@ -145,6 +146,7 @@ const LandingPage: React.FC = () => {
             </h1>
           </div>
 
+          <Link to='http://www.supreme.com.tw/File/ESG/2023ESG%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf' target="_blank">
           <div className="group hover:shadow-xl cursor-pointer  flex text-lg tracking-wide items-center pl-5 py-2 pr-2 mt-8 bg-white bg-opacity-20 overflow-hidden text-white rounded-full backdrop-filter backdrop-blur-lg hover:bg-opacity-20 transition duration-300">
             永續報告書下載
             <div className="ml-6 bg-white h-[40px] w-[40px] rounded-full flex items-center justify-center text-orange-400 duration-300 group-hover:ml-8 group-hover:bg-orange-400 group-hover:text-white">
@@ -154,6 +156,7 @@ const LandingPage: React.FC = () => {
               />
             </div>
           </div>
+          </Link>
         </div>
 
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-0"></div>
@@ -168,52 +171,54 @@ const LandingPage: React.FC = () => {
         </p>
 
         <div className="flex gap-6 mt-8 justify-between">
-          <div
+          
+
+        <div
             className="group bg-black w-[33%] rounded-[2rem] hover:w-[80%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
-            style={{ backgroundImage: `url(${BeachCardImage})` }}
+            style={{ backgroundImage: `url(${BuildingCardImage})` }}
           >
             <div className="z-10 w-full h-full relative flex flex-col items-start rounded-[1.8rem] p-10 text-white relative">
               <FontAwesomeIcon
-                icon={faEarthAsia}
+                icon={faUserGear}
                 className="text-[3.5rem] mt-2"
               />
-              <p className="text-3xl font-semibold mt-6">關心在地</p>
-              <p className="mt-6 group-hover:opacity-0 group-hover:invisible transition-opacity transition-visibility duration-500 ease-out delay-300 font-light tracking-wider">
-                我們致力於守護自然環境，推動綠色轉型，並採取可持續的發展策略，確保資源的永續利用。
+              <p className="text-3xl font-semibold mt-6">企業永續</p>
+              <p className="mt-6 group-hover:opacity-0 group-hover:invisible transition-opacity transition-visibility duration-500 ease-out delay-300">
+              強化企業韌性，尊重利害關係人，創造價值共享。
               </p>
               <div className="opacity-0 group-hover:opacity-100 transition-none duration-500 delay-300 group-hover:delay-300 group-hover:duration-300 group-hover:transition-opacity text-left w-full -mt-[5%] flex justify-between items-end">
-                <div className="flex flex-col gap-4 items-start w-full ">
+                <div className="flex flex-col gap-4 items-start w-full">
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">2022年淨山活動清除：</p>
+                    <p className="">第九屆公司治理評鑑上市公司排名：</p>
                     <span className=" font-bold text-3xl text-left">
-                      33<span className="ml-4 text-sm">公斤</span>
+                      6~20<span className="ml-4 text-sm">%</span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">執行無紙化政策：</p>
+                    <p className="">誠信經營教育訓練達：</p>
                     <span className=" font-bold text-3xl text-left">
-                      e化簽核流程<span className="ml-4 text-sm"></span>
+                      62<span className="ml-4 text-sm">小時</span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">集團減少用紙量：</p>
+                    <p className="">董事會内部自評平均達成率：</p>
                     <span className=" font-bold text-3xl text-left">
-                      28.7萬<span className="ml-4 text-sm">張</span>
+                      94<span className="ml-4 text-sm">%</span>
                     </span>
                   </div>
                 </div>
 
                 <div className="absolute flex flex-col gap-2 right-4 bottom-4">
                   <img
-                    src={EsgIcon13}
+                    src={EsgIcon08}
                     className="w-[60px] h-[60px] object-cover"
                   />
                   <img
-                    src={EsgIcon14}
+                    src={EsgIcon12}
                     className="w-[60px] h-[60px] object-cover"
                   />
                   <img
-                    src={EsgIcon15}
+                    src={EsgIcon17}
                     className="w-[60px] h-[60px] object-cover"
                   />
                 </div>
@@ -221,7 +226,6 @@ const LandingPage: React.FC = () => {
             </div>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 duration-300 group-hover:opacity-60 z-0"></div>
           </div>
-
           <div
             className="group bg-black w-[33%] rounded-[2rem] hover:w-[80%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
             style={{ backgroundImage: `url(${EmployeeCardImage})` }}
@@ -231,9 +235,9 @@ const LandingPage: React.FC = () => {
                 icon={faHandshakeAngle}
                 className="text-[3.5rem] mt-2"
               />
-              <p className="text-3xl font-semibold mt-6">關懷培力</p>
+              <p className="text-3xl font-semibold mt-6">多元共融</p>
               <p className="mt-6 group-hover:opacity-0 group-hover:invisible transition-opacity transition-visibility duration-500 ease-out delay-300">
-                注重員工發展，承諾提供員工持續學習和職業發展的機會，提供多元化培訓課程等以提升員工技能和增進員工價值。
+              建立共融職場，無分性別、無分背景，人人都得以受到尊重及充分發揮。
               </p>
               <div className="opacity-0 group-hover:opacity-100 transition-none duration-500 delay-300 group-hover:delay-300 group-hover:duration-300 group-hover:transition-opacity text-left w-full -mt-[5%] flex justify-between items-end">
                 <div className="flex flex-col gap-4 items-start w-full">
@@ -278,52 +282,55 @@ const LandingPage: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 duration-300 group-hover:opacity-60 z-0"></div>
           </div>
 
+
+
+
           <div
             className="group bg-black w-[33%] rounded-[2rem] hover:w-[80%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
-            style={{ backgroundImage: `url(${BuildingCardImage})` }}
+            style={{ backgroundImage: `url(${BeachCardImage})` }}
           >
             <div className="z-10 w-full h-full relative flex flex-col items-start rounded-[1.8rem] p-10 text-white relative">
               <FontAwesomeIcon
-                icon={faUserGear}
+                icon={faEarthAsia}
                 className="text-[3.5rem] mt-2"
               />
-              <p className="text-3xl font-semibold mt-6">關注根基</p>
-              <p className="mt-6 group-hover:opacity-0 group-hover:invisible transition-opacity transition-visibility duration-500 ease-out delay-300">
-                落實風險管理，謹慎評估市場與產業狀況，靈活的投資策略，確保年度經濟績效提升，穩定公司營運根基。
+              <p className="text-3xl font-semibold mt-6">2050淨零</p>
+              <p className="mt-6 group-hover:opacity-0 group-hover:invisible transition-opacity transition-visibility duration-500 ease-out delay-300 font-light tracking-wider">
+              透過自我檢視，減少碳排放行動，朝淨零目標持續努力。
               </p>
               <div className="opacity-0 group-hover:opacity-100 transition-none duration-500 delay-300 group-hover:delay-300 group-hover:duration-300 group-hover:transition-opacity text-left w-full -mt-[5%] flex justify-between items-end">
-                <div className="flex flex-col gap-4 items-start w-full">
+                <div className="flex flex-col gap-4 items-start w-full ">
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">第九屆公司治理評鑑上市公司排名：</p>
+                    <p className="">2022年淨山活動清除：</p>
                     <span className=" font-bold text-3xl text-left">
-                      6~20<span className="ml-4 text-sm">%</span>
+                      33<span className="ml-4 text-sm">公斤</span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">誠信經營教育訓練達：</p>
+                    <p className="">執行無紙化政策：</p>
                     <span className=" font-bold text-3xl text-left">
-                      62<span className="ml-4 text-sm">小時</span>
+                      e化簽核流程<span className="ml-4 text-sm"></span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">董事會内部自評平均達成率：</p>
+                    <p className="">集團減少用紙量：</p>
                     <span className=" font-bold text-3xl text-left">
-                      94<span className="ml-4 text-sm">%</span>
+                      28.7萬<span className="ml-4 text-sm">張</span>
                     </span>
                   </div>
                 </div>
 
                 <div className="absolute flex flex-col gap-2 right-4 bottom-4">
                   <img
-                    src={EsgIcon08}
+                    src={EsgIcon13}
                     className="w-[60px] h-[60px] object-cover"
                   />
                   <img
-                    src={EsgIcon12}
+                    src={EsgIcon14}
                     className="w-[60px] h-[60px] object-cover"
                   />
                   <img
-                    src={EsgIcon17}
+                    src={EsgIcon15}
                     className="w-[60px] h-[60px] object-cover"
                   />
                 </div>
@@ -742,7 +749,7 @@ const LandingPage: React.FC = () => {
 
 
 
-      <div className="pt-36 bg-white">
+      <div className=" bg-white">
         <Container>
           <div>
             <p className="text-3xl  font-semibold text-lake">

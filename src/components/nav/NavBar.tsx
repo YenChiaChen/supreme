@@ -97,10 +97,13 @@ const NavBar: React.FC<NavbarProps> = ({ items }) => {
               <div className="swap-on font-tc">繁體中文</div>
               <div className="swap-off font-en">EN</div>
             </label>
+
+            <Link to='http://www.supreme.com.tw/File/ESG/2023ESG%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf' target="_blank">
             <button className="px-4 py-2 rounded-full duration-300 bg-white border text-sm border-orange text-orange relative z-30 hover:bg-orange hover:text-white">
               {t("common.esgReportDownload")}
               <FontAwesomeIcon icon={faArrowDownToLine} className="ml-2" />
             </button>
+            </Link>
           </div>
         </div>
       </div>
