@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.76e771e1.css",
-    "main.js": "/supreme/static/js/main.6435f5b2.js",
+    "main.css": "/supreme/static/css/main.7de564b9.css",
+    "main.js": "/supreme/static/js/main.27164452.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/performanceCard_03.png": "/supreme/static/media/performanceCard_03.a62cd9a770f65a4bf193.png",
     "static/media/img_Charity08.jpg": "/supreme/static/media/img_Charity08.e416308355863d8d32f3.jpg",
@@ -62,7 +62,6 @@
     "static/media/img_Charity12.png": "/supreme/static/media/img_Charity12.a6ba8212692675399782.png",
     "static/media/風險管理.jpg": "/supreme/static/media/風險管理.56c3cf7be147026a068c.jpg",
     "static/media/永續發展委員會.jpg": "/supreme/static/media/永續發展委員會.de8e8f87f2ce898b5ff6.jpg",
-    "static/media/supply-chain-relationship.png": "/supreme/static/media/supply-chain-relationship.85ad0055a3a8a9f4c51a.png",
     "static/media/img_Charity06.png": "/supreme/static/media/img_Charity06.15341cb362c2ea0a97fe.png",
     "static/media/product-customer-supreme.png": "/supreme/static/media/product-customer-supreme.cc1f6ddead32e7ff0cce.png",
     "static/media/誠信經營.jpg": "/supreme/static/media/誠信經營.23dbec327c2a379c2ad6.jpg",
@@ -76,12 +75,10 @@
     "static/media/審計委員會.jpg": "/supreme/static/media/審計委員會.45436a04584d3397254f.jpg",
     "static/media/information-security-structure.png": "/supreme/static/media/information-security-structure.ed95fc98b5169332a480.png",
     "static/media/健康職場.jpg": "/supreme/static/media/健康職場.00fd72e917b6394dba32.jpg",
-    "static/media/information-security-publicize.png": "/supreme/static/media/information-security-publicize.f8d92e6391d8a42f7bb2.png",
     "static/media/board-structure.png": "/supreme/static/media/board-structure.5bf69ff9073f8d2d1a94.png",
     "static/media/risk-management-structure.png": "/supreme/static/media/risk-management-structure.4a39386da917324666dc.png",
     "static/media/智慧財產權管理.jpg": "/supreme/static/media/智慧財產權管理.865ab0d3c7a2989affba.jpg",
     "static/media/icon.jpg": "/supreme/static/media/icon.b931287d28a81cb85481.jpg",
-    "static/media/supply-chain.png": "/supreme/static/media/supply-chain.45e9f4ad5ce2c5f95738.png",
     "static/media/climate-change-flowchart.png": "/supreme/static/media/climate-change-flowchart.6f62546ee2ba423112df.png",
     "static/media/利害關係人議合.jpg": "/supreme/static/media/利害關係人議合.2c13f446f3304ab13de4.jpg",
     "static/media/whistleblower-banner.png": "/supreme/static/media/whistleblower-banner.679529a2f60e962c7e2d.png",
@@ -113,11 +110,11 @@
     "static/media/img_Charity01.jpg": "/supreme/static/media/img_Charity01.7efcd3a9dc206b1f4665.jpg",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.76e771e1.css.map": "/supreme/static/css/main.76e771e1.css.map",
-    "main.6435f5b2.js.map": "/supreme/static/js/main.6435f5b2.js.map"
+    "main.7de564b9.css.map": "/supreme/static/css/main.7de564b9.css.map",
+    "main.27164452.js.map": "/supreme/static/js/main.27164452.js.map"
   },
   "entrypoints": [
-    "static/css/main.76e771e1.css",
-    "static/js/main.6435f5b2.js"
+    "static/css/main.7de564b9.css",
+    "static/js/main.27164452.js"
   ]
 }
