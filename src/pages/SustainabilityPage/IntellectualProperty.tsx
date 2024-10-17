@@ -73,16 +73,19 @@ const IntellectualProperty: React.FC = () => {
           id: 1,
           content: "2023年01月12日董事會完成執行情形報告，如附件",
           download: 'http://www.supreme.com.tw/File/1120112智慧財產管理執行情形.pdf',
+          iconColor: "#3B79E4",
         },
         {
           id: 2,
           content: "2022年01月24日董事會完成執行情形報告，如附件",
           download: 'http://www.supreme.com.tw/File/1110124智慧財產管理執行情形.pdf',
+          iconColor: "#3B79E4",
         },
         {
           id: 3,
           content: "2021年01月08日董事會完成執行情形報告，如附件",
           download: 'http://www.supreme.com.tw/File/1100108智慧財產管理執行情形.pdf',
+          iconColor: "#3B79E4",
         },
         {
           id: 4,
@@ -93,8 +96,7 @@ const IntellectualProperty: React.FC = () => {
     <div className="mb-48">
       <HeroSection
         title="智慧財產管理"
-        description={`本公司為有效管理本公司智慧財產權，於2020年11月經董事會通過訂定「智慧財產管理計畫」。範圍包含：專利權、商標權、著作權及營業秘密，對象涵蓋本公司員工及參與本公司研究計畫之外部人士所產出或取得之各種智慧財產。`}
-        backgroundImage={BgImage}
+         backgroundImage={BgImage}
         center={true}
       />
       <Container className="mt-12">
@@ -103,6 +105,7 @@ const IntellectualProperty: React.FC = () => {
         </Section>
 
         <Section>
+          <P text={"本公司為有效管理本公司智慧財產權，於2020年11月經董事會通過訂定「智慧財產管理計畫」。範圍包含：專利權、商標權、著作權及營業秘密，對象涵蓋本公司員工及參與本公司研究計畫之外部人士所產出或取得之各種智慧財產。"} />
           <H2 text={"專案管理"} className="pb-8" />
             <AnimatedList items={AnimatedListItems1} />
         </Section>

@@ -91,10 +91,13 @@ const Governance: React.FC = () => {
 
   const AnimatedListItems1 = [
     { id: 1, content: "・依法辦理董事會及股東會之會議相關事宜。" },
-    { id: 2, content: "・製作董事會及股東會議事錄。" },
     { id: 3, content: "・協助董事就任及持續進修。" },
     { id: 4, content: "・提供董事執行業務所需之資料。" },
     { id: 5, content: "・協助董事遵循法令。" },
+    { id: 5, content: "・協助董事會、董事成員、各功能委員會自我績效評估及每三年執行外部績效評估" },
+    { id: 5, content: "・向董事會報告其就獨立董事於提名、選任時及任職期間內資格是否符合相關法令規章之檢視結果。" },
+    { id: 5, content: "・辦理董事異動相關事宜。" },
+    { id: 5, content: "・督導並精進公司治理實施情形。" },
     { id: 6, content: "・其他依公司章程或契約所訂定之事項等。" },
   ];
 
@@ -252,24 +255,21 @@ const Governance: React.FC = () => {
         </Section>
 
         <Section>
-          <H2 text={"公司治理施行原則"} />
-          <P
-            text={
-              "本公司透過總經理室專職推行公司治理相關業務，主要職責為提供董事執行業務所需之資料，與經營公司有關之最新法規發展，以協助董事遵循法令，並依法辦理董事會及股東會相關事宜。業經2019年8月13日董事會通過會計協理陳力行先生擔任公司治理主管，其具備公開發行公司股務主管工作經驗達三年以上，並依法令規定進行專業進修。"
-            }
-          />
+        
           <H3 text={"公司治理主管主要職責如下："} className="text-blue" />
           <AnimatedList items={AnimatedListItems1} />
 
           <H3
-            text={"本公司之公司治理單位2022年業務執行情況如下："}
+            text={"公司治理單位業務執行："}
             className="text-blue"
           />
           <AnimatedList items={AnimatedListItems2} />
-        </Section>
 
-        <Section>
-          <H2 text={"公司治理主管進修情形"} />
+
+          <H3
+            text={"公司治理主管進修情形"}
+            className="text-blue"
+          />
           <YearTabContainer years={["2023", "2022", "2021"]} tabColor="#3B79E4">
             <div data-year="2023">
               <div className="overflow-x-auto mt-md">
@@ -801,6 +801,7 @@ const Governance: React.FC = () => {
             </div>
           </YearTabContainer>
         </Section>
+
       </Container>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "./Container";
+import { useEffect, useState } from "react";
 
 interface HeroSectionProps {
   backgroundImage: string;
@@ -16,14 +17,39 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   description,
   mask = true,
   center = true,
-  fixed = true,
 }) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setScrollPosition(scrollTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scaleValue = 1 + scrollPosition * 0.0002;
+
   return (
-    <div
-      className="relative w-full h-[40vh] min-h-[500px] overflow-hidden bg-cover bg-center bg-no-repeat "
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
+    <div className="relative w-full h-[40vh] min-h-[500px] overflow-hidden">
+      {/* Background Image */}
+      <img
+        src={backgroundImage}
+        alt="Hero Background"
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-out"
+        style={{
+          transform: `scale(${scaleValue})`,
+        }}
+      />
+      {/* Mask (Optional) */}
       {mask && <div className="absolute inset-0 bg-black opacity-50"></div>}
+      
+      {/* Content */}
       <Container className="w-full h-full">
         <div
           className={`relative w-full h-full flex flex-col justify-center  ${

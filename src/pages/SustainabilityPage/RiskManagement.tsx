@@ -173,9 +173,10 @@ const RiskManagement: React.FC = () => {
             <AnimatedList items={AnimatedListItems1}  />
         </Section>
         <Section>
-          <H2 text={"實際執行成效"} />
-            <AnimatedList items={AnimatedListItems2} />
+          <H2 text={"風險辨識及管理流程"} />
+            <Image src={"https://res.cloudinary.com/dvgxlmyje/image/upload/v1729054871/%E6%88%AA%E5%9C%96_2024-10-16_%E4%B8%8B%E5%8D%881.00.26_kjrrek.png"} alt="Risk Management Structure" className="mb-12" />
         </Section>
+ 
 
      
 

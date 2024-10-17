@@ -32,16 +32,16 @@
           "link": "#",
           "children": [
             {
-              "title": "common.sustainableDevelopmentCommittee",
-              "link": "/sustainability/sustainbility-committee"
-            },
-            {
               "title": "common.compensationCommittee",
               "link": "/sustainability/compensation-committee"
             },
             {
               "title": "common.auditCommittee",
               "link": "/sustainability/audit-committee"
+            },
+            {
+              "title": "common.sustainableDevelopmentCommittee",
+              "link": "/sustainability/sustainbility-committee"
             }
           ]
         },

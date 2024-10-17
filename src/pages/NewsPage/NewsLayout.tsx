@@ -161,10 +161,18 @@ const NewsDetail: React.FC = () => {
     );
   }
 
+  const categoryToUrlMap: { [key: string]: string } = {
+    SpecialNews: '/news?category=永續專欄特別報導',
+    Activity: '/news?category=永續消息',
+    Story: '/news?category=精選故事',
+  };
+
+  const returnUrl = categoryToUrlMap[news.category] || '/news';
+
   return (
     <div className="bg-gray-100  text-[#555555]">
       <Container className="pt-48  -mb-[80px]">
-        <Link to="/news">
+        <Link to={returnUrl}>
           <div className="p-12 flex items-center group cursor-pointer w-fit">
             <FontAwesomeIcon
               icon={faChevronCircleLeft}

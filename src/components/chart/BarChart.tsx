@@ -1,50 +1,119 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import {
+  ComposedChart,
+  Line,
+  Area,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from 'recharts';
 
-interface BarChartProps {
-  data: { label: string; value: number }[];
-  height?: number;
-  barColor?: string;
+const data = [
+  {
+    name: '2021年',
+    uv: 3.393,
+    pv: 232.317,
+    type3: 1500.392,
+    amt: 0.259,
+  },
+  {
+    name: '2022年',
+    uv: 14.654,
+    pv: 242.175,
+    type3: 1723.624,
+    amt:0.326,
+  },
+  {
+    name: '2023年',
+    uv: 19.462,
+    pv: 280.250,
+    type3: 1289.207,
+    amt: 0.465,
+  }
+];
+
+const WaterData = [
+  {
+    name: '2021年',
+    withdrawal: 0.819,
+    discharge: 0.819,
+    consumption:0,
+  },
+  {
+    name: '2022年',
+    withdrawal: 2.867,
+    discharge: 2.867,
+    consumption:0,
+  },
+  {
+    name: '2023年',
+    withdrawal: 2.932,
+    discharge: 2.932,
+    consumption:0,
+  },
+]
+
+export class ClimateBarChart extends PureComponent {
+  render() {
+    return (
+      <ResponsiveContainer width="100%" height="100%">
+        <ComposedChart
+          width={500}
+          height={400}
+          data={data}
+          margin={{
+            top: 0,
+            right: 0,
+            bottom: 20,
+            left: 0,
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis dataKey="name" />
+          <YAxis yAxisId="left" />
+          <YAxis yAxisId="right" orientation="right" />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="uv" stackId="a" barSize={40} fill="#ffc7a3" yAxisId="left" name="範疇一" />
+          <Bar dataKey="pv" stackId="a" barSize={40} fill="#FF8D50" yAxisId="left" name="範疇二" />
+          <Bar dataKey="type3" stackId="a" barSize={40} fill="#3BC376" yAxisId="left" name="範疇三" />
+          <Line type="monotone" dataKey="amt" stroke="#4C8591" yAxisId="right" name="排放密集度" />
+        </ComposedChart>
+      </ResponsiveContainer>
+    );
+  }
 }
 
-const BarChart: React.FC<BarChartProps> = ({ data, height = 300, barColor = 'bg-blue-500' }) => {
-  const maxValue = Math.max(...data.map(item => item.value), 0);
+export class WaterBarChart extends PureComponent{
 
-  // 計算刻度的步長
-  const step = Math.ceil(maxValue / 5);
-  const scaleLabels = Array.from({ length: 6 }, (_, i) => step * i).reverse();
-
-  return (
-    <div className="relative" style={{ height: `${height}px` }}>
-      {/* 刻度線條 (背景) */}
-      <div className="absolute inset-0 flex flex-col justify-between">
-        {scaleLabels.map((_, index) => (
-          <div key={index} className="w-full h-px bg-gray-300" />
-        ))}
-      </div>
-
-      {/* Bar Chart */}
-      <div className="relative flex items-end space-x-2 z-10 pl-24" style={{ height: `${height}px` }}>
-        {data.map((item, index) => (
-          <div key={index} className="flex flex-col items-center justify-end h-full">
-            <div
-              className={`w-8 ${barColor} transition-all rounded-t-md`}
-              style={{ height: `${(item.value / maxValue) * 100}%` }}
-            ></div>
-            <span className="mt-2 text-sm">{item.label}</span>
-          </div>
-        ))}
-      </div>
-
-      {/* 左邊的刻度標籤 */}
-      <div className="absolute left-0 top-0 flex flex-col justify-between h-full mr-2 text-right z-20" style={{ height: `${height}px` }}>
-        {scaleLabels.map((label, index) => (
-          <div key={index} className="relative">
-            <span className="text-sm text-gray-500">{label}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default BarChart;
+  render() {
+    return (
+      <ResponsiveContainer width="100%" height="100%">
+        <ComposedChart
+          width={500}
+          height={400}
+          data={WaterData}
+          margin={{
+            top: 0,
+            right: 0,
+            bottom: 20,
+            left: 0,
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="withdrawal"  barSize={40} fill="#3B79E4"  name="取水量" />
+          <Bar dataKey="discharge" barSize={40} fill="#FF8D50"  name="排水量" />
+          <Line type="monotone" dataKey="consumption" stroke="#4C8591"  name="耗水量" />
+        </ComposedChart>
+      </ResponsiveContainer>
+    );
+  }
+}

@@ -5,6 +5,20 @@ import navItems from "../../data/nav.json";
 import { H2, P } from "../../components/ui/Text";
 import { Container, Section } from "../../components/ui/Container";
 import { Table, YearTabContainer } from "../../components/ui";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { WaterBarChart } from "../../components/chart/BarChart";
+import {
+  faLightbulbOn,
+  faBus,
+  faBolt,
+  faLeaf,
+  faShippingFast,
+  faTruck,
+  faChartSimple,
+  faTable,
+  faPlug
+} from "@fortawesome/pro-light-svg-icons";
 const WaterManagement: React.FC = () => {
   const tableData = {
     headers: [
@@ -20,7 +34,26 @@ const WaterManagement: React.FC = () => {
         { content: "2.867" },
         { content: "2.932" },
       ],
+      [
+        { content: "排水量" },
+        { content: "0.819" },
+        { content: "2.867" },
+        { content: "2.932" },
+      ],
+      [
+        { content: "耗水量" },
+        { content: "0" },
+        { content: "0" },
+        { content: "0" },
+      ],
     ],
+  };
+
+
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
   };
 
   return (
@@ -38,21 +71,61 @@ const WaterManagement: React.FC = () => {
           <H2 text={"水資源管理"} />
           <P
             text={
-              "本公司共有四個營運據點，分別為台北總部、新莊、龍潭及台南三個辦事處，各營運據點取水來源均為各地所屬自來水公司，未取得地表水、地下水、海水、產出水等，也無自具有水資源壓力的地區取水。本公司採用Aqueduct Water Risk Atlas工具，三個辦事處之水資源壓力分析結果皆屬「Low-Medium(1-2)」。"
+              "本公司共有四個營運據點，分別為台北總部、新莊、龍潭及台南三個辦事處，各營運據點取水來源均為各地所屬自來水公司，未取得地表水、地下水、海水、產出水等，也無自具有水資源壓力的地區取水。水資源壓力皆屬「Low-Medium(1-2)」。"
             }
           />
           <P text={"註：WATERRISKATLAS：https://reurl.cc/yyjme2"} />
         </Section>
         <Section>
-          <H2 text={"水資源使用統計"} />
+          <H2 text={"取水量&耗水量"} />
+
+          <div className="flex justify-end">
+            <label className="swap swap-rotate relative hover:scale-105 duration-300">
+              <div className="absolute w-[40px] h-[40px] left-[5px] top-[5px] bg-gray-100 animate-ping rounded-full z-0"></div>
+              <input type="checkbox" onChange={handleCheckboxChange} />
+              <div className="w-[50px] h-[50px] bg-gray-100 rounded-full flex items-center justify-center swap-on z-10 hover:bg-black ">
+                <FontAwesomeIcon
+                  icon={faChartSimple}
+                  className="text-2xl text-gray-500"
+                />
+              </div>
+              <div className="w-[50px] h-[50px] bg-gray-100 rounded-full flex items-center justify-center swap-off z-10">
+                <FontAwesomeIcon
+                  icon={faTable}
+                  className="text-2xl text-gray-500"
+                />
+              </div>
+            </label>
+          </div>
+          <div
+            className={`transition-all duration-500 ease-in-out ${
+              isChecked ? "opacity-100 block" : "opacity-0 hidden duration-0"
+            }`}
+          >
+           
           <Table
             data={tableData}
             color="#3BC376"
             unit="單位：百萬公升 ( Million Litres )"
             notes={[
-              { text: "盤查邊界涵蓋台北總部、新莊、龍潭及台南三處辦事處。" },
+              { text: "至上電子取水量數據來源以台灣自來水公司用水量度數所統計換算( 1度水=1000公升=1公噸水)。" },
+              { text: "統計範圍包含：台北總部及新莊、龍潭、台南三處辦事處。" },
+              { text: "耗水量數據來源為：總取水量－總排水量。" },
             ]}
           />
+          </div>
+
+          <div
+            className={`transition-all duration-500 ease-in-out mt-8 ${
+              isChecked ? "opacity-0 hidden duration-0" : "opacity-100 block"
+            }`}
+          >
+            <p className="text-right w-full text-sm text-gray-400 font-light">單位：百萬公升 ( Million Litres )</p>
+            <div className="h-[400px] mt-4">
+              <WaterBarChart />
+            </div>
+          </div>
+
           <YearTabContainer years={["2023", "2022"]} tabColor="#3BC376">
             <div data-year="2023">
               <P

@@ -15,6 +15,110 @@ import {
   faBadgeCheck,
   faPaperPlane,
 } from "@fortawesome/pro-light-svg-icons";
+import { Table } from "../../components/ui";
+
+const tableData4 = {
+  headers: [
+    { content: "日期" },
+    { content: "參與人次" },
+    { content: "訓練總時數" },
+  ],
+  rows: [
+    [
+      { content: "07 月 20 日、07 月 21 日" },
+      { content: "123" },
+      { content: "61.5" },
+    ],
+  ],
+};
+const tableData = {
+  headers: [
+    { content: "日期" },
+    { content: "參與人次" },
+    { content: "訓練總時數" },
+  ],
+  rows: [
+    [
+      { content: "02 月 14 日、02 月 21 日" },
+      { content: "160" },
+      { content: "80" },
+    ],
+  ],
+};
+
+
+const tableData5 = {
+  headers: [
+    { content: "員工類別" },
+    { content: "已進行反貪腐相關溝通人數" },
+    { content: "該類人員總數" },
+    { content: "已進行反貪腐相關溝通百分比" },
+  ],
+  rows: [
+    [
+      { content: "主管" },
+      { content: "77" },
+      { content: "77" },
+      { content: "100%" },
+    ],
+    [
+      { content: "非主管" },
+      { content: "119" },
+      { content: "119" },
+      { content: "100%" },
+    ],
+    [
+      { content: "合計" },
+      { content: "196" },
+      { content: "196" },
+      { content: "100%" },
+    ],
+  ],
+};
+const tableData2 = {
+  headers: [
+    { content: "員工類別" },
+    { content: "已進行反貪腐相關溝通人數" },
+    { content: "該類人員總數" },
+    { content: "已進行反貪腐相關溝通百分比" },
+  ],
+  rows: [
+    [
+      { content: "主管" },
+      { content: "70" },
+      { content: "70" },
+      { content: "100%" },
+    ],
+    [
+      { content: "非主管" },
+      { content: "128" },
+      { content: "128" },
+      { content: "100%" },
+    ],
+    [
+      { content: "合計" },
+      { content: "198" },
+      { content: "198" },
+      { content: "100%" },
+    ],
+  ],
+};
+const tableData3 = {
+  headers: [
+    { content: "治理單位" },
+    { content: "已進行反貪腐相關溝通人數" },
+    { content: "該類人員總數" },
+    { content: "已進行反貪腐相關溝通百分比" },
+  ],
+  rows: [
+    [
+      { content: "董事會" },
+      { content: "8" },
+      { content: "8" },
+      { content: "100%" },
+    ],
+  ],
+};
 const EthicalManagement: React.FC = () => {
   return (
     <div className="mb-48">
@@ -101,23 +205,24 @@ const EthicalManagement: React.FC = () => {
           <H2 text={"誠信經營執行情形"} />
           <YearTabContainer years={["2023", "2022"]} tabColor="#3B79E4">
             <div data-year="2023">
-              <P
-                text={
-                  "本公司每年不定期以教育訓練課程或電子郵件形式對董事、經理人及受僱人進行「誠信經營守則」及「防範內線交易管理」等相關法令宣導。2023年度已分別於02月14日（第一梯次）、02月21日（第二梯次），向全體員工進行「誠信經營暨公平交易、反貪腐」及「防範內線交易管理」之教育訓練宣導課程，課程內容包括建立誠信經營之企業文化及健全發展、內線交易形成原因、認定過程及交易實例說明，並將課程簡報發送予員工作為參考，2023年誠信經營相關課程實體受訓人數共160位，其餘人員皆以數位方式進行溝通宣導，累計總時數共計80小時。"
-                }
-              />
+            
+            <H3 text={"教育訓練與反貪腐溝通："} className="text-blue" />
+            <Table data={tableData} color="#3B79E4" title="誠信經營暨防範內線交易管理教育訓練" />
+            <Table data={tableData3} color="#3B79E4" title="反貪腐溝通情形（依治理單位分類）" />
+            <Table data={tableData2} color="#3B79E4" title="反貪腐溝通情形（依員工類別分類）" />
+
               <H3 text={"通知財務報告封閉期間："} className="text-blue" />
 
               <table className="min-w-full border-collapse mt-6">
                 <thead>
                   <tr className="bg-blue text-white content">
-                    <th className="border border-white px-4 py-2 rounded-tl-2xl  whitespace-pre">
+                    <th className="border border-white px-4 py-2  whitespace-pre">
                       日期
                     </th>
                     <th className="border border-white px-4 py-2  whitespace-pre">
                       項目
                     </th>
-                    <th className="border border-white px-4 py-2 rounded-tr-2xl  whitespace-pre ">
+                    <th className="border border-white px-4 py-2 whitespace-pre ">
                       連結
                     </th>
                   </tr>
@@ -201,108 +306,38 @@ const EthicalManagement: React.FC = () => {
                   </tr>
                 </tbody>
               </table>
-              <H3
-                text={
-                  "本年度履行誠信經營之執行情形已於2023年3月9日董事會進行報告說明，內容摘要如下："
-                }
-                className="text-blue"
-              />
-              <ul className="border-t-[2px] border-light_gray mt-6">
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    為持續履行企業誠信經營政策，本公司除訂有「公司治理實務守則」、「誠信經營守則」、「誠信經營作業程序及行為指南」、
-                    「企業社會責任實務守則」
-                    及「道德行為準則」等規範外，並會配合法令修改及實際需求及時修訂相關規範。
-                  </p>
-                </li>
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    本公司除加強內部教育訓練外，並持續監督相關部門於履行政策推行之運作，並於董事會進行報告。
-                  </p>
-                </li>
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    本公司透過年報、公開資訊觀測站、公司網站…等，及時揭露相關資訊，以提供股東及利害關係人了解公司運作狀況。
-                  </p>
-                </li>
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    本公司設立“稽核信箱”之檢舉管道，於2022年度並未接獲任何投訴檢舉事項。
-                  </p>
-                </li>
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    本公司網站業已設置「投資人專區」，並新增英文重大訊息資訊，提升資訊透明度。
-                  </p>
-                </li>
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    本公司為落實公司治理，已全面採行董事提名制度，且業已設置公司治理人員及主管。
-                  </p>
-                </li>
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    股東常會已採行電子投票方式，鼓勵股東參與公司治理及提高股東出席比率。
-                  </p>
-                </li>
-                <li className="border-b border-light_gray py-2 flex gap-12 items-center">
-                  <FontAwesomeIcon
-                    icon={faBadgeCheck}
-                    className="h-[40px] text-blue"
-                  />
-                  <p className="content">
-                    2022年共舉辦二場(07/20、07/21)企業誠信經營宣導課程，共計參與課程之員工人數達123人。
-                  </p>
-                </li>
+
+              <p className="mt-6 text-gray-500">本年度履行誠信經營之執行情形已於2023年3月9日董事會進行報告說明，內容摘要如下：</p>
+              <ul className="list-disc list-outside pl-8 mt-4 text-sm text-gray-500 space-y-2">
+                <li>  為持續履行企業誠信經營政策，本公司除訂有「公司治理實務守則」、「誠信經營守則」、「誠信經營作業程序及行為指南」、「企業社會責任實務守則」及「道德行為準則」等規範外，並會配合法令修改及實際需求及時修訂相關規範。</li>
+              <li>本公司除加強內部教育訓練外，並持續監督相關部門於履行政策推行之運作，並於董事會進行報告。</li>
+              <li>本公司透過年報、公開資訊觀測站、公司網站…等，及時揭露相關資訊，以提供股東及利害關係人了解公司運作狀況。</li>
+              <li>本公司設立“稽核信箱”之檢舉管道，於2022年度並未接獲任何投訴檢舉事項。</li>
+              <li>本公司網站業已設置「投資人專區」，並新增英文重大訊息資訊，提升資訊透明度。</li>
+              <li>本公司為落實公司治理，已全面採行董事提名制度，且業已設置公司治理人員及主管。</li>
+              <li>股東常會已採行電子投票方式，鼓勵股東參與公司治理及提高股東出席比率。</li>
+              <li>2022年共舉辦二場(07/20、07/21)企業誠信經營宣導課程，共計參與課程之員工人數達123人。</li>
               </ul>
+            
             </div>
             <div data-year="2022">
-              <P
-                text={
-                  "本年度已分別於2022年07月20日（第一梯次）、07月21日（第二梯次），合計123人時，向本公司全體員工進行「誠信經營守則」及「防範內線交易管理」之教育訓練宣導課程，課程內容包括建立誠信經營之企業文化及健全發展、內線交易形成原因、認定過程及交易實例說明，並將課程簡報以郵件發送予員工作為參考。"
-                }
-              />
+            <H3 text={"教育訓練與反貪腐溝通："} className="text-blue" />
+            <Table data={tableData4} color="#3B79E4" title="誠信經營暨防範內線交易管理教育訓練" />
+            <Table data={tableData3} color="#3B79E4" title="反貪腐溝通情形（依治理單位分類）" />
+            <Table data={tableData5} color="#3B79E4" title="反貪腐溝通情形（依員工類別分類）" />
 
               <H3 text={"通知財務報告封閉期間："} className="text-blue" />
 
               <table className="min-w-full border-collapse mt-6">
                 <thead>
                   <tr className="bg-blue text-white content">
-                    <th className="border border-white px-4 py-2 rounded-tl-2xl  whitespace-pre">
+                    <th className="border border-white px-4 py-2 whitespace-pre">
                       日期
                     </th>
                     <th className="border border-white px-4 py-2  whitespace-pre">
                       項目
                     </th>
-                    <th className="border border-white px-4 py-2 rounded-tr-2xl  whitespace-pre ">
+                    <th className="border border-white px-4 py-2  whitespace-pre ">
                       連結
                     </th>
                   </tr>
@@ -455,20 +490,19 @@ const EthicalManagement: React.FC = () => {
             }
           />
           <div className="flex justify-end mt-12">
-            <div
+            <a
               className="bg-orange text-white px-6 py-2 font-en rounded-full flex items-center group cursor-pointer hover-shadow"
-              onClick={() =>
-                (document.getElementById("my_modal_2") as HTMLDialogElement).showModal()
-              }
+              href="http://www.supreme.com.tw/WP/Report.aspx"
+              target="_blank"
             >
               檢舉信箱
               <FontAwesomeIcon
                 icon={faPaperPlane}
                 className="text-xl ml-2 group-hover:ml-4 duration-300"
               />
-            </div>
+            </a>
           </div>
-          <dialog id="my_modal_2" className="modal">
+          {/* <dialog id="my_modal_2" className="modal">
             <div className="modal-box w-full max-w-6xl">
              
     <iframe
@@ -480,7 +514,7 @@ const EthicalManagement: React.FC = () => {
             <form method="dialog" className="modal-backdrop">
               <button>close</button>
             </form>
-          </dialog>
+          </dialog> */}
           <Image src={WhistleblowerImage} alt="WhistleBlower Banner Image" />
         </Section>
       </Container>

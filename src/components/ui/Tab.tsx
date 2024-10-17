@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { faChevronRight } from "@fortawesome/pro-solid-svg-icons";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface TabProps {
@@ -16,7 +17,24 @@ export const YearTabContainer: React.FC<TabProps> = ({
   children,
   tabColor = "#FF8D50",
 }) => {
-  const [selectedGoal, setSelectedGoal] = useState(years[0]);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+  const searchParams = new URLSearchParams(location.search);
+  const initialYear = searchParams.get("category") || years[0];
+  const [selectedGoal, setSelectedGoal] = useState(initialYear);
+
+  const handleTabClick = (year: string) => {
+    setSelectedGoal(year);
+    navigate(`?category=${year}`, { replace: true }); 
+  };
+
+  useEffect(() => {
+    if (searchParams.get("category") && searchParams.get("category") !== selectedGoal) {
+      setSelectedGoal(searchParams.get("category") as string);
+    }
+  }, [location.search, selectedGoal]);
+  
 
   return (
     <div className="mt-[50px]">
@@ -24,7 +42,7 @@ export const YearTabContainer: React.FC<TabProps> = ({
         {years.map((year) => (
           <div
             key={year}
-            onClick={() => setSelectedGoal(year)}
+            onClick={() => handleTabClick(year)}
             className={`relative text-center px-6 font-semibold text-[18px] tracking-wide py-2 cursor-pointer group duration-300`}
             style={{
               color: selectedGoal === year ? tabColor : "#D9D9D9",

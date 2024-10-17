@@ -281,7 +281,7 @@ const WasteManagement: React.FC = () => {
         </Section>
 
         <Section>
-          <H2 text={"廢棄物減量專案"} />
+          <H2 text={"減量專案"} />
                 <Table data={tableData2} color="#3BC376" />
         </Section>
       </Container>

@@ -8,13 +8,15 @@ import focusCardImage02 from '../../assets/img/background/focusCard_02.jpg'
 import focusCardImage03 from '../../assets/img/background/focusCard_03.jpg'
 import focusCardImage04 from '../../assets/img/background/focusCard_04.jpg'
 import { faArrowRight } from "@fortawesome/pro-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 interface ListItem {
   id: number;
   title: string;
   content: string;
   image: string;
-  icon?: IconDefinition; // 新增 icon 屬性
+  icon?: IconDefinition;
+  url: string;
 }
 
 const items: ListItem[] = [
@@ -24,7 +26,8 @@ const items: ListItem[] = [
     content:
       "尊重勞工權益並遵守勞動法規，提供公平的薪資、福利、職業安全和健康環境等。同時確保每一位員工均有平等的工作機會。",
     image: focusCardImage01,
-    icon: faFaceSmileHalo,  // 設定 icon
+    icon: faFaceSmileHalo,
+    url: "/enterprise"
   },
   {
     id: 2,
@@ -33,22 +36,24 @@ const items: ListItem[] = [
       "企業應平衡經濟、環境與社會三大面向，推動永續發展戰略。通過創新和資源管理，減少碳排放與能源消耗，優化供應鏈，以達到長期的經濟利益和社會責任。在保護環境的同時，提升企業的競爭力與價值，為未來創造更多的機會與效益。",
     image: focusCardImage02,
     icon: faBuilding, 
+    url: "/sustainability"
   },
   {
     id: 3,
     title: "永續共生",
     content: "企業與環境及社會和諧共存，建立共生關係。這意味著企業不僅要追求自身的成長與成功，還要積極參與生態保護，推動生物多樣性和環境友善的經營方式。與社區、供應商和合作夥伴共同發展，創造互惠互利的關係，實現全方位的可持續性。",
     image: focusCardImage03,
-    icon: faLeaf,  // 設定另一個 icon
+    icon: faLeaf, 
+    url: "/symbiosis"
   },
   {
     id: 4,
     title: "社會共榮",
     content: "企業在追求經濟發展的同時，應積極回饋社會，推動公平、包容的社會體系。透過公益活動、志工服務及資源共享，促進社會的共同繁榮，縮小貧富差距，支持弱勢群體，並提升整體社會的幸福感。企業與社會相互支持，共同邁向繁榮的未來。",
     image: focusCardImage04,
-    icon: faPeopleCarry,  // 設定另一個 icon
+    icon: faPeopleCarry,
+    url: "/society"
   },
-  // 其他項目...
 ];
 
 const TopicHighlightsSection: React.FC = () => {
@@ -127,6 +132,7 @@ const TopicHighlightsSection: React.FC = () => {
                 >
                   {item.content}
                   <div className="mt-8 flex justify-end">
+                    <Link to={item.url}>
                   <div className="bg-orange text-white px-6 py-2  rounded-full flex items-center group cursor-pointer hover-shadow">
                   了解更多
                   <FontAwesomeIcon
@@ -134,6 +140,7 @@ const TopicHighlightsSection: React.FC = () => {
                     className="text-xl ml-2 group-hover:ml-4 duration-300"
                   />
                 </div>
+                </Link>
                   </div>
                 </motion.p>
               )}

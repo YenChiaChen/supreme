@@ -84,8 +84,6 @@ const ProductCustomerService: React.FC = () => {
     <div className="mb-48">
       <HeroSection
         title="產品與客戶服務"
-        description={`本公司於2011年完成設置薪資報酬委員會，並由董事會訂定「薪資報酬委員會組織規程」，
-藉以強化公司治理，健全公司董事及經理人薪資報酬制度。`}
         backgroundImage={BgImage}
         center={true}
       />

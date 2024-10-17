@@ -2,7 +2,7 @@ import HeroSection from "../../components/ui/HeroSection";
 import BgImage from "../../assets/img/subPage/永續經營/薪酬委員會.jpg";
 import Breadcrumbs from "../../components/nav/BreadCrumbs";
 import navItems from "../../data/nav.json";
-import { H2, List, P } from "../../components/ui/Text";
+import { H2, H3, List, P } from "../../components/ui/Text";
 import { Table } from "../../components/ui";
 import { Container, Section } from "../../components/ui/Container";
 import { YearTabContainer } from "../../components/ui/Tab";
@@ -58,6 +58,9 @@ const AuditCommittee: React.FC = () => {
             <List
               items={[
                 {
+                  text: "本公司獨立董事",
+                },
+                {
                   text: "博錸生技(股)公司獨立董事",
                 },
                 {
@@ -95,7 +98,10 @@ const AuditCommittee: React.FC = () => {
             <List
               items={[
                 {
-                  text: "安和智通（股）董事長",
+                  text: "本公司獨立董事",
+                },
+                {
+                  text: "安禾智通（股）公司董事長",
                 },
                 {
                   text: "安璽整合行銷(股)公司董事長",
@@ -144,6 +150,9 @@ const AuditCommittee: React.FC = () => {
             <List
               items={[
                 {
+                  text: "本公司獨立董事",
+                },
+                {
                   text: "香港華馨達國際(股)公司副董事長",
                 },
               ]}
@@ -160,6 +169,9 @@ const AuditCommittee: React.FC = () => {
             <List
               items={[
                 {
+                  text: "威強電(股)公司副總經理",
+                },
+                {
                   text: "清華大學數學系",
                 },
               ]}
@@ -170,15 +182,21 @@ const AuditCommittee: React.FC = () => {
         {
           content: (
             <List
-              items={[
-                {
-                  text: "威強電(股)公司副總經理",
-                },
-                {
-                  text: "泓格科技(股)公司副總經理",
-                },
-              ]}
-              listType="decimal"
+            items={[
+              {
+                text: "本公司獨立董事",
+              },
+              {
+                text: "上海金泓格國際貿易(有)公司監察人",
+              },
+              {
+                text: "泓格通科技(武漢)(有)公司監察人",
+              },
+              {
+                text: "泓格科技(股)公司副總經理",
+              },
+            ]}
+            listType="decimal"
             />
           ),
         },
@@ -419,7 +437,6 @@ const AuditCommittee: React.FC = () => {
     <div className="mb-48">
       <HeroSection
         title="審計委員會"
-        description={`本公司於2019年完成設置審計委員會，並由董事會訂定「審計委員會組織規程」，藉以強化公司治理，健全公司管理制度。`}
         backgroundImage={BgImage}
         center={true}
       />
@@ -434,22 +451,20 @@ const AuditCommittee: React.FC = () => {
         />
         <P
           text={
-            "依照中華民國證券交易法及相關行政命令規定，審計委員會應由全體獨立董事組成，其人數不得少於三人。本公司審計委員會的設置完全符合上開法規的要求。"
-          }
-        />
-        <P
-          text={
             "審計委員會為履行其職責，依其組織章程規定有權進行任何適當的審核及調查，並且與公司內部稽核人員、簽證會計師及所有員工間皆有直接聯繫之管道。審計委員會也有權聘請律師、會計師或其他顧問，協助審計委員會執行職務。審計委員會至少每季召開一次常會。"
           }
         />
 
         <Section>
-          <H2 text={"第二屆審計委員會成員"} />
+          <H2 text={"審計委員會成員"} />
           <Table data={committeeMembersData} color="#3B79E4" />
         </Section>
 
+
         <Section>
-          <H2 text={"審議事項列表"} />
+          <H2 text={"審計委員會審議情形"} />
+
+          <H3 text={"審議事項列表"} className='text-blue' />
           <div className="grid grid-cols-2 gap-6 mt-md text-blue">
             {auditItems.map((row, rowIndex) => (
               <React.Fragment key={rowIndex}>
@@ -465,10 +480,7 @@ const AuditCommittee: React.FC = () => {
               </React.Fragment>
             ))}
           </div>
-        </Section>
 
-        <Section>
-          <H2 text={"各年度審計委員會審議情形"} />
           <YearTabContainer
             years={["2024", "2023", "2022", "2021", "2020"]}
             tabColor="#3B79E4"
@@ -723,7 +735,7 @@ const AuditCommittee: React.FC = () => {
           <H2 text={"審計委員會運作情形"} />
           <P
             text={
-              "本屆委員任期：2022年06月17日至2025年06月16日，截至2024年03月11日，出席情形如下："
+              "一、本公司之審計委員會於2019年06月28日成立，委員計4人。\n二、本屆委員任期：2022年06月17日至2025年06月16日，截至2024年03月11日，出席情形如下："
             }
           />
           <Table data={committeeOperationData} color="#3B79E4" />
@@ -736,15 +748,19 @@ const AuditCommittee: React.FC = () => {
             tabColor="#3B79E4"
           >
             <div data-year="2023">
+              <P text="於 2024 年 01 月 31 日經薪酬委員會審核通過，同日提報董事會。" />
               <Table data={committeePerformanceData2023} color="#3B79E4" />
             </div>
             <div data-year="2022">
+              <P text="於 2023 年 03 月 09 日經薪酬委員會審核通過，同日提報董事會。" />
               <Table data={committeePerformanceData2022} color="#3B79E4" />
             </div>
             <div data-year="2021">
+              <P text="於 2022 年 03 月 22 日經薪酬委員會審核通過，同日提報董事會。" />
               <Table data={committeePerformanceData2021} color="#3B79E4" />
             </div>
             <div data-year="2020">
+              <P text="於 2021 年 01 月 08 日經薪酬委員會審核通過，同日提報董事會。" />
               <Table data={committeePerformanceData2020} color="#3B79E4" />
             </div>
           </YearTabContainer>

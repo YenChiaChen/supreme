@@ -2,24 +2,26 @@ import HeroSection from "../../components/ui/HeroSection";
 import BgImage from "../../assets/img/subPage/永續經營/重大主題.jpg";
 import Breadcrumbs from "../../components/nav/BreadCrumbs";
 import navItems from "../../data/nav.json";
+import React, { useState } from "react";
 import { H2, P } from "../../components/ui/Text";
 import { Container, Section } from "../../components/ui/Container";
 import ESGBarChart from "../../components/chart/ESGBarChart";
-import {
-  Table,
-  YearTabContainer,
-} from "../../components/ui";
+import { Table, YearTabContainer } from "../../components/ui";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import {
-  faArrowUpRightFromSquare,
-} from "@fortawesome/pro-solid-svg-icons";
-import KeyTopicImage2023 from '../../assets/img/subPage/永續經營/key-topic-2023.png'
-import KeyTopicImage2022 from '../../assets/img/subPage/永續經營/key-topic-2022.png'
+  faComment,
+  faChevronRight,
+  faRecycle,
+  faBalanceScale,
+  faExclamationTriangle,
+  faEye,
+} from "@fortawesome/pro-light-svg-icons";
+import { Link } from "react-router-dom";
+import { faArrowUpRightFromSquare } from "@fortawesome/pro-solid-svg-icons";
+import KeyTopicImage2023 from "../../assets/img/subPage/永續經營/key-topic-2023.png";
+import KeyTopicImage2022 from "../../assets/img/subPage/永續經營/key-topic-2022.png";
 
 const KeyTopic: React.FC = () => {
-
-
   const tableData = {
     headers: [{ content: "順序" }, { content: "執行步驟說明" }],
     rows: [
@@ -57,7 +59,6 @@ const KeyTopic: React.FC = () => {
     ],
   };
 
-
   const topic2023 = [
     { topic: "經營績效", positiveScore: 17.76, negativeScore: 12.41 },
     { topic: "誠信經營", positiveScore: 16.49, negativeScore: 10.78 },
@@ -81,14 +82,38 @@ const KeyTopic: React.FC = () => {
     { topic: "公司治理", positiveScore: 10.56, negativeScore: 7.34 },
   ];
 
+  const items = [
+    {
+      icon: faComment,
+      text: "鑑別溝通對象",
+      info: "依循AA1000SES利害關係人議合原則 （ AA1000 Stakeholder EngagementStandard）的五個面向：影響力、關注度、責任、依賴度和多元觀點，向至上電子全體同仁(含管理層) 發送利害關係人鑑別問卷，統計結果經公司核定後，依重要性歸類為6類利害關係人群體：客戶、員工、股東/投資人、供應商與承攬商、政府與主管機關、非營利組織/社區。",
+    },
+    {
+      icon: faRecycle,
+      text: "蒐集永續議題",
+      info: "參考GRI、SASB、TCFD等國際永續準則、聯合國永續發展目標（SDGs）及國內外同業永續報告書與產業關注之主題，由永續發展委員會-執行小組進行各項議題之討論與鑑別，並諮詢外部顧問，彙整出至上電子2023年永續議題清單，共23項永續議題。",
+    },
+    {
+      icon: faBalanceScale,
+      text: "評估衝擊",
+      info: "由內部管理階層對公司的利害關係人、內部單位主管及高層進行《永續議題衝擊評估問卷調查》，針對各項永續議題對經濟、環境和社會造成之實際及潛在的正負面衝擊之發生機率與規模進行評估。負面衝擊：依嚴重性、發生可能性進行評估，並考量議題的負面人權衝擊。正面衝擊：依影響規模與範疇大小、發生可能性進行評估。",
+    },
+    {
+      icon: faExclamationTriangle,
+      text: "衝擊顯著性排序",
+      info: "彙整問卷調查結果，正面與負面衝擊得分加總，依分數高低將各項議題按照衝擊顯著性排序。內部管理階層討論排序結果，進行等權分析，考量產業重大議題、國際趨勢、並參考外部顧問意見，設定重大主題門檻值，初步擬定「經營績效」、「資訊安全」、「誠信經營」、「產品與客戶服務」、「風險管理」、「氣候變遷對策及溫室氣體管理/能源管理」、「公司治理」、「人才培育與留任」、「勞雇/勞資關係」，共9項永續議題為2023年度重大主題，並呈報最高治理單位-董事會。",
+    },
+    {
+      icon: faEye,
+      text: "確認及揭露重大主題",
+      info: "董事會再次檢視、檢驗所鑑別之重大主題及門檻標準之合適性，確認應優先報導之重大主題未有疏漏、不足處，以確保其完整、包容、宏觀性及與本公司永續發展策略的一致程度。董事會核准確立上述9項重大主題，內部管理階層進一步討論確認該等重大主題對於本公司內外應考量之邊界範圍，確保重要的永續資訊已於報告書中完整揭露。內部管理階層依據重大主題報導要求於本報告書說明相關因應策略、管理行動、指標及目標等內容，確保報告書允當且忠實表達公司ESG落實情形。",
+    },
+  ];
+  const [activeInfo, setActiveInfo] = useState<string>(items[0].info);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   return (
     <div className="mb-48">
-      <HeroSection
-        title="重大主題"
-        description={`本公司依規劃-執行-查核-行動管理模式運作，鑑別利害關係人及蒐集檢視利害關係人所關切議題。為確保各項重大性議題之落實及目標達成情形，本公司定期辦理經濟、社會及環境面向重大議題討論、各單位目標達成情形及未來方向擬定，並彙整相關成果資料、與利害關係人議合結果及 ESG 討論建議事項給權責主管審核。`}
-        backgroundImage={BgImage}
-        center={true}
-      />
+      <HeroSection title="重大主題" backgroundImage={BgImage} center={true} />
       <Container className="mt-12">
         <Section>
           <Breadcrumbs items={navItems} />
@@ -96,13 +121,34 @@ const KeyTopic: React.FC = () => {
 
         <Section>
           <H2 text={"重大主題鑑別"} />
-          <P
+          {/* <P
             text={
               "至上透過與利害關係人的溝通，蒐集其關注之永續議題，並於每年根據最新版GRI準則執行重大議題辨識作業程序。將永續議題區分為環境(E)、社會(S)、治理(G)及產品(P)四大面向，由永續發展委員會相關成員針對各項議題對於公司營運所產生之正面與負面衝擊程度以及發生可能性進行評估。"
             }
-          />
+          /> */}
 
-          <Table data={tableData} color="#3B79E4" />
+          <div className="flex flex-col gap-6 mt-6">
+            {items.map((item, index, arr) => (
+              <React.Fragment key={index}>
+                <div className="flex items-center">
+                  <div className="w-[100px] min-w-[100px] h-[100px] rounded-full bg-orange flex flex-col gap-2 items-center justify-center text-white">
+                    <FontAwesomeIcon icon={item.icon} className="text-4xl" />
+                    <p className="font-light text-sm tracking-wide">Step {index + 1}</p>
+                  </div>
+                  <div className="w-[50px] min-w-[50px] h-[1px] bg-orange"></div>
+                  <div className="shadow-xl rounded-[2rem] p-8 relative overflow-hidden">
+                    <div className="absolute right-0 h-full top-0 w-[8px] bg-orange"></div>
+                    <p className="text-xl tracking-wide mb-4">{item.text}</p>
+                    <p className="text-sm leading-8 tracking-wide">
+                     {item.info}
+                    </p>
+                  </div>
+                </div>
+              </React.Fragment>
+            ))}
+          </div>
+
+     
         </Section>
 
         <Section>
@@ -324,10 +370,10 @@ const KeyTopic: React.FC = () => {
           <H2 text={"重大主題價值鏈邊界"} />
           <YearTabContainer years={["2023", "2022"]} tabColor="#3B79E4">
             <div data-year="2023" className="pt-8">
-             <img src={KeyTopicImage2023} className="w-full" />
+              <img src={KeyTopicImage2023} className="w-full" />
             </div>
             <div data-year="2022" className="pt-8">
-            <img src={KeyTopicImage2022} className="w-full" />
+              <img src={KeyTopicImage2022} className="w-full" />
             </div>
           </YearTabContainer>
         </Section>

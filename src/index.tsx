@@ -9,6 +9,7 @@ import App from './App';
 import { useFontFamily } from './components/utils/useFontFamily';
 
 
+
 const RootComponent = () => {
   useFontFamily();
 

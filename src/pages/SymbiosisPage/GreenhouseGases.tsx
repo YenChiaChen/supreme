@@ -2,10 +2,13 @@ import HeroSection from "../../components/ui/HeroSection";
 import BgImage from "../../assets/img/subPage/永續共生/溫室氣體&行動方案.jpg";
 import Breadcrumbs from "../../components/nav/BreadCrumbs";
 import navItems from "../../data/nav.json";
-import { H2, P } from "../../components/ui/Text";
+import { useState } from "react";
+import { H2, H3, P } from "../../components/ui/Text";
 import { Container, Section } from "../../components/ui/Container";
 import { Table, YearTabContainer } from "../../components/ui";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {ClimateBarChart} from "../../components/chart/BarChart";
+import CityImage from "../../assets/img/testing/city.png";
 import {
   faLightbulbOn,
   faBus,
@@ -13,7 +16,11 @@ import {
   faLeaf,
   faShippingFast,
   faTruck,
+  faChartSimple,
+  faTable,
+  faPlug
 } from "@fortawesome/pro-light-svg-icons";
+import ScrollEffectContainer from "../../components/utils/ScrollEffectContainer";
 const GreenhouseGases: React.FC = () => {
   const tableData = {
     headers: [
@@ -90,6 +97,12 @@ const GreenhouseGases: React.FC = () => {
     ],
   };
 
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+
   return (
     <div className="mb-48">
       <HeroSection
@@ -102,25 +115,84 @@ const GreenhouseGases: React.FC = () => {
         <Breadcrumbs items={navItems} />
 
         <Section>
-          <H2 text={"範疇一及範疇二溫室氣體排放統計"} />
-          <Table data={tableData} color="#3BC376" />
+          <H2 text={"溫室氣體排放統計"} />
+
+          <div className="flex justify-end">
+            <label className="swap swap-rotate relative hover:scale-105 duration-300">
+              <div className="absolute w-[40px] h-[40px] left-[5px] top-[5px] bg-gray-100 animate-ping rounded-full z-0"></div>
+              <input type="checkbox" onChange={handleCheckboxChange} />
+              <div className="w-[50px] h-[50px] bg-gray-100 rounded-full flex items-center justify-center swap-on z-10 hover:bg-black ">
+                <FontAwesomeIcon
+                  icon={faChartSimple}
+                  className="text-2xl text-gray-500"
+                />
+              </div>
+              <div className="w-[50px] h-[50px] bg-gray-100 rounded-full flex items-center justify-center swap-off z-10">
+                <FontAwesomeIcon
+                  icon={faTable}
+                  className="text-2xl text-gray-500"
+                />
+              </div>
+            </label>
+          </div>
+          <div
+            className={`transition-all duration-500 ease-in-out ${
+              isChecked ? "opacity-100 block" : "opacity-0 hidden duration-0"
+            }`}
+          >
+            <Table
+              data={tableData}
+              color="#3BC376"
+              title="範疇一及範疇二溫室氣體排放統計"
+            />
+
+            <Table
+              data={tableData2}
+              color="#3BC376"
+              title="範疇三溫室氣體排放統計（自願揭露）"
+              notes={[
+                {
+                  text: "溫室氣體盤查邊界包括：台北總部及新莊、龍潭、台南3處辦事處。",
+                },
+                { text: "計算之溫室氣體種類包含：二氧化碳。" },
+                {
+                  text: "溫室氣體排放係數引用，主要依據行政院環保署「產品碳足跡資訊網碳足跡資料庫」之排放係數；GWP值採用IPCC 第六次評估報告作為計算之依據。",
+                },
+                { text: "2021年未針對上游運輸和配送產生的排放進行盤查。" },
+                {
+                  text: "至上電子自2022年依循溫室氣體盤查議定書 ( GHG Protocol ) 指引進行溫室氣體盤查作業，故以2022年為基準年。",
+                },
+              ]}
+            />
+          </div>
+
+          <div
+            className={`transition-all duration-500 ease-in-out ${
+              isChecked ? "opacity-0 hidden duration-0" : "opacity-100 block"
+            }`}
+          >
+            <div className="h-[400px] mt-8">
+              <ClimateBarChart />
+            </div>
+          </div>
+
           <YearTabContainer years={["2023", "2022"]} tabColor="#3BC376">
             <div data-year="2023">
               <P
                 text={
-                  "2023 年度依循溫室氣體盤查議定書(GHG Protocol)指引進行盤查作業，溫室氣體總排放量(範疇一＋範疇二)為 299.712 公噸 CO2e，主要來自於範疇二之電力排放，占比為 93.51%，其餘溫室氣體排放量來源為範疇一之公務車 燃料使用、冷媒、滅火器及化糞池，占比為 6.49%。與 2022 年相比呈現微幅增加情形，主要係因營收成長人員相對增加， 為因應實質需求，資訊部門擴增伺服器等硬體設備，以致用電量增加。"
+                  "2023 年度依循溫室氣體盤查議定書(GHG Protocol)指引進行盤查作業，溫室氣體總排放量(範疇一＋範疇二)為 299.712 公噸 CO2，主要來自於範疇二之電力排放，占比為 93.51%，其餘溫室氣體排放量來源為範疇一之公務車 燃料使用、冷媒、滅火器及化糞池，占比為 6.49%。與 2022 年相比呈現微幅增加情形，主要係因營收成長人員相對增加，為因應實質需求，資訊部門擴增伺服器等硬體設備，以致用電量增加。"
                 }
               />
               <P
                 text={
-                  "為了瞭解企業營運過程中，價值鏈上下游活動的碳排放，針對範疇三進行自主性盤查，期望透過完整的溫室氣體盤查 作業，鑑別出最顯著的排放源，為溫室氣體減量與氣候轉型策略提供基礎數據。2023 年範疇三溫室氣體總量為 1，289.207 公噸 CO2e，排放源項目包含:與燃料和能源相關活動的排放(未涵蓋在範疇一或二)、運輸產生之間接溫室氣體排放(含 「貨物上/ 下游運輸與分配」、「商務旅行」)，其中以下游運輸和配送產生的排放為最大量，占範疇三總排放量之 69.51%。"
+                  "為了瞭解企業營運過程中，價值鏈上下游活動的碳排放，針對範疇三進行自主性盤查，期望透過完整的溫室氣體盤查 作業，鑑別出最顯著的排放源，為溫室氣體減量與氣候轉型策略提供基礎數據。2023 年範疇三溫室氣體總量為 1，289.207 公噸 CO2，排放源項目包含:與燃料和能源相關活動的排放(未涵蓋在範疇一或二)、運輸產生之間接溫室氣體排放(含「貨物上/ 下游運輸與分配」、「商務旅行」)，其中以下游運輸和配送產生的排放為最大量，占範疇三總排放量之 69.51%。"
                 }
               />
             </div>
             <div data-year="2022">
               <P
                 text={
-                  "2022 年度依循溫室氣體盤查議定書 ( GHG Protocol ) 指引進行盤查作業，溫室氣體總排放量 ( 範疇一 + 範疇二 ) 為 256.829 公噸 CO2e，主要來自於範疇二之電力排放，占比為 94.29%，其餘溫室 氣體排放量來源為範疇一之公務車燃料使用、冷媒、滅火器及化糞池，占比為 5.71%。"
+                  "2022 年度依循溫室氣體盤查議定書 ( GHG Protocol ) 指引進行盤查作業，溫室氣體總排放量 ( 範疇一 + 範疇二 ) 為 256.829 公噸 CO2，主要來自於範疇二之電力排放，占比為 94.29%，其餘溫室 氣體排放量來源為範疇一之公務車燃料使用、冷媒、滅火器及化糞池，占比為 5.71%。"
                 }
               />
               <P
@@ -130,57 +202,44 @@ const GreenhouseGases: React.FC = () => {
               />
               <P
                 text={
-                  "2022 年範疇三溫室氣體總量為 1,723.624 公噸 CO2e，排放源項目包含：與燃料和能源相關活動的排放 ( 未涵蓋在範疇一或二 )、運輸產生之間接溫室氣體排放 ( 含「貨物上 / 下游運輸與分配」、「商務旅行」)，其中以下游運輸和配送產生的排放為最 大量，占範疇三總排放量之 76.41 %。"
+                  "2022 年範疇三溫室氣體總量為 1,723.624 公噸 CO2，排放源項目包含：與燃料和能源相關活動的排放 ( 未涵蓋在範疇一或二 )、運輸產生之間接溫室氣體排放 ( 含「貨物上 / 下游運輸與分配」、「商務旅行」)，其中以下游運輸和配送產生的排放為最 大量，占範疇三總排放量之 76.41 %。"
                 }
               />
             </div>
           </YearTabContainer>
         </Section>
 
-        <Section>
-          <H2 text={"範疇一及範疇二之減量行動方案"} />
-          <div className="flex justify-center gap-8 mt-8">
+        <Section className="relative z-0">
+          <H2 text={"減量行動方案"} />
+          <H3 text={"範疇一"} />
+          <div className="flex justify-center gap-8 mt-8 z-10 relative">
             <div className="bg-green-light p-12 rounded-xl flex-1 basis-1/2">
-              <div className="flex flex-col text-[18px] gap-6  text-center">
+              <div className="flex flex-col text-[18px] gap-6 text-center">
+                <FontAwesomeIcon
+                  icon={faPlug}
+                  className="h-[80px] text-green"
+                />
+                <p>採用節能設備</p>
+              </div>
+            </div>
+            <div className="bg-green-light p-12 rounded-xl flex-1 basis-1/2">
+              <div className="flex flex-col text-[18px] gap-6 text-center">
                 <FontAwesomeIcon
                   icon={faLightbulbOn}
-                  className="h-[80px] text-green  text-green "
+                  className="h-[80px] text-green"
                 />
                 <p>督促大樓公共區域採用節能設備</p>
               </div>
             </div>
             <div className="bg-green-light p-12 rounded-xl flex-1 basis-1/2">
-              <div className="flex flex-col text-[18px] gap-6  text-center">
+              <div className="flex flex-col text-[18px] gap-6 text-center">
                 <FontAwesomeIcon icon={faBus} className="h-[80px] text-green" />
                 <p>鼓勵搭乘大眾交通運輸或共乘</p>
               </div>
             </div>
           </div>
-        </Section>
 
-        <Section>
-          <H2 text={"範疇三溫室氣體排放統計（自願揭露）"} />
-          <Table
-            data={tableData2}
-            color="#3BC376"
-            notes={[
-              {
-                text: "溫室氣體盤查邊界包括：台北總部及新莊、龍潭、台南3處辦事處。",
-              },
-              { text: "2.計算之溫室氣體種類包含：二氧化碳。" },
-              {
-                text: "3.溫室氣體排放係數引用，主要依據行政院環保署「產品碳足跡資訊網碳足跡資料庫」之排放係數；GWP值採用IPCC 第六次評估報告作為計算之依據。",
-              },
-              { text: "2021年未針對上游運輸和配送產生的排放進行盤查。" },
-              {
-                text: "至上電子自2022年依循溫室氣體盤查議定書 ( GHG Protocol ) 指引進行溫室氣體盤查作業，故以2022年為基準年。",
-              },
-            ]}
-          />
-        </Section>
-
-        <Section>
-          <H2 text={"範疇三減量行動方案"} />
+          <H3 text={"範疇二"} />
           <div className="flex justify-center gap-8">
             <div className="bg-green-light p-12 rounded-xl flex-1 basis-1/4">
               <div className="flex flex-col text-[18px]  gap-6 text-center">

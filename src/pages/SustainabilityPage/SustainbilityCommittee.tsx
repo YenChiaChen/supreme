@@ -19,7 +19,7 @@ const SustainbilityCommittee: React.FC = () => {
   const anmiatedListItem = [
     {
       id: 1,
-      content: "擬定永續發展相關制度並配合有關規範修訂之",
+      content: "擬定永續發展相關制度",
       icon: faClipboardCheck,
       iconColor: "#3B79E4",
       iconSize: "30px",
@@ -168,7 +168,7 @@ const SustainbilityCommittee: React.FC = () => {
             <List
               items={[
                 {
-                  text: "安和智通（股）董事長",
+                  text: "安禾智通（股）公司董事長",
                 },
                 {
                   text: "安璽整合行銷(股)公司董事長",
@@ -404,7 +404,6 @@ const SustainbilityCommittee: React.FC = () => {
     <div className="mb-48">
       <HeroSection
         title="永續發展委員會"
-        description={`本公司於2022 年11 月8 日經董事會決議通過成立「董事會功能性委員會- 永續發展委員會」。於2023年11月8日經決議通過修改【永續發展委員會組織規程】。`}
         backgroundImage={BgImage}
         center={true}
       />
@@ -414,7 +413,7 @@ const SustainbilityCommittee: React.FC = () => {
         <H2 text={"永續發展委員會"} />
         <P
           text={
-            "本公司之永續發展委員會目前由楊耀松獨立董事擔任召集人，成員包含３位獨立董事、財務長、資深業務副總以及公司治理主管，共計 6 位委員。"
+            "本公司之永續發展委員會委由楊耀松獨立董事擔任召集人，成員包含３位獨立董事、財務長、資深業務副總以及公司治理主管，共計 6 位委員。"
           }
         />
         <P
@@ -433,28 +432,7 @@ const SustainbilityCommittee: React.FC = () => {
             src={CommitteeStrucutreImage}
             alt="Sustainbility Committee Structure"
           />
-          <P
-            text={
-              "永續發展委員會一年至少二次向董事會報告執行成果及未來工作計劃。永續發展小組之 2021 年度工作成果於 2022 年向董事會進行報告，共召開一次會議，討論事項包含 2021 年度永續發展小組組織架構、執掌、永續報告書以及溫室氣體盤查等事宜。"
-            }
-          />
-          <P
-            text={
-              "2022 年度永續發展委員會工作成果報告已於 2023 年向董事會呈報，報告事項包含 2022 年度溫室氣體盤查、查證及永續報告書確信合作事項、2022 年度永續報告書重大主題辨識流程及結果等，確保董事會充分了解並監督公司永續相關計劃落實情形。"
-            }
-          />
-          <div className="mt-12">
-            <Desc
-              text={
-                "註1：12021 年度推動永續發展相關執行單位為至上之永續發展小組。"
-              }
-            />
-            <Desc
-              text={
-                "註2：2023 年法務部更名為「風險管理部」並新增「公司治理小組暨股務部」。"
-              }
-            />
-          </div>
+        
         </Section>
 
         <Section>
@@ -464,6 +442,7 @@ const SustainbilityCommittee: React.FC = () => {
         
         <Section>
           <H2 text={"永續發展委員會運作情形"} />
+          <P text={"一、本公司之永續發展委員會於2022年11月08日成立，委員計6人。\n二、本屆委員任期：2022年11月08日至2025年06月16日，截至2024年08月07日，出席情形如下："} />
           <Table data={committeeOperationData} color="#3B79E4" />
         </Section>
         

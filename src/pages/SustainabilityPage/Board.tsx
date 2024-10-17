@@ -123,7 +123,7 @@ const Board: React.FC = () => {
         { content: "0" },
       ],
       [{ content: "獨立董事 楊耀松" }, { content: "0" }],
-      [{ content: "獨立董事 王淮" }, { content: "1" }],
+      [{ content: "獨立董事 王淮" }, { content: "2" }],
       [{ content: "獨立董事 黃國誠" }, { content: "0" }],
     ],
   };
@@ -148,30 +148,30 @@ const Board: React.FC = () => {
             "董事會成員同時也應普遍具備執行職務所必須之知識、技能及素養，為達到公司治理之理想目標，其應具備之能力如下："
           }
         />
-        <div className="flex gap-6 mt-12 text-blue flex-wrap justify-center">
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+        <div className="grid grid-cols-5 gap-6 mt-12 text-blue justify-between">
+          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1] font-semibold tracking-wide w-full text-blue">
             <FontAwesomeIcon icon={faIndustry} className="h-[50px] text-blue" />
             產業知識
           </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
             <FontAwesomeIcon
               icon={faChessKing}
               className="h-[50px] text-blue"
             />
             領導能力
           </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
             <FontAwesomeIcon
               icon={faBriefcase}
               className="h-[50px] text-blue"
             />
             經營管理能力
           </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
             <FontAwesomeIcon icon={faGavel} className="h-[50px] text-blue" />
             法律知識
           </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-[200px] gap-6  font-semibold tracking-wide aspect-square text-blue">
+          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
             <FontAwesomeIcon
               icon={faCheckCircle}
               className="h-[50px] text-blue"
@@ -199,17 +199,18 @@ const Board: React.FC = () => {
                 組織透明 落實多元
               </p>
               <p className="bg-blue h-[1px] w-full my-6"></p>
-              <List
-                items={[
-                  {
-                    text: "至上董事會成員均具有產業專業背景及經營實務經驗，且分別擅長科技、財務會計、國際市場觀和法律等領域。",
-                  },
-                  {
-                    text: "至上相當注重多元平等、廣納不同性別、年齡層、族群。",
-                  },
-                ]}
-                listType="disc"
-              />
+              <P text="至上董事會成員均具有產業專業背景及經營實務經驗，且分別擅長科技、財務會計、國際市場觀和法律等領域。應具備能力如下：" />
+              <div className="flex flex-wrap gap-x-4 gap-y-2 mt-6">
+                <div className="px-4 py-2 bg-yellow-400 text-white shadow rounded tracking-wide">營運判斷能力</div>
+                <div className="px-4 py-2 bg-green-400 text-white shadow rounded tracking-wide">危機處理能力</div>
+                <div className="px-4 py-2 bg-pink-400 text-white shadow rounded tracking-wide">國際市場觀</div>
+                <div className="px-4 py-2 bg-orange-400 text-white shadow rounded tracking-wide">會計及財務分析能力</div>
+                <div className="px-4 py-2 bg-blue-400 text-white shadow rounded tracking-wide">產業知識</div>
+                <div className="px-4 py-2 bg-green-400 text-white shadow rounded tracking-wide">領導能力</div>
+                <div className="px-4 py-2 bg-red-400 text-white shadow rounded tracking-wide">經營管理能力</div>
+                <div className="px-4 py-2 bg-cyan-400 text-white shadow rounded tracking-wide">法律知識</div>
+                <div className="px-4 py-2 bg-purple-400 text-white shadow rounded tracking-wide">決策能力</div>
+              </div>
             </div>
 
             <div className="">
@@ -237,6 +238,14 @@ const Board: React.FC = () => {
                   <Stat num={25} suffix={"%"} decimals={0} color="#3B79E4" />
                 </p>
               </div>
+              <div className="flex items-center justify-between border-b-[1px] border-dashed border-blue py-6">
+                <p className="text-[16px]">長期目標：具員工身份之董事占比降低至</p>
+                <p className="text-2xl font-bold text-blue">
+                  <Stat num={25} suffix={"%"} decimals={0} color="#3B79E4" />
+                </p>
+              </div>
+
+              
             </div>
           </div>
         </Container>
@@ -652,8 +661,7 @@ const Board: React.FC = () => {
                         2023/12/12
                       </td>
                       <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
-                        第19屆(2023)公司治理國際高峰論壇─開創治理新局
-                        提升企業價值
+                        第19屆(2023)公司治理國際高峰論壇─開創治理新局提升企業價值
                       </td>
                       <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
                         3
