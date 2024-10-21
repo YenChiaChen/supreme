@@ -143,55 +143,8 @@ const Board: React.FC = () => {
             "董事會為至上最高治理單位，首要職責在於監督公司守法、資訊透明、即時揭露重要訊息及誠信經營。另於董事會下設置「審計委員會」、「薪資報酬委員會」，由全體獨立董事組成，本公司訂定之「公司章程」及「董事選任程序」皆已規範全體董事選舉採候選人提名制度。董事會首要職責在於監督，督促公司守法、資訊透明、即時揭露重要訊息及誠信經營，並透過各功能性委員會以及內控稽核系統協助董事會履行其監督職責，以確保公司永續發展及保障股東權益。"
           }
         />
-        <P
-          text={
-            "董事會成員同時也應普遍具備執行職務所必須之知識、技能及素養，為達到公司治理之理想目標，其應具備之能力如下："
-          }
-        />
-        <div className="grid grid-cols-5 gap-6 mt-12 text-blue justify-between">
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1] font-semibold tracking-wide w-full text-blue">
-            <FontAwesomeIcon icon={faIndustry} className="h-[50px] text-blue" />
-            產業知識
-          </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
-            <FontAwesomeIcon
-              icon={faChessKing}
-              className="h-[50px] text-blue"
-            />
-            領導能力
-          </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
-            <FontAwesomeIcon
-              icon={faBriefcase}
-              className="h-[50px] text-blue"
-            />
-            經營管理能力
-          </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
-            <FontAwesomeIcon icon={faGavel} className="h-[50px] text-blue" />
-            法律知識
-          </div>
-          <div className=" bg-blue-light bg-opacity-50 rounded-[30px] flex flex-col items-center justify-center p-5 w-full gap-6 aspect-[1/1]  font-semibold tracking-wide w-full text-blue">
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="h-[50px] text-blue"
-            />
-            決策能力
-          </div>
-        </div>
-
-    
-        <Section>
-          <H2 text={"董事會成員"} />
-          <P
-            text={
-              "本屆董事會設置 8 席董事：4席一般董事、4席獨立董事："
-            }
-          />
-          <PersonInfoList people={boardPersonData} />
-        </Section>
-      </Container>
-      <BgSection color="#ECF2FD" className="mt-md">
+        </Container>
+        <BgSection color="#ECF2FD" className="mt-md">
         <Container>
           <div className="relative z-10 py-12 grid grid-cols-2 gap-36 items-center">
             <div>
@@ -250,6 +203,20 @@ const Board: React.FC = () => {
           </div>
         </Container>
       </BgSection>
+        <Container>
+
+    
+        <Section>
+          <H2 text={"董事會成員"} />
+          <P
+            text={
+              "本屆董事會設置 8 席董事：4席一般董事、4席獨立董事："
+            }
+          />
+          <PersonInfoList people={boardPersonData} />
+        </Section>
+      </Container>
+
 
       <Container>
         <Section>

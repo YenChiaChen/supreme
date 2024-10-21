@@ -80,7 +80,7 @@ export const newsData: NewsItem[] = [
     date:"2023",
     location: "2023年永續報告書",
     title: "永續專欄特別報導-高效率與自動數位化節能產品",
-    bg: "https://res.cloudinary.com/dvgxlmyje/image/upload/v1727096150/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2_2024-09-23_205523_ygclzz.png",
+    bg: "https://res.cloudinary.com/dvgxlmyje/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1729227200/%E6%B0%B8%E7%BA%8C%E8%87%B3%E4%B8%8A_3_vndgll.png",
     desc: "隨著科技的快速演變，現今已進入高速運算的AI時代，而在全球氣候變化和環保意識已日趨成熟的背景下，節能減碳躍升為國際專注議題，也成為企業責無旁貸不可推卸的社會責任。",
     category: "SpecialNews",
     components: [
@@ -237,7 +237,7 @@ export const newsData: NewsItem[] = [
     date:"2022",
     location: "2022年永續報告書",
     title: "自行研發醫療器材",
-    bg: "https://res.cloudinary.com/dvgxlmyje/image/upload/v1727101681/img_reluma_aah3jn.png",
+    bg: "https://res.cloudinary.com/dvgxlmyje/image/upload/v1729227526/%E6%B0%B8%E7%BA%8C%E8%87%B3%E4%B8%8A_5_he70ui.png",
     desc: "由 Invitrx 研發出具有突破性的日常化妝保養系列產品，產品皆由幹細胞核心萃取技術衍生而成的生長基因及基質蛋白而成，可增強肌膚屏障以及提升肌膚光彩。reluma 不只專注在臉部肌膚上的保養，更推出針對頭皮保養的產品，帶給使用者齊全的產品線。",
     category: "SpecialNews",
     components: [

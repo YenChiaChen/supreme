@@ -212,8 +212,8 @@ export const ListTab: React.FC<TabTableProps> = ({ goals, color='#FF8D50' }) => 
                 >
                   {item.highlight ? (
                     <>
-                      <p className="col-span-9 content">{item.description}</p>
-                      <p className="col-span-3 text-right font-bold text-[24px]" style={{color: color}}>
+                      <p className="col-span-9 tracking-wide leading-8 text-[#555555]">{item.description}</p>
+                      <p className="col-span-3 text-right font-bold text-[20px]" style={{color: color}}>
                         {item.highlight}
                       </p>
                     </>

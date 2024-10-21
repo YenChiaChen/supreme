@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import focusCardImage01 from '../../assets/img/background/focusCard_01.jpg'
 import focusCardImage02 from '../../assets/img/background/focusCard_02.jpg'
 import focusCardImage03 from '../../assets/img/background/focusCard_03.jpg'
-import focusCardImage04 from '../../assets/img/background/focusCard_04.jpg'
+import focusCardImage04 from '../../assets/img/subPage/society/2023/01.jpg'
 import { faArrowRight } from "@fortawesome/pro-solid-svg-icons";
 import { Link } from "react-router-dom";
 

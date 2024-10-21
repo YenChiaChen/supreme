@@ -65,77 +65,76 @@ const Footer: React.FC = () => {
 
           <div className="flex gap-24 tracking-wide">
             <div className="flex flex-col gap-4 ">
-              <p className="font-bold text-xl cursor-pointer">最新動態</p>
-              <p className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              <Link to={"/news"} className="font-bold text-xl cursor-pointer">最新動態</Link>
+              <Link to={"/news?category=精選故事"}  className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 永續專欄特別報導
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/news?category=永續專欄特別報導"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 精選故事
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/news?category=永續消息"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 永續消息
-              </p>
+              </Link>
             </div>
             <div className="flex flex-col gap-4 ">
-              <p className="font-bold text-xl cursor-pointer">幸福企業</p>
-              <p className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              <Link to={"/enterprise"} className="font-bold text-xl cursor-pointer">幸福企業</Link>
+              <Link to={"/enterprise/occupational-safety"} className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 友善職場
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/enterprise/welfare-care"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 員工政策
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/enterprise/diverse-growth"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 人才培育
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/enterprise/hr-distribution"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 人力資源分布
-              </p>
+              </Link>
             </div>
             <div className="flex flex-col gap-4 ">
-              <p className="font-bold text-xl cursor-pointer">永續經營</p>
-              <p className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              <Link to={"/sustainability"} className="font-bold text-xl cursor-pointer">永續經營</Link>
+              <Link to={"/sustainability/message-from-chairman"} className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 經營者的話
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/sustainability/compensation-committee"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 功能性委員會
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/sustainability/stakeholder-engagement"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 利害關係人專區
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/sustainability/intellectual-property"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 科技風險
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/sustainability/supply-chain"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 永續供應鏈
-              </p>
+              </Link>
             </div>
             <div className="flex flex-col gap-4 ">
-              <p className="font-bold text-xl cursor-pointer">永續共生</p>
-              <p className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              <Link to={"/symbiosis"} className="font-bold text-xl cursor-pointer">永續共生</Link>
+              <Link to={"/symbiosis/climate-change"} className="mt-2 opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 氣候變遷對策
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/symbiosis/greenhouse-gases"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 溫室氣體 & 行動方案
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/symbiosis/green-energy"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 綠能低碳計畫
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/symbiosis/energy-management"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 能源管理
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/symbiosis/waste-management"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 廢棄物管理
-              </p>
-              <p className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
+              </Link>
+              <Link to={"/symbiosis/water-management"} className="opacity-70 duration-300 hover:opacity-100 cursor-pointer">
                 水資源管理
-              </p>
+              </Link>
             </div>
           </div>
         </Container>
       </div>
 
       <div className="bg-[#224952] text-white text-center text-xs py-8 tracking-wide">
-        {" "}
         © 2024 Supreme Electronics Co., Ltd.. All rights reserved.
       </div>
     </>

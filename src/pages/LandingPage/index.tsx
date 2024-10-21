@@ -174,7 +174,7 @@ const LandingPage: React.FC = () => {
           
 
         <div
-            className="group bg-black w-[33%] rounded-[2rem] hover:w-[80%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
+            className="group bg-black w-[33%] rounded-[2rem] hover:w-[90%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
             style={{ backgroundImage: `url(${BuildingCardImage})` }}
           >
             <div className="z-10 w-full h-full relative flex flex-col items-start rounded-[1.8rem] p-10 text-white relative">
@@ -189,21 +189,15 @@ const LandingPage: React.FC = () => {
               <div className="opacity-0 group-hover:opacity-100 transition-none duration-500 delay-300 group-hover:delay-300 group-hover:duration-300 group-hover:transition-opacity text-left w-full -mt-[5%] flex justify-between items-end">
                 <div className="flex flex-col gap-4 items-start w-full">
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">第九屆公司治理評鑑上市公司排名：</p>
+                    <p className="">誠信經營暨公平交易、反貪腐教育訓練達：</p>
                     <span className=" font-bold text-3xl text-left">
-                      6~20<span className="ml-4 text-sm">%</span>
-                    </span>
-                  </div>
-                  <div className="flex items-end gap-4 w-full">
-                    <p className="">誠信經營教育訓練達：</p>
-                    <span className=" font-bold text-3xl text-left">
-                      62<span className="ml-4 text-sm">小時</span>
+                      80<span className="ml-4 text-sm">小時</span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
                     <p className="">董事會内部自評平均達成率：</p>
                     <span className=" font-bold text-3xl text-left">
-                      94<span className="ml-4 text-sm">%</span>
+                      97.27<span className="ml-4 text-sm">%</span>
                     </span>
                   </div>
                 </div>
@@ -211,10 +205,6 @@ const LandingPage: React.FC = () => {
                 <div className="absolute flex flex-col gap-2 right-4 bottom-4">
                   <img
                     src={EsgIcon08}
-                    className="w-[60px] h-[60px] object-cover"
-                  />
-                  <img
-                    src={EsgIcon12}
                     className="w-[60px] h-[60px] object-cover"
                   />
                   <img
@@ -227,7 +217,7 @@ const LandingPage: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 duration-300 group-hover:opacity-60 z-0"></div>
           </div>
           <div
-            className="group bg-black w-[33%] rounded-[2rem] hover:w-[80%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
+            className="group bg-black w-[33%] rounded-[2rem] hover:w-[90%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
             style={{ backgroundImage: `url(${EmployeeCardImage})` }}
           >
             <div className="z-10 w-full h-full relative flex flex-col items-start rounded-[1.8rem] p-10 text-white relative">
@@ -246,34 +236,44 @@ const LandingPage: React.FC = () => {
                       基層人員平均薪資較最低薪資標準高於：
                     </p>
                     <span className=" font-bold text-3xl text-left">
-                      200<span className="ml-4 text-sm">%</span>
+                      1.73<span className="ml-4 text-sm">倍</span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">平均調薪：</p>
+                    <p className="">員工訓練總時數：</p>
                     <span className=" font-bold text-3xl text-left">
-                      5<span className="ml-4 text-sm">%</span>
+                      3,527<span className="ml-4 text-sm">小時</span>
+                    </span>
+                  </div>
+                  <div className="flex items-end gap-4 w-full">
+                    <p className="">女性對男性總薪酬比率</p>
+                    <span className=" font-bold text-3xl text-left">
+                      1 : 0.92<span className="ml-4 text-sm"></span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
                     <p className="">舉辦「勞工健康保護-臨場醫護諮詢」：</p>
                     <span className=" font-bold text-3xl text-left">
-                      24<span className="ml-4 text-sm">次</span>
+                      39<span className="ml-4 text-sm">次</span>
                     </span>
                   </div>
                 </div>
 
                 <div className="absolute flex flex-col gap-2 right-4 bottom-4">
                   <img
-                    src={EsgIcon03}
-                    className="w-[60px] h-[60px] object-cover"
-                  />
-                  <img
                     src={EsgIcon05}
                     className="w-[60px] h-[60px] object-cover"
                   />
                   <img
+                    src={EsgIcon08}
+                    className="w-[60px] h-[60px] object-cover"
+                  />
+                  <img
                     src={EsgIcon10}
+                    className="w-[60px] h-[60px] object-cover"
+                  />
+                  <img
+                    src={EsgIcon17}
                     className="w-[60px] h-[60px] object-cover"
                   />
                 </div>
@@ -286,7 +286,7 @@ const LandingPage: React.FC = () => {
 
 
           <div
-            className="group bg-black w-[33%] rounded-[2rem] hover:w-[80%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
+            className="group bg-black w-[33%] rounded-[2rem] hover:w-[90%] h-[450px] duration-300 bg-cover bg-center bg-no-repeat relative overflow-hidden p-4 "
             style={{ backgroundImage: `url(${BeachCardImage})` }}
           >
             <div className="z-10 w-full h-full relative flex flex-col items-start rounded-[1.8rem] p-10 text-white relative">
@@ -301,21 +301,15 @@ const LandingPage: React.FC = () => {
               <div className="opacity-0 group-hover:opacity-100 transition-none duration-500 delay-300 group-hover:delay-300 group-hover:duration-300 group-hover:transition-opacity text-left w-full -mt-[5%] flex justify-between items-end">
                 <div className="flex flex-col gap-4 items-start w-full ">
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">2022年淨山活動清除：</p>
+                    <p className="">至上淨灘活動清除廢棄物：</p>
                     <span className=" font-bold text-3xl text-left">
-                      33<span className="ml-4 text-sm">公斤</span>
+                      37.5公斤<span className="ml-4 text-sm">公斤</span>
                     </span>
                   </div>
                   <div className="flex items-end gap-4 w-full">
-                    <p className="">執行無紙化政策：</p>
+                    <p className="">執行無紙化政策減少砍伐：</p>
                     <span className=" font-bold text-3xl text-left">
-                      e化簽核流程<span className="ml-4 text-sm"></span>
-                    </span>
-                  </div>
-                  <div className="flex items-end gap-4 w-full">
-                    <p className="">集團減少用紙量：</p>
-                    <span className=" font-bold text-3xl text-left">
-                      28.7萬<span className="ml-4 text-sm">張</span>
+                      56.94<span className="ml-4 text-sm">顆樹</span>
                     </span>
                   </div>
                 </div>
@@ -374,6 +368,7 @@ const LandingPage: React.FC = () => {
             <div className="col-span-8 mt-6 font-light tracking-wide">
               本公司與國立臺灣師範大學科技應用與人力資源發展學系攜手合作，展開「動手做STEAM多元智能晨光時間」。本計畫由臺師大科技系的蔡其瑞助理教授領導，旨在啟發長安國中特教學生發展多元智能，提升其自我肯定，促進社交技巧，同時體驗動手做的樂趣。
               <div className="flex justify-end mt-12">
+                <Link to={"/news/9"} target="_blank">
                 <div className="bg-orange text-white px-6 py-2 font-en rounded-full flex items-center group cursor-pointer hover-shadow">
                   More
                   <FontAwesomeIcon
@@ -381,6 +376,7 @@ const LandingPage: React.FC = () => {
                     className="text-xl ml-2 group-hover:ml-4 duration-300"
                   />
                 </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -411,19 +407,19 @@ const LandingPage: React.FC = () => {
               永續亮點績效
             </p>
             <p className="text-white font-en mt-1 font-light">What We Do</p>
-          </div>
-          <motion.div
-            className="sticky top-[90%] mt-[70%]"
+            <motion.div
             key={activeDiv}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <p className="text-5xl text-white  font-semibold text-white">
+            <p className="text-5xl text-white  font-semibold text-white mt-[50%]">
               {getPerformanceTitle()}
             </p>
           </motion.div>
+          </div>
+
           <div className="grid grid-cols-6 z-10 relative">
             <div className="col-span-2">&nbsp;</div>
             <div
@@ -437,7 +433,7 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">公司營收新台幣</p>
-                <p className="text-2xl font-semibold">787.9億元</p>
+                <p className="text-2xl font-semibold">1,521.45億元</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
@@ -445,9 +441,9 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">
-                  第九屆公司治理評鑑上市公司排名
+                董事會内部自評平均達成
                 </p>
-                <p className="text-2xl font-semibold ">前6~20%</p>
+                <p className="text-2xl font-semibold ">97.27%</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
@@ -455,9 +451,9 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">
-                  董事會内部自評平均達成率
+                各功能性委員會總評比達成率
                 </p>
-                <p className="text-2xl font-semibold ">93.81%</p>
+                <p className="text-2xl font-semibold ">95%</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
@@ -473,26 +469,19 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">
-                  全體董事出席董事會比率達
+                誠信經營暨公平交易、反貪腐教育訓練達
                 </p>
-                <p className="text-2xl font-semibold ">100%</p>
+                <p className="text-2xl font-semibold ">80小時</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
                 data-aos="fade-left"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                <p className="text-lg tracking-wide">誠信經營教育訓練達</p>
-                <p className="text-2xl font-semibold ">61.5小時</p>
+                <p className="text-lg tracking-wide">無違反道德及誠信經營之情事</p>
+                <p className="text-2xl font-semibold "></p>
               </div>
-              <div
-                className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
-                data-aos="fade-left"
-                data-aos-anchor-placement="bottom-bottom"
-              >
-                <p className="text-lg tracking-wide">董事會通過設置</p>
-                <p className="text-2xl font-semibold ">永續發展委員會</p>
-              </div>
+
             </div>
             <div className="col-span-1 flex flex-col justify-end pb-9">
               <div
@@ -544,31 +533,15 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">全集團減少用紙量約A4紙</p>
-                <p className="text-2xl font-semibold ">287,231張</p>
+                <p className="text-2xl font-semibold ">474,526張</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
                 data-aos="fade-left"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                <p className="text-lg tracking-wide">2022淨山活動清除垃圾</p>
-                <p className="text-2xl font-semibold ">32.70公斤</p>
-              </div>
-              <div
-                className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
-                data-aos="fade-left"
-                data-aos-anchor-placement="bottom-bottom"
-              >
-                <p className="text-lg tracking-wide">誠信經營教育訓練達</p>
-                <p className="text-2xl font-semibold ">61.5小時</p>
-              </div>
-              <div
-                className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
-                data-aos="fade-left"
-                data-aos-anchor-placement="bottom-bottom"
-              >
-                <p className="text-lg tracking-wide">董事會通過設置</p>
-                <p className="text-2xl font-semibold ">永續發展委員會</p>
+                <p className="text-lg tracking-wide">2023淨灘活動清除廢棄物</p>
+                <p className="text-2xl font-semibold ">37.5公斤</p>
               </div>
             </div>
             <div className="col-span-1 flex flex-col justify-end pb-9">
@@ -603,15 +576,7 @@ const LandingPage: React.FC = () => {
                 <p className="text-lg tracking-wide">
                   基層人員平均薪資較最低薪資標準高於
                 </p>
-                <p className="text-2xl font-semibold">200％</p>
-              </div>
-              <div
-                className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
-                data-aos="fade-left"
-                data-aos-anchor-placement="bottom-bottom"
-              >
-                <p className="text-lg tracking-wide">平均調薪</p>
-                <p className="text-2xl font-semibold ">5％</p>
+                <p className="text-2xl font-semibold">1.73倍</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
@@ -619,23 +584,31 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">員工訓練總時數</p>
-                <p className="text-2xl font-semibold ">1,583小時</p>
+                <p className="text-2xl font-semibold ">3,527小時</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
                 data-aos="fade-left"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                <p className="text-lg tracking-wide">女性員工占比</p>
-                <p className="text-2xl font-semibold ">32%</p>
+                <p className="text-lg tracking-wide">女性對男性總薪酬比率</p>
+                <p className="text-2xl font-semibold ">1 : 0.92</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
                 data-aos="fade-left"
                 data-aos-anchor-placement="bottom-bottom"
               >
-                <p className="text-lg tracking-wide">女性主管占比</p>
-                <p className="text-2xl font-semibold ">18%</p>
+                <p className="text-lg tracking-wide">水銷廢棄紙張</p>
+                <p className="text-2xl font-semibold ">15箱</p>
+              </div>
+              <div
+                className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
+                data-aos="fade-left"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <p className="text-lg tracking-wide">公益活動捐款達</p>
+                <p className="text-2xl font-semibold ">3,636,000元</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
@@ -645,7 +618,7 @@ const LandingPage: React.FC = () => {
                 <p className="text-lg tracking-wide">
                   舉辦「勞工健康保護-臨場醫護諮詢」
                 </p>
-                <p className="text-2xl font-semibold ">24次</p>
+                <p className="text-2xl font-semibold ">39次</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"
@@ -653,9 +626,9 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">
-                  各項社會公益活動捐贈金額達
+                職業病及職業災害
                 </p>
-                <p className="text-2xl font-semibold ">1,389,000元</p>
+                <p className="text-2xl font-semibold ">0件</p>
               </div>
             </div>
             <div className="col-span-1 flex flex-col justify-end pb-9">
@@ -704,7 +677,7 @@ const LandingPage: React.FC = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <p className="text-lg tracking-wide">研發費用支出達新台幣</p>
-                <p className="text-2xl font-semibold">8,879 萬元</p>
+                <p className="text-2xl font-semibold">100,337 仟元</p>
               </div>
               <div
                 className="justify-between flex items-center  border border-white text-white rounded-xl p-6 shadow-xl"

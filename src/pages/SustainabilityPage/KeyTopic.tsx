@@ -139,7 +139,7 @@ const KeyTopic: React.FC = () => {
                   <div className="shadow-xl rounded-[2rem] p-8 relative overflow-hidden">
                     <div className="absolute right-0 h-full top-0 w-[8px] bg-orange"></div>
                     <p className="text-xl tracking-wide mb-4">{item.text}</p>
-                    <p className="text-sm leading-8 tracking-wide">
+                    <p className=" leading-8 tracking-wide">
                      {item.info}
                     </p>
                   </div>

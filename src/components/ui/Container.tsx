@@ -19,7 +19,7 @@ interface ContainerProps {
   
   export const Section: React.FC<SectionProps> = ({ children, className = "" }) => {
     return (
-      <div className={`py-8 ${className}`}>
+      <div className={`py-4 ${className}`}>
         {children}
       </div>
     );
@@ -28,7 +28,7 @@ interface ContainerProps {
   
   export const BgSection:  React.FC<SectionProps> = ({ children, className = "", color= "#ffffff" }) => {
     return (
-      <div className={`py-8 w-full ${className}`} style={{backgroundColor: color}}>
+      <div className={`py-4 w-full ${className}`} style={{backgroundColor: color}}>
         {children}
       </div>
     );

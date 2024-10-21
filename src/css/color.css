@@ -17,3 +17,7 @@
 body{
   background-color: white;
 }
+
+li::marker {
+  color: #FF8D50;
+}

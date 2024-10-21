@@ -181,21 +181,20 @@ const Governance: React.FC = () => {
 
       <BgSection color="#ECF2FD" className="mt-md">
         <Container>
-          <Section>
-            <div className="relative z-10 py-24 grid grid-cols-3 items-center">
+            <div className="relative z-10 py-12 grid grid-cols-3 items-center">
               <div className="border-t-[2px] border-blue h-full flex flex-col relative px-12 py-6 relative">
                 <FontAwesomeIcon
                   icon={faBullseye}
                   className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
                 />
                 <p className="text-2xl font-bold text-blue tracking-widest mt-12 mb-5">
-                  短期目標
+                  短期目標（2026年）
                 </p>
 
-                <Desc
-                  text={"落實各項永續發展項目之執行與董事會之監督及參與。"}
-                />
-
+              <List items={[
+                {text: "落實各項永續發展項目之執行與董事會之監督及參與。"},
+                {text: "協助董事、內部經理人遵循法令，持續公司誠信經營與法令遵循宣導。"},
+              ]} />
                 <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-blue"></div>
               </div>
               <div className="border-t-[2px] border-blue h-full flex  flex-col relative px-12 py-6 relative">
@@ -204,9 +203,12 @@ const Governance: React.FC = () => {
                   className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
                 />
                 <p className="text-2xl font-bold text-blue tracking-widest mt-12 mb-5">
-                  中期目標
+                  中期目標（2028）
                 </p>
-                <Desc text={"公司治理評鑑進入前５% 並獲得永續獎。"} />
+              <List items={[
+                {text: "持續精進公司治理，使公司治理評鑑進入前５%並獲得永續獎。"},
+                {text: "協助子公司永續目標規劃與執行。"},
+              ]} />
                 <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-blue"></div>
               </div>
               <div className="border-t-[2px] border-blue h-full flex flex-col relative px-12 py-6 relative">
@@ -219,18 +221,15 @@ const Governance: React.FC = () => {
                   className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
                 />
                 <p className="text-2xl font-bold text-blue tracking-widest mt-12 mb-5">
-                  長期目標
+                  長期目標（2030）
                 </p>
 
-                <Desc
-                  text={
-                    "董事會成員具員工身分之董事占比降低至 25%；\n女性董事比例提升至 25%。"
-                  }
-                />
+                <List items={[
+                {text: "落實董事會多元化及獨立性，使董事會成員具員工身分之董事占比降低至25%；女性董事比例提升至25%。"},
+              ]} />
                 <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-blue"></div>
               </div>
             </div>
-          </Section>
         </Container>
       </BgSection>
 
@@ -250,11 +249,14 @@ const Governance: React.FC = () => {
           <Image
             src={BoardStructureImage}
             alt="Company Governance Structure"
-            maxWidth="800px"
+            maxWidth="600px"
           />
         </Section>
 
         <Section>
+
+
+        <H2 text={"公司治理主管"} />
         
           <H3 text={"公司治理主管主要職責如下："} className="text-blue" />
           <AnimatedList items={AnimatedListItems1} />
@@ -263,7 +265,34 @@ const Governance: React.FC = () => {
             text={"公司治理單位業務執行："}
             className="text-blue"
           />
-          <AnimatedList items={AnimatedListItems2} />
+          
+
+          <YearTabContainer years={["2023", "2022"]} tabColor='#3B79E4'>
+            <div data-year="2023">
+              <List items={[
+                {text: "召開6次董事會、6次審計委員會、3次薪資報酬委員會及2次永續發展委員會，於開會七日前通知及提供會議資料給董事及委員，議題如需利益迴避均予以事前提醒，並於會後二十日內寄發議事錄。"},
+                {text: "獨立董事依照公司治理實務守則，需與內部稽核主管或簽證會計師溝通瞭解公司業務狀況時，協助安排相關會議，與會計師溝通會議共計5次、與稽核主管溝通會議共計4次。"},
+                {text: "依法於2023年06月09日召開股東常會，並負責製作開會通知、議事手冊、議事錄並於修訂章程或董事改選辦理變更登記事務。"},
+                {text: "董事會及股東會後負責重大訊息發布事宜，共發布40則中、英文重大訊息，確保重訊內容之適法性及正確性，以保障投資人交易訊息對等。"},
+                {text: "每年度安排各董事參加外部專業機構課程，提昇董事專業能力藉以增進董事會之運作效能，2023年全體董事進修時數皆達6小時以上。"},
+                {text: "定期(每年至少1次)向董事會報告本公司之公司治理運作狀況，2023年度風險管理執行情形、智慧財產管理執行情形、利害關係人溝通情形於2024年01月31日向董事會報告；2023年度誠信經營及永續發展執行情形於2024年03月11日向董事會報告。"},
+                {text: "完成2023年度董事會及功能性委員會(審計、薪資報酬、永續發展)之績效評估，並委請社團法人中華公司治理協會執行董事會績效外部評估，相關結果於2024年01月31日向董事會報告。"},
+                {text: "不定期向董事及內部經理人進行法令宣導共計17次。"},
+              ]} />
+
+            </div>
+            <div data-year="2022">
+              <List items={[
+                {text: "通知董事會成員有關公司經營領域以及公司治理最新法令規章修訂。"},
+                {text: "獨立董事依照公司治理實務守則，需與內部稽核主管或簽證會計師會面瞭解公司業務狀況時，協助安排相關會議。"},
+                {text: "依照公司產業特性及最新經濟情勢發展，安排董事參與年度進修課程。"},
+                {text: "向董事會、審計委員會及薪酬委員會報告本公司之公司治理運作狀況，股東會及董事會召開是否符合相關法律及公司治理守則規範。"},
+                {text: "董事會後負責重大訊息發布事宜，確保重訊內容之適法性及正確性，以保障投資人交易訊息對等。"},
+                {text: "擬訂董事會議程於七日前通知董事，召集會議並提供會議資料，議題如需利益迴避予以事前提醒，並於會後二十天內完成董事會議事錄。"},
+                {text: "依法辦理股東會日期事前登記，法定期限內製作開會通知、議事手冊、議事錄並於修訂章程或董事改選辦理變更登記事務。"},
+              ]} />
+            </div>
+          </YearTabContainer>
 
 
           <H3

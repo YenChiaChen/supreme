@@ -46,7 +46,6 @@ const tableData = {
   ],
 };
 
-
 const tableData5 = {
   headers: [
     { content: "員工類別" },
@@ -144,13 +143,18 @@ const EthicalManagement: React.FC = () => {
                   className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
                 />
                 <p className="text-2xl font-bold text-blue tracking-widest mt-12 mb-5">
-                  整體目標
+                  短期目標（2026年）
                 </p>
 
-                <Desc
-                  text={
-                    "持續推動誠信經營理念，將此信念深植在每位員工心中，轉化為公司創新成長的動力。\n\n至上承諾遵守公平交易，以誠信為最高原則推動公司永續經營成長。"
-                  }
+                <List
+                  items={[
+                    {
+                      text: "員工培訓：持續提供誠信經營暨公平交易、反貪腐教育訓練。",
+                    },
+                    {
+                      text: "邀請供應商簽署「人權、環境永續暨誠信經營承諾書」，持續觀察與供應商往來交易，改善誠信經營不足之處。",
+                    },
+                  ]}
                 />
 
                 <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-blue"></div>
@@ -161,12 +165,18 @@ const EthicalManagement: React.FC = () => {
                   className="absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
                 />
                 <p className="text-2xl font-bold text-blue tracking-widest mt-12 mb-5">
-                  中期目標
+                  中期目標（2028年）
                 </p>
-                <Desc
-                  text={
-                    "要求供應商簽署誠信承諾，持續觀察與供應商往來交易，改善誠信經營不足之處。"
-                  }
+
+                <List
+                  items={[
+                    {
+                      text: "持續改進與監控：定期審查和更新誠信經營相關管理辦法並佈達給董事、員工。",
+                    },
+                    {
+                      text: "所有供應商皆簽署「人權、環境永續暨誠信經營承諾書」，確保其能了解公司對誠信經營之承諾與理念，並確實遵守行為規範。",
+                    },
+                  ]}
                 />
                 <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-blue"></div>
               </div>
@@ -180,10 +190,16 @@ const EthicalManagement: React.FC = () => {
                   className="absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 text-blue h-[30px]"
                 />
                 <p className="text-2xl font-bold text-blue tracking-widest mt-12 mb-5">
-                  長期目標
+                  長期目標（2030年）
                 </p>
 
-                <Desc text={"所有供應商皆簽署誠信承諾。"} />
+                <List
+                  items={[
+                    {
+                      text: "善用科技提升公司誠信經營管理效率：導入新興AI人工智慧，偵測公司內部異常交易活動，杜絕不誠信行為，達成高效益的管控成果。",
+                    },
+                  ]}
+                />
                 <div className="w-full h-full absolute left-0 top-0 border-l-[1px] border-dashed border-blue"></div>
               </div>
             </div>
@@ -203,13 +219,127 @@ const EthicalManagement: React.FC = () => {
 
         <Section>
           <H2 text={"誠信經營執行情形"} />
-          <YearTabContainer years={["2023", "2022"]} tabColor="#3B79E4">
+          <YearTabContainer years={["2024", "2023", "2022"]} tabColor="#3B79E4">
+            <div data-year="2024">
+              <H3 text={"通知財務報告封閉期間："} className="text-blue" />
+
+              <table className="min-w-full border-collapse mt-6">
+                <thead>
+                  <tr className="bg-blue text-white content">
+                    <th className="border border-white px-4 py-2 whitespace-pre">
+                      日期
+                    </th>
+                    <th className="border border-white px-4 py-2  whitespace-pre">
+                      項目
+                    </th>
+                    <th className="border border-white px-4 py-2  whitespace-pre ">
+                      連結
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="">
+                  <tr>
+                    <td className="border-b border-light_gray px-4 py-6 text-center">
+                      2024.07.10
+                    </td>
+                    <td className="border-b border-light_gray px-8 py-2 whitespace-pre  ">
+                      113年Q2財務報告【封閉期間】通知
+                    </td>
+                    <td className="border-b border-light_gray px-12 py-2 text-center">
+                      <a
+                        href="http://www.supreme.com.tw/File/113%E5%B9%B4Q2%E8%B2%A1%E5%A0%B1%E5%B0%81%E9%96%89%E9%80%9A%E7%9F%A5.jpg"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon
+                          icon={faArrowUpRightFromSquare}
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-light_gray px-4 py-6 text-center">
+                      2024.04.12
+                    </td>
+                    <td className="border-b border-light_gray px-8 py-2 whitespace-pre  ">
+                      113年Q1財務報告【封閉期間】通知
+                    </td>
+                    <td className="border-b border-light_gray px-12 py-2 text-center">
+                      <a
+                        href="http://www.supreme.com.tw/File/113%E5%B9%B4Q1%E8%B2%A1%E5%A0%B1%E5%B0%81%E9%96%89%E9%80%9A%E7%9F%A5.jpg"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon
+                          icon={faArrowUpRightFromSquare}
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-b border-light_gray px-4 py-6 text-center">
+                      2024.01.31
+                    </td>
+                    <td className="border-b border-light_gray px-8 py-2 whitespace-pre  ">
+                      112年年度財務報告【封閉期間】通知
+                    </td>
+                    <td className="border-b border-light_gray px-12 py-2 text-center">
+                      <a
+                        href="http://www.supreme.com.tw/File/112%E5%B9%B4%E5%B9%B4%E5%BA%A6%E8%B2%A1%E5%A0%B1%E5%B0%81%E9%96%89%E9%80%9A%E7%9F%A5.jpg"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon
+                          icon={faArrowUpRightFromSquare}
+                          className="text-blue h-[30px] duration-300 cursor-pointer hover:scale-[1.05] hover:opacity-100 opacity-70"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <List
+                title="2023年度履行誠信經營之執行情形已於2024年3月11日董事會進行報告說明，其內容摘要如下"
+                items={[
+                  {
+                    text: "本公司設立“獨立董事信箱”之檢舉管道，於2023年度並未接獲任何投訴檢舉事項。",
+                  },
+                  {
+                    text: "舉辦二場(2/14、2/21)誠信經營暨防範內線交易宣導課程，參與課程之員工共計160人／80小時。",
+                  },
+                  {
+                    text: "不定期以 mail 方式對內部經理人進行法令宣導，2023年度共計5次。",
+                  },
+                  {
+                    text: "每月隨內部人股權異動詢問函，對董事、內部經理人進行內部人股權異動相關法令宣導，2023年度共計12次。",
+                  },
+                  {
+                    text: "依公司治理實務守則§10 規定，於召開董事會（決議財務報告）前通知董事們【封閉期間】資訊，2023年度共計4次。",
+                  },
+                  {
+                    text: "綜合公司治理實務守則 §10 及 證交法 §157-1 規定，自2024.01.01起，適用範疇由【全體董事】擴大至【全體董事＋內部經理人】。",
+                  },
+                ]}
+              />
+            </div>
+
             <div data-year="2023">
-            
-            <H3 text={"教育訓練與反貪腐溝通："} className="text-blue" />
-            <Table data={tableData} color="#3B79E4" title="誠信經營暨防範內線交易管理教育訓練" />
-            <Table data={tableData3} color="#3B79E4" title="反貪腐溝通情形（依治理單位分類）" />
-            <Table data={tableData2} color="#3B79E4" title="反貪腐溝通情形（依員工類別分類）" />
+              <H3 text={"教育訓練與反貪腐溝通："} className="text-blue" />
+              <Table
+                data={tableData}
+                color="#3B79E4"
+                title="誠信經營暨防範內線交易管理教育訓練"
+              />
+              <Table
+                data={tableData3}
+                color="#3B79E4"
+                title="反貪腐溝通情形（依治理單位分類）"
+              />
+              <Table
+                data={tableData2}
+                color="#3B79E4"
+                title="反貪腐溝通情形（依員工類別分類）"
+              />
 
               <H3 text={"通知財務報告封閉期間："} className="text-blue" />
 
@@ -307,24 +437,53 @@ const EthicalManagement: React.FC = () => {
                 </tbody>
               </table>
 
-              <p className="mt-6 text-gray-500">本年度履行誠信經營之執行情形已於2023年3月9日董事會進行報告說明，內容摘要如下：</p>
+              <p className="mt-6 text-gray-500">
+                本年度履行誠信經營之執行情形已於2023年3月9日董事會進行報告說明，內容摘要如下：
+              </p>
               <ul className="list-disc list-outside pl-8 mt-4 text-sm text-gray-500 space-y-2">
-                <li>  為持續履行企業誠信經營政策，本公司除訂有「公司治理實務守則」、「誠信經營守則」、「誠信經營作業程序及行為指南」、「企業社會責任實務守則」及「道德行為準則」等規範外，並會配合法令修改及實際需求及時修訂相關規範。</li>
-              <li>本公司除加強內部教育訓練外，並持續監督相關部門於履行政策推行之運作，並於董事會進行報告。</li>
-              <li>本公司透過年報、公開資訊觀測站、公司網站…等，及時揭露相關資訊，以提供股東及利害關係人了解公司運作狀況。</li>
-              <li>本公司設立“稽核信箱”之檢舉管道，於2022年度並未接獲任何投訴檢舉事項。</li>
-              <li>本公司網站業已設置「投資人專區」，並新增英文重大訊息資訊，提升資訊透明度。</li>
-              <li>本公司為落實公司治理，已全面採行董事提名制度，且業已設置公司治理人員及主管。</li>
-              <li>股東常會已採行電子投票方式，鼓勵股東參與公司治理及提高股東出席比率。</li>
-              <li>2022年共舉辦二場(07/20、07/21)企業誠信經營宣導課程，共計參與課程之員工人數達123人。</li>
+                <li>
+                  為持續履行企業誠信經營政策，本公司除訂有「公司治理實務守則」、「誠信經營守則」、「誠信經營作業程序及行為指南」、「企業社會責任實務守則」及「道德行為準則」等規範外，並會配合法令修改及實際需求及時修訂相關規範。
+                </li>
+                <li>
+                  本公司除加強內部教育訓練外，並持續監督相關部門於履行政策推行之運作，並於董事會進行報告。
+                </li>
+                <li>
+                  本公司透過年報、公開資訊觀測站、公司網站…等，及時揭露相關資訊，以提供股東及利害關係人了解公司運作狀況。
+                </li>
+                <li>
+                  本公司設立“稽核信箱”之檢舉管道，於2022年度並未接獲任何投訴檢舉事項。
+                </li>
+                <li>
+                  本公司網站業已設置「投資人專區」，並新增英文重大訊息資訊，提升資訊透明度。
+                </li>
+                <li>
+                  本公司為落實公司治理，已全面採行董事提名制度，且業已設置公司治理人員及主管。
+                </li>
+                <li>
+                  股東常會已採行電子投票方式，鼓勵股東參與公司治理及提高股東出席比率。
+                </li>
+                <li>
+                  2022年共舉辦二場(07/20、07/21)企業誠信經營宣導課程，共計參與課程之員工人數達123人。
+                </li>
               </ul>
-            
             </div>
             <div data-year="2022">
-            <H3 text={"教育訓練與反貪腐溝通："} className="text-blue" />
-            <Table data={tableData4} color="#3B79E4" title="誠信經營暨防範內線交易管理教育訓練" />
-            <Table data={tableData3} color="#3B79E4" title="反貪腐溝通情形（依治理單位分類）" />
-            <Table data={tableData5} color="#3B79E4" title="反貪腐溝通情形（依員工類別分類）" />
+              <H3 text={"教育訓練與反貪腐溝通："} className="text-blue" />
+              <Table
+                data={tableData4}
+                color="#3B79E4"
+                title="誠信經營暨防範內線交易管理教育訓練"
+              />
+              <Table
+                data={tableData3}
+                color="#3B79E4"
+                title="反貪腐溝通情形（依治理單位分類）"
+              />
+              <Table
+                data={tableData5}
+                color="#3B79E4"
+                title="反貪腐溝通情形（依員工類別分類）"
+              />
 
               <H3 text={"通知財務報告封閉期間："} className="text-blue" />
 
@@ -446,9 +605,9 @@ const EthicalManagement: React.FC = () => {
         </Section>
       </Container>
 
-      <BgSection color="#ECF2FD" className="mt-xl">
+      <BgSection color="#ECF2FD" className="mt-8">
         <Container>
-          <div className="grid grid-cols-2 gap-x-0 gap-y-8 py-16">
+          <div className="grid grid-cols-2 gap-x-0 gap-y-8 pb-12">
             <H3
               text={"內部稽核之稽核組織"}
               className="text-blue col-span-2 mt-0"

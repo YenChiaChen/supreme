@@ -229,7 +229,7 @@ const EnterprisePage: React.FC = () => {
                 <div className="col-span-3 w-full bg-gray-100 rounded-xl aspect-square  flex justify-center items-center ">
                   <FontAwesomeIcon icon={faHeartbeat} className="h-[60px]" />
                 </div>
-                <div className="col-span-5 py-8">
+                <div className="col-span-5 py-8 content">
                   <p className="text-xl font-semibold text-pink mb-4">
                     健康成長
                   </p>
