@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.6cee0885.css",
-    "main.js": "/supreme/static/js/main.977b6f2d.js",
+    "main.css": "/supreme/static/css/main.0194fcce.css",
+    "main.js": "/supreme/static/js/main.d0ff6d61.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/performanceCard_03.png": "/supreme/static/media/performanceCard_03.a62cd9a770f65a4bf193.png",
     "static/media/01.jpg": "/supreme/static/media/01.9597b13d694c126fd3a8.jpg",
@@ -48,7 +48,6 @@
     "static/media/diverse-growth-sells02.png": "/supreme/static/media/diverse-growth-sells02.0216a2dac4f55b0d85d6.png",
     "static/media/02.jpg": "/supreme/static/media/02.4f89917f3fa5f0198771.jpg",
     "static/media/healthy-check-01.jpg": "/supreme/static/media/healthy-check-01.3d86fd73adafb643cc7d.jpg",
-    "static/media/focusCard_04.jpg": "/supreme/static/media/focusCard_04.3ff4a61db53c9e0a14b0.jpg",
     "static/media/人權政策.jpg": "/supreme/static/media/人權政策.3ff4a61db53c9e0a14b0.jpg",
     "static/media/diverse-growth-blockchain01.png": "/supreme/static/media/diverse-growth-blockchain01.e80ffc1617210f5acd2b.png",
     "static/media/績效檢核與薪酬.jpg": "/supreme/static/media/績效檢核與薪酬.cf09afc8050e8b93c866.jpg",
@@ -96,11 +95,11 @@
     "static/media/ESG-15.png": "/supreme/static/media/ESG-15.f9ef422e54cf06514190.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.6cee0885.css.map": "/supreme/static/css/main.6cee0885.css.map",
-    "main.977b6f2d.js.map": "/supreme/static/js/main.977b6f2d.js.map"
+    "main.0194fcce.css.map": "/supreme/static/css/main.0194fcce.css.map",
+    "main.d0ff6d61.js.map": "/supreme/static/js/main.d0ff6d61.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cee0885.css",
-    "static/js/main.977b6f2d.js"
+    "static/css/main.0194fcce.css",
+    "static/js/main.d0ff6d61.js"
   ]
 }
