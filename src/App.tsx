@@ -37,6 +37,7 @@ import GreenEnergy from "./pages/SymbiosisPage/GreenEnergy";
 import GreenhouseGases from "./pages/SymbiosisPage/GreenhouseGases";
 import WasteManagement from "./pages/SymbiosisPage/WasteManagement";
 import WaterManagement from "./pages/SymbiosisPage/WaterManagement";
+import DownloadPage from "./pages/LandingPage/DownloadPage";
 import './i18n'
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPage />} />
+          <Route path="download" element={<DownloadPage />} />
           <Route path="news" element={<NewsPage />} />
           <Route path="news/:id" element={<NewsDetail />} />
           <Route path="society" element={<SocietyPage />} />

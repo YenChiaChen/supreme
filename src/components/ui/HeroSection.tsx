@@ -56,7 +56,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             center ? "items-center" : "items-start"
           }  text-white`}
         >
-          <h1 className="text-5xl font-semibold mb-4 tracking-widest">
+          <h1 className="text-5xl font-semibold mb-4 tracking-widest pt-12">
             {title}
           </h1>
           {description && (
