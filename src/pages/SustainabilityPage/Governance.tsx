@@ -249,7 +249,7 @@ const Governance: React.FC = () => {
           <Image
             src={BoardStructureImage}
             alt="Company Governance Structure"
-            maxWidth="600px"
+            maxWidth="750px"
           />
         </Section>
 
