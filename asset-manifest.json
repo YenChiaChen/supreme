@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/supreme/static/css/main.cbbfe3c2.css",
-    "main.js": "/supreme/static/js/main.cecdf513.js",
+    "main.js": "/supreme/static/js/main.c043de01.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/performanceCard_03.png": "/supreme/static/media/performanceCard_03.a62cd9a770f65a4bf193.png",
     "static/media/01.jpg": "/supreme/static/media/01.9597b13d694c126fd3a8.jpg",
@@ -54,6 +54,7 @@
     "static/media/資訊安全管理.jpg": "/supreme/static/media/資訊安全管理.8cac08370f546c987bad.jpg",
     "static/media/風險管理.jpg": "/supreme/static/media/風險管理.56c3cf7be147026a068c.jpg",
     "static/media/永續發展委員會.jpg": "/supreme/static/media/永續發展委員會.de8e8f87f2ce898b5ff6.jpg",
+    "static/media/sustainbility-committee-structure.png": "/supreme/static/media/sustainbility-committee-structure.ac17cba8329137921608.png",
     "static/media/product-customer-supreme.png": "/supreme/static/media/product-customer-supreme.cc1f6ddead32e7ff0cce.png",
     "static/media/誠信經營.jpg": "/supreme/static/media/誠信經營.23dbec327c2a379c2ad6.jpg",
     "static/media/水資源.jpg": "/supreme/static/media/水資源.a283ed53ff24e7e0fa71.jpg",
@@ -65,7 +66,6 @@
     "static/media/審計委員會.jpg": "/supreme/static/media/審計委員會.45436a04584d3397254f.jpg",
     "static/media/information-security-structure.png": "/supreme/static/media/information-security-structure.ed95fc98b5169332a480.png",
     "static/media/健康職場.jpg": "/supreme/static/media/健康職場.00fd72e917b6394dba32.jpg",
-    "static/media/board-structure.png": "/supreme/static/media/board-structure.5bf69ff9073f8d2d1a94.png",
     "static/media/risk-management-structure.png": "/supreme/static/media/risk-management-structure.4a39386da917324666dc.png",
     "static/media/智慧財產權管理.jpg": "/supreme/static/media/智慧財產權管理.865ab0d3c7a2989affba.jpg",
     "static/media/icon.jpg": "/supreme/static/media/icon.b931287d28a81cb85481.jpg",
@@ -74,11 +74,11 @@
     "static/media/whistleblower-banner.png": "/supreme/static/media/whistleblower-banner.679529a2f60e962c7e2d.png",
     "static/media/waste-management-2022.png": "/supreme/static/media/waste-management-2022.1b4927d51b2e999583cf.png",
     "static/media/綠能低碳計畫.jpg": "/supreme/static/media/綠能低碳計畫.23fe867ee3bdca983460.jpg",
-    "static/media/sustainbility-committee-structure.png": "/supreme/static/media/sustainbility-committee-structure.9fb98c7ba39a491c78bc.png",
     "static/media/key-topic-2022.png": "/supreme/static/media/key-topic-2022.f5c133320e56a8fafcd1.png",
     "static/media/climate-change-matrix.png": "/supreme/static/media/climate-change-matrix.51c6f7dd180fc1d25e15.png",
     "static/media/key-topic-2023.png": "/supreme/static/media/key-topic-2023.9fbca89fe8eed5e9d55e.png",
     "static/media/waste-management-flowchart.png": "/supreme/static/media/waste-management-flowchart.913fb3bb7222a18ab752.png",
+    "static/media/board-structure.png": "/supreme/static/media/board-structure.096d8b9bdc06fe6b5014.png",
     "static/media/accident-investigation-process-en.png": "/supreme/static/media/accident-investigation-process-en.eb17aca0ec4c57493275.png",
     "static/media/accident-investigation-process-zh.png": "/supreme/static/media/accident-investigation-process-zh.197fbc6a4352d150e3cc.png",
     "static/media/ESG-17.png": "/supreme/static/media/ESG-17.fa44807c451cc69c726a.png",
@@ -96,10 +96,10 @@
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
     "main.cbbfe3c2.css.map": "/supreme/static/css/main.cbbfe3c2.css.map",
-    "main.cecdf513.js.map": "/supreme/static/js/main.cecdf513.js.map"
+    "main.c043de01.js.map": "/supreme/static/js/main.c043de01.js.map"
   },
   "entrypoints": [
     "static/css/main.cbbfe3c2.css",
-    "static/js/main.cecdf513.js"
+    "static/js/main.c043de01.js"
   ]
 }
