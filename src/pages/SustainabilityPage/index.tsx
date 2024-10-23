@@ -168,23 +168,22 @@ const cards5 = [
 const SustainabilityPage: React.FC = () => {
   const stats = [
     {
-      label: "第九屆公司治理評鑑得分",
-      num: 94.5,
-      suffix: "分",
-      color: "#3B79E4",
-    },
-    {
-      label: "上市公司排名列入之級距",
-      num: 6,
+      label: "反貪腐政策完訓率",
+      num: 100.0,
       suffix: "%",
-      staticString: "6% ~ 20%",
       color: "#3B79E4",
     },
     {
-      label: "2022年設置",
+      label: "2023年永續發展委員會獨董席次達",
+      num: 50,
+      suffix: "%",
+      color: "#3B79E4",
+    },
+    {
+      label: "2022年永續發展協會提升為",
       num: 24,
       suffix: "次",
-      staticString: "永續發展委員會",
+      staticString: "功能性委員會",
       color: "#3B79E4",
     },
   ];

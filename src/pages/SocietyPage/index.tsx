@@ -27,15 +27,15 @@ const stats = [
     staticString: "$3,636,000 元",
   },
   {
-    label: "2023年公益活動參與總人數",
-    num: 76,
-    suffix: "人",
+    label: "淨灘活動清除海洋廢棄物",
+    num: 37.5,
+    suffix: "公斤",
     color: "#A36ACA",
   },
   {
-    label: "2023年社會公益總時數",
-    num: 110,
-    suffix: "小時",
+    label: "二場愛心捐血活動捐血",
+    num: 495,
+    suffix: "袋",
     color: "#A36ACA",
   },
 ];
@@ -213,7 +213,7 @@ const SocietyPage: React.FC = () => {
           </Section>
 
           <Section className="mb-36  text-[#555555]">
-            <H2 text={"執行情形報告"} />
+            <H2 text={"執行情形"} />
             <CharityTable />
           </Section>
         </Container>

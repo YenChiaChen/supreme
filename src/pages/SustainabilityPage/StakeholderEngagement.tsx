@@ -237,7 +237,6 @@ const StakeholderEngagement: React.FC = () => {
                         [
                             {text: "定期"},
                             {text: "不定期議"},
-                            {text: "董事／經理人法令宣導：5次"},
                         ]
                       } />
                     </div>
@@ -263,10 +262,11 @@ const StakeholderEngagement: React.FC = () => {
                         [
                             {text: "教育訓練總時數：3,527／HR"},
                             {text: "人均時數：17.81／HR"},
-                            {text: "職業傷害事件：0"},
+                            {text: "職業災害事件：0"},
                             {text: "健康諮詢：", subItems:[{text:"醫護 3次/月（共計36次）"}, {text:"醫師 3次/年（共計3次）"}]},
                             {text: "員工健檢人數：170人"},
                             {text: "健檢率：99%"},
+                            {text: "新進員工入職進行新人導引訓練。"},
                             {text: "安排健康諮詢、績效評量"},
                             {text: "視需求安排宣導座談會"},
                         ]
@@ -369,6 +369,8 @@ const StakeholderEngagement: React.FC = () => {
                             {text: "價格競爭力"},
                             {text: "持續平穩的供給"},
                             {text: "技術能力"},
+                            {text: "符合各項法規要求"},
+                            {text: "工作環境安全"},
                         ]
                       } />
                    
@@ -420,7 +422,8 @@ const StakeholderEngagement: React.FC = () => {
                       </p>
                       <List items={
                         [
-                            {text: "能源與水資源管理、廢棄物管理與回收"},
+                            {text: "能源與水資源管理"},
+                            {text: "廢棄物管理與回收"},
                             {text: "人文及特色教育發展"},
                             {text: "社會及社區公益參與"},
                             {text: "環境保護"},

@@ -76,7 +76,7 @@ const NavBar: React.FC<NavbarProps> = ({ items }) => {
           </div>
         </div>
 
-        <div className="hidden xl:flex justify-center">
+        <div className="flex justify-center">
           <div className="nav-links">
             <ul>
               {items.map((item, index) => (

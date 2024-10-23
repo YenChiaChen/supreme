@@ -235,7 +235,7 @@ const Governance: React.FC = () => {
 
       <Container>
         <Section>
-          <H2 text={"有效性預估值"} />
+          <H2 text={"公司治理績效"} />
           <P
             text={
               "推動誠信經營政策，宣導公司永續經營理念，舉辦誠信經營和防範內線交易講座、加強法令宣導， 確實遵循法令規章，共創優良企業形象，並於 2022 年 11 月經董事會決議通過，自願設置「永續發展委員會」，以因應公司治理及永續發展。"
@@ -258,11 +258,11 @@ const Governance: React.FC = () => {
 
         <H2 text={"公司治理主管"} />
         
-          <H3 text={"公司治理主管主要職責如下："} className="text-blue" />
+          <H3 text={"公司治理主管主要職責："} className="text-blue" />
           <AnimatedList items={AnimatedListItems1} />
 
           <H3
-            text={"公司治理單位業務執行："}
+            text={"公司治理單位業務執行情形："}
             className="text-blue"
           />
           
@@ -572,7 +572,7 @@ const Governance: React.FC = () => {
                         2022/08/11
                       </td>
                       <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
-                        6
+                        3
                       </td>
                     </tr>
                     <tr className="content bg-white">
@@ -821,7 +821,7 @@ const Governance: React.FC = () => {
                         2021/12/22
                       </td>
                       <td className="py-2 px-4 border-b border-light_gray whitespace-pre-wrap">
-                        3
+                        6
                       </td>
                     </tr>
                   </tbody>

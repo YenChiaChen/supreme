@@ -18,14 +18,14 @@ const Footer: React.FC = () => {
     <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
     </defs>
     <g className="parallax">
-    <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(76,133,145,0.7" />
-    <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(76,133,145,0.5)" />
-    <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(76,133,145,0.3)" />
-    <use xlinkHref="#gentle-wave" x="48" y="7" fill="#4C8591" />
+    <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(255,141,80,0.7" />
+    <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(255,141,80,0.5)" />
+    <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(255,141,80,0.3)" />
+    <use xlinkHref="#gentle-wave" x="48" y="7" fill="#FF8D50" />
     </g>
     </svg>
     </div>
-      <div className="w-full bg-lake  py-20  text-white ">
+      <div className="w-full bg-orange  py-20  text-white ">
         <Container>
           <div className="flex justify-between items-center">
             <div className="flex gap-6 items-center">

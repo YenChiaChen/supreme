@@ -47,7 +47,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         }}
       />
       {/* Mask (Optional) */}
-      {mask && <div className="absolute inset-0 bg-black opacity-50"></div>}
+      {mask && <div className="absolute inset-0 bg-black opacity-40"></div>}
       
       {/* Content */}
       <Container className="w-full h-full">
