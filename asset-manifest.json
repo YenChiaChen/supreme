@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/supreme/static/css/main.ce053f9f.css",
-    "main.js": "/supreme/static/js/main.cb240e8f.js",
+    "main.css": "/supreme/static/css/main.cbbfe3c2.css",
+    "main.js": "/supreme/static/js/main.cecdf513.js",
     "static/media/職業安全衛生.jpg": "/supreme/static/media/職業安全衛生.828919fd2dc4ec3d0afe.jpg",
     "static/media/performanceCard_03.png": "/supreme/static/media/performanceCard_03.a62cd9a770f65a4bf193.png",
     "static/media/01.jpg": "/supreme/static/media/01.9597b13d694c126fd3a8.jpg",
@@ -95,11 +95,11 @@
     "static/media/ESG-15.png": "/supreme/static/media/ESG-15.f9ef422e54cf06514190.png",
     "static/media/supreme-white.png": "/supreme/static/media/supreme-white.02350f4c2f567feefff0.png",
     "index.html": "/supreme/index.html",
-    "main.ce053f9f.css.map": "/supreme/static/css/main.ce053f9f.css.map",
-    "main.cb240e8f.js.map": "/supreme/static/js/main.cb240e8f.js.map"
+    "main.cbbfe3c2.css.map": "/supreme/static/css/main.cbbfe3c2.css.map",
+    "main.cecdf513.js.map": "/supreme/static/js/main.cecdf513.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce053f9f.css",
-    "static/js/main.cb240e8f.js"
+    "static/css/main.cbbfe3c2.css",
+    "static/js/main.cecdf513.js"
   ]
 }
